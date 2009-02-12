@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>mtgtournaments.com :: Free Magic: The Gathering Tournaments, Online MWS Tournaments, Magic Tournament Prizes</title>
+		<meta name="description" content="Free and prize supported Magic the Gathering tournaments held online automatically at your pace." />
+		<meta name="keywords" content="magic, gathering, tournament, tournaments, mtg, wizards, dci, online, prizes, prize, free, tournament, vintage, standard, legacy, 5-color, block" />
+
+		<link rel="stylesheet" type="text/css" href="http://www.mtgtournaments.com/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="http://www.mtgtournaments.com/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="http://www.mtgtournaments.com/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://www.mtgtournaments.com/css/forum_style.css" />
+
+
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-70773-6");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+		<meta name="verify-v1" content="2z8cUkDIcaeaFwW5BWz3qReBRSx7MpZgJ+eMa5EISjk=" />
+	</head>
+	<body>
+		<div id="website">
+			<div id="page_header">
+				<h1><img src="http://www.mtgtournaments.com/images/logo.png" alt="mtgtournaments.com - Free Magic: The Gathering Tournaments - Magic Tournaments" /></h1>
+				<ul id="page_menu">
+					<li><a href="http://www.mtgtournaments.com/">Home</a></li>
+					<li><a href="http://www.mtgtournaments.com/user/profile.html">My Account</a></li>
+					<li><a href="http://www.mtgtournaments.com/tournament/index.html">Tournaments</a></li>
+					<li><a href="http://www.mtgtournaments.com/chat.html">Chat</a></li>
+					<li><a href="http://www.mtgtournaments.com/forum.html">Forums</a></li>
+					<li><a href="http://www.mtgtournaments.com/user/links.html">Links</a></li>
+					<li><a href="http://www.mtgtournaments.com/contact.html">Contact</a></li>
+					<li><a href="http://www.mtgtournaments.com/user/login.html">Login</a></li>
+				</ul>
+			</div>
+			<div id="page_body">
+				<h2><div id="social_links"><a href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src="http://www.mtgtournaments.com/images/delicious.png" alt="Bookmark This Page" /></a> <a href="http://twitter.com/mtgtournaments"><img src="http://www.mtgtournaments.com/images/twitter.png" alt="Twitter Feed" /></a> <a href="http://www.facebook.com/pages/Internet/mtgtournamentscom/243456185037"><img src="http://www.mtgtournaments.com/images/facebook.png" alt="Twitter Feed" /></a></div>Free Magic Tournaments</h2>
+<div id="home_greeting">
+	<ul class="clearfix">
+		<li>
+			<h3>FREE Tournaments</h3>
+			<p>Play tournaments for free against other players, and compete for free in any kind of format.</p>
+		</li>
+		<li class="center">
+			<h3>Prize-Supported Tournaments</h3>
+			<p>Play in tournaments that offer product-based prize support for a small entry fee.</p>
+		</li>
+		<li>
+			<h3>Forums</h3>
+			<p>Discuss strategy, get help for your decks and complain about how bad people play on the forums.</p>
+		</li>
+	</ul>
+</div>
+<p>Do you not have 6-10 hours to dedicate on a weekend or evening to play in Magic: The Gathering tournaments? Tournament rounds held on this site are run over seven <em>days</em> to provide a more casual atmosphere. It allows busy people who don't have the time to block out an entire day of their weekend or blow their whole evening to participate in both free tournaments and paid, prize supported tournaments.</p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1591486072432776";
+/* 728x15, created 5/27/09 */
+google_ad_slot = "2520421995";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<div id="how_it_works">
+<h3>How it works:</h3>
+	<ul>
+		<li><a href="http://www.mtgtournaments.com/user/login.html">Log in</a>, or <a href="http://www.mtgtournaments.com/user/create.html">create an account</a></li>
+		<li>All tournaments are 8 man single elimination tournaments and each round lasts seven days.</li>
+		<li>You will receive your pairings via email. It is your responsibility to contact your opponent to find a time to play on Magic Workstation.</li>
+		<li>When the match is complete, the winner reports the results on the tournament page and the opponent confirms the results.</li>
+		<li>If the tournament was prize supported, prizes will be mailed after the tournament has completed.</li>
+		<li>Detailed rules are located at the <a href="http://www.mtgtournaments.com/user/rules.html">Rules Page</a>.</li>
+	</ul>
+</div>
+<h3><a href="http://www.mtgtournaments.com/tournament/prizes.html">Current Prize Pool</a></h3>
+<p>View the current prizes available above.</p>
+<h3>Current Site Stats</h3>
+<ul>
+	<li><a href="http://www.mtgtournaments.com/tournament/list_waiting.html">6 tournaments waiting for signups</a></li>
+	<li><a href="http://www.mtgtournaments.com/tournament/list_in_progress.html">3 tournaments in progress</a></li>
+	<li><a href="http://www.mtgtournaments.com/tournament/list_complete.html">12 completed tournaments</a></li>
+</ul>
+<h3>Top Rated Players</h3>
+<ol>
+	<li>1638 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=338e259077e498b1db295cc90626adb0&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/75.html">Tim Burr</a></li>
+	<li>1630 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=abb76d00c087bf48dd87361fd5c04f1f&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/169.html">Thiago Lanza</a></li>
+	<li>1624 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=e7dccf00ff03309f915c5328f1424cf2&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/44.html">Jeremy Barbeau</a></li>
+	<li>1621 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=d5620d3ea86667ae2e2ad0d174b8be92&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/1.html">Jeremy Bush</a></li>
+	<li>1609 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=7c83a7e51d45bf7bdb187db0158e4fee&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/195.html">Steve Counsell</a></li>
+	<li>1608 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=df14da514fa7d2d25d3f73fadf780b99&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/15.html">Tom Folsom</a></li>
+	<li>1608 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=db7fdbc838fcc1b6cc467ead12123b1e&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/23.html">Grant Champion</a></li>
+	<li>1608 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=dc83774fdbde55788896df11954a8a01&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/536.html">Phillip Segrave</a></li>
+	<li>1608 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=dbae270d9effd110d8330daa3310838b&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/58.html">Tom  Reiffers</a></li>
+	<li>1608 - <img src="http://www.gravatar.com/avatar.php?gravatar_id=7fad102e5ad5b678e1362b88d959ab21&amp;s=15&amp;r=G" /> <a href="http://www.mtgtournaments.com/user/view/88.html">Nate Gillett</a></li>
+	</ol>			</div>
+			<div id="footer">
+				<p class="copyright">Rendered in 1.1041 seconds, using 2.22MB of memory<br/>Copyright &copy;2009 mtgtournaments.com</p>
+				<p class="copyright"><a href="http://www.webfaction.com?affiliate=jeremybush"><img src="http://www.mtgtournaments.com/images/webfaction.png" alt="Hosted by WebFaction" /></a> | Powered by <a href="http://www.kohanaphp.com/">Kohana 2.3</a> | <a href="http://www.mtgtournaments.com/user/privacy.html">Privacy</a></p>
+			</div>
+		</div>
+	</body>
+</html>
