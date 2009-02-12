@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<title>wmd - The Wysiwym Markdown Editor</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link href="/stylesheets/style.css" media="screen" rel="Stylesheet" type="text/css">
+
+
+<script type="text/javascript"  src="http://box1.wmd-editor.com/1/wmd.js"></script>
+
+</head>
+<body>
+
+<div id="background">
+
+<div id="container">
+    <div id="header">
+        <a href="http://wmd-editor.com" id="wmd" title="WMD: The Wysiwym Markdown Editor"><img src="/images/wmd.png" width="275" height="90" alt="WMD: The Wysiwym Markdown Editor"></a>
+    	<div id="topnav">
+            <ul class="nav">
+            <li><a href="http://wmd-editor.com/" class="selected">Home</a></li>
+            <li><a href="http://wmd-editor.com/features" >Features</a></li>
+            <li><a href="http://wmd-editor.com/demo" >Demo</a></li>
+
+            <li><a href="http://wmd-editor.com/download" >Download</a></li>
+            <li><a href="http://wmd-editor.com/user/account" >Log in</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="page">
+        
+    
+        <div id="content">
+
+            <p class="flash" style="color: green"></p>
+            <p class="flash" style="color: yellow"></p>
+            <p class="flash" style="color: red"></p>
+        
+<h2>WMD: The Wysiwym Markdown Editor</h2>
+
+<p>WMD is a simple, lightweight HTML editor for blog comments, forum posts, and basic content management.  You can add WMD to any textarea with <b>one line of code</b>.  Add live preview with one line more.  WMD works in <a href="features#compatibility" title="Browser compatibility list">nearly all modern browsers</a>,  and is now <strong>completely free to use.</strong>  The next release will be open source under an MIT-style license.</p>
+
+<p>This is not a <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor.  Writing HTML to <em>look</em> a certain way can make your text less accessible to blind people, search engines, mobile users, and feed readers.  HTML describes a document's logical structure&mdash;not its appearance.  It just wasn't built for WYSIWYG.</p>
+
+<p>So WMD is something new: a <em>Wysiwym Markdown</em> editor.</p>
+
+<ul>
+
+<li><p><strong>Wysiwym</strong> stands for What You See Is What You <em>Mean</em>.  WMD produces clean semantic HTML, leaving presentation details like fonts and colors up to style sheets.   But you're not left in the dark about cosmetics; as you type, WMD's live preview shows you <em>exactly</em> what your text will look like after the current styles have been applied.</p></li>
+<li><p><strong>Markdown</strong> is a simple markup language that's as easy to read and write as plain-text email.  WMD uses Markdown as an input format, converting it into HTML behind the scenes.  You can also mix raw HTML with Markdown, so the full expressiveness of HTML is always there if you need it.</p></li>
+</ul>
+
+<p>WMD is just as easy to use as any WYSIWYG editor, so you don't need to know anything about Markdown or HTML to write clean, semantically meaningful markup.  You click the buttons, and WMD writes the Markdown.</p>
+
+<p>Try out WMD on the <a href="/demo">demo page</a>.  If you like it, <a href="/download">download</a> it and add it to your own site.</p>
+        
+        </div>
+    
+        
+    </div>
+
+    <div id="footer">
+        Copyright &copy; 2007-2008 <a href="http://attacklab.net/">Attacklab</a>
+    </div>
+</div>
+
+<div id="cloud1"></div>
+<div id="cloud2"></div>
+<div id="cloud3"></div>
+<div id="grass"></div>
+</div>
+
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-2009955-1";
+    urchinTracker();
+    </script>
+    
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript" language="javascript">
+    var sc_project=2619265; 
+    var sc_invisible=0; 
+    var sc_partition=25; 
+    var sc_security="ed723f74"; 
+    </script>
+    
+    <script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+    <noscript>
+        <img src="http://c26.statcounter.com/counter.php?sc_project=2619265&java=0&security=ed723f74&invisible=0" alt="free hit counter" border="0">
+    </noscript>
+
+    <!-- End of StatCounter Code -->
+
+
+
+</body>
+</html>
+
