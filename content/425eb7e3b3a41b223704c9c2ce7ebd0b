@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Nintari.net: Buy, Sell, Trade Used Video Games and DVDs</title>
+<link rel="shortcut icon" href="/images/icons/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- Header Tags-->
+<meta name="description" content="Nintari.net is an online marketplace where you can buy, sell and trade new and used video games and DVDs. Register for free. Organize your video game and DVD collection online." />
+<meta name="keywords" content="nintari.net, community, video games, DVD, DVDs, buy, sell, trade, buy sell and trade video games and DVDs, trading, video game and DVD community, collection, get some play then trade away, trades" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<!-- Style Sheets -->
+
+<link href="/stylesheets/LoginView.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/ErrorBox.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/Forms.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/TitleBar.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/Common.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/NTNDesc.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/Steps.css" rel="stylesheet" type="text/css" />
+
+<link href="/stylesheets/BottomBar.css" rel="stylesheet" type="text/css" />
+
+<!-- JavaScript Source Files -->
+<script language="JavaScript" type="text/javascript" src="/javascripts/md5.js"></script>
+<script language="JavaScript" type="text/javascript" src="/javascripts/forms.js"></script>
+<script language="JavaScript" type="text/javascript" src="/javascripts/common.js"></script>
+
+<!-- Image Preloads -->
+<script language="JavaScript" type="text/JavaScript">
+	<!--
+		try
+{
+	if ( location.href != top.location.href )
+		top.location.replace(location.href);
+}
+catch(ex)
+{
+	top.location.replace(location.href);
+}
+		-->
+</script>
+	
+
+
+</head>
+
+<body onload="" style="margin:0px">
+
+<div style="position:absolute; left:0px; top:0px; width:100%; text-align:center">
+
+<div style="position:absolute; left:0px; top:91px; width:100%; height:23px; background-image: url(/images/titlebar/bg_search_bar_orange_1x23.gif)"></div>
+
+<div style="position:absolute; left:0px; top:90px; width:100%; height:20px; line-height:1px; font-size:1px; border-top:1px solid black"></div>
+<div style="position:absolute; left:0px; top:114px; width:100%; height:1px; line-height:1px; font-size:1px; border-top:1px solid black; z-index:11"></div>
+
+<div style="width:770px; margin-left:auto; margin-right:auto; text-align:left">
+<div style="position:absolute">
+
+<div style="position:absolute; left:0px; top:20px; width:770px">
+
+<a href="/"><img style="position:absolute; left:0px; top:-8px" width="215" height="64" src="/images/titlebar/logo_nintari_beta_215x64.gif" border="0" alt="Nintari.net - Buy, Sell, Trade Video Games &amp; DVDs" /></a>
+
+<div style="position:absolute; right:10px; top:10px">
+		<a class="TBR_Link" href="/mycollection/"><img style="width:12px; height:13px; margin-right:5px; vertical-align:bottom" src="/images/titlebar/icon_my_collection_12x13.gif" border="0" alt="" /></a><a class="TBR_Link" href="/mycollection/">My Collection</a>
+	<a style="margin-left:10px" class="TBR_Link" href="/mymatches/"><img style="width:17px; height:14px; margin-right:5px; vertical-align:bottom" src="/images/titlebar/icon_my_matches_17x14.gif" border="0" alt="" /></a><a class="TBR_Link" href="/mymatches/">My Matches</a>
+	<a style="margin-left:10px" class="TBR_Link" href="/mytrades/"><img style="width:16px; height:14px; margin-right:5px; vertical-align:bottom" src="/images/titlebar/icon_my_trades_16x14.gif" border="0" alt="" /></a><a class="TBR_Link" href="/mytrades/">My Trades</a>
+	<a style="margin-left:10px" class="TBR_Link" href="/myaccount/"><img style="width:13px; height:13px; margin-right:5px; vertical-align:bottom" src="/images/titlebar/icon_my_account_13x13.gif" border="0" alt="" /></a><a class="TBR_Link" style="font-size:12px" href="/myaccount/">My Account</a>
+			<a style="margin-left:10px" class="TBR_Link" href="/help/"><img style="width:12px; height:13px; margin-right:5px; vertical-align:bottom" src="/images/titlebar/icon_help_12x13.gif" border="0" alt="" /></a><a class="TBR_Link" href="/help/">Help</a>
+	</div>
+
+<div style="position:absolute; top:47px; left:0px; width:100%; height:48px">
+		<div style="position:absolute; left:0px; bottom:24px; width:100%; height:1px; line-height:1px; font-size:1px; border-top:1px solid white"></div>
+	
+	<a href="/"><img style="position:absolute; right:229px; top:2px; width:85px; height:23px" src="/images/titlebar/tab_home_85x23.gif" border="0" alt="Home" /></a>
+	<a href="/games/"><img style="position:absolute; right:83px; top:0px; width:141px; height:23px" src="/images/titlebar/tab_video_games_141x23.gif" border="0" alt="Video Games" /></a>
+	<a href="/dvds/"><img style="position:absolute; right:1px; top:0px; width:77px; height:23px" src="/images/titlebar/tab_dvds_77x23.gif" border="0" alt="DVDs" /></a>
+			<div style="position:absolute; left:0px; bottom:24px; width:457px; height:1px; line-height:1px; font-size:1px; border-bottom:1px solid black"></div>
+	<div style="position:absolute; right:0px; bottom:24px; width:229px; height:1px; line-height:1px; font-size:1px; border-bottom:1px solid black"></div>
+		<div style="position:absolute; left:0px; bottom:0px; width:100%; height:23px; padding-left:10px; background-image: url(/images/titlebar/bg_search_bar_orange_1x23.gif)">
+				<form name="Q-SEARCH" action="/gil.php" method="get">
+		<span style="position:absolute; left:10px; top:0px">
+			<span style="height:23px; vertical-align:middle"></span><img style="width:13px; height:13px; vertical-align:middle" src="/images/titlebar/icon_search_black_13x13.gif" border="0" alt="" />&nbsp;&nbsp;<b><span style="color:black; vertical-align:middle">Search</span></b>
+				<select tabindex="1" style="vertical-align:middle" name="cat" size="1">
+					<option value="2" selected="selected">in Video Games</option>
+					<option value="3">in DVDs</option>
+				</select>
+				<input tabindex="2" style="vertical-align:middle" name="search" type="text" size="40" />
+				<input name="rel" type="hidden" value="2" />
+				<input name="order" type="hidden" value="1" />
+				
+				<a tabindex="3" href="javascript:document.forms['Q-SEARCH'].submit()" onmouseover="window.status=''; return true;"><img height="17" width="44" border="0" style="vertical-align:middle; cursor:pointer" src="/images/common/go_44x17.gif" alt="Go" /></a>
+		</span>
+		</form>
+						<span style="position:absolute; right:10px; top:3px">
+			
+							<img style="width:12px; height:13px; vertical-align:middle" src="/images/titlebar/icon_login_black_12x13.gif" border="0" alt="" />&nbsp;&nbsp;<a class="COM_HighLink" style="color:black" href="/login/lf/YToyOntzOjU6InRpdGxlIjtOO3M6MzoidXJsIjtzOjE6Ii8iO30=/">Login</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="COM_HighLink" style="color:black" href="/register/">Register</a>
+					</span>
+			</div>
+</div>
+
+<div style="position:absolute; left:0px; top:94px; width:100%">
+<div style="position:absolute;top:0px;right:0px;width:100%;height:20px;">
+<div style="position:absolute; width:100%;">
+	<table  style="width:100%; height:100%; font-size:11px; font-family:tahoma;" align="center">
+		<tr align="center">		
+			<td style="background-color:white; border:dotted 1px #ccc"> 
+				<b>Newest users:</b>
+				&nbsp;<a href="/users/trey1395/" target="_blank">trey1395</a>&cedil;
+				&nbsp;<a href="/users/zakariyabenguesmi/" target="_blank">zakariyabenguesmi</a>&cedil;
+				&nbsp;<a href="/users/SAJAREMBO/" target="_blank">SAJAREMBO</a><br />
+			</td>
+
+			<td style="background-color:white; border:dotted 1px #ccc">
+				43204  <b>Haves</b><br />
+			</td>
+
+			<td style="background-color:white; border:dotted 1px #ccc">
+				31626  <b>Wants</b><br />
+			</td>
+
+			<td style="background-color:white; border:dotted 1px #ccc">
+				18949 <b>Matches</b><br />
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
+<div style="position:absolute; left:0px; top:50px;width:100%; height:255px">
+	<div id="home-minorr4c2" style="position:absolute; left:0px; top:0px;width:195px; height:221px;z-index:2; visibility:visible">
+		<div class="leftTitle" style="width:100%">What is Nintari.net?</div>
+		<div class="leftTxt" style="width:100%">Nintari.net is a community of hardcore Gamers and Movie buffs. We are creating the ultimate place to Buy, Sell and Trade your Video Games and DVDs.</div>
+		<div style="width:100%; text-align:right"><a class="link11" href="/help/chp/3/#AboutNintari">Learn More</a></div>
+		<div class="leftTitle" style="width:100%">Help Wanted!</div>
+		<div class="leftTxt" style="width:100%">We need your help to make Nintari.net great. Join the community today! </div>  
+		<div style="width:100%; text-align:right"><a class="link11" href="/help/chp/3/#HelpWanted">Learn More</a>
+	</div>
+
+	<div style="position:absolute; left:235px; top:15px;width:295px; height:255px;z-index:4; visibility:visible">
+		<div style="position:absolute; width:100%; height:100%">
+			<img name="CenterBox_295x255" alt="Welcome" src="/images/homepage/center_box_295x255.gif" width="295" height="255" border="0" />
+		</div>
+		<div style="position:absolute; left:45px; top:16px;width:206px; height:13px;z-index:3; visibility:visible">
+			<img name="DescTitle_206x13" alt="Your Video Game &amp; DVD Community" src="/images/homepage/desc_title_206x13.gif" width="206" height="13" border="0" />
+		</div>
+		<div style="position:absolute; left:66px; top:51px;width:159px; height:144px;z-index:5; visibility:visible">
+			<img name="GamesNDVDs_159x144" alt="Video Game and DVD covers" src="/images/homepage/games_n_dvds_159x144.gif" width="159" height="144" border="0" />
+		</div>
+		<div style="position:absolute; left:50px; top:218px;width:19px; height:13px;z-index:7; visibility:visible">
+			<img name="TriArrowLeft_19x13" alt="TriArrow Left" src="/images/homepage/tri_arrow_left_19x13.gif" width="19" height="13" border="0" />
+		</div>
+		<div style="position:absolute; left:81px; top:212px;width:148px; height:20px;z-index:6; visibility:visible"><a class="link18" href="/register/">Start Trading</a></div>
+		<div style="position:absolute; left:227px; top:218px;width:19px; height:13px;z-index:8; visibility:visible">
+			<img name="TriArrowRight_19x13" alt="TriArrow Right" src="/images/homepage/tri_arrow_right_19x13.gif" width="19" height="13" border="0" />
+		</div>
+	</div>
+
+		<div style="position:absolute; left:575px; width:194px; top:0px">
+			
+			<ul class="checkList" style="vertical-align: center">
+			<li> &nbsp;&nbsp;<a class="link12" href="/register/">Register</a>  for FREE</li>
+			<li> &nbsp;&nbsp;NO Service Fees</li>
+			<li> &nbsp;&nbsp;Organize Your <a class="link12" href="/quickstart/#part2">Collection</a></li>
+			<li> &nbsp;&nbsp;Buy, Sell and <a class="link12" href="/help/chp/1/#HowToTrade">Trade</a></li>
+			<li> &nbsp;&nbsp;<a class="link12" href="/quickstart/">One-Click</a> Listing</li>
+			
+			<!--
+			<li> &nbsp;&nbsp;Read <a class="link12" href="">Reviews</a></li>
+			<li> &nbsp;&nbsp;Participate in <a class="link12" href="">Forums</a></li>
+			-->
+			</ul><a href="/tshirtgiveaway/" ><img src="/images/tshirtgiveaway/tshirt_promo_165x105.gif" width="165" height="105" border="0" alt="referral program" /></a>
+	</div>
+</div><div style="position:absolute; left:0px; top:330px;width:218px; height:229px;z-index:7; visibility:visible">
+	<div style="position:absolute; width:100%; height:100%">		
+		<img name="Step1_218x229" alt="Step 1" src="/images/homepage/step1_218x229.gif" width="218" height="229" border="0" usemap="#m_Step1_218x229" />
+	</div>
+	<div class="stepsTitle" style="position:absolute; left:75px; top:15px; width:125px; height:27px;z-index:10; visibility:visible">Sign Up for FREE!</div>
+	<div class="stepsTxt" style="position:absolute; left:21px; top:65px;width:185px; height:41px;z-index:13; visibility:visible">Creating an account is simple and easy. Just <a href="/register/" class="blackLink"><b><u>click</u></b></a> to sign up now.</div>
+</div>
+
+
+<map name="m_Step1_218x229" id="m_Step1_218x229"><area shape="circle" coords="27,27, 27" href="/register/" alt="Step 1" /></map><div style="position:absolute; left:276px; top:330px;width:218px; height:229px;z-index:8; visibility:visible">
+	<div style="position:absolute; width:100%; height:100%">
+		<img name="Step2_218x229" alt="Step 2" src="/images/homepage/step2_218x229.gif" width="218" height="229" border="0" usemap="#m_Step2_218x229" />
+	</div>	
+	<div class="stepsTitle" style="position:absolute; left:70px; top:20px;width:135px; height:13px;z-index:11; visibility:visible">List for FREE!</div>
+	<div class="stepsTxt" style="position:absolute; left:21px; top:65px;width:185px; height:54px;z-index:12; visibility:visible">Browse our database of over 34,000 DVDs and 10,000 Video Games to create your own 'have' and 'want' list.</div>
+</div>
+
+<map name="m_Step2_218x229" id="m_Step2_218x229"><area shape="circle" coords="27,27, 27" href="/register/" alt="Step 2" /></map><div style="position:absolute; left:552px; top:330px;width:218px; height:229px;z-index:9; visibility:visible">
+	<div style="position:absolute; width:100%; height:100%">		
+		<img name="Step3_218x229" alt="Step 3" src="/images/homepage/step3_218x229.gif" width="218" height="229" border="0" usemap="#m_Step3_218x229" />
+	</div>
+	<div class="stepsTitle" style="position:absolute; left:75px; top:20px;width:135px; height:30px;z-index:9; visibility:visible">Get Trading!</div>
+	<div class="stepsTxt" style="position:absolute; left:21px; top:65px;width:185px; height:39px;z-index:14; visibility:visible">Buy, Sell &amp; Trade your new and used <a href="/games/" class="blackLink"><b><u>Video Games</u></b></a> and <a href="/dvds/" class="blackLink"><b><u>DVDs</u></b></a>.</div>
+</div>
+
+<map name="m_Step3_218x229" id="m_Step3_218x229"><area shape="circle" coords="27,27, 27" href="/register/" alt="Step 3" /></map>
+<div style="position:absolute;left:0px;top:609px;width:770px;height:65px;">
+<div id="BOTTOMBAR-FIN" class="BBR_Fin" style="position:absolute; left:0px; top:0px; width:177px; height:20px"></div>
+<div id="BOTTOMBAR-FIN-DIVIDER" class="BBR_FinDiv" style="position:absolute; left:177px; top:0px; width:20px; height:20px"><img style="width:20px; height:20px; border:none" src="/images/bottombar/bottombar_fin_divider.gif" border="0" alt="" /></div>
+<div id="BOTTOMBAR-FIN-FILLER" class="BBR_FinFill" style="position:absolute; left:0px; top:20px; width:770px; height:2px; line-height:2px; font-size:2px"></div>
+<div id="BOTTOMBAR-COPYRIGHT" class="BBR_Copyright" style="position:absolute; top:23px; left:0px; width:256px; height:40px; background-color:#FF9900; color:#333333">&copy; 2010 Nintari.net<br />All rights reserved.</div>
+<div id="BOTTOMBAR-DIVIDER" class="BBR_Div" style="position:absolute; top:22px; left:260px; width:21px; height:23px; background-color:#FF9900"><img style="width:21px; height:23px; border:none" src="/images/bottombar/bottombar_divider.gif" border="0" alt="" /></div>
+<div id="BOTTOMBAR-LINKS" class="BBR_Links" style="position:absolute; top:22px; left:281px; width:478px; height:22px; line-height:21px"><a class="BBR_Link" href="/privacy_guarantee/">Our Privacy Guarantee</a> | <a class="BBR_Link" href="/user_agreement/">Our User Agreement</a> | <a class="BBR_Link" href="/contactus/">Contact Us</a> | <a class="BBR_Link" href="/help/">Help</a></div>
+<div id="BOTTOMBAR-FILLER" class="BBR_Fill" style="position:absolute; top:45px; left:281px; width:489px; height:18px; background-color:#FF9900"></div>
+<div id="BOTTOMBAR-DIVIDER-FILLER" class="BBR_DivFill" style="position:absolute; top:45px; left:260px; width:21px; height:19px; background-color:#FF9900"></div>
+</div>
+<!-- end tags -->
+<!-- title bar end tags --> </div></div></div></div></div>
+<!-- -->
+<script language=javascript src="/javascripts/awstats_misc_tracker.js"></script><script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-474392-3"; urchinTracker();</script>
+</body>
+
+</html>
