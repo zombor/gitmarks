@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+<head><base href="http://www.maschek.hu/">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta http-equiv="Content-Language" content="en" >
+<meta name="description" content="Online Image Map Editor. Free online image mapper tool. Use images on the web or from your PC. Load your image, map your links, get the code! No software to download." >
+<meta name="author" content="Adam Maschek" >
+<meta name="keywords" content="image map editor, free, online, imagemap, map, edit, make, area, coordinates, rectangle, circle, poly, polygon">
+
+<meta name="DC.title" lang="en" content="Online Image Map Editor" >
+<meta name="DC.creator" content="Adam Maschek" >
+<meta name="DC.date" content="2006-10-30" >
+<meta name="DC.description" content="Online Image Map Editor. Free online image mapper tool. Use images on the web or from your PC. Load your image, map your links, get the code! No software to download." >
+<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" >
+<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" >
+<meta name="DC.language" content="en" >
+
+<link rel="DC.rights copyright" href="http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode" >
+<link rel="schema.DC"           href="http://purl.org/dc/elements/1.1/" >
+<link rel="schema.DCTERMS"      href="http://purl.org/dc/terms/" >
+<link rel="home"   href="eng/" >
+<link rel="author" href="contact" >
+<link rel='alternate' type='application/rss+xml' title='maschek.hu' href='http://feeds.feedburner.com/maschek'>
+
+<link rel="stylesheet" href="css/simple.css"     type="text/css">
+<link rel="stylesheet" href="css/suckerfish.css" type="text/css">
+
+<title>maschek.hu - Online Image Map Editor</title>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery.suckerfish.js'></script>
+<script type='text/javascript' src='http://openx.videoflo.net/www/delivery/spcjs.php?id=1'></script>
+<link rel="stylesheet" href="imgmap/imgmap.css?v=3" type="text/css"></head>
+
+<body>
+<div id="maindivcontainer">
+<div id="maindiv">
+
+<!-- langbox -->
+<div style="position:relative;"> 
+<div id="div_lang">
+<a href="setlang.php?lang=hun" class="hunflag" title="Magyar">HUN</a> |
+<a href="setlang.php?lang=eng" class="engflag" title="English">ENG</a> |
+<a href="setlang.php?lang=por" class="porflag" title="Portugu&ecirc;s">POR</a>
+</div>
+</div>
+
+<!-- title with stripe -->
+<div id="div_title">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width: 100%;height: 50px;" summary="">
+	<tr valign="middle">
+	<td>
+	<h1 id="titletext">Online Image Map Editor</h1>
+	</td>
+	<td width="100%">
+	<div id="titlestripe">&nbsp;</div>
+	</td>
+	</tr>
+</table>
+</div>
+
+<div id="div_menu">
+<ul id="nav">
+	<li><a href="eng/index" class="home" title="">home :</a>
+	</li>
+	<li><a href="imagemap/index" title="">about :</a>
+		<ul>
+			<li><a href="imagemap/overview">overview</a></li>
+			<li><a href="imagemap/features">features</a></li>
+			<li><a href="imagemap/bugs">bugs and issues</a></li>
+			<li><a href="imagemap/changelog">changelog</a></li>
+			<li><a href="imagemap/credits">credits</a></li>
+		</ul>	
+	</li>
+	<li><a href="imagemap/imgmap" title="">online editor :</a>
+	</li>
+	<li><a href="imagemap/desktop" title="">desktop editor :</a>
+	</li>
+	<li><a href="imagemap/license" title="">license :</a>
+	</li>
+	<li><a href="imagemap/purchase" title="">purchase :</a>
+	</li>
+	<li><a href="imagemap/download" title="">download :</a>
+	</li>
+	<li><a href="imagemap/donate" title="">donate :</a>
+	</li>
+</ul>
+
+<div class="sidenote">
+<script type='text/javascript'>
+    OA_show(1);
+</script>
+</div>
+
+</div>
+
+<div id="div_content">
+
+<script type='text/javascript'>
+    OA_show(2);
+</script>
+
+<br>
+
+
+<form id="img_area_form">
+	<fieldset>
+		<legend>
+			<a onclick="toggleFieldset(this.parentNode.parentNode)">Select source</a>
+		</legend>
+		<div>
+			<div class="source_desc">Use an image on your computer:</div>
+			<div class="source_url">
+				<iframe id="iframe_uploader"
+					name="uploader"
+					src="imgmap/upload.php"
+					scrolling="no"
+					noresize="noresize"
+					frameborder="no"
+					width="240"
+					height="24"></iframe>
+			</div>
+			<a href="javascript:gui_loadImage(window.frames['uploader'].document.getElementById('src').getAttribute('rel'))" class="source_accept">accept</a><br>
+			
+			<div class="source_desc">OR an image on the Internet:</div>
+			<div class="source_url"><input type="txt" id="source_url2" value="http://"></div>
+			<a href="javascript:gui_loadImage(document.getElementById('source_url2').value)" class="source_accept">accept</a><br>
+			
+			<div class="source_desc">OR use a sample image:</div>
+			<div class="source_url">
+				<select id="source_url3">
+					<option value="imgmap/sample1.jpg" >sample 1</option>
+					<option value="imgmap/sample2.jpg" >sample 2</option>
+					<option value="imgmap/sample3.jpg" >sample 3</option>
+					<option value="imgmap/sample4.jpg" >sample 4</option>
+				</select>
+			</div>
+			<a href="javascript:gui_loadImage(document.getElementById('source_url3').value)" class="source_accept">accept</a><br>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<a onclick="toggleFieldset(this.parentNode.parentNode)">Image map areas</a>
+		</legend>
+		<div style="border-bottom: solid 1px #efefef">
+		<table cellspacing="0" width="100%">
+		<tr>
+		<td width="100">
+		<div id="button_container">
+		<!-- buttons come here -->
+			<img src="imgmap/add.gif" onclick="myimgmap.addNewArea()" alt="Add new area" title="Add new area" style="margin: 0 2px; cursor: pointer;">
+			<img src="imgmap/delete.gif" onclick="myimgmap.removeArea(myimgmap.currentid)" alt="Delete selected area" title="Delete selected area" style="margin: 0 2px; cursor: pointer;">
+			<img src="imgmap/zoom.gif" id="i_preview" onclick="myimgmap.togglePreview();" alt="Preview image map" title="Preview image map" style="margin: 0 2px; cursor: pointer;">
+			<img src="imgmap/html.gif" onclick="gui_htmlShow()" alt="Get image map HTML" title="Get image map HTML" style="margin: 0 2px; cursor: pointer;">
+		</div>
+		</td>
+		<td>				
+			<label for="dd_zoom">Zoom</label>:
+			<select onchange="gui_zoom(this)" id="dd_zoom">
+			<option value='0.25'>25%</option>
+			<option value='0.5'>50%</option>
+			<option value='1' selected="1">100%</option>
+			<option value='2'>200%</option>
+			<option value='3'>300%</option>
+			</select>
+			<label for="dd_output">Output</label>:
+			<select id="dd_output" onchange="return gui_outputChanged(this)">
+			<option value='imagemap'>Standard imagemap</option>
+			<option value='css'>CSS imagemap</option>
+			<option value='wiki'>Wiki imagemap</option>
+			</select>			
+		</td>
+		<td align="right" width="40%">
+			<input type="checkbox" id="bb" onClick="toggleBoundingBox(this)"><label for="bb">bounding box</label>&nbsp;
+			<select onchange="changelabeling(this)">
+			<option value=''>No labeling</option>
+			<option value='%n' selected='1'>Label with numbers</option>
+			<option value='%a'>Label with alt text</option>
+			<option value='%h'>Label with href</option>
+			<option value='%c'>Label with coords</option>
+			</select>
+		</td>
+		</tr>
+		</table>			
+		
+		</div>
+		<div id="form_container" style="clear: both;">
+		<!-- form elements comehere -->
+     	</div>
+	</fieldset>
+	<div id="pic_container">
+	</div>			
+	<fieldset>
+		<legend>
+			<a onclick="toggleFieldset(this.parentNode.parentNode)">Status</a>
+		</legend>
+		<div id="status_container"></div>
+	</fieldset>
+	<fieldset id="fieldset_html" class="fieldset_off">
+		<legend>
+			<a onclick="toggleFieldset(this.parentNode.parentNode)">Code</a>
+		</legend>
+		<div>
+		<div id="output_help">
+		</div>			
+		<textarea id="html_container"></textarea></div>
+	</fieldset>
+</form>
+
+<script type="text/javascript" src="imgmap/imgmap_packed.js"></script>
+<script type="text/javascript" src="imgmap/default_interface.js"></script>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float: left">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+</form>
+
+<div style="float: right">
+Problems? &gt;&gt;&gt; <a href="http://code.google.com/p/imgmap/issues/list">FEEDBACK</a>
+</div>
+
+
+
+
+</div>
+
+<div id="div_footer">
+<div id="div_footer_left">
+<!-- Creative Commons License -->
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+	<img alt="Creative Commons License" border="0" src="pics/cc.jpg"> Some Rights Reserved</a>
+<!-- /Creative Commons License -->
+<!-- 
+<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+	<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.5/" >
+	<dc:title>maschek.hu</dc:title>
+	<dc:date>2006</dc:date>
+	<dc:creator><Agent><dc:title>Adam Maschek</dc:title></Agent></dc:creator>
+	<dc:rights><Agent><dc:title>Adam Maschek</dc:title></Agent></dc:rights>
+	<dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" >
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+	<permits rdf:resource="http://web.resource.org/cc/Reproduction">
+	<permits rdf:resource="http://web.resource.org/cc/Distribution">
+	<requires rdf:resource="http://web.resource.org/cc/Notice">
+	<requires rdf:resource="http://web.resource.org/cc/Attribution">
+	<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse">
+</License>
+</rdf:RDF>
+-->
+</div>
+<div id="div_counter">
+|
+<!-- Site Meter XHTML Strict 1.0 -->
+<script type="text/javascript" src="http://s22.sitemeter.com/js/counter.js?site=s22maschekhu">
+</script>
+<!-- Copyright (c)2006 Site Meter -->
+</div>
+<div id="div_footer_right">
+	<a href="http://feeds.feedburner.com/maschek" rel="alternate" type="application/rss+xml">Subscribe<br> in a reader</a>
+</div>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-729919-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
