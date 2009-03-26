@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+
+<head>
+  <LINK HREF="styles.css" REL="stylesheet" TYPE="text/css">
+</head>
+
+<BODY>
+
+<DIV ID="banner">
+ <IMG align="left" SRC="images/aux-logo.png" ALT="A/UX Picasso Logo">
+ <IMG SRC="images/aux-banner.png" ALT="A/UX Server Penelope">
+</DIV>
+
+<DIV ID="menu">
+
+<a href="index.htm"><img border="0" src="images/intro.gif" alt="Intro"/></a>
+<a href="hardware.htm"><img border="0" src="images/hardware.gif" alt="Hardware"/></a>
+<a href="software.htm"><img border="0" src="images/software.gif" alt="Software"/></a>
+<a href="aux_3.0.htm"><img border="0" src="images/aux-3.0.gif" alt="A/UX 3.0"/></a>
+<a href="aux_2.0.htm"><img border="0" src="images/aux-2.0.gif" alt="A/UX 2.0"/></a>
+<a href="aux_1.0.htm"><img border="0" src="images/aux-1.0.gif" alt="A/UX 1.0"/></a>
+<a href="downloads.htm"><img border="0" src="images/downloads.gif" alt="Downloads"/></a>
+<a href="closing.htm"><img border="0" src="images/closing.gif" alt="Closing"/></a>
+
+</DIV>
+
+
+<DIV ID="main">
+<DIV ID="center">
+
+<H4>Essential Downloads for A/UX</H4>
+
+<P>
+Please note:  These startup floppies are not DiskCopy images - They are raw disk images created with the Unix dd command, then compressed using gzip.  You can recreate the floppies using "dd if=filename of=/dev/fd0" on your favorite Unix-based platform, although the name of your floppy drive (/dev/fd0) may vary.  The A/UX 2.0 startup floppies are 800KB format, and <I>must</I> be created on a Macintosh.
+</P>
+
+<BR>
+<BR>
+
+<H4>A/UX Startup Floppies</H4>
+
+<TABLE CELLSPACING="10">
+<TR>
+  <TD><A HREF="files/Quadra_Boot.img.gz"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0.1 Startup/Installation Floppy for Quadra and Centris Systems</TD>
+</TR>
+<TR>  
+  <TD><A HREF="files/MacII_Boot.img.gz"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0.1 Startup/Installation Floppy for Mac II Series Systems</TD>
+</TR>
+<TR>
+  <TD><A HREF="files/AUX_3.1_Boot.img.gz"><IMG SRC="images/floppy-red.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0.1 Custom Startup/Installation Floppy - Highly Recommended!</TD>
+</TR>
+<TR>
+  <TD><A HREF="files/610-Enabler.img.gz"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0.1 Quadra/Centris 610 - Bootable 040 enabler disk</TD> 
+</TR>
+</TABLE>
+
+<BR>
+<BR>
+
+<H4>A/UX Archive - Over 150 files!</H4>
+
+<TABLE CELLSPACING="10">
+<TR>
+  <TD><A HREF="archive.htm"><IMG SRC="images/floppy-red.png" BORDER="0"></A></TD>
+  <TD>Complete Jagubox mirror & User Contributions - Vital Security Downloads!!!</TD> 
+</TR>
+</TABLE>
+
+
+<BR>
+<BR>
+
+<H4>A/UX Documentation</H4>
+
+<TABLE CELLSPACING="10">
+
+<TR>
+  <TD><A HREF="files/ServerAdmin.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0 - Server Administration for A/UX</TD>
+</TR>
+<TR>
+  <TD><A HREF="files/RoadMap.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 3.0 - Road Map to A/UX</TD>
+</TR>
+<TR>
+  <TD><A HREF="files/BasicSkills.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>       
+  <TD>A/UX 3.0 - Basic Skills</TD>              
+</TR>
+<TR>
+  <TD><A HREF="files/ServerTuning.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD> 
+  <TD>A/UX 3.0 - Tuning Server Performance & Adding Internal Hard Drives</TD>
+</TR>
+
+</TABLE>
+
+<BR>
+
+<TABLE CELLSPACING="10">
+
+<TR>
+  <TD><A HREF="files/600-2091-a.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 2.0 - Setting up Accounts and Periferals for A/UX</TD>
+</TR>
+
+<TR>
+  <TD><A HREF="files/600-2092-a.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 2.0 - A/UX Essentials</TD>
+</TR>
+
+<TR>
+  <TD><A HREF="files/600-2100-a.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 2.0 - MacX User's Guide</TD> 
+</TR>
+
+<TR>
+  <TD><A HREF="files/600-2106-a.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>A/UX 2.0 - A/UX Installation Guide</TD> 
+</TR>
+
+</TABLE>
+
+
+<BR>
+
+<TABLE CELLSPACING="10">
+
+<TR>
+  <TD><A HREF="files/vi-reference.pdf"><IMG SRC="images/floppy.png" BORDER="0"></A></TD>
+  <TD>Vi Quick Reference - Not A/UX specific</TD>
+</TR>
+
+</TABLE>
+
+<!--
+
+<LI><A HREF="files/FAQ.aux.301">A/UX 3.0.1 FAQ</A></LI>
+<LI><A HREF="files/FAQ.aux.201">A/UX 2.0.1 FAQ</A></LI>
+
+<LI><A HREF="Custom_Apache.htm">Installing and configuring Apache</A></LI>
+<LI><A HREF="Custom_LoginScreen.htm">How to colourize the login screen</A></LI>
+<LI><A HREF="Custom_iso9660.htm">How to add iso9660 support</A></LI>
+<LI><A HREF="Custom_IOBuffers.htm">How to tune the Disk I/O</A></LI>
+<LI><A HREF="Custom_SerialTerminal.htm">How to use A/UX as a serial terminal</A></LI>
+
+-->
+
+<BR>
+<BR>
+
+<H4>User-Contributions</H4>
+
+<P>
+Over the years, many people have contributed to the development of A/UX Penelope.  All contributions, great and small, are truly appreciated.  This section is my way of saying "thanks" to everyone who has contacted me regarding what I consider one of the coolest products ever developed.  If you have anything you want to contribute to this page, or if I've missed anyone, please let me know!
+</P>
+
+<BR>
+
+<P>
+<B>John Kullmann</B> - The Director of A/UX Product Development sent me a boxed-set of A/UX 3.01 with all the original documentation and media.  The package contained two original copies of A/UX 3.0.1, and shrink-wrapped manuals.  Wow!
+</P>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/AccountsPeriferals.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/AccountsPeriferalsSM.jpg" ALT="Setting Up Accounts and Periferals" BORDER="1"></A></TD>
+  <TD><A HREF="images/AUXessentials.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/AUXessentialsSM.jpg" ALT="A/UX Essentials" BORDER="1"></A></TD>
+  <TD><A HREF="images/MacX.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/MacXSM.jpg" ALT="MacX Manual" BORDER="1"></A></TD>
+  <TD><A HREF="images/NetworkingEssentials.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/NetworkingEssentialsSM.jpg" ALT="A/UX Networking Essentials" BORDER="1"></A></TD>
+  <TD><A HREF="images/X11.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/X11SM.jpg" ALT="X11 Manual" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/InstallationGuide.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/InstallationGuideSM.jpg" ALT="A/UX Installation Guide" BORDER="1"></A></TD>
+  <TD><A HREF="images/RoadMap.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/RoadMapSM.jpg" ALT="RoadMap to A/UX" BORDER="1"></A></TD>
+  <TD><A HREF="images/SoftwareFolder1.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/SoftwareFolder1SM.jpg" ALT="A/UX Software Folder" BORDER="1"></A></TD>
+  <TD><A HREF="images/SoftwareFolder2.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/SoftwareFolder2SM.jpg" ALT="A/UX Software Folder" BORDER="1"></A></TD>
+  <TD><A HREF="images/SoftwareFolder3.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/SoftwareFolder3SM.jpg" ALT="A/UX Software Folder" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/InstallMacII.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/InstallMacIISM.jpg" ALT="Boot floppy for MacII Series" BORDER="1"></A></TD>
+  <TD><A HREF="images/InstallQuadra.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/InstallQuadraSM.jpg" ALT="Boot floppy for Quadra Series" BORDER="1"></A></TD>
+  <TD><A HREF="images/ReadmeMacII.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/ReadmeMacIISM.jpg" ALT="Readme for MacII Series" BORDER="1"></A></TD>
+  <TD><A HREF="images/ReadmeQuadra.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/ReadmeQuadraSM.jpg" ALT="Readme for Quadra Series" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/SleeveFront.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/SleeveFrontSM.jpg" ALT="CD Sleeve" BORDER="1"></A></TD>
+  <TD><A HREF="images/InstallCD1.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/InstallCD1SM.jpg" ALT="Installation CD" BORDER="1"></A></TD>
+  <TD><A HREF="images/AUXbox1.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/AUXbox1SM.jpg" ALT="A/UX Boxed Set" BORDER="1"></A></TD>
+  <TD><A HREF="images/AUXbox2.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/AUXbox2SM.jpg" ALT="A/UX Boxed Set" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<P>
+<B>Anonymous Donor</B> - An anonymous donor provided these images of the Apple Workgroup Server 95 software package, and a fully functional copy of the A/UX 3.1 update.
+</P>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/Applesearch_DEMO.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Applesearch_DEMOSM.jpg" ALT="AppleSearch Demo" BORDER="1"></A></TD>
+  <TD><A HREF="images/AppleShare_Pro.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/AppleShare_ProSM.jpg" ALT="AppleShare Pro for AWS95" BORDER="1"></A></TD>
+  <TD><A HREF="images/Basic-Skills.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Basic-SkillsSM.jpg" ALT="Basic Skills for AWS95" BORDER="1"></A></TD>
+  <TD><A HREF="images/Boot-Disks.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Boot-DisksSM.jpg" ALT="AWS95 Boot Floppies" BORDER="1"></A></TD>
+  <TD><A HREF="images/Setting-Up-and-Managing-Ser.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Setting-Up-and-Managing-SerSM.jpg" ALT="Setting up and Managing the AWS95" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/DAT-Tapes.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/DAT-TapesSM.jpg" ALT="DDS Tapes" BORDER="1"></A></TD>
+  <TD><A HREF="images/Data-Access-Server---Back.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Data-Access-Server---BackSM.jpg" ALT="Product Listing" BORDER="1"></A></TD>
+  <TD><A HREF="images/Data-Access-Server---Front.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Data-Access-Server---FrontSM.jpg" ALT="Product Listing" BORDER="1"></A></TD>
+  <TD><A HREF="images/Installer.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/InstallerSM.jpg" ALT="System Software" BORDER="1"></A></TD>
+  <TD><A HREF="images/Tuning-Server-Performance.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Tuning-Server-PerformanceSM.jpg" ALT="Tuning Server Performance" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/Packing-List.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Packing-ListSM.jpg" ALT="Packing List" BORDER="1"></A></TD>
+  <TD><A HREF="images/Quick-Start-Card.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Quick-Start-CardSM.jpg" ALT="Quick Start Guide" BORDER="1"></A></TD>
+  <TD><A HREF="images/Retrospect-Remote.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Retrospect-RemoteSM.jpg" ALT="Retrospect" BORDER="1"></A></TD>
+  <TD><A HREF="images/Server-Administration.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Server-AdministrationSM.jpg" ALT="Server Admin for A/UX" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<BR>
+
+<P>
+<B>Josh Burker</B> - Source code and compiled binaries for <A HREF="files/ssh-1.2.32.tar.gz">SSH 1.2.32</A>, <A HREF="files/apache-1.3.34.tar.gz">Apache 1.3.34</A>, <A HREF="files/perl-5005_04.tar.gz">Perl 5.005_04</A>, and <A HREF="files/top-3.3.tar.gz">top 3.3</A>.  The binaries were compiled on A/UX 3.1.1 using gcc 2.7.2 and gmake 3.7.9.  These packages (also listed above) contain the information required to build your own binaries...  Very useful info if you're trying to compile other software for A/UX!
+</P>
+
+<BR>
+<BR>
+
+<P>
+<B>Anonymous Donor</B> - An anonymous donor provided the complete set of A/UX 2.0.1 floppies
+</P>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/FloppyLaunch.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/FloppyLaunchSM.jpg" ALT="A/UX 2.0.1 Floppy Launch" BORDER="1"></A></TD>
+  <TD><A HREF="images/FloppyRoot.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/FloppyRootSM.jpg" ALT="A/UX 2.0.1 Floppy Root" BORDER="1"></A></TD>
+  <TD><A HREF="images/ReadMe.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/ReadMeSM.jpg" ALT="A/UX 2.0.1 ReadMe Disk" BORDER="1"></A></TD>
+  <TD><A HREF="images/Startup.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/StartupSM.jpg" ALT="A/UX 2.0.1 Startup Disk" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<TABLE CELLSPACING="20">
+  <TR>
+  <TD><A HREF="images/StartupUtils.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/StartupUtilsSM.jpg" ALT="A/UX 2.0.1 Floppy Launch" BORDER="1"></A></TD>
+  <TD><A HREF="images/SystemTools.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/SystemToolsSM.jpg" ALT="A/UX 2.0.1 System Tools" BORDER="1"></A></TD>
+  <TD><A HREF="images/Utilities1.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Utilities1SM.jpg" ALT="A/UX 2.0.1 Utilities Disk 1" BORDER="1"></A></TD>
+  <TD><A HREF="images/Utilities2.jpg" TARGET="new"><IMG class="shadowbox" SRC="images/thumbnails/Utilities2SM.jpg" ALT="A/UX 2.0.1 Utilities Disk 2" BORDER="1"></A></TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<BR>
+
+<P>
+<B>Anonymous Apple Engineer</B> - I received a phone call from one of the original Unix Engineers of the A/UX Development team.  The gentleman was the manager of the MacX project, helped to build the regular X server for A/UX, participated in the development of A/UX from version 1.0 to the final release, and was responsible for <A HREF="mae/index.htm" TARGET="new">Macintosh Application Environment</A> - A Macintosh emulator for Solaris and HP-UX.  While he wished to remain anonymous, I want to say what an honour it was to receive his call.
+</P>
+
+<BR>
+<BR>
+
+<CENTER><A HREF="closing.htm">Proceed to Closing Notes</A></CENTER>
+<BR>
+
+<BR>
+<BR>
+
+</DIV> 
+</DIV> 
+
+<BR>
+<BR>
+
+</BODY>
+</HTML>
