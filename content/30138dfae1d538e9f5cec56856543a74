@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>dbtxt (page
+
+43)
+</title>
+<link rel="stylesheet" type="text/css" href="/styles/transparent.css" media="screen">
+</head>
+<body>
+
+<!-- * -->
+<div id="leader">
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt><a href="/">Ideaspike</a> -&gt; dbtxt
+</div>
+<div id="backtrail">
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+<b><a href="bensmusic_ins.shtml">Previous</a></b> &lt;&mdash;&gt; <b><a href="comic.shtml">Next</a></b>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.ideaspike.com/">Home</a>
+&mdash;
+<a href="http://www.ideaspike.com/sitemap.shtml">Sitemap</a>
+&mdash;
+<a href="http://www.ideaspike.com/theindex.shtml">Index</a>
+
+</div>
+
+<div id="content">
+<a name="tent111"></a>
+<h2>9.3 - dbtxt - A tiny PD database in Python</h2>
+<a name="ient0"></a>
+
+<a name="ient1"></a>
+
+<a name="ient2"></a>
+
+<p>I wrote dbtxt because I needed a small, flat database in a python environment that didn't depend upon any external libraries. Most libraries are contaminated with the GPL, and this needed to be OK for commercial distribution without any complications. So that's what we have here - a complete (though small) database system that depends on nothing at all other than the Python language and its internal libraries. The entire database comes in at about 20k bytes (that's right, &quot;k&quot;, not hundreds of k or megabytes) and I was able to implement all the functions I needed. So I was happy. Will you be happy? Well, download it and read the docs and see what you think. The download, zipped, is about 13k. Yep. 13k. <tt>:-)</tt></p>
+
+<p>By all means, if you have a need for the same kind of thing, feel free to make any use of dbtxt you please. I have released it as PD, so you can use it in projects that are commercial, GPL, BSD, PD, private, government... whatever you like. Below you'll find a basic description taken from beginning of the docs; in the archive you'll download there is complete documentation, two sample databases, a test program and the database engine itself.</p>
+
+<a name="tent112"></a>
+<h3>9.3.1 - Why PD and not GPL?</h3>
+
+<p>Because I want to give this to the entire community without any obligations in either direction, and the GPL cannot accomplish this. Frankly, I'm not a fan of the GPL. I feel that it is more about restriction and class warfare than it is about freedom. PD <i>is</i> about freedom. And I do want this to be free.</p>
+
+<a name="tent113"></a>
+<h3>9.3.2 - What about changes?</h3>
+
+<p>If you make any, feel free to <a href="/contact.shtml">let me know</a>. Or not, as you please. If <i>I</i> make any, I'll post them here. Observe the version number and compare to what you're using. If it is different, then something has been updated. It's as simple as that.</p>
+
+<a name="tent114"></a>
+<h3>9.3.3 - Installation</h3>
+
+<p>All you really need to know is that the archive is flat, that is, unpacking it will not create a sub-directory. The files will be extracted in the directory or folder you are presently located in. So if you want this in a particular folder, either create it if you need to, and navigate to it <i>before</i> you extract the files, or you'll just have to move them afterwards. The only file you need to add to your own projects is <tt>dbtxt.py</tt>, everything else is either documentation or related to tutorial matters.</p>
+
+<p>So here's what it's all about:</p>
+
+<a name="tent115"></a>
+<h3>9.3.4 - BETA version 1.1 for the bold</h3>
+<p>Version 1.1 adds the binary field type (and so can handle extended character sets or things like jpeg images) and floating point field types, time and date capability, and more documentation. This is a beta version, particularly in that the new capabilities need testing. By all means, please do so and if you find any problems, <a href="http://www.ideaspike.com/contact.shtml">let me know</a>. Download BETA version 1.1 <a href="/dbt_1.1.tar.gz"><b>here</b></a>.</p>
+
+<a name="tent116"></a>
+<h3>9.3.5 - version 1.0 for the wary</h3>
+
+<p><tt> <br> class dbtxt() - <a href="/dbt.tar.gz"><b>Download Here</b></a><br> ====================================<br> Incept Date: Thursday, April 7th, 2005, MST<br> Hours invested: April 7th/4, 8th/4, 9th/12, 11th/2<br> Last Prodding: Monday, April 11th, 2005, MST<br> Author: Black Belt Systems/CBB<br> Version: 1.0<br> Disclaimer: No obligations. For anything. Use at your own risk.<br> What it's For: Tiny db applications. No mysql, postgresql? Try this.<br> License: None. PD. 100% Free Sofware. Use it any way you like.<br> Bug reports to: dbtxt@blackbeltsystems.com<br> Changes: 1.0: This is the out-of-the-gate release.<br> <br> Class dbtxt() provides the following features:<br> ----------------------------------------------<br> o Class dbtxt() is small! 20k for a working database? Yupper, you betcha!<br> o You need... nothing else. Nothing. Python2.2.2+class dbtxt(), you're good to go.<br> o Table level data management, one table at a time<br> o Integer and text field types<br> o Skeletal (muhahahahahhh) SQL-like query/command language<br> o Memory consumption linear with query result size<br> o Ability to automatically reuse deleted table rows<br> o Ability to NOT automatically reuse rows (faster)<br> o Case sensitive and insensitive layered order by clauses<br> o Packed ASCII database is moderately efficient AND readable, includes field cues<br> o Multiple reading clients, no limits. Notice READING clients!<br> o Reasonable error messages and dead-quiet failure modes<br> o Command language:<br> o pack -- allows you to re-pack a database with deleted rows<br> o create -- create a database table, optionally overwrite<br> o insert -- add a record to a table, optionally reusing dead rows<br> o delete -- row delete <br> o undelete -- undo deleted rows (if not re-using dead rows)<br> o update -- change data in existing rows<br> o select -- select rows from the database<br> <br> Class dbtxt() presently labors under the following limitations:<br> ---------------------------------------------------------------<br> o One user and one thread per table if you're writing anything. PERIOD! (Python doesn't support file locking)<br> o Where clauses don't do math. They do logic only.<br> o ASCII characters up to 127 *ONLY*. 128 and higher are used internally. I warned you. (except v1.1+)<br> o There are no auto-incrementing field types<br> o class dbtxt() doesn't implement indexes. Slower, but very memory-friendly.<br> o Most of SQL is missing, and it isn't exactly SQL anyway. So take off.<br> o You can't alter the structure of an already existing table. Unless deleting it.<br> (but you *can* create a new one and load the old data into it)<br> <br> Systems that have been able to run class dbtxt():<br> -------------------------------------------------<br> o RH9 Linux and Python 2.2.2 with dbtxt() 1.0<br> o Debian (unknown revision) and Python 2.2.1 with dbtxt() 1.0<br> o Mac OS X 10.3, 10.4 and 10.5 and the supplied Python with dbtxt() 1.0<br> <br> </tt></p>
+
+<p>Have a comment for me? <a href="contact.shtml">Click here.</a></p>
+
+</div>
+
+<div id="rightblock">
+<center>
+My T-Shirt Designs
+</center>
+<script type="text/javascript" src="nxpr.js"></script>
+<table border="1"
+       cellspacing="0"
+       cellpadding="0"
+       style="border:1px solid #000000; width:227px; height:410px; margin: auto;">
+<tr>
+<td colspan="2"
+    style="background-color: #fff;"
+    valign="top" align="center"><div id="titSrc" align="center">tp</div><div id="titImg">ip</div></td>
+</tr>
+<tr height="10%">
+
+<td style="background-color: #fff;"
+    width="50%"><a href="javascript:prev();"><div align="center"><img alt="previous" title="previous" src="/djimg/left.png" border=0><br><i>prev</i></div></a></td>
+
+<td style="background-color: #fff;"
+    width="50%"><a href="javascript:next();"><div align="center"><img src="/djimg/right.png" border=0 alt="next" title="next"><br><i>next</i></div></a></td>
+
+</tr>
+</table>
+<div align="center">
+<font face="arial, helvetica" size"-2"><i>available from</i><br>
+<div id="lnkSrc">sp</div></font>
+</div>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-8874504213266322";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="5826103492";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<!-- * -->
+</div>
+
+<!-- * -->
+
+
+<div id="backtrail">
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+<b><a href="bensmusic_ins.shtml">Previous</a></b> &lt;&mdash;&gt; <b><a href="comic.shtml">Next</a></b>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.ideaspike.com/">Home</a>
+&mdash;
+<a href="http://www.ideaspike.com/sitemap.shtml">Sitemap</a>
+&mdash;
+<a href="http://www.ideaspike.com/theindex.shtml">Index</a>
+
+</div>
+
+<div id="footer">
+	These pages are copyright &copy; 2004-2009 www.ideaspike.com
+</div>
+
+</body>
+</html>
