@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Slicehost Articles: Ubuntu Hardy - Apache, Rails and mongrels</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+  <link href="/feed/atom.xml" rel="alternate" type="application/atom+xml" /> 
+
+
+  <script type="text/javascript">
+    var GB_ROOT_DIR="http://articles.slicehost.com/greybox/";
+</script>
+  <link href="/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
+  <script src="/greybox/AJS.js" type="text/javascript"></script>
+  <script src="/greybox/gb_scripts.js" type="text/javascript"></script>
+
+  <script src="/javascripts/code_highlighter.js" type="text/javascript"></script>
+  <script src="/javascripts/css.js" type="text/javascript"></script>
+  <script src="/javascripts/html.js" type="text/javascript"></script>
+  <script src="/javascripts/ruby.js" type="text/javascript"></script>
+
+<!--[if IE]>
+<style type="text/css">
+body {behavior: url(/stylesheets/csshover2.htc);}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    	<ul id="skiplinks">
+		<li><a href="#content">Skip to the Content</a></li>
+		<li><a href="#nav">Skip to the Navigation</a></li>
+	</ul>
+
+	<ul id="quicklinks">
+		<li id="signup"><a href="https://manage.slicehost.com/customers/new">Sign Up</a></li>
+		<li id="manage"><a href="http://manage.slicehost.com">Manage Your Slices</a></li>
+	</ul>
+
+
+        <div id="header">
+      <div id="header-top"></div>
+
+        <h2><a href="/"><img src="/images/title.gif" alt="slicehost articles home page" /></a></h2>
+
+        <p><a href="/"><img src="/images/logo_sub.jpg" alt="slicehost articles home page" /></a></p>
+
+      <div class="clear"></div>
+
+      <div id="nav">
+
+  <ul class="nav1">
+
+    <li class="subnav"><a href="#"><strong>EBOOKS</strong></a>
+      <ul class="nav2">
+        <li><a href="/ebook" title="ebooks">SliceManager</a></li> 
+        <li><a href="/api" title="api">API</a></li>
+       </ul>
+    </li>
+
+    <li class="subnav"><a href="#"><strong>LINUX DISTROS</strong></a>
+      <ul class="nav2"> 
+        <li><a href="/ubuntu-10" title="Ubuntu 10.x">Ubuntu 10.x</a></li>
+        <li><a href="/ubuntu-karmic" title="Ubuntu Karmic">Ubuntu Karmic</a></li>
+        <li><a href="/ubuntu-jaunty" title="Ubuntu Jaunty">Ubuntu Jaunty</a></li>
+        <li><a href="/ubuntu-intrepid" title="Ubuntu Intrepid">Ubuntu Intrepid</a></li>
+        <li><a href="/ubuntu-hardy" title="Ubuntu Hardy - LTS">Ubuntu Hardy (LTS)</a></li> 
+        <li><a href="/ubuntu-gutsy" title="Ubuntu - Gutsy">Ubuntu Gutsy</a></li> 
+        <!-- <li><a href="/ubuntu" title="Ubuntu Dapper - LTS">Ubuntu Dapper (LTS)</a></li> -->
+        <li><a href="/debian-lenny" title="Debian Lenny">Debian Lenny</a></li> 
+        <li><a href="/debian" title="Debian Etch">Debian Etch</a></li>
+        <li><a href="/rhel" title="RHEL">RHEL</a></li> 
+        <li><a href="/centos" title="CentOS">CentOS</a></li>
+        <li><a href="/gentoo" title="Gentoo">Gentoo</a></li> 
+        <li><a href="/fedora" title="Fedora">Fedora</a></li>
+        <li><a href="/arch" title="Arch">Arch</a></li>
+      </ul> 
+    </li> 
+
+    <li class="subnav"><a href="#"><strong>SERVERS</strong></a>
+      <ul class="nav2">
+         <li><a href="/apache" title="Apache Web Server">Apache</a></li>
+         <li><a href="/nginx" title="Nginx Web Server">Nginx</a></li>
+         <li><a href="/email" title="Mail Servers">Email</a></li>
+       </ul>
+    </li>
+
+    <li class="subnav"><a href="#"><strong>FRAMEWORKS</strong></a>
+      <ul class="nav2">
+        <li><a href="/rails" title="Ruby on Rails">Ruby on Rails</a></li>
+        <li><a href="/capistrano" title="Ruby on Rails with Capistrano">Capistrano</a></li>
+        <li><a href="/django" title="Django">Django</a></li>
+       </ul>
+    </li>
+
+    <li class="subnav"><a href="#"><strong>SLICE ADMIN</strong></a>
+      <ul class="nav2">
+         <li><a href="/panel" title="SliceManager">SliceManager</a></li>
+         <li><a href="/slice-admin" title="Slice Admin">Slice Admin</a></li>
+         <li><a href="/backup" title="Backup">Backup</a></li>
+         <li><a href="/security" title="Security">Security</a></li>
+       </ul>
+    </li>
+
+    <li class="subnav"><a href="#"><strong>OTHER</strong></a>
+      <ul class="nav2">
+        <li><a href="/mysql" title="MySQL">MySQL</a></li>
+        <li><a href="/postgresql" title="PostgreSQL">PostgreSQL</a></li>
+         <li><a href="/email" title="Mail Servers">Email</a></li>
+        <li><a href="/subversion" title="Subversion">Subversion</a></li>
+        <li><a href="/ssh" title="SSH">SSH</a></li>
+        <li><a href="/windows" title="Working with Windows">Windows</a></li>
+       </ul>
+    </li>
+
+  </ul> <!-- end ul nav1 -->
+
+</div> <!-- end div navigation -->
+
+
+
+    </div> <!-- end div header -->
+
+
+    <div id="container">
+      <div id="container-top"></div>
+
+      <div id="content">
+        
+  
+<div class="article">
+
+  <h1><a href="/2008/5/9/ubuntu-hardy-apache-rails-and-mongrels" title="Ubuntu Hardy - Apache, Rails and mongrels">Ubuntu Hardy - Apache, Rails and mongrels</a></h1> 
+    
+      <p>Following from the <a href="http://articles.slicehost.com/2008/5/9/ubuntu-hardy-mongrel-and-mongrel-clusters" title="Ubuntu Hardy - mongrel and mongrel clusters">mongrel and mongrel cluster</a> article, we can now look at creating and configuring Apache to proxy to a mongrel cluster so we can serve our Ruby on Rails application.</p>
+
+      <hr />
+
+      
+    
+    
+
+      <h3>Prerequisites</h3>
+
+<p>To get the most out of this article you need to have a couple of things preinstalled:</p>
+
+<p>Firstly, you need Apache installed (see <a href="http://articles.slicehost.com/2008/4/25/ubuntu-hardy-installing-apache-and-php5" title="Ubuntu Hardy - Apache installation">this article</a>) - if you don't require PHP then please feel free to leave that section out.</p>
+
+<p>Secondly, you will need to have installed mongrels as per the mongrel and mongrel cluster article link above.</p>
+
+<h3>Rails application</h3>
+
+<p>To start with, we will need a basic Ruby on Rails application. Move into your public_html folder (create one if you do not have one already):</p>
+
+<pre><code>cd ~/public_html</code></pre>
+
+<p>Then create a Rails application. We'll use the default sqlite database for this example:</p>
+
+<pre><code>rails railsapp</code></pre>
+
+<h3>Apache modules</h3>
+
+<p>Apache will need the proxy and rewrite modules enabled.</p>
+
+<p>Depending on your Apache install you may need to issue all the following commands:</p>
+
+<pre><code>sudo a2enmod proxy
+sudo a2enmod proxy_balancer
+sudo a2enmod proxy_http
+sudo a2enmod rewrite</code></pre>
+
+<p>Once done, reload Apache:</p>
+
+<pre><code>sudo /etc/init.d/apache2 force-reload</code></pre>
+
+<h3>What's the plan, Stan?</h3>
+
+<p>Well, for our simple application we're going to create a mongrel cluster consisting of 3 mongrels running on port 5000 in production mode. We'll also add a symlink so the cluster will restart if the Slice is rebooted at any point.</p>
+
+<p>Then we can create an Apache virtual host to serve the Ruby on Rails application.</p>
+
+<h3>Mongrel Cluster</h3>
+
+<p>I won't go into the details of explaining what the commands are in this section. Please refer to the main <a href="http://articles.slicehost.com/2008/5/9/ubuntu-hardy-mongrel-and-mongrel-clusters" title="Ubuntu Hardy - mongrel and mongrel clusters">mongrel and mongrel cluster</a> article for that.</p>
+
+<p>Ensure you are in the rails folder:</p>
+
+<pre><code>cd ~/public_html/railsapp</code></pre>
+
+<p>Then create a mongrel cluster file as such:</p>
+
+<pre><code>mongrel_rails cluster::configure -e production -p 5000 -N 3 -c /home/demo/public_html/railsapp -a 127.0.0.1</code></pre>
+
+<p>It's always a good idea to check the created file (config/mongrel_cluster.yml):</p>
+
+<pre><code>cwd: /home/demo/public_html/railsapp
+log_file: log/mongrel.log
+port: &quot;5000&quot;
+environment: production
+address: 127.0.0.1
+pid_file: tmp/pids/mongrel.pid
+servers: 3</code></pre>
+
+<p>Looks good.</p>
+
+<p>Now create a symlink to the /etc/mongrel_cluster folder. This ensures the cluster is restarted on a reboot:</p>
+
+<pre><code>sudo ln -s /home/demo/public_html/railsapp/config/mongrel_cluster.yml /etc/mongrel_cluster/railsapp.yml</code></pre>
+
+<p>Now all we need to do is start the cluster:</p>
+
+<pre><code>mongrel_cluster_ctl start</code></pre>
+
+<p>Done.</p>
+
+<h3>Apache Virtual Host</h3>
+
+<p>Now we can create the virtual host:</p>
+
+<pre><code>sudo nano /etc/apache2/sites-available/domain.com</code></pre>
+
+<p>he following will suffice for a basic application:</p>
+
+<pre><code>&lt;VirtualHost *:80&gt;
+  ServerName domain.com
+  ServerAlias www.domain.com
+
+  DocumentRoot /home/demo/public_html/railsapp/public
+
+  RewriteEngine On
+
+  &lt;Proxy balancer://mongrel1&gt;
+    BalancerMember http://127.0.0.1:5000
+    BalancerMember http://127.0.0.1:5001
+    BalancerMember http://127.0.0.1:5002
+  &lt;/Proxy&gt;
+
+  # Redirect all non-static requests to thin
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+  RewriteRule ^/(.*)$ balancer://mongrel1%{REQUEST_URI} [P,QSA,L]
+
+  ProxyPass / balancer://mongrel1/
+  ProxyPassReverse / balancer://mongrel1/
+  ProxyPreserveHost on
+
+  &lt;Proxy *&gt;
+    Order deny,allow
+    Allow from all
+  &lt;/Proxy&gt;
+
+  # Custom log file locations
+  ErrorLog  /home/demo/public_html/railsapp/log/error.log
+  CustomLog /home/demo/public_html/railsapp/log/access.log combined
+
+&lt;/VirtualHost&gt;</code></pre>
+
+<p>Nice and simple and, as you may have noticed, is the pretty much the same as the Apache vhost we created when using the 'thin' web server (see <a href="http://articles.slicehost.com/2008/4/25/ubuntu-hardy-installing-apache-and-php5" title="Ubuntu Hardy - Apache installation">this article</a>).</p>
+
+<p>There is a good reason they are the same - all they are doing is proxying rails requests to the 3rd party server. In this case, the requests are proxied to the mongrel cluster.</p>
+
+<h3>Enable</h3>
+
+<p>Now we must enable the vhost:</p>
+
+<pre><code>sudo a2ensite domain.com</code></pre>
+
+<p>Reload Apache:</p>
+
+<pre><code>sudo /etc/init.d/apache2 reload</code></pre>
+
+<p>If you get any port and NameVirtualHost errors then please read the <a href="http://articles.slicehost.com/2008/4/29/ubuntu-hardy-apache-virtual-hosts-1" title="Ubuntu Hardy - Apache Virtual Hosts">Apache Virtual Host</a> article which will take you through setting up said details.</p>
+
+<h3>Navigate</h3>
+
+<p>All that's left is to navigate to your domain:</p>
+
+<pre><code>http://www.domain.com</code></pre>
+
+<p>Where you will be greeted with the rails welcome page.</p>
+
+<h3>Summary</h3>
+
+<p>Setting up a virtual host to proxy to a mongrel cluster is fairly simple.</p>
+
+<p>Although setting up and configuring mongrel, especially if you want them restart on a reboot, can be a bit complicated, once done it is a quick and powerful method in serving your Ruby on Rails application.</p>
+
+<p>PickledOnion</p>
+    
+</div> <!-- end div article -->
+
+
+
+  
+
+<div id="commentsblock">
+
+  <h2>Article Comments:</h2> 
+
+  
+    <div class="comment" id="comment-2586">
+
+      <p class="author"><span><span>chris</span></span> commented Wed May 14 01:41:06 UTC 2008:</p>
+
+      <div class="by-guest">
+
+        <p>Note that build-essential is required</p>
+
+<p>sudo apt-get install build-essential</p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-2597">
+
+      <p class="author"><span><a href="http://articles.slicehost.com">PickledOnion</a></span> commented Wed May 14 09:07:32 UTC 2008:</p>
+
+      <div class="by-author">
+
+        <p>Hi Chris,</p>
+
+<p>You are quite right - build-essential is required and is part of the basic Slice setup:</p>
+
+<p><a href="http://articles.slicehost.com/2008/4/25/ubuntu-hardy-setup-page-2" title="Slice setup">slice setup - page 2</a></p>
+
+<p>PickledOnion</p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-3840">
+
+      <p class="author"><span><span>Andy</span></span> commented Sat Jul 26 18:56:16 UTC 2008:</p>
+
+      <div class="by-guest">
+
+        <p>When I tried to use the example virtualhost config, "apache2 reload" balked with "mixing * and non-* ports with a NamedVirtualHost is not supported"</p>
+
+<p>I may have missed a step in the apache2 setup, but I got around this by changing the asterisk at the top "VirtualHost *:80" to the actual ip of my slice, eg: "VirtualHost 1.2.3.4:80".  Then it all worked.</p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-6629">
+
+      <p class="author"><span><span>DJ</span></span> commented Tue Dec 02 10:38:02 UTC 2008:</p>
+
+      <div class="by-guest">
+
+        <p>I am getting this error-></p>
+
+<p>[Tue Dec 02 00:47:15 2008] [error] (111)Connection refused: proxy: HTTP: attempt to connect to 127.0.0.1:8000 (127.0.0.1) failed
+[Tue Dec 02 00:47:15 2008] [error] ap<em>proxy</em>connect_backend disabling worker for (127.0.0.1)
+[Tue Dec 02 00:47:15 2008] [error] (111)Connection refused: proxy: HTTP: attempt to connect to 127.0.0.1:8001 (127.0.0.1) failed
+[Tue Dec 02 00:47:15 2008] [error] ap<em>proxy</em>connect_backend disabling worker for (127.0.0.1)
+[Tue Dec 02 00:47:15 2008] [error] (111)Connection refused: proxy: HTTP: attempt to connect to 127.0.0.1:8002 (127.0.0.1) failed
+[Tue Dec 02 00:47:15 2008] [error] ap<em>proxy</em>connect_backend disabling worker for (127.0.0.1)
+[Tue Dec 02 00:47:20 2008] [error] proxy: BALANCER: (balancer://mongrel_cluster). All workers are in error state  </p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-7498">
+
+      <p class="author"><span><span>Adam</span></span> commented Thu Jan 08 17:07:07 UTC 2009:</p>
+
+      <div class="by-guest">
+
+        <p>Hello,</p>
+
+<p>I used the tutorial above. Thx for it, it's the first one which works for me. But I still have a problem. I can't protect the domain with .htaccess.I changed the conf file as follows:</p>
+
+<p>&lt;virtualhost>
+  ServerName domain.de
+  ServerAlias www.domain.de</p>
+
+<p>DocumentRoot /root/public_html/railsapp/public</p>
+
+<p>&lt;directory />
+    Options FollowSymLinks
+    AllowOverride AuthConfig
+    Order allow,deny
+    Allow from all
+  &lt;/directory></p>
+
+<p>RewriteEngine On</p>
+
+<p>&lt;proxy />
+    BalancerMember http://127.0.0.1:5000
+    BalancerMember http://127.0.0.1:5001
+    BalancerMember http://127.0.0.1:5002
+  &lt;/proxy></p>
+
+<p># Redirect all non-static requests to thin
+  RewriteCond %{DOCUMENT<em>ROOT}/%{REQUEST</em>FILENAME} !-f
+  RewriteRule ^/(.*)$ balancer://mongrel1%{REQUEST_URI} [P,QSA,L]</p>
+
+<p>ProxyPass / balancer://mongrel1/
+  ProxyPassReverse / balancer://mongrel1/
+  ProxyPreserveHost on</p>
+
+<p>&lt;proxy>
+    Order deny,allow
+    Allow from all
+  &lt;/proxy></p>
+
+<p># Custom log file locations
+  ErrorLog  /root/public_html/railsapp/log/error.log
+  CustomLog /root/public_html/railsapp/log/access.log combined</p>
+
+<p>&lt;/virtualhost></p>
+
+<p>The .htaccess is stored in /root/public_html/railsapp/public and has the following settings:</p>
+
+<p>AuthType Basic 
+AuthUserFile /root/htaccess/.passwd 
+AuthName "geschuetzer Bereich" </p>
+
+<p>order deny,allow
+allow from all
+require valid-user</p>
+
+<p>But the domain is still not protected. Do you know why I can't activate the AuthConfig??</p>
+
+<p>Thx</p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-9598">
+
+      <p class="author"><span><span>don</span></span> commented Wed Mar 25 00:03:09 UTC 2009:</p>
+
+      <div class="by-guest">
+
+        <p>I have followed this to the t and I do not have a /etc/mongrel_clusters/ folder and hence it does not work!</p>
+
+<p>I have installed mongrel_cluster several times and still nothing it the /etc/ folder any ideas?</p>
+
+<p>D</p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+    <div class="comment" id="comment-22146">
+
+      <p class="author"><span><span>kenny</span></span> commented Wed Apr 14 08:55:24 UTC 2010:</p>
+
+      <div class="by-guest">
+
+        <p>Hi, Thank you , I have completed , but the local access , external netword can not access  why ? </p>
+
+      </div> <!-- end div by-xxxxx -->
+
+    </div> <!-- end div comment -->
+
+  
+
+</div> <!-- end div commentsblock -->
+
+
+
+
+<div id="commentsform">
+
+<form id="comment-form" method="post" action="/2008/5/9/ubuntu-hardy-apache-rails-and-mongrels/comments#comment-form">
+<fieldset><legend>Want to comment?</legend>
+  <p><label class="text" for="comment_author">Name:</label><br/>
+    <input type="text" id="comment_author" name="comment[author]" value="" /></p>
+
+  <p><label class="text" for="comment_author_email">Email Address:</label>(not made public)<br />
+    <input type="text" id="comment_author_email" name="comment[author_email]" value="" /></p>
+
+  <p><label class="text" for="comment_author_url">Website:</label>(optional)<br />
+    <input type="text" id="comment_author_url" name="comment[author_url]" value="" /></p>
+
+  <p><label class="text" for="comment_body">Comment:</label>(use plain text or <a href="http://daringfireball.net/projects/markdown/basics">Markdown</a> syntax)<br />
+    <textarea id="comment_body" name="comment[body]"></textarea></p>
+
+  <div class="formactions">
+    <input type="submit" value="Post comment" class="submit" />
+  </div>
+</fieldset>
+</form>
+</div> <!-- end div commentsform -->
+
+
+
+
+
+
+
+
+
+      </div> <!-- end div content -->
+
+      <div id="container-bottom"></div>
+
+    </div> <!-- end div container -->
+
+      <div class="clear"></div>
+
+  </div> <!-- end div wrapper -->
+
+  <div id="footer">
+          
+<div id="footertags">
+  <p><span>Tags:</span>
+    
+      <span style='font-size: 1.5em'><a title='admin' href='/tags/admin'>admin</a></span>
+    
+      <span style='font-size: 0.9em'><a title='administration' href='/tags/administration'>administration</a></span>
+    
+      <span style='font-size: 1.5em'><a title='apache' href='/tags/apache'>apache</a></span>
+    
+      <span style='font-size: 0.9em'><a title='api' href='/tags/api'>api</a></span>
+    
+      <span style='font-size: 1.5em'><a title='arch' href='/tags/arch'>arch</a></span>
+    
+      <span style='font-size: 0.9em'><a title='at' href='/tags/at'>at</a></span>
+    
+      <span style='font-size: 0.9em'><a title='awstats' href='/tags/awstats'>awstats</a></span>
+    
+      <span style='font-size: 1.00em'><a title='backup' href='/tags/backup'>backup</a></span>
+    
+      <span style='font-size: 1.5em'><a title='capistrano' href='/tags/capistrano'>capistrano</a></span>
+    
+      <span style='font-size: 1.5em'><a title='centos' href='/tags/centos'>centos</a></span>
+    
+      <span style='font-size: 0.9em'><a title='courier' href='/tags/courier'>courier</a></span>
+    
+      <span style='font-size: 0.9em'><a title='cron' href='/tags/cron'>cron</a></span>
+    
+      <span style='font-size: 1.5em'><a title='dapper' href='/tags/dapper'>dapper</a></span>
+    
+      <span style='font-size: 1.5em'><a title='debian' href='/tags/debian'>debian</a></span>
+    
+      <span style='font-size: 0.9em'><a title='dig' href='/tags/dig'>dig</a></span>
+    
+      <span style='font-size: 1.20em'><a title='django' href='/tags/django'>django</a></span>
+    
+      <span style='font-size: 1.5em'><a title='dns' href='/tags/dns'>dns</a></span>
+    
+      <span style='font-size: 0.9em'><a title='dstat' href='/tags/dstat'>dstat</a></span>
+    
+      <span style='font-size: 1.00em'><a title='ebook' href='/tags/ebook'>ebook</a></span>
+    
+      <span style='font-size: 1.5em'><a title='email' href='/tags/email'>email</a></span>
+    
+      <span style='font-size: 0.9em'><a title='fail2ban' href='/tags/fail2ban'>fail2ban</a></span>
+    
+      <span style='font-size: 0.9em'><a title='failover' href='/tags/failover'>failover</a></span>
+    
+      <span style='font-size: 1.5em'><a title='fedora' href='/tags/fedora'>fedora</a></span>
+    
+      <span style='font-size: 1.5em'><a title='feisty' href='/tags/feisty'>feisty</a></span>
+    
+      <span style='font-size: 0.9em'><a title='forensics' href='/tags/forensics'>forensics</a></span>
+    
+      <span style='font-size: 0.9em'><a title='ftp' href='/tags/ftp'>ftp</a></span>
+    
+      <span style='font-size: 1.5em'><a title='gentoo' href='/tags/gentoo'>gentoo</a></span>
+    
+      <span style='font-size: 0.9em'><a title='git' href='/tags/git'>git</a></span>
+    
+      <span style='font-size: 1.5em'><a title='gutsy' href='/tags/gutsy'>gutsy</a></span>
+    
+      <span style='font-size: 0.9em'><a title='ha' href='/tags/ha'>ha</a></span>
+    
+      <span style='font-size: 1.5em'><a title='hardy' href='/tags/hardy'>hardy</a></span>
+    
+      <span style='font-size: 0.9em'><a title='heartbeat' href='/tags/heartbeat'>heartbeat</a></span>
+    
+      <span style='font-size: 0.9em'><a title='ibex' href='/tags/ibex'>ibex</a></span>
+    
+      <span style='font-size: 1.5em'><a title='intrepid' href='/tags/intrepid'>intrepid</a></span>
+    
+      <span style='font-size: 0.9em'><a title='iotop' href='/tags/iotop'>iotop</a></span>
+    
+      <span style='font-size: 0.9em'><a title='iptables' href='/tags/iptables'>iptables</a></span>
+    
+      <span style='font-size: 0.9em'><a title='jaunty' href='/tags/jaunty'>jaunty</a></span>
+    
+      <span style='font-size: 0.9em'><a title='karmic' href='/tags/karmic'>karmic</a></span>
+    
+      <span style='font-size: 1.5em'><a title='kernel' href='/tags/kernel'>kernel</a></span>
+    
+      <span style='font-size: 1.5em'><a title='lenny' href='/tags/lenny'>lenny</a></span>
+    
+      <span style='font-size: 1.5em'><a title='logrotate' href='/tags/logrotate'>logrotate</a></span>
+    
+      <span style='font-size: 1.5em'><a title='logs' href='/tags/logs'>logs</a></span>
+    
+      <span style='font-size: 0.9em'><a title='lucid' href='/tags/lucid'>lucid</a></span>
+    
+      <span style='font-size: 0.9em'><a title='mail' href='/tags/mail'>mail</a></span>
+    
+      <span style='font-size: 0.9em'><a title='maverick' href='/tags/maverick'>maverick</a></span>
+    
+      <span style='font-size: 1.00em'><a title='mod_rails' href='/tags/mod_rails'>mod_rails</a></span>
+    
+      <span style='font-size: 1.5em'><a title='mongrel' href='/tags/mongrel'>mongrel</a></span>
+    
+      <span style='font-size: 1.5em'><a title='monitoring' href='/tags/monitoring'>monitoring</a></span>
+    
+      <span style='font-size: 1.5em'><a title='munin' href='/tags/munin'>munin</a></span>
+    
+      <span style='font-size: 1.5em'><a title='mysql' href='/tags/mysql'>mysql</a></span>
+    
+      <span style='font-size: 0.9em'><a title='network' href='/tags/network'>network</a></span>
+    
+      <span style='font-size: 1.5em'><a title='nginx' href='/tags/nginx'>nginx</a></span>
+    
+      <span style='font-size: 1.5em'><a title='ntp' href='/tags/ntp'>ntp</a></span>
+    
+      <span style='font-size: 0.9em'><a title='open relay' href='/tags/open relay'>open relay</a></span>
+    
+      <span style='font-size: 1.5em'><a title='passenger' href='/tags/passenger'>passenger</a></span>
+    
+      <span style='font-size: 1.00em'><a title='permissions' href='/tags/permissions'>permissions</a></span>
+    
+      <span style='font-size: 1.5em'><a title='php' href='/tags/php'>php</a></span>
+    
+      <span style='font-size: 1.5em'><a title='postfix' href='/tags/postfix'>postfix</a></span>
+    
+      <span style='font-size: 1.5em'><a title='postgresql' href='/tags/postgresql'>postgresql</a></span>
+    
+      <span style='font-size: 1.5em'><a title='pv-grub' href='/tags/pv-grub'>pv-grub</a></span>
+    
+      <span style='font-size: 1.5em'><a title='rails' href='/tags/rails'>rails</a></span>
+    
+      <span style='font-size: 0.9em'><a title='rescue' href='/tags/rescue'>rescue</a></span>
+    
+      <span style='font-size: 0.9em'><a title='rescue mode' href='/tags/rescue mode'>rescue mode</a></span>
+    
+      <span style='font-size: 0.9em'><a title='resize' href='/tags/resize'>resize</a></span>
+    
+      <span style='font-size: 1.5em'><a title='rhel' href='/tags/rhel'>rhel</a></span>
+    
+      <span style='font-size: 1.00em'><a title='rootkit' href='/tags/rootkit'>rootkit</a></span>
+    
+      <span style='font-size: 0.9em'><a title='rsync' href='/tags/rsync'>rsync</a></span>
+    
+      <span style='font-size: 1.5em'><a title='security' href='/tags/security'>security</a></span>
+    
+      <span style='font-size: 1.5em'><a title='setup' href='/tags/setup'>setup</a></span>
+    
+      <span style='font-size: 1.20em'><a title='sftp' href='/tags/sftp'>sftp</a></span>
+    
+      <span style='font-size: 1.00em'><a title='shorewall' href='/tags/shorewall'>shorewall</a></span>
+    
+      <span style='font-size: 0.9em'><a title='slice' href='/tags/slice'>slice</a></span>
+    
+      <span style='font-size: 0.9em'><a title='slice admin' href='/tags/slice admin'>slice admin</a></span>
+    
+      <span style='font-size: 1.5em'><a title='slice administration' href='/tags/slice administration'>slice administration</a></span>
+    
+      <span style='font-size: 1.5em'><a title='slicemanager' href='/tags/slicemanager'>slicemanager</a></span>
+    
+      <span style='font-size: 0.9em'><a title='spam' href='/tags/spam'>spam</a></span>
+    
+      <span style='font-size: 0.9em'><a title='spamhaus' href='/tags/spamhaus'>spamhaus</a></span>
+    
+      <span style='font-size: 0.9em'><a title='spf' href='/tags/spf'>spf</a></span>
+    
+      <span style='font-size: 0.9em'><a title='ssh' href='/tags/ssh'>ssh</a></span>
+    
+      <span style='font-size: 1.5em'><a title='ssl' href='/tags/ssl'>ssl</a></span>
+    
+      <span style='font-size: 1.00em'><a title='subversion' href='/tags/subversion'>subversion</a></span>
+    
+      <span style='font-size: 0.9em'><a title='tar' href='/tags/tar'>tar</a></span>
+    
+      <span style='font-size: 0.9em'><a title='tcpdump' href='/tags/tcpdump'>tcpdump</a></span>
+    
+      <span style='font-size: 0.9em'><a title='telnet' href='/tags/telnet'>telnet</a></span>
+    
+      <span style='font-size: 1.5em'><a title='thin' href='/tags/thin'>thin</a></span>
+    
+      <span style='font-size: 0.9em'><a title='tomcat' href='/tags/tomcat'>tomcat</a></span>
+    
+      <span style='font-size: 1.5em'><a title='ubuntu' href='/tags/ubuntu'>ubuntu</a></span>
+    
+      <span style='font-size: 0.9em'><a title='untar' href='/tags/untar'>untar</a></span>
+    
+      <span style='font-size: 0.9em'><a title='upgrade' href='/tags/upgrade'>upgrade</a></span>
+    
+      <span style='font-size: 1.5em'><a title='vhosts' href='/tags/vhosts'>vhosts</a></span>
+    
+      <span style='font-size: 1.20em'><a title='windows' href='/tags/windows'>windows</a></span>
+    
+      <span style='font-size: 1.20em'><a title='winscp' href='/tags/winscp'>winscp</a></span>
+    
+  </p>
+</div> <!-- end footertags -->
+
+<p>Copyright 2007-2008 <a href="http://www.slicehost.com">Slicehost LLC</a>  -  “Slicehost” and “slice” are trademarks of Slicehost, LLC</p>
+
+  </div> <!-- end div footer -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8237735-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
+
+
