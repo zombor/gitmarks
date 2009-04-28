@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-gb">
+
+<head>
+<!-- Header Begin -->
+<meta name="copyright" content="Copyright (c) 2000-2010, Brian Cryer, All rights reserved.">
+<meta name="keywords" content="autorun,file,html,create cd,html file,create,use,cd,javascript,htm,maximized,windows,following,use javascript,maximize,command,screen,start,would,inf">
+<link rel="stylesheet" href="../brian.css" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon">
+<!-- Header End -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Notes on how to create a cd that will auto run a HTML file maximized when placed in a drive.">
+<title>How To ... Create a cd that will autorun HTML maximized</title>
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="center">
+		<p class="tight">
+		<img alt="Brian Cryer" src="../brian.gif" width="68" height="100"></p>
+		<ul class="SideButtons">
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="howto.htm">How To ...</a></li>
+		</ul>
+		<div>
+			<script type="text/javascript"><!--
+google_ad_client = "pub-5994403859070052";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="2996080480";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			
+</script>
+		</div>
+		<div id="tsrchddd1">
+&nbsp;</div>
+		</td>
+		<td class="notepad">&nbsp;</td>
+		<td class="note">
+		<h2 class="center">Cry How To...</h2>
+		<hr>
+		<h1>Create a CD that will autorun an HTML file maximized</h1>
+		<hr>
+		<p>For notes on how to create a CD that will autorun please refer to the 
+		article &#8216;<a href="howtocacdtwar.htm">Create a cd that will autorun</a>&#8217;.</p>
+		<p>To create a cd that will autorun to open the html file &#8216;<code>index.htm</code>&#8217; 
+		non-maximized would require the following &#8216;<code>autorun.inf</code>&#8217; file:</p>
+		<blockquote>
+			<p><code>[autorun]<br>
+			ShellExecute=index.htm</code></p>
+		</blockquote>
+		<p>There are two methods to create a CD that will autorun, displaying an 
+		HTML file maximized:</p>
+		<ul>
+			<li><a href="#Method1UseWindowsShell">Use windows shell to maximize 
+			it</a></li>
+			<li><a href="#Method2UseJavascript">Use JavaScript to maximize it.</a></li>
+		</ul>
+		<hr>
+		<p><a name="Method1UseWindowsShell">Method 1: Use Windows Shell</a></p>
+		<p>The following &#8216;<code>autorun.inf</code>&#8217; file invokes the command processor 
+		to start a full screen browser on the html file &#8216;<code>index.htm</code>&#8217;:</p>
+		<blockquote>
+			<p><code>[autorun]<br>
+			open=command /c start /max index.htm</code></p>
+		</blockquote>
+		<p>Be aware that the use of &#8216;<code>command</code>&#8217; and &#8216;<code>start</code>&#8217; 
+		restrict this to machines running Windows. It is therefore not portable 
+		to other platforms.</p>
+		<hr>
+		<p><a name="Method2UseJavascript">Method 2: Use JavaScript</a></p>
+		<p>An alternative approach is to use JavaScript to maximize the HTML file 
+		after it has been displayed. The &#8216;<code>autorun.inf</code>&#8217; file requires 
+		nothing other than to invoke the browser:</p>
+		<blockquote>
+			<p><code>[autorun]<br>
+			ShellExecute=index.htm</code></p>
+		</blockquote>
+		<p>In order to be maximized the HTML file would require the following JavaScript 
+		to be included. The obvious place for it would be just inside the opening 
+		&#39;&lt;BODY&gt; tag or just before the closing &#39;&lt;/HEAD&gt;&#39; tag.</p>
+		<blockquote>
+			<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+if (document.all || document.layers)
+{
+  window.moveTo(0,0);
+  window.resizeTo(screen.availWidth,screen.availHeight)
+} else if (window.screen) {
+  window.moveTo(0,0);
+  window.outerHeight = screen.availHeight;
+  window.outerWidth = screen.availWidth;
+</code>}<code>
+//--&gt;
+&lt;/script&gt;</code></pre>
+		</blockquote>
+		<p>The disadvantage of this approach is that it isn&#39;t strictly maximizing 
+		the window - it is resizing it to take advantage of the full screen size, 
+		but it should be portable to non-Windows platforms.</p>
+		<hr>
+		<p class="center">These notes are believed to apply to all versions of Windows.</p>
+		<hr></td>
+		<td class="pageend">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
