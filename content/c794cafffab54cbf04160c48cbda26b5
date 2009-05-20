@@ -1,0 +1,1712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.2.7" />
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock {
+  padding-left: 2.0em;
+}
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock {
+  padding-left: 2.0em;
+}
+div.verseblock > div.content {
+  white-space: pre;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+div.olist > ol {
+  list-style-type: decimal;
+}
+div.olist2 > ol {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hlist td {
+  padding-bottom: 15px;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock-content {
+  white-space: pre;
+}
+div.verseblock-attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+
+/* Because IE6 child selector is broken. */
+div.olist2 ol {
+  list-style-type: lower-alpha;
+}
+div.olist2 div.olist ol {
+  list-style-type: decimal;
+}
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){generateToc(3)}
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, October 2006. License: GPL */
+
+function getText(el) {
+  var text = "";
+  for (var i = el.firstChild; i != null; i = i.nextSibling) {
+    if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+      text += i.data;
+    else if (i.firstChild != null)
+      text += getText(i);
+  }
+  return text;
+}
+
+function TocEntry(el, text, toclevel) {
+  this.element = el;
+  this.text = text;
+  this.toclevel = toclevel;
+}
+
+function tocEntries(el, toclevels) {
+  var result = new Array;
+  var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+  // Function that scans the DOM tree for header elements (the DOM2
+  // nodeIterator API would be a better technique but not supported by all
+  // browsers).
+  var iterate = function (el) {
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+        var mo = re.exec(i.tagName)
+        if (mo)
+          result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+        iterate(i);
+      }
+    }
+  }
+  iterate(el);
+  return result;
+}
+
+// This function does the work. toclevels = 1..4.
+function generateToc(toclevels) {
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementsByTagName("body")[0], toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "toc" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    document.getElementById("header").removeChild(toc);
+}
+/*]]>*/
+</script>
+<title>Supybook</title>
+</head>
+<body>
+<div id="header">
+<h1>Supybook</h1>
+<span id="author">Heikki Hokkanen</span><br />
+<span id="email"><tt>&lt;<a href="mailto:hoxu@users.sf.net">hoxu@users.sf.net</a>&gt;</tt></span><br />
+<span id="revision">version 0.0.1,</span>
+2008-09-13
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="para"><p>0.0.1</p></div>
+</div>
+</div>
+<h2 id="_preface">1. Preface</h2>
+<div class="sectionbody">
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">At the time of this writing, Supybot version is 0.83.3. If you are using a newer (or even older) version, keep that in mind.</td>
+</tr></table>
+</div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">This document is very much a work in process. It covers nowhere near everything there is to Supybot. However, it hopefully allows a good start into learning Supybot.</td>
+</tr></table>
+</div>
+<h3 id="_what_is_this_document">1.1. What is this document?</h3><div style="clear:left"></div>
+<div class="para"><p>This document is a handbook for <a href="http://supybot.com/">Supybot</a>, the IRC (<a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay Chat</a>) bot written in Python.</p></div>
+<h3 id="_motivation_behind_this_document">1.2. Motivation behind this document</h3><div style="clear:left"></div>
+<div class="para"><p>Some time ago I started needing an IRC bot for various purposes. The bot would have to be able to take care of auto-opping and similar "traditional" channel duties. This made me think of <a href="http://oer.equnet.org/">Oer</a>, an old but very nice bot. However, I also wanted to have factoid functionality similar to <a href="http://blootbot.sourceforge.net/">blootbot</a>/<a href="http://infobot.org/">infobot</a>, without having to run multiple bots. That was when I arrived at Supybot once again. This time I decided to give it a closer look.</p></div>
+<div class="para"><p>My experience of the documentation was lacking though. I longed for something similar to <a href="http://oer.equnet.org/um.php">Oer's User Manual</a> that provides a quick references for basic administrator tasks and so forth. Alas, I could not find such document.</p></div>
+<div class="para"><p>I figured I could as well wrap up such a handbook while learning to use the bot myself. Hopefully someone finds reading this document as useful as writing it was.</p></div>
+<h3 id="_conventions_used_in_this_document">1.3. Conventions used in this document</h3><div style="clear:left"></div>
+<div class="vlist"><dl>
+<dt>
+<tt>command &lt;name&gt; [value]</tt>
+</dt>
+<dd>
+<p>
+        A command that takes <tt>name</tt> as a required parameter and <tt>value</tt> as an optional parameter.
+</p>
+</dd>
+<dt>
+<tt>command &lt;nick&#8230;&gt;</tt>
+</dt>
+<dd>
+<p>
+        A command that takes one or more parameters.
+</p>
+</dd>
+<dt>
+<tt>command [--{foo,bar}] &lt;value&gt;</tt>
+</dt>
+<dd>
+<p>
+        A command that takes two optional options as parameters, eg. <tt>--foo value</tt> and/or <tt>--bar value</tt>.
+</p>
+</dd>
+<dt>
+<span style="color: green;">Plugin</span>
+</dt>
+<dd>
+<p>
+        A plugin name
+</p>
+</dd>
+</dl></div>
+<h3 id="_this_document_is_free">1.4. This document is Free</h3><div style="clear:left"></div>
+<div class="para"><p>This document is Free &#8482; as defined by the <a href="http://www.fsf.org/">Free Software Foundation</a>, more specifically, this document is available under the terms of <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License version 3 (GPLv3)</a>. The source is a text file that can be converted to various formats by <a href="http://www.methods.co.nz/asciidoc/">asciidoc</a>.</p></div>
+<h3 id="_how_to_give_feedback">1.5. How to give feedback</h3><div style="clear:left"></div>
+<div class="para"><p>If you spot an error, have suggestions or just want to tell me how much you love/hate the document, send e-mail to <a href="mailto:hoxu@users.sf.net">hoxu@users.sf.net</a>. Prefix the Subject with <tt>[supybook]</tt>.</p></div>
+</div>
+<h2 id="_getting_started">2. Getting started</h2>
+<div class="sectionbody">
+<h3 id="_initial_configuration">2.1. Initial configuration</h3><div style="clear:left"></div>
+<div class="para"><p>Create a new directory (eg. <tt>mkdir ~/supybot</tt>) and run <tt>supybot-wizard</tt> in it. Follow the directions to get the bot initially configured and connected to a network.</p></div>
+<h3 id="_identifying_to_the_bot">2.2. Identifying to the bot</h3><div style="clear:left"></div>
+<div class="para"><p>After running supybot-wizard and starting the bot, connect to the same IRC network it is on, and /query it. You can identify with the <tt>identify &lt;name&gt; &lt;password&gt;</tt> command. You can check the bot's idea of who you are with the <tt>whoami</tt> command.</p></div>
+<h3 id="_accessing_the_online_help">2.3. Accessing the online help</h3><div style="clear:left"></div>
+<div class="para"><p>Most commands on the bot have a short online help available. You can use <tt>list</tt> to list loaded plugins, and <tt>list &lt;plugin&gt;</tt> to list commands in those plugins. <tt>help [plugin] &lt;command&gt;</tt> can be used to access the command help. Use <tt>more</tt> to read long messages from the bot.</p></div>
+<div class="para"><p>Help for configuration items can be accessed with the <tt>config help &lt;key&gt;</tt> command.</p></div>
+</div>
+<h2 id="_understanding_supybot_s_peculiarities">3. Understanding supybot's peculiarities</h2>
+<div class="sectionbody">
+<div class="para"><p>Supybot has a couple of features that sets it apart from more traditional bots. More specifically, nested commands, plugin framework (even the basic functionality is implemented using plugins), and capabilities. This section covers some basic information about Supybot. Feel free to skip it, but come back later if you run into something you don't understand.</p></div>
+<h3 id="_nested_commands">3.1. Nested commands</h3><div style="clear:left"></div>
+<div class="para"><p>Supybot allows nested commands, in other words, you can pass the result of a command to another command as a parameter. What does this allow then, though, apart from the obvious bragging rights? For example, if you want to restore a configuration entry to the default value, you can type:</p></div>
+<div class="para"><p><tt>config reply.withNickPrefix [config default reply.withNickPrefix]</tt></p></div>
+<div class="para"><p>Obviously, that wasn't very neat. They could've included a <tt>config reset &lt;key&gt;</tt> command instead, for example. But I'm sure you can figure out <strong>something</strong> more useful to do with this, as a homework ;-)</p></div>
+<h3 id="_plugins">3.2. Plugins</h3><div style="clear:left"></div>
+<div class="para"><p>Pretty much everything in Supybot is a plugin. Most commands you use belong to a plugin. If two plugins provide the same command, then you need to prefix the command with the plugin name. For example, the <tt>ignore list</tt> command yields the following output:</p></div>
+<div class="listingblock">
+<div class="title">Example: output</div>
+<div class="content">
+<pre><tt>Error: The command "ignore list" is available in the Admin and Channel plugins.
+Please specify the plugin whose command you wish to call by using its name as a command before "ignore list".</tt></pre>
+</div></div>
+<div class="para"><p>Thus, you need to either use <tt>admin ignore list</tt> or <tt>channel ignore list</tt> command. That is, unless you define which plugin is the default one using the <tt>defaultplugin [--remove] &lt;command&gt; [plugin]</tt> command provided in the <span style="color: green;">Owner</span> plugin.</p></div>
+<div class="para"><p>The <tt>list</tt> command (<span style="color: green;">Plugin</span>) can be used to list loaded plugins. You can prevent some plugins from showing in the list with the command:</p></div>
+<div class="para"><p><tt>config plugins.&lt;plugin&gt;.public False</tt></p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>list</tt>
+</dt>
+<dd>
+<p>
+        List currently loaded plugins, excluding the ones set non-public.
+</p>
+</dd>
+<dt>
+<tt>list --private</tt>
+</dt>
+<dd>
+<p>
+        List loaded plugins that are set to non-public.
+</p>
+</dd>
+<dt>
+<tt>list &lt;plugin&gt;</tt>
+</dt>
+<dd>
+<p>
+        List commands provided by the given plugin.
+</p>
+</dd>
+<dt>
+<tt>load [--deprecated] &lt;plugin&gt;</tt>
+</dt>
+<dd>
+<p>
+        Load a plugin. Supybot looks for plugins in directories listed in <tt>config conf.supybot.directories.plugins</tt>.
+</p>
+</dd>
+<dt>
+<tt>unload &lt;plugin&gt;</tt>
+</dt>
+<dd>
+<p>
+        Unloads a plugin. The <span style="color: green;">Owner</span> plugin cannot be unloaded.
+</p>
+</dd>
+</dl></div>
+<h3 id="_configuration">3.3. Configuration</h3><div style="clear:left"></div>
+<div class="para"><p>Most of Supybot configuration is done online using the <span style="color: green;">Config</span> plugin. This excludes things such as granting the owner capability (must be done by modifying the files).</p></div>
+<div class="para"><p>There are two types of configuration items: global and channel-specific. The latter are actually no different from the global ones, except that they can be set for channels as well. This means you can have a global default which is overridden for specific channels.</p></div>
+<div class="para"><p>Configuration items are hierarchical. The "root" item is <tt>supybot</tt>, which can be omitted. Configs for plugins live under their own key, <tt>supybot.plugins</tt>, or shortly, <tt>plugins</tt>.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>config &lt;name&gt; [value]</tt>
+</dt>
+<dd>
+<p>
+        Get the current value of <tt>name</tt>, or set it to <tt>value</tt> if provided.
+</p>
+</dd>
+<dt>
+<tt>config channel [channel] &lt;name&gt; [value]</tt>
+</dt>
+<dd>
+<p>
+        Ditto, but for channel configs.
+</p>
+</dd>
+<dt>
+<tt>config default &lt;name&gt;</tt>
+</dt>
+<dd>
+<p>
+        Get the default value of <tt>name</tt>. This does not change the value. No, there is no command to reset an item to default value. You need to use <tt>config &lt;name&gt; [config default &lt;name&gt;]</tt> for that.
+</p>
+</dd>
+<dt>
+<tt>config export &lt;filename&gt;</tt>
+</dt>
+<dd>
+<p>
+        Export non-confidential parts of configuration to a file for debugging purposes.
+</p>
+</dd>
+<dt>
+<tt>config help &lt;name&gt;</tt>
+</dt>
+<dd>
+<p>
+        Show help for a configuration item.
+</p>
+</dd>
+<dt>
+<tt>config list &lt;group&gt;</tt>
+</dt>
+<dd>
+<p>
+        List configuration items in <tt>group</tt>. Subgroups are prefixed with <em>@</em>, channel-specific items with <em>#</em>.
+</p>
+</dd>
+<dt>
+<tt>config reload</tt>
+</dt>
+<dd>
+<p>
+        Reloads configuration. Mostly useful if you've had to modify the files by hand.
+</p>
+</dd>
+<dt>
+<tt>config search &lt;word&gt;</tt>
+</dt>
+<dd>
+<p>
+        Show configuration items matching <tt>word</tt>.
+</p>
+</dd>
+</dl></div>
+<h3 id="capabilities">3.4. Capabilities</h3><div style="clear:left"></div>
+<div class="para"><p>Many traditional IRC bots manage permissions of users using flags. Some network services in fact, do, too. Each user can have various flags on each channel. The flags can mean auto-op, op, use of !ban command and so forth. On side of those, there are often global user flags that entitle the user to full access, global auto-op, etc. Some bots also support channel flags that determine what bot functionality is available on the channel.</p></div>
+<div class="para"><p>Supybot does not have any flags. Instead, the permissions are managed using <em>capabilities</em>. There are two kinds of capabilities: <tt>user capabilities</tt> and <tt>channel capabilities</tt>.</p></div>
+<div class="para"><p><em>User capabilities</em> are checked first when a user tries to run a command. If the user has an <em>anticapability</em> for the command (eg. <tt>-command</tt>, <tt>-Plugin.command</tt>) or the Plugin (<tt>-Plugin</tt>), it won't be run.</p></div>
+<div class="para"><p>Next, if the command was run on the channel, the <em>channel capabilities</em> are checked. The logic is same as above, but the checked capabilities are prefixed with <tt>#channel,</tt>, for example <tt>#channel,-Plugin.command</tt>.</p></div>
+<div class="para"><p>There are some special capabilities recognized by Supybot:</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>owner</tt>
+</dt>
+<dd>
+<p>
+        For bot owners: the people who have "physical" access to the bot and its files. This cannot be granted online; the <em>conf/users.conf</em> file must be edited by hand followed by <tt>reload</tt>. Owners are exempt from <tt>#channel,op</tt> capability checks and channel anticapabilities.
+</p>
+</dd>
+<dt>
+<tt>admin</tt>
+</dt>
+<dd>
+<p>
+        For bot administrators. Users with this capability can manage global bot properties, make the bot join new channels and so forth. However, they can't do channel administration which is reserved for ops.
+</p>
+</dd>
+<dt>
+<tt>#channel,op</tt>
+</dt>
+<dd>
+<p>
+        Channel ops can execute channel-related commands.
+</p>
+</dd>
+<dt>
+<tt>trusted</tt>
+</dt>
+<dd>
+<p>
+        Allow user to run commands that can potentially crash the bot, or cause denial of service on the system it's running on.
+</p>
+</dd>
+</dl></div>
+<div class="para"><p>Commands used to manipulate capabilities are covered in the <a href="#channel-capabilities">Manipulating channel capabilities</a> and <a href="#user-capabilities">Manipulating user capabilities</a> sections.</p></div>
+</div>
+<h2 id="_administrative_tasks">4. Administrative tasks</h2>
+<div class="sectionbody">
+<h3 id="_networks">4.1. Networks</h3><div style="clear:left"></div>
+<div class="para"><p>Related plugins: <span style="color: green;">Network, Services</span>.</p></div>
+<h4 id="_adding_a_network">4.1.1. Adding a network</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>network connect [&#8212;ssl] &lt;network&gt; [&lt;host[:port]&gt;] [password]</tt>
+</dt>
+<dd>
+<p>
+        Connect to <tt>network</tt>. <tt>host</tt> must be provided if the network is new or has no servers defined.
+</p>
+</dd>
+</dl></div>
+<h4 id="_reconnecting">4.1.2. Reconnecting</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>reconnect [network] [message]</tt>
+</dt>
+<dd>
+<p>
+        Disconnects and connects <tt>network</tt>, or current if not specified. <tt>message</tt>, if given, is shown as the quit message, otherwise <tt>config plugins.Owner.quitMsg</tt> is used, or your nickname.
+</p>
+</dd>
+</dl></div>
+<h4 id="_disconnecting">4.1.3. Disconnecting</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>network disconnect [network] [message]</tt>
+</dt>
+<dd>
+<p>
+        Disconnect <tt>network</tt>, or current if not specified. <tt>message</tt> as above.
+</p>
+</dd>
+</dl></div>
+<h4 id="_listing_networks">4.1.4. Listing networks</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>networks</tt>
+</dt>
+<dd>
+<p>
+        List of networks &amp; servers currently connected to.
+</p>
+</dd>
+</dl></div>
+<div class="listingblock">
+<div class="title">Example: output</div>
+<div class="content">
+<pre><tt>freenode: wolfe.freenode.net and ircnet: irc.elisa.fi</tt></pre>
+</div></div>
+<div class="vlist"><dl>
+<dt>
+<tt>config list networks</tt>
+</dt>
+<dd>
+<p>
+        List all networks.
+</p>
+</dd>
+</dl></div>
+<h4 id="_adding_more_servers">4.1.5. Adding more servers</h4>
+<div class="para"><p>Once you've added a network with the initial server, you can add more servers:</p></div>
+<div class="para"><p><tt>config networks.&lt;network&gt;.servers [config networks.&lt;network&gt;.servers] server:6667</tt></p></div>
+<h4 id="_listing_network_servers">4.1.6. Listing network servers</h4>
+<div class="para"><p><tt>config networks.&lt;network&gt;.servers</tt></p></div>
+<div class="listingblock">
+<div class="title">Example: output</div>
+<div class="content">
+<pre><tt>chat.freenode.net:6667</tt></pre>
+</div></div>
+<h4 id="_services_nickserv">4.1.7. Services: NickServ</h4>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">My pratical experience with <span style="color: green;">Services</span> plugin on Freenode is&#8230; not-so-good. It definitely does not work all the time as expected.</td>
+</tr></table>
+</div>
+<div class="para"><p>You can make Supybot identify itself to the network NickServ after it has connected.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>config plugins.Services.noJoinsUntilIdentified True</tt>
+</dt>
+<dd>
+<p>
+        Settings this is useful on Freenode and other networks who change the user mask after identifying to NickServ. In my experience this seems to be a tad buggy, so I don't recommend enabling it unless really needed.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Services.NickServ NickServ</tt>
+</dt>
+<dd>
+<p>
+        Tell the bot what name NickServ can be found under.
+</p>
+</dd>
+<dt>
+<tt>services password &lt;nick&gt; [password]</tt>
+</dt>
+<dd>
+<p>
+        Can be used to set or remove NickServ password.
+</p>
+<div class="literalblock">
+<div class="content">
+<pre><tt>NOTE: Password removal did not work for me on Supybot 0.83.3</tt></pre>
+</div></div>
+</dd>
+<dt>
+<tt>services identify</tt>
+</dt>
+<dd>
+<p>
+        Identifies the bot to NickServ with the current nick. You don't need to give this command after the bot has been set up; it will identify when connecting to the network automatically.
+</p>
+</dd>
+</dl></div>
+<h4 id="_services_chanserv">4.1.8. Services: ChanServ</h4>
+<div class="para"><p>You can make Supybot request op after joining a channel on a network with ChanServ.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>config plugins.Services.ChanServ ChanServ</tt>
+</dt>
+<dd>
+<p>
+        Tell the bot what name ChanServ can be found under.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Services.ChanServ.op &lt;on|off&gt;</tt>
+</dt>
+<dd>
+<p>
+        Set the default for all channels. This will be used unless a channel-specific config overrides it.
+</p>
+</dd>
+<dt>
+<tt>config channel [channel] plugins.services.ChanServ.op &lt;on|off&gt;</tt>
+</dt>
+<dd>
+<p>
+        Set to request op on the given <tt>channel</tt>.
+</p>
+</dd>
+</dl></div>
+<div class="para"><p>Voice and half-op (on networks supporting it) can be used similarly.</p></div>
+<h3 id="_channels">4.2. Channels</h3><div style="clear:left"></div>
+<div class="para"><p>Related plugins: <span style="color: green;">Channel</span>.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">Commands in this section (such as adding/removing channels) work in the current network, eg. the one you are messaging the bot in. The commands also accept a <tt>[channel]</tt> parameter which is needed only when the command is written in private.</td>
+</tr></table>
+</div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">If you want to /msg the bot in one network, while having the command apply in another network, you can use the <tt>network command &lt;network&gt; &lt;command&gt; [params]</tt> command. The reply comes in the other network if you are there as well.</td>
+</tr></table>
+</div>
+<h4 id="_adding_a_new_channel">4.2.1. Adding a new channel</h4>
+<div class="para"><p>A new channel is added by messaging the bot in the same network with <tt>join &lt;channel&gt; [key]</tt> command.</p></div>
+<h4 id="_listing_channels">4.2.2. Listing channels</h4>
+<div class="para"><p><tt>channels</tt></p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">This only works in private, to prevent knowledge of top secret channels from falling into wrong hands.</td>
+</tr></table>
+</div>
+<div class="para"><p>You can list channels in another network with <tt>config networks.&lt;network&gt;.channels</tt>.</p></div>
+<h4 id="_removing_a_channel">4.2.3. Removing a channel</h4>
+<div class="para"><p><tt>part [channel] [reason]</tt></p></div>
+<h4 id="_modifying_channel_config">4.2.4. Modifying channel config</h4>
+<div class="para"><p><tt>config channel [channel] &lt;name&gt; &lt;value&gt;</tt></p></div>
+<h4 id="_setting_the_key">4.2.5. Setting the key</h4>
+<div class="para"><p><tt>channel key [channel] [key]</tt> can be used to set or clear the channel key.</p></div>
+<h4 id="_setting_the_limit">4.2.6. Setting the limit</h4>
+<div class="para"><p><tt>channel limit [channel] [limit]</tt> sets or clears the channel limit.</p></div>
+<h4 id="_channel_commands">4.2.7. Channel commands</h4>
+<div class="para"><p>Channel ops can use the following commands to control the channel via the bot, assuming it is opped.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>op [channel] [nick&#8230;]</tt>
+</dt>
+<dd>
+<p>
+        Ops the given nicks (or you if none) on the channel.
+</p>
+</dd>
+<dt>
+<tt>deop [channel] [nick&#8230;]</tt>
+</dt>
+<dd>
+<p>
+        Ditto, but deops.
+</p>
+</dd>
+<dt>
+<tt>voice [channel] [nick&#8230;]</tt>
+</dt>
+<dd>
+<p>
+        Voices the given nicks (or you if none) on the channel.
+</p>
+</dd>
+<dt>
+<tt>devoice [channel] [nick&#8230;]</tt>
+</dt>
+<dd>
+<p>
+        Ditto, but devoices.
+</p>
+</dd>
+<dt>
+<tt>kban [channel] [--{exact,nick,user,host}] &lt;nick&gt; [seconds] [reason]</tt>
+</dt>
+<dd>
+<p>
+        Bans and kicks the given nick from the channel. If <tt>seconds</tt> is specified and is not 0, the ban will expire after that time.
+</p>
+</dd>
+<dt>
+<tt>mode [channel] &lt;mode&gt; [params]</tt>
+</dt>
+<dd>
+<p>
+        Set channel mode. This can be used to change any channel modes, making the commands below redundant aliases.
+</p>
+</dd>
+<dt>
+<tt>moderate [channel]</tt>
+</dt>
+<dd>
+<p>
+        Set +m. This is not enforced by the bot, so any channel op can remove it.
+</p>
+</dd>
+<dt>
+<tt>unmoderate [channel]</tt>
+</dt>
+<dd>
+<p>
+        Set -m.
+</p>
+</dd>
+<dt>
+<tt>topic lock [channel]</tt>
+</dt>
+<dd>
+<p>
+        Set +t. Not enforced, so any channel op can remove it.
+</p>
+</dd>
+<dt>
+<tt>topic unlock [channel]</tt>
+</dt>
+<dd>
+<p>
+        Set -t.
+</p>
+</dd>
+<dt>
+<tt>alert [channel] &lt;text&gt;</tt>
+</dt>
+<dd>
+<p>
+        Sends <tt>text</tt> to all users on the channel with op capability.
+</p>
+</dd>
+<dt>
+<tt>cycle [channel]</tt>
+</dt>
+<dd>
+<p>
+        Make the bot part and join the channel. Mostly useful to test whether auto-ops from other bots/users work for the bot.
+</p>
+</dd>
+</dl></div>
+<h4 id="_maintaining_the_ban_list">4.2.8. Maintaining the ban list</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>ban add [channel] &lt;nick|hostmask&gt; [expires]</tt>
+</dt>
+<dd>
+<p>
+        Add ban for given nick or hostmask on the channel. If nick is given, the full hostmask is banned. <tt>expires</tt> when gives, expires the ban after so many seconds.
+</p>
+</dd>
+<dt>
+<tt>ban list [channel]</tt>
+</dt>
+<dd>
+<p>
+        List bans with their expire times.
+</p>
+</dd>
+<dt>
+<tt>ban remove [channel] &lt;hostmask&gt;</tt>
+</dt>
+<dd>
+<p>
+        Removes the ban on given <tt>hostmask</tt>.
+</p>
+</dd>
+</dl></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">Users matching the ban list are not automatically kicked off the channel. See the <tt>kban</tt> command in the previous section to kick and ban a user.</td>
+</tr></table>
+</div>
+<h4 id="_maintaining_the_ignore_list">4.2.9. Maintaining the ignore list</h4>
+<div class="para"><p><tt>channel ignore add [channel] &lt;nick|hostmask&gt; [expires]</tt></p></div>
+<div class="para"><p><tt>channel ignore list [channel]</tt></p></div>
+<div class="para"><p><tt>channel ignore remove [channel] &lt;hostmask&gt;</tt></p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">There is also a global ignore list.</td>
+</tr></table>
+</div>
+<h4 id="_listing_channel_nicks">4.2.10. Listing channel nicks</h4>
+<div class="para"><p><tt>channel nicks [channel]</tt></p></div>
+<h4 id="_topic_operations">4.2.11. Topic operations</h4>
+<div class="para"><p>Related plugins: <span style="color: green;">Topic</span>.</p></div>
+<div class="para"><p>Supybot allows elaborate manipulation of the channel topic.</p></div>
+<div class="para"><p><a href="http://supybot.com/documentation/plugins/topic">http://supybot.com/documentation/plugins/topic</a></p></div>
+<h4 id="_logging">4.2.12. Logging</h4>
+<div class="para"><p>Logging of channels is provided by the <span style="color: green;">ChannelLogger</span> plugin. Various channel-specific configuration items are provided, see <tt>config list plugins.ChannelLogger</tt>.</p></div>
+<div class="para"><p>By default logs will go into logs/ChannelLogger/&lt;network&gt;/&lt;channel&gt;/&lt;channel&gt;.log and will be rotated when the default "%d-%a-%Y" (eg. 06-Sat-2008) timestamp rotates. See <a href="http://docs.python.org/lib/module-time.html">the python documentation for strftime</a> for the formatting characters.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">The logs of <span style="color: green;">ChannelLogger</span> cannot be searched online. However, other plugins provide some searching functionality. See <a href="#searching-history">Searching the history</a>.</td>
+</tr></table>
+</div>
+<h4 id="_auto_ops_amp_voices">4.2.13. Auto-ops &amp; voices</h4>
+<div class="para"><p>Auto-opping is provided by the <span style="color: green;">AutoMode</span> plugin.</p></div>
+<h4 id="_seen">4.2.14. Seen</h4>
+<div class="para"><p>The <span style="color: green;">Seen</span> plugin keeps track of last channel/nick/user activity. Most typical use is asking the bot when a given user was last seen chatting on a channel.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>seen any [channel] [--user &lt;user&gt;] [nick]</tt>
+</dt>
+<dd>
+<p>
+        Lists any activity given <tt>nick</tt> or <tt>user</tt> was doing on the channel. If no <tt>nick</tt> or <tt>user</tt> is given, returns the last activity on the channel, regardless of who it was from.
+</p>
+</dd>
+</dl></div>
+<div class="para"><p><tt>seen last [channel]</tt>:
+        Last line said on the channel.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>seen [channel] &lt;nick&gt;</tt>
+</dt>
+<dd>
+<p>
+        Last time a <tt>nick</tt> was seen on a channel and what it said.
+</p>
+</dd>
+</dl></div>
+<div class="para"><p><tt>seen user [channel] &lt;user&gt;</tt>:
+        Ditto, except use a user name, disregarding what nick the said user had.</p></div>
+<h4 id="channel-capabilities">4.2.15. Manipulating channel capabilities</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>capability list [channel]</tt>
+</dt>
+<dd>
+<p>
+        List capabilities on <tt>channel</tt>.
+</p>
+</dd>
+<dt>
+<tt>capability set [channel] &lt;capability..&gt;</tt>
+</dt>
+<dd>
+<p>
+        Adds the given <tt>capability</tt> to <tt>channel</tt>.
+</p>
+</dd>
+<dt>
+<tt>capability unset [channel] &lt;capability..&gt;</tt>
+</dt>
+<dd>
+<p>
+        Removes the given <tt>capability</tt> from <tt>channel</tt>.
+</p>
+</dd>
+<dt>
+<tt>capability setdefault [channel] &lt;True|False&gt;</tt>
+</dt>
+<dd>
+<p>
+        Whether to allow users on <tt>channel</tt> by default to access non-maintenance related commands. Default is True.
+       <br />
+        Note that this concerns unregistered users as well. So if you want to disallow use of commands by unregistered users, set default user capabilities to allow them, and set this to False.
+</p>
+</dd>
+</dl></div>
+<div class="para"><p>See also <a href="#capabilities">Capabilities</a>.</p></div>
+<h3 id="_users">4.3. Users</h3><div style="clear:left"></div>
+<div class="para"><p>Related plugins: <span style="color: green;">Users</span>.</p></div>
+<div class="para"><p>Supybot users are global: they are visible across networks. This means the same username/password and hostmasks will work in all networks the bot is on.</p></div>
+<div class="para"><p>Users are recognized either by matching hostmasks, or after manually identifying to the bot. In secure mode, the user must both match a hostmask and identify to the bot (<tt>uset set secure [password] &lt;True|False&gt;</tt>).</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">If users knowing each others' nicks is an issue, they could come up with different aliases when registering to the bot. The bot username does not have to match the nick of the user.</td>
+</tr></table>
+</div>
+<h4 id="_adding_a_new_user">4.3.1. Adding a new user</h4>
+<div class="para"><p><tt>user register &lt;name&gt; &lt;password&gt;</tt></p></div>
+<h4 id="_manipulating_hostmasks">4.3.2. Manipulating hostmasks</h4>
+<div class="para"><p><tt>user hostmask add</tt> - add your current hostmask. Obviously this makes only sense after identify.</p></div>
+<div class="para"><p><tt>user hostmask add [name] [hostmask] [password]</tt> - add hostmask for another user. If not owner, password must be given.</p></div>
+<div class="para"><p><tt>user hostmask remove &lt;name&gt; &lt;hostmask&gt; [password]</tt></p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">There is no way to add network-specific hostmasks.</td>
+</tr></table>
+</div>
+<h4 id="_listing_users">4.3.3. Listing users</h4>
+<div class="para"><p><tt>user list [glob]</tt> - list registered users. Note that the list of users is global across networks.</p></div>
+<h4 id="_deleting_users">4.3.4. Deleting users</h4>
+<div class="para"><p><tt>user unregister &lt;name&gt; [password]</tt></p></div>
+<h4 id="_changing_password">4.3.5. Changing password</h4>
+<div class="para"><p><tt>user set password &lt;user&gt; &lt;old password&gt; &lt;new password&gt;</tt>.</p></div>
+<h4 id="_renaming_a_user">4.3.6. Renaming a user</h4>
+<div class="para"><p><tt>user changename &lt;name&gt; &lt;new name&gt; [password]</tt></p></div>
+<div class="para"><p>Users can change their name themselves.</p></div>
+<h4 id="user-capabilities">4.3.7. Manipulating user capabilities</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>capabilities [user]</tt>
+</dt>
+<dd>
+<p>
+        List capabilities of the <tt>user</tt>, or the calling user.
+</p>
+</dd>
+<dt>
+<tt>admin capability add &lt;user|hostmask&gt; &lt;capability&gt;</tt>
+</dt>
+<dd>
+<p>
+        Add <tt>capability</tt> to <tt>user</tt> or a user that matches the <tt>hostmask</tt>.
+</p>
+</dd>
+<dt>
+<tt>admin capability remove &lt;user|hostmask&gt; &lt;capability&gt;</tt>
+</dt>
+<dd>
+<p>
+        Ditto, but remove the capability.
+</p>
+</dd>
+<dt>
+<tt>channel capability add [channel] &lt;nick|user&gt; &lt;capability..&gt;</tt>
+</dt>
+<dd>
+<p>
+        Add capability <tt>capability</tt> on <tt>channel</tt> to <tt>nick</tt>/<tt>user</tt>.
+</p>
+</dd>
+<dt>
+<tt>channel capability remove [channel] &lt;nick|user&gt; &lt;capability..&gt;</tt>
+</dt>
+<dd>
+<p>
+        Remove capability <tt>capability</tt> on <tt>channel</tt> from <tt>nick</tt>/<tt>user</tt>.
+</p>
+</dd>
+<dt>
+<tt>defaultcapability &lt;add|remove&gt; &lt;capability&gt;</tt>
+</dt>
+<dd>
+<p>
+        Add or remove <tt>capability</tt> from list of capabilities given to new users.
+</p>
+</dd>
+<dt>
+<tt>config capabilities</tt>
+</dt>
+<dd>
+<p>
+        List default capabilities given to new users.
+</p>
+</dd>
+</dl></div>
+<div class="listingblock">
+<div class="title">Example: output</div>
+<div class="content">
+<pre><tt>-owner -admin -trusted</tt></pre>
+</div></div>
+<div class="para"><p>See also <a href="#capabilities">Capabilities</a>.</p></div>
+<h3 id="_general_bot_maintenance">4.4. General bot maintenance</h3><div style="clear:left"></div>
+<div class="para"><p>Related plugins: <span style="color: green;">Admin, Config</span>.</p></div>
+<h4 id="_setting_nickname_amp_alternative_nick">4.4.1. Setting nickname &amp; alternative nick</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>admin nick &lt;newnick&gt;</tt>
+</dt>
+<dd>
+<p>
+        Change nick to <tt>newnick</tt>.
+</p>
+</dd>
+<dt>
+<tt>config nick</tt>
+</dt>
+<dd>
+<p>
+        Default nick.
+</p>
+</dd>
+<dt>
+<tt>config nick.alternates</tt>
+</dt>
+<dd>
+<p>
+        Space-separated list of alternate nicks, %s refers to nick.
+</p>
+</dd>
+</dl></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">It is not possible to have a different nick in different networks.</td>
+</tr></table>
+</div>
+<h4 id="_setting_ident">4.4.2. Setting ident</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>config ident &lt;newident&gt;</tt>
+</dt>
+<dd>
+<p>
+        Sets the bot's ident (<tt>nick!ident@host</tt>).
+</p>
+</dd>
+</dl></div>
+<h4 id="_setting_ircname">4.4.3. Setting ircname</h4>
+<div class="vlist"><dl>
+<dt>
+<tt>config user [ircname]</tt>
+</dt>
+<dd>
+<p>
+        Sets the bot's ircname/realname to <tt>ircname</tt>. If left empty, defaults to <em>Supybot 0.83.3</em> for example.
+</p>
+</dd>
+</dl></div>
+<h4 id="_setting_command_prefix_controlling_when_the_bot_replies">4.4.4. Setting command prefix / controlling when the bot replies</h4>
+<div class="para"><p>Like most other bots, the bot can be addressed by its nickname, or a command prefix character (any or many of <tt>~!@#$%^&amp;*()_-+=[{}]\|'";:,&lt;.&gt;/?</tt>). For special (braindead?) purposes the bot can also be made assume that all lines are addressed to it.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>config reply.whenAddressedBy.chars</tt>
+</dt>
+<dd>
+<p>
+        List of characters the bot will recognize as addressing, besides the nick of the bot.
+</p>
+</dd>
+<dt>
+<tt>config channel [channel] reply.whenAddressedBy.chars</tt>
+</dt>
+<dd>
+<p>
+        Ditto, but for a specific channel.
+</p>
+</dd>
+<dt>
+<tt>config reply.whenNotAddressed</tt>
+</dt>
+<dd>
+<p>
+        Assume everyone wants to talk to the bot, eg. treat all messages as if addressed to the bot. This does not imply <tt>reply.WhenNotCommand False</tt> which you should set as well.
+</p>
+</dd>
+<dt>
+<tt>config reply.whenNotCommand</tt>
+</dt>
+<dd>
+<p>
+        Whether to reply when addressed with an invalid command.
+</p>
+</dd>
+</dl></div>
+<h4 id="_listing_and_searching_settings">4.4.5. Listing and searching settings</h4>
+<div class="para"><p><tt>config search &lt;word&gt;</tt> - list config items containing word.</p></div>
+<div class="para"><p><tt>config &lt;name&gt;</tt> - show config value for name.</p></div>
+<div class="para"><p><tt>config &lt;name&gt; &lt;value&gt;</tt> - set config value for name.</p></div>
+<h3 id="_owner_commands">4.5. Owner commands</h3><div style="clear:left"></div>
+<div class="para"><p><tt>owner announce &lt;text&gt;</tt> - send <tt>text</tt> to all channels the bot is on.</p></div>
+<div class="para"><p><tt>owner ircquote &lt;raw&gt;</tt> - send <tt>raw</tt> as-is to the server. You need to know your way around <a href="http://www.faqs.org/rfcs/rfc1459.html">RFC1459</a> pretty well to use this.</p></div>
+</div>
+<h2 id="_user_commands">5. User commands</h2>
+<div class="sectionbody">
+<h3 id="searching-history">5.1. Searching the history</h3><div style="clear:left"></div>
+<div class="vlist"><dl>
+<dt>
+<tt>url last [channel] [--{from,with,without,near,proto} value] [--nolimit]</tt>
+</dt>
+<dd>
+<p>
+        Find last URL (or all with <tt>--nolimit</tt>) matching given criteria. From matches nick, with(out) part of the URL, near rest of the line where the URL was, and proto matches the protocol (https, ftp, etc). In case of multiple URLs, the newest is listed first. Multiple criterias can be given.
+</p>
+<div class="literalblock">
+<div class="content">
+<pre><tt>NOTE: This command lists only the URLs, not nick or what message the URLs were part of. No date is shown either.</tt></pre>
+</div></div>
+</dd>
+<dt>
+<tt>last [--from,in,on,with,without,regexp} value] [--nolimit]</tt>
+</dt>
+<dd>
+<p>
+        Find messages matching given criteria. From matches nick, in matches channel, on matches network, with(out) matches part of the message, regexp matches messages that are included by the regular expression. Also see <tt>config protocols.irc.maxHistoryLength</tt>.
+</p>
+</dd>
+</dl></div>
+<h3 id="_useful_plugins">5.2. Useful plugins</h3><div style="clear:left"></div>
+<h4 id="_dict">5.2.1. Dict</h4>
+<div class="para"><p><span style="color: green;">Dict</span> provides dictionary functionality using dict.org. You can also use a local dictd server.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>dict [dictionary] &lt;word&gt;</tt>
+</dt>
+<dd>
+<p>
+        Show dictionary entry for <tt>word</tt>, from <tt>dictionary</tt> if provided. If <tt>plugins.Dict.default</tt> is set, use the specified dictionary instead of all.
+</p>
+</dd>
+<dt>
+<tt>dictionaries</tt>
+</dt>
+<dd>
+<p>
+        List dictionaries available on the used server.
+</p>
+</dd>
+<dt>
+<tt>dict random</tt>
+</dt>
+<dd>
+<p>
+        Show a random dictionary from available dictionaries.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Dict.server [server]</tt>
+</dt>
+<dd>
+<p>
+        The dictd server to be used, default is dict.org.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Dict.default [dictionary]</tt>
+</dt>
+<dd>
+<p>
+        Channel-specific default dictionary for <tt>dict</tt> command. <tt>*</tt> means to use all dictionaries. <tt>wn</tt> is a good default if english words are mostly looked up.
+</p>
+</dd>
+</dl></div>
+<h4 id="_later">5.2.2. Later</h4>
+<div class="para"><p>This is a nick-based replacement for NoteServ and the likes. Simply put, you give the bot a note to deliver to a nick (or wildcard) the next time it sees a matching nick. In other words, this can be used to deliver messages to people who are not registered to the bot. Naturally that is not a very safe method of communicating.</p></div>
+<div class="vlist"><dl>
+<dt>
+<tt>notes [nick]</tt>
+</dt>
+<dd>
+<p>
+        List nicks that have notes queued, or the notes queued for <tt>nick</tt> if given.
+</p>
+</dd>
+<dt>
+<tt>later tell &lt;nick&gt; &lt;text&gt;</tt>
+</dt>
+<dd>
+<p>
+        Queues <tt>text</tt> to be sent to first matching <tt>nick</tt> when seen. Nick can contain wildcards, eg. <tt>foo*</tt>.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Later.maximum</tt>
+</dt>
+<dd>
+<p>
+        How many messages can be queued per nick at maximum, default is 0 = no limit.
+</p>
+</dd>
+<dt>
+<tt>config plugins.Later.private</tt>
+</dt>
+<dd>
+<p>
+        Whether to send notes in private or on the channel where the recipient is seen.
+</p>
+</dd>
+</dl></div>
+<h3 id="_games">5.3. Games</h3><div style="clear:left"></div>
+<div class="para"><p>Plugins: <span style="color: green;">Games, Nickometer, Quote, QuoteGrabs</span>.</p></div>
+</div>
+<h2 id="_caveats">6. Caveats</h2>
+<div class="sectionbody">
+<div class="para"><p>This is a list of issues I have not yet figured out how to do, or there simply isn't a way.</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+How to enforce channel modes (eg. force +ns-t for example)
+</p>
+</li>
+<li>
+<p>
+How to delete config items
+</p>
+</li>
+<li>
+<p>
+How to delete channels / networks
+</p>
+</li>
+<li>
+<p>
+Ban add does not seem to work on Freenode
+</p>
+</li>
+<li>
+<p>
+No global ban list
+</p>
+</li>
+<li>
+<p>
+No way to delete a network
+</p>
+</li>
+<li>
+<p>
+Incomplete multi-network support
+</p>
+<div class="ilist"><ul>
+<li>
+<p>
+Capabilities are not network/channel -specific, but channel-specific. If channel by same name exists in two networks, the users have same capabilities on both
+</p>
+</li>
+<li>
+<p>
+No way to add network-specific hostmasks
+</p>
+</li>
+<li>
+<p>
+Not possible for the bot to have different nick in different networks
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+There is no command to reboot the bot; it must be done from the shell
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_tips">7. Tips</h2>
+<div class="sectionbody">
+<h3 id="_how_to_emulate_blootbot_cmds_using_moobotfactoids">7.1. How to emulate blootbot CMDs using MoobotFactoids</h3><div style="clear:left"></div>
+<div class="para"><p><span style="background-color: yellow;">Thanks to Tobias Rosenqvist for the tip!</span></p></div>
+<div class="para"><p>We try to make a command factoid, like we are used to with blootbot:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;user&gt; cmdtest is &lt;action&gt; gives $1 "(an apple|a pear)"
+&lt;bot&gt; Ok.</tt></pre>
+</div></div>
+<div class="para"><p>Then we test it:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;user&gt; cmdtest someone</tt></pre>
+</div></div>
+<div class="para"><p>But it doesn't work.
+However, the factoid works:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;user&gt; cmdtest
+  * bot gives $1 an apple</tt></pre>
+</div></div>
+<div class="para"><p>The Moobotfactoids plugin in supybot doesn't handle arguments, (yet)
+unfortunately, so you need to do it another way.
+Use the Moobotfactoids to do the random part(s):</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;user&gt; fruits is &lt;reply&gt; "(an apple|an orange|a banana|a pear)"
+&lt;bot&gt; Ok.</tt></pre>
+</div></div>
+<div class="para"><p>Then use an alias to do the command, with arguments (the "action" command
+is found in the Reply plugin), here you also see a use of a nested command:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;user&gt; alias add givefruit action gives [fruits] to $1
+&lt;bot&gt; Ok.
+&lt;user&gt; givefruit someone
+ * bot gives a pear to someone</tt></pre>
+</div></div>
+<h3 id="_tidier_bot_replies">7.2. Tidier bot replies</h3><div style="clear:left"></div>
+<div class="para"><p>I don't personally like the default Supybot replies: I hate the nick prefix and the way too verbose <em>The operation succeeded.</em>.</p></div>
+<div class="para"><p>Fortunately there are plenty of settings to configure how Supybot replies. These can be listed with <tt>config reply</tt> and <tt>config replies</tt>.</p></div>
+<div class="para"><p>The <tt>reply</tt> items determine how Supybot acts, and <tt>replies</tt> contains some messages it uses. I prefer:</p></div>
+<div class="para"><p><tt>config reply.withNickPrefix False</tt></p></div>
+<div class="para"><p><tt>config replies.success OK</tt></p></div>
+<div class="para"><p><tt>config reply.error.inPrivate True</tt>.</p></div>
+</div>
+<h2 id="_reference">8. Reference</h2>
+<div class="sectionbody">
+<h3 id="_configuration_2">8.1. Configuration</h3><div style="clear:left"></div>
+<h4 id="_reply">8.1.1. reply</h4>
+<div class="hlist"><table>
+<tr>
+<td class="hlist1">
+<strong>#inPrivate</strong>
+</td>
+<td class="hlist2">
+Whether to reply in private to commands given on channel.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#requireChannelCommandsToBeSentInChannel</strong>
+</td>
+<td class="hlist2">
+-
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#showSimpleSyntax</strong>
+</td>
+<td class="hlist2">
+Whether to be extra helpful when a user fails syntax of a command.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenNotAddressed</strong>
+</td>
+<td class="hlist2">
+Assume everyone wants to talk to the bot, eg. treat all messages as if addressed to the bot. This does not imply <tt>reply.WhenNotCommand False</tt> which you should set as well.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenNotCommand</strong>
+</td>
+<td class="hlist2">
+Whether to reply when addressed with an invalid command.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#withNickPrefix</strong>
+</td>
+<td class="hlist2">
+Whether to prefix the reply with the nick of the user who gave the command.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#withNotice</strong>
+</td>
+<td class="hlist2">
+Whether to use notices instead of regular messages.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#mores.instant</strong>
+</td>
+<td class="hlist2">
+How many messages to send initially before prompting for <tt>more</tt>. Default is 1.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#mores.length</strong>
+</td>
+<td class="hlist2">
+How long messages can be. Default is 0, which uses rocket science to determine the maximum number of characters that can be fit into a message without it collapsing into a black hole.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#mores.maximum</strong>
+</td>
+<td class="hlist2">
+Maximum number of messages to queue, default is 50.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#error.inPrivate</strong>
+</td>
+<td class="hlist2">
+Whether to send errors in private instead of replying on channel.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#error.noCapability</strong>
+</td>
+<td class="hlist2">
+If True, don't tell users why they can not run a command because of missing capabilities.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#error.withNotice</strong>
+</td>
+<td class="hlist2">
+Whether to send errors as notices instead of regular messages.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>error.detailed</strong>
+</td>
+<td class="hlist2">
+Whether to show an exception or a generic error when something breaks. Mostly useful for developers.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#format.time</strong>
+</td>
+<td class="hlist2">
+Format string for timestamps (<tt>%I:%M %p, %B %d, %Y</tt>, eg. <em>08:41 PM, September 11, 2008</em>).
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenAddressedBy.chars</strong>
+</td>
+<td class="hlist2">
+List of characters the bot will recognize as addressing (when a command is prefixed with one of them), besides the nick of the bot.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenAddressedBy.nicks</strong>
+</td>
+<td class="hlist2">
+List of extra nicks to consider as addressing the bot, despite the current nick.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenAddressedBy.strings</strong>
+</td>
+<td class="hlist2">
+Like the chars key, except a space-separated list of strings to accept as command prefix. This allows multicharacter command prefixes.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>#whenAddressedBy.nick.atEnd</strong>
+</td>
+<td class="hlist2">
+Whether to consider messages that end in the bot's nick to be addressed to the bot.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>maximumLength</strong>
+</td>
+<td class="hlist2">
+Maximum length of a reply message from the bot. This does not mean the length of a single message (prompting for <tt>more</tt>), but the whole message.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>oneToOne</strong>
+</td>
+<td class="hlist2">
+Whether to send replies consisting of multiple messages in a single message.
+</td>
+</tr>
+<tr>
+<td class="hlist1">
+<strong>withNoticeWhenPrivate</strong>
+</td>
+<td class="hlist2">
+Whether to use notices instead of private messages.
+</td>
+</tr>
+</table></div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.0.1<br />
+Last updated 2008-09-13 10:19:16 EEST
+</div>
+</div>
+</body>
+</html>
