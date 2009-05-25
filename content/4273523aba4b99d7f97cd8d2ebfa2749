@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+<title>Color Trends + Palettes :: COLOURlovers</title>
+<meta name="keywords" content="" />
+<meta name="description" content="COLOURlovers is a creative community where people from around the world create and share colors, palettes and patterns, discuss the latest trends and explore colorful articles... All in the spirit of love" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="shortcut icon" href="http://static.colourlovers.com/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://static.colourlovers.com/images/v4.0/_/misc/apple-touch-icon.png" type="image/png" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.colourlovers.com/firefox/COLOURlovers.xml" title="COLOURlovers Palette Search" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.colourlovers.com/firefox/COLOURlovers_hex.xml" title="COLOURlovers Palette HEX Search" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.colourlovers.com/blog/atom" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/Colourlovers" />
+					<script type="text/javascript">
+						//<![CDATA[
+						var _lang	= "en-us";
+						var _cSV	= "v4.0";
+						//]]>
+					</script>
+<script type="text/javascript" src="http://static.colourlovers.com/js/v4.0/lib_p1.6.1_s1.8.3.js?1" charset="utf-8"></script>
+<script type="text/javascript" src="http://static.colourlovers.com/js/v4.0/global.js?10" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="http://static.colourlovers.com/css/v4.0/global.css?6" charset="utf-8" media="all" />
+
+</head>
+
+<body>
+<div class="header-shell">
+<div class="header">
+<a href="http://www.chromaom.com" class="chromaom-logo" title="CHROMAom">CHROMAom</a><div class="separator"></div><div id="log-in-drop-down"><div class="drop-down-left-cap"></div><div class="text"><a href="/login" onclick="return false;">Log In</a></div><div id="log-in-drop-down-arrow"></div><div class="drop-down-right-cap"></div></div><div class="sign-up-btn"><div class="sign-up-btn-left-cap"></div><div class="text"><a href="/register">Sign Up</a></div><div class="sign-up-btn-right-cap"></div></div><div id="log-in-drop-down-contents" style="display: none;"><form action="/op/log-in" method="post"><label for="userName-log-in">Username</label><input type="text"id="userName-log-in" name="userName" class="text" maxlength="20" /><div class="clear"></div><label for="password-log-in">Password</label><input type="password"id="password-log-in" name="userPassword" class="password" /><div class="clear shim"></div><a href="/lost/password" class="left link">Lost Password?</a><input type="image" src="http://static.colourlovers.com/images/v4.0/_/header/log-in-btn.png" class="right" value="Log In" /><a href="/register" class="right mr-5"><img src="http://static.colourlovers.com/images/v4.0/_/header/sign-up-btn.png" alt="Sign Up" /></a></form></div><a href="/" class="colourlovers-logo" title="Home">COLOURlovers</a></div></div>
+<div class="header-colors" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/header/colors-bg.png?21016)"></div>
+<div class="nav">
+<ul>
+<li><a id="nav_0" href="/browse">Browse</a></li>
+<li><a id="nav_1" href="/create">Create</a></li>
+<li><a id="nav_2" href="#" onclick="return false;">Search</a></li>
+<li><a id="nav_3" href="/community">Community</a></li>
+<li><a id="nav_4" href="/channels">Channels</a></li>
+<li><a id="nav_5" href="/trends">Trends</a></li>
+<li><a id="nav_6" href="/tools">Tools</a></li>
+<li><a id="nav_7" href="/store">Store</a></li>
+</ul>
+<div id="sub-nav_0" class="sub-nav" style="display: none;"><span><a href="/palettes"><span></span>Palettes</a></span><span><a href="/patterns"><span></span>Patterns</a></span><span><a href="/colors"><span></span>Colors</a></span><span><a href="/lovers" class="last"><span></span>Lovers</a></span></div><div id="sub-nav_1" class="sub-nav" style="display: none;"><span><a href="/palettes/add"><span></span>Palette</a></span><span><a href="/patterns/add"><span></span>Pattern</a></span><span><a href="/colors/add" class="last"><span></span>Color</a></span></div><div id="sub-nav_2" class="sub-nav" style="display: none;"><span><a href="/palettes/search"><span></span>Palettes</a></span><span><a href="/patterns/search"><span></span>Patterns</a></span><span><a href="/colors/search"><span></span>Colors</a></span><span><a href="/lovers/search" class="last"><span></span>Lovers</a></span></div><div id="sub-nav_3" class="sub-nav" style="display: none;"><span><a href="/blog"><span></span>Blog</a></span><span><a href="/forums"><span></span>Forums</a></span><span><a href="/groups"><span></span>Groups</a></span><span><a href="/group/Sharing_the_Love" class="last"><span></span>FAQ</a></span></div><div id="sub-nav_4" class="sub-nav" style="display: none;"><span><a href="/business"><span></span>Business</a></span><span><a href="/craft"><span></span>Craft</a></span><span><a href="/fashion"><span></span>Fashion</a></span><span><a href="/home"><span></span>Home</a></span><span><a href="/print"><span></span>Print</a></span><span><a href="/web"><span></span>Web</a></span><span><a href="/wedding" class="last"><span></span>Wedding</a></span></div><div id="sub-nav_5" class="sub-nav" style="display: none;"><span><a href="/business/trends/branding"><span></span>Branding</a></span><span><a href="/craft/trends/handmade"><span></span>Handmade</a></span><span><a href="/home/trends/interior-looks"><span></span>Interior Looks</a></span><span><a href="/print/trends/magazines"><span></span>Magazines</a></span><span><a href="/fashion/trends/street-fashion"><span></span>Street Fashion</a></span><span><a href="/web/trends/websites"><span></span>Websites</a></span><span><a href="/wedding/trends/wedding-invites" class="last"><span></span>Wedding Invites</a></span></div><div id="sub-nav_6" class="sub-nav" style="display: none;"><span><a href="/blog/2009/12/01/colorschemer-studio-2-for-mac-colourlovers"><span></span>ColorSchemer</a></span><span><a href="/seamless"><span></span>Seamless</a></span><span><a href="/themeleon"><span></span>Themeleon</a></span><span><a href="/photocopa"><span></span>PHOTOCOPA</a></span><span><a href="/copaso/ColorPaletteSoftware"><span></span>COPASO</a></span><span><a href="/coty" class="last"><span></span>Color Of The Year</a></span></div><div id="sub-nav_7" class="sub-nav" style="display: none;"><span><a href="/store/software"><span></span>Software</a></span><span><a href="/store/fabric"><span></span>Fabric</a></span><span><a href="/store/art-print"><span></span>Art / Print</a></span><span><a href="/store/clothing" class="last"><span></span>Clothing</a></span></div></div>
+<div class="content">
+<div class="callout-container">
+<div class="sign-up-container">
+<a href="/register" class="sign-up-for-free sign-up-for-free-btn">Join the Community!</a></div><h2>Share Your Color Ideas &amp; Inspiration.</h2>
+<p class="about">
+<strong>COLOURlovers</strong> is a creative community where people from around the world create<br />and share <a href="/colors">colors</a>, <a href="/palettes">palettes</a> and <a href="/patterns">patterns</a>, discuss the latest <a href="/trends">trends</a> and explore colorful<br /><a href="/blog">articles</a>... All in the spirit of love.</p>
+</div><div class="column-container">
+<div class="col-620 mr-20">
+<div class="column-container">
+<ul class="big-tabs-container">
+<li id="channel-chooser_0" class="selected">All</li><li id="channel-chooser_1">Wedding</li><li id="channel-chooser_2">Home</li><li id="channel-chooser_3">Fashion</li><li id="channel-chooser_4">Web</li><li id="channel-chooser_5">Print</li><li id="channel-chooser_6">Craft</li><li id="channel-chooser_7">Business</li></ul><div id="channel-content">
+
+<!-- Tue, 21 Dec 2010 13:33:02 -0600 -->
+<div class="sub-header pl-10 pr-10"><a href="/blog" class="view-more" style="margin-top: 2px;">View More &#155;</a><h2 class="left light-shadow">Latest Blog Posts</h2><div class="clear"></div>
+</div>
+<div class="content-panel pr-0">
+<div class="col-194" style="margin-right: 9px;"><a href="/business/blog/2010/12/09/colourlovers-in-your-pocket-our-official-iphone-app-is-out" class="blog-post-header"><img src="http://static.colourlovers.com/uploads/images/2/27/27598.thumb.jpg" alt="COLOURlovers in Your Pocket: Our Official iPhone App is Out!" /></a><h2 class="blog-post-title"><a href="/business/blog/2010/12/09/colourlovers-in-your-pocket-our-official-iphone-app-is-out">COLOURlovers in Your Pocket: Our Official iPhone App is Out!</a></h2>
+<a href="/business/blog/2010/12/09/colourlovers-in-your-pocket-our-official-iphone-app-is-out#comments" class="blog-post-comment-count"><span></span>20 Comments</a><div class="clear"></div>
+</div><div class="col-194" style="margin-right: 9px;"><a href="/print/blog/2010/12/20/multi-polar-projects-4-identities-1-person-art-collective-interview" class="blog-post-header"><img src="http://static.colourlovers.com/uploads/images/2/27/27975.thumb.jpg" alt="Multi-Polar Projects: 4 Identities 1 Person Art Collective - Interview" /></a><h2 class="blog-post-title"><a href="/print/blog/2010/12/20/multi-polar-projects-4-identities-1-person-art-collective-interview">Multi-Polar Projects: 4 Identities 1 Person Art Collective - Interview</a></h2>
+<a href="/print/blog/2010/12/20/multi-polar-projects-4-identities-1-person-art-collective-interview#comments" class="blog-post-comment-count"><span></span>2 Comments</a><div class="clear"></div>
+</div><div class="col-194" style="margin-right: 9px;"><a href="/home/blog/2010/12/19/interior-design-trends-pink-gray" class="blog-post-header"><img src="http://static.colourlovers.com/uploads/images/2/28/28178.thumb.jpg" alt="Interior Design Trends: Pink &amp; Gray" /></a><h2 class="blog-post-title"><a href="/home/blog/2010/12/19/interior-design-trends-pink-gray">Interior Design Trends: Pink & Gray</a></h2>
+<a href="/home/blog/2010/12/19/interior-design-trends-pink-gray#comments" class="blog-post-comment-count"><span></span>1 Comment</a><div class="clear"></div>
+</div><div class="clear"></div>
+</div>
+<div class="feature-col">
+<div class="sub-header pl-10 pr-10"><a href="/palettes/add" class="plus-btn" title="Add a Palette"></a><h2 class="left light-shadow">Palettes</h2></div>
+<div class="content-panel">
+<div class="col">
+<a href="/palette/1391830/Navajo_Blanket" class="palette" style="width: 186px; height: 56px;"><span class="c" style="width: 37px; height: 56px; background-color: #A61E02;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #785752;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #E4CAC0;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #6C7069;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 38px; height: 56px; background-color: #373836;"><span class="s" style="margin-top: 51px;"></span></span>
+</a><a href="/palette/1391830/Navajo_Blanket" class="title">Navajo Blanket</a><a href="/palette/1391830/Navajo_Blanket#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/profeam">profeam</a></div></div>
+<div class="col">
+<a href="/palette/1391829/O4" class="palette" style="width: 186px; height: 56px;"><span class="c" style="width: 37px; height: 56px; background-color: #4C6670;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #E9E9E9;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #D99D88;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #E06549;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 38px; height: 56px; background-color: #E9411A;"><span class="s" style="margin-top: 51px;"></span></span>
+</a><a href="/palette/1391829/O4" class="title">O4</a><a href="/palette/1391829/O4#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/Anna%20Neklesa">Anna Neklesa</a></div></div>
+<div class="col">
+<a href="/palette/1391828/party_time" class="palette" style="width: 186px; height: 56px;"><span class="c" style="width: 37px; height: 56px; background-color: #DF0052;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #B000BC;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #5D00AF;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #0B00C1;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 38px; height: 56px; background-color: #D70400;"><span class="s" style="margin-top: 51px;"></span></span>
+</a><a href="/palette/1391828/party_time" class="title">party time</a><a href="/palette/1391828/party_time#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/ashlynn159">ashlynn159</a></div></div>
+<div class="col">
+<a href="/palette/1391827/Winter_Wedding_2" class="palette" style="width: 186px; height: 56px;"><span class="c" style="width: 37px; height: 56px; background-color: #000029;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #095394;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #6CA4C7;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #525868;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 38px; height: 56px; background-color: #D5EEFF;"><span class="s" style="margin-top: 51px;"></span></span>
+</a><a href="/palette/1391827/Winter_Wedding_2" class="title">Winter Wedding 2</a><a href="/palette/1391827/Winter_Wedding_2#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/bowsandbuttercream">bowsandbuttercream</a></div></div>
+<div class="col">
+<a href="/palette/1391826/Apple_Blackcurrant" class="palette" style="width: 186px; height: 56px;"><span class="c" style="width: 37px; height: 56px; background-color: #E3F971;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #F9B685;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #F9907F;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 37px; height: 56px; background-color: #DC7080;"><span class="s" style="margin-top: 51px;"></span></span>
+<span class="c" style="width: 38px; height: 56px; background-color: #450337;"><span class="s" style="margin-top: 51px;"></span></span>
+</a><a href="/palette/1391826/Apple_Blackcurrant" class="title">Apple Blackcurrant</a><a href="/palette/1391826/Apple_Blackcurrant#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/rafferty">rafferty</a></div></div>
+<a href="/palettes" class="view-more">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="feature-col">
+<div class="sub-header pl-10 pr-10"><a href="/patterns/add" class="plus-btn" title="Add a Pattern"></a><h2 class="left light-shadow">Patterns</h2></div>
+<div class="content-panel">
+<div class="col">
+<a href="/pattern/1206382/Cute_but_not_cuddly" class="pattern" style="width: 186px; height: 56px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206382.png);"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/pattern/1206382/Cute_but_not_cuddly" class="title">Cute but not cuddly</a><a href="/pattern/1206382/Cute_but_not_cuddly#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/Wordofmouse">Wordofmouse</a></div></div>
+<div class="col">
+<a href="/pattern/1206381/under_the_purple_sky" class="pattern" style="width: 186px; height: 56px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206381.png);"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/pattern/1206381/under_the_purple_sky" class="title">under the purple sky</a><a href="/pattern/1206381/under_the_purple_sky#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/OrendaWhisper">OrendaWhisper</a></div></div>
+<div class="col">
+<a href="/pattern/1206380/Makeup_of_the_Night" class="pattern" style="width: 186px; height: 56px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206380.png);"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/pattern/1206380/Makeup_of_the_Night" class="title">Makeup of the Night</a><a href="/pattern/1206380/Makeup_of_the_Night#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/viarockgirl14">viarockgirl14</a></div></div>
+<div class="col">
+<a href="/pattern/1206379/i_luv_u_this_much!" class="pattern" style="width: 186px; height: 56px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206379.png);"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/pattern/1206379/i_luv_u_this_much!" class="title">i luv u this much!</a><a href="/pattern/1206379/i_luv_u_this_much!#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/OrendaWhisper">OrendaWhisper</a></div></div>
+<div class="col">
+<a href="/pattern/1206378/serious_blonde" class="pattern" style="width: 186px; height: 56px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206378.png);"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/pattern/1206378/serious_blonde" class="title">serious blonde</a><a href="/pattern/1206378/serious_blonde#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/Meyouich">Meyouich</a></div></div>
+<a href="/patterns" class="view-more">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="feature-col br-0">
+<div class="sub-header pl-10 pr-10"><a href="/colors/add" class="plus-btn" title="Add a Color"></a><h2 class="left light-shadow">Colors</h2></div>
+<div class="content-panel">
+<div class="col">
+<a href="/color/E06549/4" class="color" style="width: 186px; height: 56px; background-color: #E06549;"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/color/E06549/4" class="title">4</a><a href="/color/E06549/4#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/Anna%20Neklesa">Anna Neklesa</a></div></div>
+<div class="col">
+<a href="/color/D99D88/455" class="color" style="width: 186px; height: 56px; background-color: #D99D88;"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/color/D99D88/455" class="title">455</a><a href="/color/D99D88/455#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/Anna%20Neklesa">Anna Neklesa</a></div></div>
+<div class="col">
+<a href="/color/6CA4C7/Blue_Bubblegum" class="color" style="width: 186px; height: 56px; background-color: #6CA4C7;"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/color/6CA4C7/Blue_Bubblegum" class="title">Blue Bubblegum</a><a href="/color/6CA4C7/Blue_Bubblegum#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/bowsandbuttercream">bowsandbuttercream</a></div></div>
+<div class="col">
+<a href="/color/095394/Teal_Waters" class="color" style="width: 186px; height: 56px; background-color: #095394;"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/color/095394/Teal_Waters" class="title">Teal Waters</a><a href="/color/095394/Teal_Waters#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/bowsandbuttercream">bowsandbuttercream</a></div></div>
+<div class="col">
+<a href="/color/F9907F/Pink_beige" class="color" style="width: 186px; height: 56px; background-color: #F9907F;"><span style="height: 5px; margin-top: 51px;"></span></a><a href="/color/F9907F/Pink_beige" class="title">Pink beige</a><a href="/color/F9907F/Pink_beige#comments" class="comment-count"><span></span>0</a><div class="clear"></div>
+<div class="by-line">by <a href="/lover/rafferty">rafferty</a></div></div>
+<a href="/colors" class="view-more">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="clear"></div>
+<div class="feature-col">
+<div class="sub-header pl-10 pr-10"><h2 class="left light-shadow">Groups</h2></div>
+<div class="content-panel">
+<div class="col">
+<a href="/group/Food_lovers" class="group-image"><img src="http://static.colourlovers.com/images/v4.0/_/group/no-picture-small.png" alt="Food lovers" /></a>
+<a href="/group/Food_lovers" class="title">Food lovers</a><a href="/group/Food_lovers" class="user-count"><span></span>1</a></div><div class="col">
+<a href="/group/I_♥_Tea" class="group-image"><img src="http://static.colourlovers.com/images/groups/2/2827f.jpg?1292873557" alt="I ♥ Tea" /></a>
+<a href="/group/I_♥_Tea" class="title">I ♥ Tea</a><a href="/group/I_♥_Tea" class="user-count"><span></span>12</a></div><div class="col">
+<a href="/group/Quadrants" class="group-image"><img src="http://static.colourlovers.com/images/groups/2/2826f.jpg?1292855331" alt="Quadrants" /></a>
+<a href="/group/Quadrants" class="title">Quadrants</a><a href="/group/Quadrants" class="user-count"><span></span>8</a></div><div class="col">
+<a href="/group/Friends_from_PA" class="group-image"><img src="http://static.colourlovers.com/images/groups/2/2825f.jpg?1292869676" alt="Friends from PA" /></a>
+<a href="/group/Friends_from_PA" class="title">Friends from PA</a><a href="/group/Friends_from_PA" class="user-count"><span></span>4</a></div><div class="col">
+<a href="/group/My_favourite_patterns" class="group-image"><img src="http://static.colourlovers.com/images/v4.0/_/group/no-picture-small.png" alt="My favourite patterns" /></a>
+<a href="/group/My_favourite_patterns" class="title">My favourite patterns</a><a href="/group/My_favourite_patterns" class="user-count"><span></span>1</a></div><a href="/groups" class="view-more">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="feature-col">
+<div class="sub-header pl-10 pr-10"><h2 class="left light-shadow">Trends</h2></div>
+<div class="content-panel">
+<div class="col" style="height: 160px;">
+<a href="/print/trends/magazines/7835/White_Fungus_Issue_4" class="trend-image"><img src="http://static.colourlovers.com/images/trends/magazines/0/7/7835f_0.jpg" alt="White Fungus Issue 4" /></a>
+<a href="/print/trends/magazines/7835/White_Fungus_Issue_4" class="palette" style="width: 186px; height: 34px;"><span class="c" style="width: 31px; height: 34px; background-color: #CECECE;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #E6E7DF;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #C0B3BC;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #7A656A;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #615E59;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #89CBC9;"><span class="s" style="margin-top: 29px;"></span></span>
+</a><div class="clear"></div>
+<a href="/print/trends/magazines/7835/White_Fungus_Issue_4" class="title">White Fungus Issue 4</a><a href="/print/trends/magazines/7835/White_Fungus_Issue_4#comments" class="comment-count"><span></span>5</a></div><div class="col" style="height: 160px;">
+<a href="/print/trends/magazines/7834/Print_Design_Annual_2010" class="trend-image"><img src="http://static.colourlovers.com/images/trends/branding/0/7/7834f_0.jpg" alt="Print Design Annual 2010" /></a>
+<a href="/print/trends/magazines/7834/Print_Design_Annual_2010" class="palette" style="width: 186px; height: 34px;"><span class="c" style="width: 31px; height: 34px; background-color: #D7D7CD;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #D2367D;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #720D5B;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #CF3104;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #BCA000;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 31px; height: 34px; background-color: #018E4A;"><span class="s" style="margin-top: 29px;"></span></span>
+</a><div class="clear"></div>
+<a href="/print/trends/magazines/7834/Print_Design_Annual_2010" class="title">Print Design Annual 2010</a><a href="/print/trends/magazines/7834/Print_Design_Annual_2010#comments" class="comment-count"><span></span>1</a></div><div class="col" style="height: 160px;">
+<a href="/print/trends/magazines/7833/Proximity_Issue_7" class="trend-image"><img src="http://static.colourlovers.com/images/trends/magazines/0/7/7833f_0.jpg" alt="Proximity Issue 7" /></a>
+<a href="/print/trends/magazines/7833/Proximity_Issue_7" class="palette" style="width: 186px; height: 34px;"><span class="c" style="width: 62px; height: 34px; background-color: #CACBC5;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 62px; height: 34px; background-color: #606839;"><span class="s" style="margin-top: 29px;"></span></span>
+<span class="c" style="width: 62px; height: 34px; background-color: #030303;"><span class="s" style="margin-top: 29px;"></span></span>
+</a><div class="clear"></div>
+<a href="/print/trends/magazines/7833/Proximity_Issue_7" class="title">Proximity Issue 7</a><a href="/print/trends/magazines/7833/Proximity_Issue_7#comments" class="comment-count"><span></span>1</a></div><a href="/trends" class="view-more">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="feature-col br-0">
+<div class="sub-header pl-10 pr-10"><h2 class="left light-shadow">Discussions</h2></div>
+<div class="content-panel">
+<div class="col" style="height: auto;"><a href="/forums/5,9,3258/Original_Gangster_Colour_Lover_T-Shirt" class="comment-count"><span></span>2</a><a href="/forums/5,9,3258/Original_Gangster_Colour_Lover_T-Shirt" class="title">Original Gangster Colour Lover T-Shirt</a><div class="clear"></div>
+<div class="last-comment"><span title="21 Dec, 2010 03:05:57">10 hours ago</span> by <a href="/lover/Keilyjensson">Keilyjensson</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/1,2,998/Interesting_Coincidences.?page=27" class="comment-count"><span></span>538</a><a href="/forums/1,2,998/Interesting_Coincidences.?page=27" class="title">Interesting Coincidences.</a><div class="clear"></div>
+<div class="last-comment"><span title="20 Dec, 2010 19:03:02">18 hours ago</span> by <a href="/lover/xOwllight">xOwllight</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/4,8,3055/What_inspires_you" class="comment-count"><span></span>13</a><a href="/forums/4,8,3055/What_inspires_you" class="title">What inspires you?</a><div class="clear"></div>
+<div class="last-comment"><span title="20 Dec, 2010 10:12:31">1 day ago</span> by <a href="/lover/coloursplash">coloursplash</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/1,3,3445/designing_new_year_card" class="comment-count"><span></span>3</a><a href="/forums/1,3,3445/designing_new_year_card" class="title">designing new year card</a><div class="clear"></div>
+<div class="last-comment"><span title="20 Dec, 2010 09:48:14">1 day ago</span> by <a href="/lover/Armine777">Armine777</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/1,1,1054/Name_a_film_that_inspires_you.?page=4" class="comment-count"><span></span>70</a><a href="/forums/1,1,1054/Name_a_film_that_inspires_you.?page=4" class="title">Name a film that inspires you.</a><div class="clear"></div>
+<div class="last-comment"><span title="20 Dec, 2010 05:20:47">1 day ago</span> by <a href="/lover/itzme">itzme</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/1,2,3226/Your_Palette_Tells_a_Story_(Game)?page=2" class="comment-count"><span></span>30</a><a href="/forums/1,2,3226/Your_Palette_Tells_a_Story_(Game)?page=2" class="title">Your Palette Tells a Story (Game)</a><div class="clear"></div>
+<div class="last-comment"><span title="19 Dec, 2010 23:24:58">1 day ago</span> by <a href="/lover/rememberinglianne-">rememberinglianne-</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/2,5,3378/Broken_Pattern" class="comment-count"><span></span>5</a><a href="/forums/2,5,3378/Broken_Pattern" class="title">Broken Pattern</a><div class="clear"></div>
+<div class="last-comment"><span title="19 Dec, 2010 14:18:29">1 day ago</span> by <a href="/lover/ycc2106">ycc2106</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/2,6,3142/How_about_a_helptip_section_on_HOW_TO_USE_this_site" class="comment-count"><span></span>3</a><a href="/forums/2,6,3142/How_about_a_helptip_section_on_HOW_TO_USE_this_site" class="title">How about a helptip section on HOW TO USE this site</a><div class="clear"></div>
+<div class="last-comment"><span title="19 Dec, 2010 14:16:03">1 day ago</span> by <a href="/lover/ycc2106">ycc2106</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/2,6,3413/10_color_palette_!" class="comment-count"><span></span>4</a><a href="/forums/2,6,3413/10_color_palette_!" class="title">10 color palette !?</a><div class="clear"></div>
+<div class="last-comment"><span title="19 Dec, 2010 14:12:23">1 day ago</span> by <a href="/lover/ycc2106">ycc2106</a></div></div><hr class="mb-5 mt-10" style="background-color: #e9e9e9;" /><div class="col" style="height: auto;"><a href="/forums/2,6,3011/Pattern_Help" class="comment-count"><span></span>8</a><a href="/forums/2,6,3011/Pattern_Help" class="title">Pattern Help</a><div class="clear"></div>
+<div class="last-comment"><span title="19 Dec, 2010 14:10:58">1 day ago</span> by <a href="/lover/ycc2106">ycc2106</a></div></div><a href="/forums" class="view-more" style="margin-top: 36px;">View More &#155;</a><div class="clear"></div>
+</div></div>
+<div class="clear"></div>
+</div></div><div class="sub-header pl-10 pr-10"><h2 class="light-shadow">Store</h2></div>
+<div class="content-panel store-summary">
+<div class="left mr-30 ml-10 mb-20" style="width: 172px;">
+<a href="/store/software" class="image"><img src="http://static.colourlovers.com/images/v4.0/_/store/cs-t.jpg" alt="ColorSchemer Studio 2" /></a><h3 class="tac"><a href="/store/software">ColorSchemer Studio 2</a></h3></div><div class="left mr-30 mb-20" style="width: 172px;">
+<a href="/store/fabric" class="image"><img src="http://static.colourlovers.com/images/v4.0/_/store/spoonflower-t.jpg" alt="Spoonflower" /></a><h3 class="tac"><a href="/store/fabric">Spoonflower</a></h3></div><div class="left mb-20" style="width: 172px;">
+<a href="/store/art-print" class="image"><img src="http://static.colourlovers.com/images/v4.0/_/store/imagekind-t.jpg" alt="Imagekind" /></a><h3 class="tac"><a href="/store/art-print">Imagekind</a></h3></div><div class="left ml-10 mr-30" style="width: 172px;">
+<a href="/store/art-print" class="image"><img src="http://static.colourlovers.com/images/v4.0/_/store/moo-t.jpg" alt="Moo" /></a><h3 class="tac"><a href="/store/art-print">Moo</a></h3></div><div class="left" style="width: 172px;">
+<a href="/store/clothing" class="image"><img src="http://static.colourlovers.com/images/v4.0/_/store/shirt-t.jpg" alt="Shirts" /></a><h3 class="tac"><a href="/store/clothing">Lovers T-Shirt</a></h3></div><div class="clear"></div>
+</div></div><div class="col-300">
+<script type="text/javascript">
+<!--//<![CDATA[
+	var m3_u = (location.protocol=='https:'?'https://d1.openx.org/ajs.php':'http://d1.openx.org/ajs.php');
+	var m3_r = Math.floor(Math.random() * 99999999999);
+	if (!document.MAX_used) document.MAX_used = ',';
+	document.write('<scr' + 'ipt type="text/javascript" src="' + m3_u);
+	document.write('?zoneid=169871&amp;target=_blank');
+	document.write('&amp;cb=' + m3_r);
+	if (document.MAX_used != ',') document.write('&amp;exclude=' + document.MAX_used);
+	document.write('&amp;charset=UTF-8');
+	document.write('&amp;loc=' + escape(window.location));
+	if (document.referrer) document.write('&amp;referer=' + escape(document.referrer));
+	if (document.context) document.write('&context=' + escape(document.context));
+	if (document.mmm_fo) document.write('&amp;mmm_fo=1');
+	document.write ('"></scr' + 'ipt>');
+//]]>-->
+</script>
+<noscript><a href="http://d1.openx.org/ck.php?n=aa860bf5&amp;cb=2104750100" target="_blank"><img src="http://d1.openx.org/avw.php?zoneid=169871&amp;charset=UTF-8&amp;cb=2104750100&amp;n=a1bb9617" border="0" alt=" " /></a></noscript>
+<a href="http://r1.fmpub.net/?r=http%3A%2F%2Fwww.colourlovers.com%2Fbusiness&amp;k4=436&amp;k5={banner_id}" class="block mb-10" style="margin-top: 4px;"><img src="http://static.colourlovers.com/images/v4.0/_/btn/hp.png" alt="HP" /></a>
+<h3 class="sub-panel-header">Lovers Peek</h3><div class="sub-panel-dark lovers-peek"><div class="feature"><a href="/palette/1391100/[t2]_Byrons_October" class="palette" style="width: 50px; height: 32px;"><span class="c" style="width: 15px; height: 32px; background-color: #BAB77A;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 1px; height: 32px; background-color: #DC7450;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 3px; height: 32px; background-color: #B53744;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 1px; height: 32px; background-color: #66283C;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 30px; height: 32px; background-color: #2C060C;"><span class="s" style="margin-top: 27px;"></span></span>
+</a></div><div class="text"><a href="/lover/phoenix1">phoenix1</a> on <a href="/palette/1391100/[t2]_Byrons_October#comment-1302253">[t2] Byron's October</a><div class="light-text">good couple!  big love</div></div><div class="clear"></div>
+<div class="feature"><a href="/palette/1391820/.jelly_doughnut." class="palette" style="width: 50px; height: 32px;"><span class="c" style="width: 7px; height: 32px; background-color: #533042;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 7px; height: 32px; background-color: #AB876C;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 5px; height: 32px; background-color: #FFF2FC;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 20px; height: 32px; background-color: #8C5672;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 11px; height: 32px; background-color: #38222E;"><span class="s" style="margin-top: 27px;"></span></span>
+</a></div><div class="text"><a href="/lover/blackvelvetsheep">blackvelvetsheep</a> on <a href="/palette/1391820/.jelly_doughnut.#comment-1302252">.jelly doughnut.</a><div class="light-text">yum</div></div><div class="clear"></div>
+<div class="feature"><a href="/pattern/1206363/Reptile_Sass" class="pattern" style="width: 50px; height: 32px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206363.png);"><span style="height: 5px; margin-top: 27px;"></span></a></div><div class="text"><a href="/lover/dss358">dss358</a> on <a href="/pattern/1206363/Reptile_Sass#comment-397294">Reptile Sass</a><div class="light-text">This is great!</div></div><div class="clear"></div>
+<div class="feature"><a href="/palette/1391705/Mango_Smoothie" class="palette" style="width: 50px; height: 32px;"><span class="c" style="width: 21px; height: 32px; background-color: #F34553;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 4px; height: 32px; background-color: #F26144;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 4px; height: 32px; background-color: #F28D44;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 4px; height: 32px; background-color: #F2B844;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 17px; height: 32px; background-color: #F2E444;"><span class="s" style="margin-top: 27px;"></span></span>
+</a></div><div class="text"><a href="/lover/Richie086">Richie086</a> on <a href="/palette/1391705/Mango_Smoothie#comment-1302251">Mango Smoothie</a><div class="light-text">well done</div></div><div class="clear"></div>
+<div class="feature"><a href="/palette/1355064/I_Made_Her_Sigh!" class="palette" style="width: 50px; height: 32px;"><span class="c" style="width: 19px; height: 32px; background-color: #07051B;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 1px; height: 32px; background-color: #150B4A;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 2px; height: 32px; background-color: #2A35C3;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 4px; height: 32px; background-color: #280B89;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 24px; height: 32px; background-color: #18002D;"><span class="s" style="margin-top: 27px;"></span></span>
+</a></div><div class="text"><a href="/lover/ycc2106">ycc2106</a> on <a href="/palette/1355064/I_Made_Her_Sigh!#comment-1302250">I Made Her Sigh!</a><div class="light-text">Included this to my magic palette 'rug'  =)</div></div><div class="clear"></div>
+<div class="feature"><a href="/pattern/1206283/coral_reef" class="pattern" style="width: 50px; height: 32px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1206/1206283.png);"><span style="height: 5px; margin-top: 27px;"></span></a></div><div class="text"><a href="/lover/Phoenixfire">Phoenixfire</a> on <a href="/pattern/1206283/coral_reef#comment-397293">coral reef</a><div class="light-text">I love the title, it does look like you are lookin&hellip;</div></div><div class="clear"></div>
+<div class="feature"><a href="/palette/1391793/[t2]_Bullfighter" class="palette" style="width: 50px; height: 32px;"><span class="c" style="width: 13px; height: 32px; background-color: #F8FBFF;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 16px; height: 32px; background-color: #EEC5A9;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 2px; height: 32px; background-color: #F03781;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 7px; height: 32px; background-color: #1E1609;"><span class="s" style="margin-top: 27px;"></span></span>
+<span class="c" style="width: 12px; height: 32px; background-color: #50914D;"><span class="s" style="margin-top: 27px;"></span></span>
+</a></div><div class="text"><a href="/lover/earlgrey">earlgrey</a> on <a href="/palette/1391793/[t2]_Bullfighter#comment-1302247">[t2] Bullfighter</a><div class="light-text">nice! :D
+you found some really pretty palettes an&hellip;</div></div><div class="clear"></div>
+<div class="feature"><a href="/pattern/1175892/Anuli" class="pattern" style="width: 50px; height: 32px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1175/1175892.png);"><span style="height: 5px; margin-top: 27px;"></span></a></div><div class="text"><a href="/lover/LuisaBVG">LuisaBVG</a> on <a href="/pattern/1175892/Anuli#comment-397291">Anuli</a><div class="light-text">THIS IS SOOO PRETTYYY!!!!!!!!!</div></div><div class="clear"></div>
+<div class="feature"><a href="/color/A4A470/Santa_Baby_RC147" class="color" style="width: 50px; height: 32px; background-color: #A4A470;"><span style="height: 5px; margin-top: 27px;"></span></a></div><div class="text"><a href="/lover/novrain62">novrain62</a> on <a href="/color/A4A470/Santa_Baby_RC147#comment-181143">Santa Baby RC147</a><div class="light-text">How Cute!</div></div><div class="clear"></div>
+<div class="feature"><a href="/pattern/1181746/177_*" class="pattern" style="width: 50px; height: 32px; background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/1181/1181746.png);"><span style="height: 5px; margin-top: 27px;"></span></a></div><div class="text"><a href="/lover/LuisaBVG">LuisaBVG</a> on <a href="/pattern/1181746/177_*#comment-397289">177 *</a><div class="light-text">how did u get those little swirls and stuff?? i ju&hellip;</div></div><div class="clear"></div>
+</div><h3 class="sub-panel-header">1,114 ACTIVE LOVERS</h3><div id="recently-active-lovers" class="sub-panel-dark" style="padding-bottom: 5px;"><a href="/lover/prosson" class="avatar-image" title="prosson" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/leshommes" class="avatar-image" title="leshommes" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/lyidios" class="avatar-image" title="lyidios" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarFemale.png);"></a><a href="/lover/gabsie92" class="avatar-image" title="gabsie92" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarFemale.png);"></a><a href="/lover/Sirografik" class="avatar-image" title="Sirografik" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/ingabird" class="avatar-image" title="ingabird" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/WarBossTilt" class="avatar-image" title="WarBossTilt" style="background-image: url(http://static.colourlovers.com/images/lovers/439/439484t.jpg?1292959996);"></a><a href="/lover/pengicupcake" class="avatar-image" title="pengicupcake" style="background-image: url(http://static.colourlovers.com/images/lovers/502/502515t.jpg?1292959995);"><span class="sponsor" title="Sponsor"></span></a><a href="/lover/soulim" class="avatar-image" title="soulim" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarMale.png);"></a><a href="/lover/birdahonk" class="avatar-image" title="birdahonk" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarMale.png);"></a><a href="/lover/tyom" class="avatar-image" title="tyom" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarMale.png);"></a><a href="/lover/lorenzdearabia" class="avatar-image" title="lorenzdearabia" style="background-image: url(http://static.colourlovers.com/images/lovers/538/538272t.jpg?1292959991);"></a><a href="/lover/day2church" class="avatar-image" title="day2church" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/CuddleSnuggle" class="avatar-image" title="CuddleSnuggle" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/mayko48" class="avatar-image" title="mayko48" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarMale.png);"></a><a href="/lover/LUCIFUGE%20ROFOCALE" class="avatar-image" title="LUCIFUGE ROFOCALE" style="background-image: url(http://static.colourlovers.com/images/lovers/160/160014t.jpg?1292959986);"></a><a href="/lover/mslovinglife216" class="avatar-image" title="mslovinglife216" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><a href="/lover/Kerouac" class="avatar-image" title="Kerouac" style="background-image: url(http://static.colourlovers.com/images/lovers/284/284777t.jpg?1292959984);"></a><a href="/lover/BruWretzky" class="avatar-image" title="BruWretzky" style="background-image: url(http://static.colourlovers.com/images/lovers/115/115247t.jpg?1292959984);"></a><a href="/lover/vikthegreat" class="avatar-image" title="vikthegreat" style="background-image: url(http://static.colourlovers.com/images/v4.0/_/lover/noAvatarPat.png);"></a><div class="clear"></div><div class="paging mt-10 mb-0"><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',1,null,true,'recently-active-lovers'); return false;">&laquo;</a><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',1,null,true,'recently-active-lovers'); return false;" class="selected">1</a><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',2,null,true,'recently-active-lovers'); return false;">2</a><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',3,null,true,'recently-active-lovers'); return false;">3</a><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',4,null,true,'recently-active-lovers'); return false;">4</a><span>&hellip;</span><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',23355,null,true,'recently-active-lovers'); return false;">23,355</a><a href="#" onclick="buildAjaxUpdaterRequest('recently-active-lovers','/',2,null,true,'recently-active-lovers'); return false;">&raquo;</a><div class="clear"></div></div><div class="clear"></div>
+</div><h3 class="sub-panel-header">Love Stats</h3><div class="sub-panel-dark"><p>There are currently <strong>467,090 Lovers</strong> sharing <strong>3,289,254 Colors</strong> in <strong>1,391,725 Palettes</strong> and <strong>1,206,382 Patterns</strong>.</p><p>Lovers have scored the lovely Colors, Palettes &amp; Patterns <strong>5,730,263 times</strong> and left <strong>2,772,831 comments</strong>.</p></div></div><div class="clear"></div>
+</div></div><div class="footer-shell">
+<div class="footer">
+<div class="col">
+<h2><a href="/browse" style="color: #cbb3b3;">Browse</a></h2>
+<ul style="color: #998787;"><li><div></div><a href="/colors">Colors</a></li><li><div></div><a href="/palettes">Palettes</a></li><li><div></div><a href="/patterns">Patterns</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/create" style="color: #cbbfb3;">Create</a></h2>
+<ul style="color: #999087;"><li><div></div><a href="/palettes/add">Palettes</a></li><li><div></div><a href="/patterns/add">Patterns</a></li><li><div></div><a href="/colors/add">Colors</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/community" style="color: #cbc6b3;">Community</a></h2>
+<ul style="color: #999587;"><li><div></div><a href="/forums">Forums</a></li><li><div></div><a href="/groups">Groups</a></li><li><div></div><a href="/lovers">Lovers</a></li><li><div></div><a href="/blog">Blog</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/channels" style="color: #c8cbb3;">Channels</a></h2>
+<ul style="color: #979987;"><li><div></div><a href="/business">Business</a></li><li><div></div><a href="/craft">Craft</a></li><li><div></div><a href="/fashion">Fashion</a></li><li><div></div><a href="/home">Home</a></li><li><div></div><a href="/print">Print</a></li><li><div></div><a href="/web">Web</a></li><li><div></div><a href="/wedding">Wedding</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/trends" style="color: #b3cbb3;">Trends</a></h2>
+<ul style="color: #879987;"><li><div></div><a href="/business/trends/branding">Branding</a></li><li><div></div><a href="/craft/trends/handmade">Handmade</a></li><li><div></div><a href="/home/trends/interior-looks">Interior Looks</a></li><li><div></div><a href="/print/trends/magazines">Magazines</a></li><li><div></div><a href="/fashion/trends/street-fashion">Street Fashion</a></li><li><div></div><a href="/web/trends/websites">Websites</a></li><li><div></div><a href="/wedding/trends/wedding-invites">Wedding Invites</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/tools" style="color: #b3c1cb;">Tools</a></h2>
+<ul style="color: #879199;"><li><div></div><a href="/blog/2009/12/01/colorschemer-studio-2-for-mac-colourlovers">ColorSchemer</a></li><li><div></div><a href="/seamless">Seamless</a></li><li><div></div><a href="/themeleon">Themeleon</a></li><li><div></div><a href="/photocopa">PHOTOCOPA</a></li><li><div></div><a href="/copaso/ColorPaletteSoftware">COPASO</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/store" style="color: #b7b3cb;">Store</a></h2>
+<ul style="color: #8a8799;"><li><div></div><a href="/store/software">Software</a></li><li><div></div><a href="/store/fabric">Fabric</a></li><li><div></div><a href="/store/art-print">Art / Print</a></li><li><div></div><a href="/store/clothing">Clothing</a></li></ul>
+</div>
+<div class="col">
+<h2><a href="/about" style="color: #cbb3c9;">About</a></h2>
+<ul style="color: #998797;"><li><div></div><a href="/partners">Advertise</a></li><li><div></div><a href="/about">About Us</a></li><li><div></div><a href="/contact">Contact Us</a></li><li><div></div><a href="/api">API</a></li><li><div></div><a href="/privacy">Terms</a></li><li><div></div><a href="/group/Sharing_the_Love">FAQ</a></li></ul>
+</div>
+<div class="clear"></div>
+<div class="bottom-copy">
+<div class="left">
+<strong>&copy; 2010 CHROMAom, Inc. All Rights Reserved</strong>
+<a href="/privacy">Privacy &amp; Terms of Use</a>
+<p class="cc">
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license" target="_blank"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" alt="Creative Commons License" /></a>
+</p>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+				<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+				<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+				<noscript><img src="http://pixel.quantserve.com/pixel/p-0eUEUzVYOgu22.gif" style="display: none;" height="1" width="1" alt="Quantcast" /></noscript>
+					<script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+				<script type="text/javascript">
+					//<![CDATA[
+					try {
+						reinvigorate.track("05072-x9uo90cy86");
+					} catch(err) {}
+
+					_qacct = "p-0eUEUzVYOgu22";
+					quantserve();
+						_uacct = "UA-731420-1";
+						urchinTracker();
+					//]]>
+				</script>
+
+<!-- 627:PRODUCTION:web01:10.16.59.132 -->
+</body>
+</html>
