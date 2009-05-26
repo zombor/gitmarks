@@ -1,0 +1,2276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" dir="ltr">
+<head>
+<title>Extension Writing Part I: Introduction to PHP and Zend</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Rating" content="General" />
+<meta name="Distribution" content="Global" />
+<meta name="Revisit-After" content="3 Days" />
+<meta name="Copyright" content="1999-2006 Zend Technologies Ltd." />
+<meta name="WT.cg_n" content="_Zend DevZone">
+<meta name="WT.seg_1" content="Community" /> 
+<meta name="keywords" content="php, best practices, samples, articles, news, community, knowledge, Extension, Tutorials" />
+
+<link rel="search" type="application/opensearchdescription+xml"
+      href="/opensearch.xml" title="Zend DevZone" />
+
+<link rel="alternate" title="Zend Developer Zone - Home Page RSS Feed" href="http://feeds.feedburner.com/ZendDeveloperZone" type="application/rss+xml" />  
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/screen.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+<link rel="canonical" href="/article/1021" />
+<!--Fireclick implementation-->
+<script type="text/javascript">
+var fc_segment="devzone.zend.com/en";
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-291885-1']);
+_gaq.push(['_setDomainName', '.zend.com']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+
+
+
+<script type="text/javascript" src="/js/prototype.js"></script>
+<script type="text/javascript" src="/js/category_boxes.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript">
+var self_url = 'http://devzone.zend.com';
+var ajax_marker = '';
+var self_secure_url = 'https:' + self_url.substring(5);
+
+
+var watcher = null;
+
+function doThisOnLoad() {
+    javascriptize('loginlink');
+
+
+    javascriptize("add_comment");
+
+
+	displayExtFeed('/extfeeds/fetch/feed/phpdeveloper', 'extfeed-phpdeveloper');
+	displayExtFeed('/extfeeds/fetch/feed/dzonephp', 'extfeed-dzonephp');
+	displayExtFeed('/extfeeds/fetch/feed/phpwomen', 'extfeed-phpwomen');
+} // function doThisOnLoad
+</script>
+
+
+
+<script type="text/javascript" src="/js/sh/shCore.js"></script>
+<script type="text/javascript" src="/js/sh/shBrushCss.js"></script>
+<script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+<script type="text/javascript" src="/js/sh/shBrushPhp.js"></script>
+<script type="text/javascript" src="/js/sh/shBrushSql.js"></script>
+<script type="text/javascript" src="/js/sh/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/sh/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="/css/sh/shThemeDevZone.css"/>
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = '/js/sh/clipboard.swf';
+    SyntaxHighlighter.all();
+</script>
+
+</head>
+    <body onload="doThisOnLoad();">
+        <div id="lightbox_white">
+            <p>
+                DevZone uses zend.com accounts.  If you already have a zend.com account
+                you may dismiss this message and log in directly.  
+            </p><p>
+                If you don't already
+                have a zend.com account, then please continue on to register for an
+                account at zend.com.  After you are done you will be redirected back
+                to DevZone to login.
+            </p>
+            <a href="http://www.zend.com/user/register?redirect=/member/login&sub=devzone"><button>
+                Continue Registration
+            </button></a>
+            &nbsp; &nbsp;
+            <button onClick="return hideLightbox();">Dismiss</button> 
+        </div>
+        <div id="lightbox_black"></div>
+        <div id="container">
+            <div id="header">
+                <div id="logo">
+                    <a href="http://devzone.zend.com/"><span>Zend Developer Zone - Advancing the art of PHP</span></a>
+                </div>
+                <div id="logincontainer">
+                    <div id ="account">
+                        <ul>
+                                                <li><a href="/member/login?redirect=http://devzone.zend.com/article/1021" title="Login" id="loginlink">Login</a>&nbsp;|&nbsp;</li>
+                        <li><a href="http://www.zend.com/user/register?redirect=/member/login&sub=devzone" title="Create new account and profile" onclick="return showLightbox();">Register</a>&nbsp;|&nbsp;
+                        </li>
+                                                <li><a href="http://devzone.zend.com/contribute" title="Contribute content">Contribute</a></li>
+                    </ul>
+                    </div>
+
+                    <div id="loginheader">
+                        <form name="headerloginform" method="POST" action=""><ul>
+                        <li><label class="login-label">Username: </label><input type="text" size="8" class="login-text" name="username" /></li>
+                        <li><label class="login-label">Password: </label><input type="password" size="8" class="login-text" name="userpass"/></li>
+                        <input type="hidden" name="redirect" value="http://devzone.zend.com/article/1021">
+                        <li><input type="submit" class="login-button" value="Login" name="submit"></li>
+                        <li><input type="button" class="login-button" value="Cancel" onclick="divSwap('account','logincontainer');"></li>
+                        </ul></form>
+                    </div>
+                    <div id="login-pleasewait">
+                        <p> Processing login. Please wait...
+                    </div>
+                </div>
+            </div>
+            <div id="middle">
+                <div id="nav">
+                    <ul>
+                        <li><a href="http://devzone.zend.com/">Home</a></li>
+                        <li><a href="http://devzone.zend.com/articles">Articles</a></li>
+                        <li><a href="http://devzone.zend.com/tutorials">Tutorials</a></li>
+                        <li><a href="http://devzone.zend.com/podcasts">Podcasts</a></li>
+                        <li><a href="http://devzone.zend.com/news">News</a></li>
+                        <li><a href="http://devzone.zend.com/events">Events</a></li>
+                        <li><a href="http://forums.zend.com/">Forums</a></li>
+                        <li><a href="http://php.net/docs.php">PHP Manual</a></li>
+                    </ul>
+                    <div class="feed-icon"><a href="http://feeds.feedburner.com/ZendDeveloperZone" title="Zend Developer Zone - Home Page RSS Feed" rel="alternate" type="application/rss+xml" ><img src="/images/feed-icon-28x28.png" /></a></div>
+                    <div id="search">
+                    <form name="search.form" action="http://devzone.zend.com/search/entry" method="post" id="search_form">
+                      <div>
+                        <input name="search_from_url" type="hidden" value="http://devzone.zend.com/article/1021" />
+                        <input name="search_text" type="text" maxlength="80" id="search_text" class="input-text" />
+                        <input type="image" src="/images/btn_search.gif" alt="Search" value="Go" id="search_submit" class="input-button" />
+                      </div>
+                    </form>                    
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                                <div id="col-left">
+                    
+                    					<div id="popular-tags" >
+	                   <div class="tabbed" id="tabbed">
+	                       <ul class="tabs">
+	                           <li id="tagCloud">
+	                               <a class="selected">
+	                                   <b class="p1"></b><b class="p2"></b><b class="p3"></b><em>Hot Tags</em><b class="p3"></b><b class="p2"></b><b class="p1"></b>
+	                               </a>
+	                           </li>
+	                       </ul>
+	                   </div><div id="tagswrapper">
+                       <div class="tags" id="tags">
+                           <ul class="tagCloud"><li><a href="/tag/Book Pages" style="font-size: 65%;">Book Pages</a></li> <li><a href="/tag/Zend Framework" style="font-size: 150%;">Zend Framework</a></li> <li><a href="/tag/Adobe" style="font-size: 65%;">Adobe</a></li> <li><a href="/tag/Flex" style="font-size: 72%;">Flex</a></li> <li><a href="/tag/Database" style="font-size: 65%;">Database</a></li> <li><a href="/tag/Debugging" style="font-size: 65%;">Debugging</a></li> <li><a href="/tag/PEAR" style="font-size: 72%;">PEAR</a></li> <li><a href="/tag/Web Services" style="font-size: 72%;">Web Services</a></li> <li><a href="/tag/Object/Relational" style="font-size: 65%;">Object/Relational</a></li> <li><a href="/tag/symfony" style="font-size: 65%;">symfony</a></li> <li><a href="/tag/Training" style="font-size: 65%;">Training</a></li> <li><a href="/tag/Contest" style="font-size: 65%;">Contest</a></li> <li><a href="/tag/REGEX" style="font-size: 65%;">REGEX</a></li> <li><a href="/tag/Zend_Cache" style="font-size: 65%;">Zend_Cache</a></li> <li><a href="/tag/ZendCon" style="font-size: 87%;">ZendCon</a></li> <li><a href="/tag/Zend_Config" style="font-size: 65%;">Zend_Config</a></li> <li><a href="/tag/Microsoft" style="font-size: 65%;">Microsoft</a></li> <li><a href="/tag/Framework" style="font-size: 72%;">Framework</a></li> <li><a href="/tag/CouchDb" style="font-size: 65%;">CouchDb</a></li> <li><a href="/tag/Zend Studio" style="font-size: 65%;">Zend Studio</a></li> <li><a href="/tag/API" style="font-size: 72%;">API</a></li> <li><a href="/tag/PHPUnit" style="font-size: 72%;">PHPUnit</a></li> <li><a href="/tag/PECL" style="font-size: 65%;">PECL</a></li> <li><a href="/tag/curl" style="font-size: 65%;">curl</a></li> <li><a href="/tag/REST" style="font-size: 65%;">REST</a></li> <li><a href="/tag/Object Oriented Programming" style="font-size: 65%;">Object Oriented Programming</a></li> <li><a href="/tag/Eclipse" style="font-size: 65%;">Eclipse</a></li> <li><a href="/tag/FastCGI" style="font-size: 65%;">FastCGI</a></li> <li><a href="/tag/Windows" style="font-size: 65%;">Windows</a></li> <li><a href="/tag/Flash" style="font-size: 65%;">Flash</a></li> <li><a href="/tag/Open Source" style="font-size: 65%;">Open Source</a></li> <li><a href="/tag/unconference" style="font-size: 79%;">unconference</a></li> <li><a href="/tag/Streams" style="font-size: 65%;">Streams</a></li> <li><a href="/tag/PDT" style="font-size: 65%;">PDT</a></li> <li><a href="/tag/APC" style="font-size: 65%;">APC</a></li> <li><a href="/tag/Testing" style="font-size: 65%;">Testing</a></li> <li><a href="/tag/HTTP" style="font-size: 65%;">HTTP</a></li> <li><a href="/tag/Zend Server" style="font-size: 65%;">Zend Server</a></li> <li><a href="/tag/Twitter" style="font-size: 65%;">Twitter</a></li> <li><a href="/tag/Conference" style="font-size: 72%;">Conference</a></li> <li><a href="/tag/Doctrine" style="font-size: 65%;">Doctrine</a></li> <li><a href="/tag/Not Just SQL" style="font-size: 72%;">Not Just SQL</a></li> <li><a href="/tag/Zend_AMF" style="font-size: 65%;">Zend_AMF</a></li> <li><a href="/tag/Zend_OAuth" style="font-size: 65%;">Zend_OAuth</a></li> <li><a href="/tag/Code Analysis" style="font-size: 65%;">Code Analysis</a></li></ul>
+                       </div></div>
+                    </div>                    <br />
+                    
+                            <div id="right_sidebar_other" class="sidebar_outer">
+          <div align="center" class="sidebar_inner" style="background: white" >
+            <a href="http://www.zend.com/devzone_offer">
+                <img src="http://www.zend.com/r/devzone/offer.jpg"  border="0" />
+            </a>
+          </div>
+        </div><br />
+                    
+                    					<div id="quick-links">
+						<h2 class="gray-heading"><span>Quick Links</span></h2>
+						<ul class="first-level">
+    						    						      						      <li class="first" >
+    						      <a href="http://www.php.net/downloads" target="_blank">Get PHP!</a></li>
+    						      						      <li>
+    						      <a href="http://www.zend.com" target="_blank">Zend Home Page</a></li>
+    						      						      <li>
+    						      <a href="http://framework.zend.com/" target="_blank">Zend Framework</a></li>
+    						      						      <li>
+    						      <a href="http://www.zend.com/community/zend-server-ce" target="_blank">Zend Server CE</a></li>
+    						      						      <li>
+    						      <a href="http://www.zend.com/en/products/server/" target="_blank">Zend Server</a></li>
+    						      						      <li>
+    						      <a href="http://www.zend.com/en/products/studio/" target="_blank">Zend Studio</a></li>
+    						      						      <li>
+    						      <a href="http://www.zend.com/products/zend_guard" target="_blank">Zend Guard </a></li>
+    						      						      <li>
+    						      <a href="http://www.phparch.com" target="_blank">php|architect</a></li>
+    						      						      <li class="last" >
+    						      <a href="http://phppodcasts.com" target="_blank">PHP Podcasts</a></li>
+    						      												</ul>
+						<div class="bottom"></div>
+					</div>                    <br clear="all" />
+                    <div>
+                    
+                    		<div class="extfeeds" class="section-box">
+		    <div id="extfeed-phpdeveloper" class="extfeed">
+				<div class="loading">Loading feed</div>
+		    </div>
+			<div id="extfeed-dzonephp" class="extfeed">
+				<div class="loading">Loading feed</div>
+			</div>
+			<div id="extfeed-phpwomen" class="extfeed">
+				<div class="loading">Loading feed</div>
+			</div>
+		</div>                    </div>
+                </div>                
+                        
+                
+               <div id="content" class="article-page" >
+              
+              
+                           <div class="tagbar">
+                              <img class="icon" src="/images/article.png"
+                  alt="Original DevZone Content"
+                  title="Original DevZone Content" />
+                          <div class="tags">
+                                     &nbsp;<a href="/tag/Extension">Extension</a>&nbsp;
+                                     &nbsp;<a href="/tag/Tutorials">Tutorials</a>&nbsp;
+                              </div>
+         </div>
+                  <div class="info-container">
+                          <a href="http://devzone.zend.com/member/4580-SaraMG" 
+                title="Author Profile"><img src="http://www.gravatar.com/avatar/bee47565e20f4193527bd11c56d35a0a?s=30&r=g&d=identicon" alt="" /></a>
+                      <div class="info-inner">
+         <h1 id="page-heading">Extension Writing Part I: Introduction to PHP and Zend</h1>
+       <div class="article-info">
+           <span class="article-by"><a
+                href="http://devzone.zend.com/member/4580-SaraMG" 
+                title="Author profile and contributions">             SaraMG</a></span>
+           <span class="comment-block"> |
+             <a href="#comments" title="Jump to comments">             20 comments             </a> | Tuesday, March 1, 2005 
+           </span>
+                      </div>
+          </div>
+         </div>
+        <div class="clearfix"></div><br />
+
+        <div class="article-body">
+          <!-- META
+Author: Sara Golemon
+Title:  Extension Writing Part I: Introduction to PHP and Zend
+Date:   28th February 2005
+-->
+<div>
+
+<p>
+<a href='#Heading1'>Introduction</a><br />
+<a href='#Heading2'>What's an Extension?</a><br />
+<a href='#Heading3'>Lifecycles</a><br />
+<a href='#Heading4'>Memory Allocation</a><br />
+<a href='#Heading5'>Setting Up a Build Environment</a><br />
+<a href='#Heading6'>Hello World</a><br />
+<a href='#Heading7'>Building Your Extension</a><br />
+<a href='#Heading8'>INI Settings</a><br />
+<a href='#Heading9'>Global Values</a><br />
+<a href='#Heading10'>INI Settings as Global Values</a><br />
+<a href='#Heading11'>Sanity Check</a><br />
+<a href='#Heading12'>What's Next?</a><br />
+</p>
+
+<a name='Heading1'></a><h3>Introduction</h3>
+<p>
+If you're reading this tutorial, you probably have some interest in writing an
+extension for the PHP language. If not... well perhaps when we're done you'll have
+discovered an interest you didn't know existed!
+</p>
+
+<p>
+This tutorial assumes basic familiarity with both the PHP language and the
+language the PHP interpreter is written in: <b>C</b>.
+</p>
+
+<p>
+Let's start by identifying why you might want to write a PHP extension.
+</p>
+
+<ol>
+  <li>There is some library or OS specific call which cannot be made from PHP
+  directly because of the degree of abstraction inherent in the language.</li>
+  <li>You want to make PHP itself behave in some unusual way.</li>
+  <li>You've already got some PHP code written, but you know it could be faster,
+  smaller, and consume less memory while running.</li>
+  <li>You have a particularly clever bit of code you want to sell, and it's
+  important that the party you sell it to be able to execute it, but not view the
+  source.</li>
+</ol>
+
+<p>
+These are all perfectly valid reasons, but in order to create an extension, you
+need to understand what an extension is first.
+</p>
+<a name='Heading2'></a><h3>What's an Extension?</h3>
+<p>
+If you've used PHP, you've used extensions. With only a few exceptions, every
+userspace function in the PHP language is grouped into one extension or another. A
+great many of these functions are part of the <i>standard</i> extension - over 400
+of them in total. The PHP source bundle comes with around 86 extensions, having an
+average of about 30 functions each. Do the math, that's about 2500 functions. As if
+this weren't enough, <a href="http://pecl.php.net/">the PECL
+repository</a> offers over 100 additional extensions, and even more can be found
+elsewhere on the Internet.
+</p>
+
+<p>
+"With all these functions living in extensions, what's left?" I hear you ask.
+"What are they an extension <i>to</i>? What is the 'core' of PHP?"
+</p>
+
+<p>
+PHP's core is made up of two separate pieces. At the lowest levels you find
+<b>the Zend Engine (ZE)</b>. ZE handles parsing a human-readable script into
+machine-readable tokens, and then executing those tokens within a process space. ZE
+also handles memory management, variable scope, and dispatching function calls. The
+other half of this split personality is <b>the PHP core</b>. PHP handles
+communication with, and bindings to, the <b>SAPI</b> layer (Server Application
+Programming Interface, also commonly used to refer to the host environment - Apache,
+IIS, CLI, CGI, etc). It also provides a unified control layer for
+<code>safe_mode</code> and <code>open_basedir</code> checks, as well as the streams
+layer which associates file and network I/O with userspace functions like
+<code>fopen()</code>, <code>fread()</code>, and <code>fwrite()</code>.
+</p>
+
+<a name='Heading3'></a><h3>Lifecycles</h3>
+<p>
+When a given SAPI starts up, for example in response to
+<code>/usr/local/apache/bin/apachectl start</code>, PHP begins by initializing its
+core subsystems. Towards the end of this startup routine, it loads the code for each
+extension and calls their <b>Module Initialization</b> routine (<code>MINIT</code>).
+This gives each extension a chance to initialize internal variables, allocate
+resources, register resource handlers, and register its functions with ZE, so that
+if a script calls one of those functions, ZE knows which code to execute.
+</p>
+
+<p>
+Next, PHP waits for the SAPI layer to request a page to be processed. In the case
+of the CGI or CLI SAPIs, this happens immediately and only once. In the case of
+Apache, IIS, or other fully-fledged web server SAPIs, it occurs as pages are
+requested by remote users and repeats any number of times, possibly concurrently. No
+matter how the request comes in, PHP begins by asking ZE to setup an environment for
+the script to run in, then calls each extension's <b>Request Initialization</b>
+(<code>RINIT</code>) function. <code>RINIT</code> gives the extension a chance to
+set up specific environment variables, allocate request specific resources, or
+perform other tasks such as auditing. A prime example of the <code>RINIT</code>
+function in action is in the sessions extension where, if the
+<code>session.auto_start</code> option is enabled, <code>RINIT</code> will
+automatically trigger the userspace <code>session_start()</code> function and
+pre-populate the <code>$_SESSION</code> variable.
+</p>
+
+<p>
+Once the request is initialized, ZE takes over by translating the PHP script into
+<b>tokens</b>, and finally to <b>opcodes</b> which it can step through and execute.
+Should one of these opcodes require an extension function to be called, ZE will
+bundle up the arguments for that function, and temporarily give over control until
+it completes.
+</p>
+
+<p>
+After a script has finished executing, PHP calls the <b>Request Shutdown</b>
+(<code>RSHUTDOWN</code>) function of each extension to perform any last minute
+cleanup (such as saving session variables to disk). Next, ZE performs a cleanup
+process (known as <b>garbage collection</b>) which effectively performs an
+<code>unset()</code> on every variable used during the previous request.
+</p>
+
+<p>
+Once completed, PHP waits for the SAPI to either request another document or
+signal a shutdown. In the case of the CGI and CLI SAPIs, there <i>is</i> no "next
+request", so the SAPI initiates a shutdown immediately. During shutdown, PHP again
+cycles through each extension calling their <b>Module Shutdown</b>
+(<code>MSHUTDOWN</code>) functions, and finally shuts down its own core
+subsystems.
+</p>
+
+<p>
+This process may sound daunting at first, but once you dive into a working
+extension it should all gradually start to make sense.
+</p>
+
+<a name='Heading4'></a><h3>Memory Allocation</h3>
+<p>
+In order to avoid losing memory to poorly written extensions, ZE performs its own
+internal memory management using an additional flag that indicates persistence. A
+<b>persistent allocation</b> is a memory allocation that is meant to last for longer
+than a single page request. A <b>non-persistent allocation</b>, by contrast, is
+freed at the end of the request in which it was allocated, whether or not the free
+function is called. Userspace variables, for example, are allocated non-persistently
+because at the end of a request they're no longer useful.
+</p>
+
+<p>
+While an extension may, in theory, rely on ZE to free non-persistent memory
+automatically at the end of each page request, this is not recommended. Memory
+allocations will remain unreclaimed for longer periods of time, resources associated
+with that memory will be less likely to be shutdown properly, and it's just poor
+practice to make a mess without cleaning it up. As you'll discover later on, it's
+actually quite easy to ensure that all allocated data is cleaned up properly
+</p>
+
+<p>
+Let's briefly compare traditional memory allocation functions (which should only
+be used when working with external libraries) with persistent and non-persistent
+memory allocation within PHP/ZE.
+</p>
+
+<table class='tutorialTable'>
+  <tr valign='top'>
+    <th>Traditional</th>
+    <th>Non-Persistent</th>
+    <th>Persistent</th>
+  </tr>
+  <tr valign='top'>
+    <td><code>malloc(count)</code><br />
+      <code>calloc(count, num)</code>
+    </td>
+    <td><code>emalloc(count)</code><br />
+      <code>ecalloc(count, num)</code>
+    </td>
+    <td><code>pemalloc(count, 1)</code><sup>*</sup><br />
+    <code>pecalloc(count, num, 1)</code>
+    </td>
+  </tr>
+  <tr valign='top'>
+    <td><code>strdup(str)</code><br />
+      <code>strndup(str, len)</code>
+    </td>
+    <td><code>estrdup(str)</code><br />
+    <code>estrndup(str, len)</code>
+    </td>
+    <td><code>pestrdup(str, 1)</code><br />
+      <code>pemalloc() &amp; memcpy()</code>
+    </td>
+  </tr>
+  <tr valign='top'>
+    <td><code>free(ptr)</code></td>
+    <td><code>efree(ptr)</code></td>
+    <td><code>pefree(ptr, 1)</code></td>
+  </tr>
+  <tr valign='top'>
+    <td><code>realloc(ptr, newsize)</code></td>
+    <td><code>erealloc(ptr, newsize)</code></td>
+    <td><code>perealloc(ptr, newsize, 1)</code></td>
+  </tr>
+  <tr valign='top'>
+    <td><code>malloc(count * num + extr)</code><sup>**</sup></td>
+    <td><code>safe_emalloc(count, num, extr)</code></td>
+    <td><code>safe_pemalloc(count, num, extr)</code></td>
+  </tr>
+  <tr valign='bottom'>
+    <td colspan='3'>
+    * <i>The <code>pemalloc()</code> family include a 'persistent' flag which allows
+    them to behave like their non-persistent counterparts.<br />
+    &nbsp;&nbsp;&nbsp;For example:
+    <code>emalloc(1234)</code> is the same as <code>pemalloc(1234,
+    0)</code></i><br />
+    ** <i><code>safe_emalloc()</code> and (in PHP 5) <code>safe_pemalloc()</code>
+    perform an additional check to avoid integer overflows</i></td>
+  </tr>
+</table>
+<br />
+
+<a name='Heading5'></a><h3>Setting Up a Build Environment</h3>
+<p>
+Now that you've covered some of the theory behind the workings of PHP and the
+Zend Engine, I'll bet you'd like to dive in and start building something. Before you
+can do that however, you'll need to collect some necessary build tools and set up an
+environment suited to your purposes.
+</p>
+
+<p>
+First you'll need PHP itself, and the set of build tools required by PHP. If
+you're unfamiliar with building PHP from source, I suggest you take a look at
+<a href="http://www.php.net/install.unix">http://www.php.net/install.unix</a>.
+(Developing PHP extensions for Windows
+will be covered in a later article). While it might be tempting to use a binary
+package of PHP from your distribution of choice, these versions tend to leave out
+two important <i>./configure</i> options that are very handy during the development
+process. The first is <code>--enable-debug</code>. This option will compile PHP with
+additional symbol information loaded into the executable so that, if a segfault
+occurs, you'll be able to collect a core dump from it and use gdb to track down
+where the segfault occurred and why. The other option depends on which version of
+PHP you'll be developing against. In PHP 4.3 this option is named
+<code>--enable-experimental-zts</code>, in PHP 5 and later it's
+<code>--enable-maintainer-zts</code>. This option will make PHP think its operating
+in a multi-threaded environment and will allow you to catch common programming
+mistakes which, while harmless in a non-threaded environment, will cause your
+extension to be unusable in a multi-threaded one. Once you've compiled PHP using
+these extra options and installed it on your development server (or workstation),
+you can begin to put together your first extension.
+</p>
+
+<a name='Heading6'></a><h3>Hello World</h3>
+<p>
+What programming introduction would be complete without the requisite <b>Hello
+World</b> application? In this case, you'll be making an extension that exports a
+single function returning a string containing the words: "Hello World". In PHP code
+you'd probably do it something like this:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+<span style="color: #0000BB">&lt;?php<br />
+<br /></span><span style="color: #007700">function</span> <span style=
+"color: #0000BB">hello_world</span><span style="color: #007700">() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return</span> <span style="color: #DD0000">'Hello
+World'</span><span style="color: #007700">;<br />
+}<br />
+<br /></span><span style="color: #0000BB">?&gt;</span><br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Now you're going to turn that into a PHP extension. First let's create a
+directory called <i>hello</i> under the <i>ext/</i> directory in your PHP source
+tree and <code>chdir</code> into that folder. This directory can actually live
+anywhere inside or outside the PHP tree, but I'd like you to place it here to
+demonstrate an unrelated concept in a later article. Here you need to create three
+files: a <b>source file</b> containing your <code>hello_world</code> function, a
+<b>header file</b> containing references used by PHP to load your extension, and a
+<b>configuration file</b> used by <i>phpize</i> to prepare your extension for
+compiling.
+</p>
+
+<h3>config.m4</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>PHP_ARG_ENABLE(hello, whether to enable Hello
+World support,<br />
+[ --enable-hello&nbsp;&nbsp;&nbsp;Enable Hello World support])<br />
+<br />
+if test "$PHP_HELLO" = "yes"; then<br />
+&nbsp;&nbsp;AC_DEFINE(HAVE_HELLO, 1, [Whether you have Hello World])<br />
+&nbsp;&nbsp;PHP_NEW_EXTENSION(hello, hello.c, $ext_shared)<br />
+fi<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<h3>php_hello.h</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifndef PHP_HELLO_H<br />
+#define PHP_HELLO_H 1<br />
+<br />
+#define PHP_HELLO_WORLD_VERSION "1.0"<br />
+#define PHP_HELLO_WORLD_EXTNAME "hello"<br />
+<br />
+PHP_FUNCTION(hello_world);<br />
+<br />
+extern zend_module_entry hello_module_entry;<br />
+#define phpext_hello_ptr &amp;hello_module_entry<br />
+<br />
+#endif<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<h3>hello.c</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifdef HAVE_CONFIG_H<br />
+#include "config.h"<br />
+#endif<br />
+<br />
+#include "php.h"<br />
+#include "php_hello.h"<br />
+<br />
+static function_entry hello_functions[] = {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_world, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{NULL, NULL, NULL}<br />
+};<br />
+<br />
+zend_module_entry hello_module_entry = {<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_HEADER,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_EXTNAME,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_functions,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_VERSION,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_PROPERTIES<br />
+};<br />
+<br />
+#ifdef COMPILE_DL_HELLO<br />
+ZEND_GET_MODULE(hello)<br />
+#endif<br />
+<br />
+PHP_FUNCTION(hello_world)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_STRING("Hello World", 1);<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Most of the code you can see in the example extension above is just glue -
+protocol language to introduce the extension to PHP and establish a dialogue for
+them to communicate. Only the last four lines are what you might call "real code"
+which performs a task on a level that the userspace script might interact with.
+Indeed the code at this level looks very similar to the PHP code we looked at
+earlier and can be easily parsed on sight:
+</p>
+
+<ol>
+  <li>Declare a function named <code>hello_world</code></li>
+  <li>Have that function return a string: "Hello World"</li>
+  <li>....um.... 1? What's that 1 all about?</li>
+</ol>
+
+<p>
+Recall that ZE includes a sophisticated memory management layer which ensures
+that allocated resources are freed when the script exits. In the land of memory
+management however, it's a big no-no to free the same block of memory twice. This
+action, called <b>double freeing</b>, is a common cause of segmentation faults, as
+it involves the calling program trying to access a block of memory which it no
+longer owns. Similarly, you don't want to allow ZE to free a static string buffer
+(such as "Hello World" in our example extension) as it lives in program space and
+thus isn't a data block to be owned by any one process. <code>RETURN_STRING()</code>
+could assume that any strings passed to it need to be copied so that they can be
+safely freed later; but since it's not uncommon for an internal function to allocate
+memory for a string, fill it dynamically, then return it,
+<code>RETURN_STRING()</code> allows us to specify whether it's necessary to make a
+copy of the string value or not. To further illustrate this concept, the following
+code snippet is identical to its counterpart above:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_world)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;char *str;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;str = estrdup("Hello World");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_STRING(str, 0);<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+In this version, you manually allocated the memory for the "Hello World" string
+that will ultimately be passed back to the calling script, then "gave" that memory
+to <code>RETURN_STRING()</code>, using a value of <code>0</code> in the second
+parameter to indicate that it didn't need to make its own copy, it could have
+ours.
+</p>
+
+<a name='Heading7'></a><h3>Building Your Extension</h3>
+<p>
+The final step in this exercise will be building your extension as a dynamically
+loadable module. If you've copied the example above correctly, this should only take
+three commands run from <i>ext/hello/</i>:
+</p>
+
+<pre>
+$ phpize
+$ ./configure --enable-hello
+$ make
+</pre>
+
+<p>
+After running each of these commands, you should have a <i>hello.so</i>
+file in <i>ext/hello/modules/</i> . Now, as with any other PHP extension, you can
+just copy this to your extensions directory (<i>/usr/local/lib/php/extensions/</i>
+is the default, check your <i>php.ini</i> to be sure) and add the line
+<code>extension=hello.so</code> to your <i>php.ini</i> to trigger it to load on
+startup. For CGI/CLI SAPIs, this simply means the next time PHP is run; for web
+server SAPIs like Apache, this will be the next time the web server is restarted.
+Let's give it a try from the command line for now:
+</p>
+
+<pre>
+$ php -r 'echo hello_world();'
+</pre>
+
+<p>
+If everything's gone as it should, you should see <code>Hello
+World</code> output by this script, since the <code>hello_world()</code> function in
+your loaded extension returns that string, and the <code>echo</code> command
+displays whatever is passed to it (the result of the function in this case).
+</p>
+
+<p>
+Other scalars may be returned in a similar fashion, using
+<code>RETURN_LONG()</code> for integer values, <code>RETURN_DOUBLE()</code> for
+floating point values, <code>RETURN_BOOL()</code> for true/false values, and
+<code>RETURN_NULL()</code> for, you guessed it, <code>NULL</code> values. Let's take
+a look at each of those in action by adding <code>PHP_FE()</code> lines to the
+<code>function_entry</code> struct in <i>hello.c</i> and adding some
+<code>PHP_FUNCTION()</code>s to the end of the file.
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+static function_entry hello_functions[] =
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_world, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_long, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_double, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_bool, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_null, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{NULL, NULL, NULL}<br />
+};<br />
+<br />
+PHP_FUNCTION(hello_long)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_LONG(42);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_double)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_DOUBLE(3.1415926535);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_bool)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_BOOL(1);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_null)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_NULL();<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+You'll also need to add prototypes for these functions alongside the prototype
+for <code>hello_world()</code> in the header file, <i>php_hello.h</i>, so that the
+build process takes place properly:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_world);<br />
+PHP_FUNCTION(hello_long);<br />
+PHP_FUNCTION(hello_double);<br />
+PHP_FUNCTION(hello_bool);<br />
+PHP_FUNCTION(hello_null);<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Since you made no changes to the <i>config.m4</i> file, it's technically safe to
+skip the <i>phpize</i> and <i>./configure</i> steps this time and jump straight to
+<i>make</i>. However, at this stage of the game I'm going to ask you to go through
+all three build steps again just to make sure you have a nice build. In additional,
+you should call <i>make clean all</i> rather than simply <i>make</i> in the last
+step, to ensure that all source files are rebuilt. Again, this isn't necessary
+because of the types of changes you've made so far, but better safe than confused.
+Once the module is built, you'll again copy it to your extension directory,
+replacing the old version.
+</p>
+
+<p>
+At this point you could call the PHP interpreter again, passing it simple scripts
+to test out the functions you just added. In fact, why don't you do that now? I'll
+wait here...
+</p>
+
+<p>
+Done? Good. If you used <code>var_dump()</code> rather than <code>echo</code> to
+view the output of each function then you probably noticed that
+<code>hello_bool()</code> returned true. That's what the 1 value in
+<code>RETURN_BOOL()</code> represents. Just like in PHP scripts, an integer value of
+<code>0</code> equates to <code>FALSE</code>, while any other integer value equates
+to <code>TRUE</code>. Extension authors often use <code>1</code> as a matter of
+convention, and you're encouraged to do the same, but don't feel locked into it. For
+added readability, the <code>RETURN_TRUE</code> and <code>RETURN_FALSE</code> macros
+are also available; here's <code>hello_bool()</code> again, this time using
+<code>RETURN_TRUE</code>:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_bool)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_TRUE;<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Note that no parentheses were used here. <code>RETURN_TRUE</code> and
+<code>RETURN_FALSE</code> are aberrations from the rest of the
+<code>RETURN_*()</code> macros in that way, so be sure not to get caught by this
+one!
+</p>
+
+<p>
+You probably noticed in each of the code samples above that we didn't pass a zero
+or one value indicating whether or not the value should be copied. This is because
+no additional memory (beyond the variable container itself - we'll delve into this
+deeper in <a href="/node/view/id/1022">Part 2</a>) needs to be allocated - or freed
+- for simple small scalars such as these.
+</p>
+
+<p>
+There are an additional three return types: <code>RESOURCE</code> (as returned by
+<code>mysql_connect()</code>, <code>fsockopen()</code>, and
+<code>ftp_connect()</code> to name but a few), <code>ARRAY</code> (also known as a
+<code>HASH</code>), and <code>OBJECT</code> (as returned by the keyword
+<code>new</code>). We'll look at these in Part II of this series, when we cover
+variables in depth.
+</p>
+
+<a name='Heading8'></a><h3>INI Settings</h3>
+<p>
+The Zend Engine provides two approaches for managing <code>INI</code> values.
+We'll take a look at the simpler approach for now, and explore the fuller, but more
+complex, approach later on, when you've had a chance to work with global values.
+</p>
+
+<p>
+Let's say you want to define a <i>php.ini</i> value for your extension,
+<code>hello.greeting</code>, which will hold the value used to say hello in your
+<code>hello_world()</code> function. You'll need to make a few additions to
+<i>hello.c</i> and <i>php_hello.h</i> while making a few key changes to the
+<code>hello_module_entry</code> structure. Start off by adding the following
+prototypes near the userspace function prototypes in <i>php_hello.h</i>:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_MINIT_FUNCTION(hello);<br />
+PHP_MSHUTDOWN_FUNCTION(hello);<br />
+<br />
+PHP_FUNCTION(hello_world);<br />
+PHP_FUNCTION(hello_long);<br />
+PHP_FUNCTION(hello_double);<br />
+PHP_FUNCTION(hello_bool);<br />
+PHP_FUNCTION(hello_null);<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Now head over to <i>hello.c</i> and take out the current version of
+<code>hello_module_entry</code>, replacing it with the following listing:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+zend_module_entry hello_module_entry = {<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_HEADER,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_EXTNAME,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_functions,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MINIT(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MSHUTDOWN(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_VERSION,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_PROPERTIES<br />
+};<br />
+<br />
+PHP_INI_BEGIN()<br />
+PHP_INI_ENTRY("hello.greeting", "Hello World", PHP_INI_ALL, NULL)<br />
+PHP_INI_END()<br />
+<br />
+PHP_MINIT_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;REGISTER_INI_ENTRIES();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+<br />
+PHP_MSHUTDOWN_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;UNREGISTER_INI_ENTRIES();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Now, you just need to add an <code>#include</code> to the rest of the
+<code>#include</code>s at the top of <i>hello.c</i> to get the right headers for
+<code>INI</code> file support:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifdef HAVE_CONFIG_H<br />
+#include "config.h"<br />
+#endif<br />
+<br />
+#include "php.h"<br />
+#include "php_ini.h"<br />
+#include "php_hello.h"<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Finally, you can modify your <code>hello_world</code> function to use the
+<code>INI</code> value:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_world)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_STRING(INI_STR("hello.greeting"), 1);<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Notice that you're copying the value returned by <code>INI_STR()</code>. This is
+because, as far as the PHP variable stack is concerned, this is a static string. In
+fact, if you tried to modify the string returned by this value, the PHP execution
+environment would become unstable and might even crash.
+</p>
+
+<p>
+The first set of changes in this section introduced two methods you'll want to
+become very familiar with: <code>MINIT</code>, and <code>MSHUTDOWN</code>. As
+<a href="#Heading3">mentioned earlier</a>, these methods are called during the
+initial startup of the SAPI layer and during its final shutdown, respectively. They
+are not called between or during requests. In this example you've used them to
+register the <i>php.ini</i> entries defined in your extension. Later in this series,
+you'll find how to use the <code>MINIT</code> and <code>MSHUTDOWN</code> functions
+to register resource, object, and stream handlers as well.
+</p>
+
+<p>
+In your <code>hello_world()</code> function you used <code>INI_STR()</code> to
+retrieve the current value of the <code>hello.greeting</code> entry as a string. A
+host of other functions exist for retrieving values as longs, doubles, and Booleans
+as shown in the following table, along with a complementary <code>ORIG</code>
+counterpart which provides the value of the referenced <code>INI</code> setting as
+it was set in <i>php.ini</i> (before being altered by <i>.htaccess</i> or
+<code>ini_set()</code> statements).
+</p>
+
+<table class='tutorialTable'>
+  <tr valign='top'>
+    <td>Current Value</td>
+    <td>Original Value</td>
+    <td>Type</td>
+  </tr>
+  <tr valign='top'>
+    <td><code>INI_STR(name)</code></td>
+    <td><code>INI_ORIG_STR(name)</code></td>
+    <td><code>char *</code> (NULL terminated)</td>
+  </tr>
+  <tr valign='top'>
+    <td><code>INI_INT(name)</code></td>
+    <td><code>INI_ORIG_INT(name)</code></td>
+    <td>signed long</td>
+  </tr>
+  <tr valign='top'>
+    <td><code>INI_FLT(name)</code></td>
+    <td><code>INI_ORIG_FLT(name)</code></td>
+    <td>signed double</td>
+  </tr>
+  <tr valign='top'>
+    <td><code>INI_BOOL(name)</code></td>
+    <td><code>INI_ORIG_BOOL(name)</code></td>
+    <td><code>zend_bool</code></td>
+  </tr>
+</table>
+
+<p>
+The first parameter passed to <code>PHP_INI_ENTRY()</code> is a string containing
+the <b>name</b> of the entry to be used in <i>php.ini</i>. In order to avoid
+namespace collisions, you should use the same conventions as with your functions;
+that is, prefix all values with the name of your extension, as you did with
+<code>hello.greeting</code>. As a matter of convention, a period is used to separate
+the extension name from the more descriptive part of the ini setting name.
+</p>
+
+<p>
+The second parameter is the <b>initial value</b>, and is always given as a
+<code>char*</code> string regardless of whether it is a numerical value or not. This
+is due primarily to the fact that values in an <i>.ini</i> file are inherently
+textual - being a text file and all. Your use of <code>INI_INT()</code>,
+<code>INI_FLT()</code>, or <code>INI_BOOL()</code> later in your script will handle
+type conversions.
+</p>
+
+<p>
+The third value you pass is an <b>access mode modifier</b>. This is a bitmask
+field which determines when and where this <code>INI</code> value should be
+modifiable. For some, such as <code>register_globals</code>, it simply doesn't make
+sense to allow the value to be changed from within a script using
+<code>ini_set()</code> because the setting only has meaning during request startup -
+before the script has had a chance to run. Others, such as
+<code>allow_url_fopen</code>, are administrative settings which you don't want to
+allow users on a shared hosting environment to change, either via
+<code>ini_set()</code> or through the use of <i>.htaccess</i> directives. A typical
+value for this parameter might be <code>PHP_INI_ALL</code>, indicating that the
+value may be changed anywhere. Then there's
+<code>PHP_INI_SYSTEM|PHP_INI_PERDIR</code>, indicating that the setting may be
+changed in the <i>php.ini</i> file, or via an Apache directive in a <i>.htaccess</i>
+file, but not through the use of <code>ini_set()</code>. Or there's
+<code>PHP_INI_SYSTEM</code>, meaning that the value may only be changed in the
+<i>php.ini</i> file and nowhere else.
+</p>
+
+<p>
+We'll skip the fourth parameter for now and only mention that it allows the use
+of a callback method to be triggered whenever the ini setting is changed, such as
+with <code>ini_set()</code>. This allows an extension to perform more precise
+control over when a setting may be changed, or trigger a related action dependant on
+the new setting.
+</p>
+
+<a name='Heading9'></a><h3>Global Values</h3>
+<p>
+Frequently, an extension will need to track a value through a particular request,
+keeping that value independent from other requests which may be occurring at the
+same time. In a non-threaded SAPI that might be simple: just declare a global
+variable in the source file and access it as needed. The trouble is, since PHP is
+designed to run on threaded web servers (such as Apache 2 and IIS), it needs to keep
+the global values used by one thread separate from the global values used by
+another. PHP greatly simplifies this by using the TSRM (Thread Safe Resource
+Management) abstraction layer, sometimes referred to as ZTS (Zend Thread Safety). In
+fact, by this point you've already used parts of TSRM and didn't even know it.
+(Don't search too hard just yet; as this series progresses you'll come to discover
+it's hiding everywhere.)
+</p>
+
+<p>
+The first part of creating a <b>thread safe global</b> is, as with any global,
+declaring it. For the sake of this example, you'll declare one global value which
+will start out as a <code>long</code> with a value of <code>0</code>. Each time the
+<code>hello_long()</code> function is called you'll increment this value and return
+it. Add the following block of code to <i>php_hello.h</i> just after the
+<code>#define PHP_HELLO_H</code> statement:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifdef ZTS<br />
+#include "TSRM.h"<br />
+#endif<br />
+<br />
+ZEND_BEGIN_MODULE_GLOBALS(hello)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;long counter;<br />
+ZEND_END_MODULE_GLOBALS(hello)<br />
+<br />
+#ifdef ZTS<br />
+#define HELLO_G(v) TSRMG(hello_globals_id, zend_hello_globals *, v)<br />
+#else<br />
+#define HELLO_G(v) (hello_globals.v)<br />
+#endif<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+You're also going to use the <code>RINIT</code> method this time around, so you
+need to declare its prototype in the header:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_MINIT_FUNCTION(hello);<br />
+PHP_MSHUTDOWN_FUNCTION(hello);<br />
+PHP_RINIT_FUNCTION(hello);<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Now let's go over to <i>hello.c</i> and add the following just after your include
+block:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifdef HAVE_CONFIG_H<br />
+#include "config.h"<br />
+#endif<br />
+<br />
+#include "php.h"<br />
+#include "php_ini.h"<br />
+#include "php_hello.h"<br />
+<br />
+ZEND_DECLARE_MODULE_GLOBALS(hello)<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Change <code>hello_module_entry</code> by adding
+<code>PHP_RINIT(hello)</code>:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+zend_module_entry hello_module_entry = {<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_HEADER,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_EXTNAME,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_functions,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MINIT(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MSHUTDOWN(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_RINIT(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_VERSION,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_PROPERTIES<br />
+};<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+And modify your <code>MINIT</code> function, along with the addition of another
+couple of functions, to handle initialization upon request startup:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+static void
+php_hello_init_globals(zend_hello_globals *hello_globals)<br />
+{<br />
+}<br />
+<br />
+PHP_RINIT_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter) = 0;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+<br />
+PHP_MINIT_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ZEND_INIT_MODULE_GLOBALS(hello, php_hello_init_globals,
+NULL);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;REGISTER_INI_ENTRIES();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Finally, you can modify the <code>hello_long()</code> function to use this
+value:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_long)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter)++;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_LONG(HELLO_G(counter));<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+In your additions to <i>php_hello.h</i>, you used a pair of macros -
+<code>ZEND_BEGIN_MODULE_GLOBALS()</code> and <code>ZEND_END_MODULE_GLOBALS()</code>
+- to create a struct named <code>zend_hello_globals</code> containing one variable
+of type <code>long</code>. You then conditionally defined <code>HELLO_G()</code> to
+either fetch this value from a thread pool, or just grab it from a global scope - if
+you're compiling for a non-threaded environment.
+</p>
+
+<p>
+In <i>hello.c</i> you used the <code>ZEND_DECLARE_MODULE_GLOBALS()</code> macro
+to actually instantiate the <code>zend_hello_globals</code> struct either as a true
+global (if this is a non-thread-safe build), or as a member of this thread's
+resource pool. As extension authors, this distinction is one we don't need to worry
+about, as the Zend Engine takes care of the job for us. Finally, in
+<code>MINIT</code>, you used <code>ZEND_INIT_MODULE_GLOBALS()</code> to allocate a
+thread safe resource id - don't worry about what that is for now.
+</p>
+
+<p>
+You may have noticed that <code>php_hello_init_globals()</code> doesn't actually
+do anything, yet we went to the trouble of declaring <code>RINIT</code> to
+initialize the counter to <code>0</code>. Why?
+</p>
+
+<p>
+The key lies in when the two functions are called.
+<code>php_hello_init_globals()</code> is only called when a new process or thread is
+started; however, each process can serve more than one request, so using this
+function to initialize our counter to <code>0</code> will only work for the first
+page request. Subsequent page requests to the same process will still have the old
+counter value stored here, and hence will not start counting from <code>0</code>. To
+initialize the counter to <code>0</code> for every single page request, we
+implemented the <code>RINIT</code> function, which <a href="#Heading3">as you
+learned earlier</a> is called prior to every page request. We included the
+<code>php_hello_init_globals()</code> function at this point because you'll be using
+it in a few moments, but also because passing a <code>NULL</code> to
+<code>ZEND_INIT_MODULE_GLOBALS()</code> for the <code>init</code> function will
+result in a segfault on non-threaded platforms.
+</p>
+
+<a name='Heading10'></a><h3>INI Settings as Global Values</h3>
+<p>
+If you recall <a href="#Heading8">from earlier</a>, a <i>php.ini</i> value
+declared with <code>PHP_INI_ENTRY()</code> is parsed as a string value and
+converted, as needed, to other formats with <code>INI_INT()</code>,
+<code>INI_FLT()</code>, and <code>INI_BOOL()</code>. For some settings, that
+represents a fair amount of unnecessary work duplication as the value is read over
+and over again during the course of a script's execution. Fortunately it's possible
+to instruct ZE to store the <code>INI</code> value in a particular data type, and
+only perform type conversions when its value is changed. Let's try that out by
+declaring another <code>INI</code> value, a Boolean this time, indicating whether
+the counter should increment, or decrement. Begin by changing the
+<code>MODULE_GLOBALS</code> block in <i>php_hello.h</i> to the following:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+ZEND_BEGIN_MODULE_GLOBALS(hello)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;long counter;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;zend_bool direction;<br />
+ZEND_ENG_MODULE_GLOBALS(hello)<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Next, declare the <code>INI</code> value itself by changing your
+<code>PHP_INI_BEGIN()</code> block thus:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_INI_BEGIN()<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_INI_ENTRY("hello.greeting", "Hello World",
+PHP_INI_ALL, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STD_PHP_INI_ENTRY("hello.direction", "1", PHP_INI_ALL,
+OnUpdateBool, direction, zend_hello_globals, hello_globals)<br />
+PHP_INI_END()<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+Now initialize the setting in the <code>init_globals</code> method with:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+static void
+php_hello_init_globals(zend_hello_globals *hello_globals)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_globals-&gt;direction = 1;<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+And lastly, use the value of the ini setting in <code>hello_long()</code> to
+determine whether to increment or decrement:
+</p>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+PHP_FUNCTION(hello_long)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (HELLO_G(direction)) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter)++;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;} else {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter)--;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_LONG(HELLO_G(counter));<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<p>
+And that's it. The <code>OnUpdateBool</code> method you specified in the
+<code>INI_ENTRY</code> section will automatically convert any value provided in
+<i>php.ini</i>, <i>.htaccess</i>, or within a script via <code>ini_set()</code> to
+an appropriate <code>TRUE</code>/<code>FALSE</code> value which you can then access
+directly within a script. The last three parameters of
+<code>STD_PHP_INI_ENTRY</code> tell PHP which global variable to change, what the
+structure of our extension globals looks like, and the name of the global scope
+container where they're contained.
+</p>
+
+<a name='Heading11'></a><h3>Sanity Check</h3>
+<p>
+By now our three files should look similar to the following listings. (A few
+items have been moved and grouped together, for the sake of readability.)
+</p>
+
+<h3>config.m4</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>PHP_ARG_ENABLE(hello, whether to enable Hello
+World support,<br />
+[ --enable-hello&nbsp;&nbsp;&nbsp;Enable Hello World support])<br />
+<br />
+if test "$PHP_HELLO" = "yes"; then<br />
+&nbsp;&nbsp;AC_DEFINE(HAVE_HELLO, 1, [Whether you have Hello World])<br />
+&nbsp;&nbsp;PHP_NEW_EXTENSION(hello, hello.c, $ext_shared)<br />
+fi<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<h3>php_hello.h</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifndef PHP_HELLO_H<br />
+#define PHP_HELLO_H 1<br />
+<br />
+#ifdef ZTS<br />
+#include "TSRM.h"<br />
+#endif<br />
+<br />
+ZEND_BEGIN_MODULE_GLOBALS(hello)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;long counter;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;zend_bool direction;<br />
+ZEND_END_MODULE_GLOBALS(hello)<br />
+<br />
+#ifdef ZTS<br />
+#define HELLO_G(v) TSRMG(hello_globals_id, zend_hello_globals *, v)<br />
+#else<br />
+#define HELLO_G(v) (hello_globals.v)<br />
+#endif<br />
+<br />
+#define PHP_HELLO_WORLD_VERSION "1.0"<br />
+#define PHP_HELLO_WORLD_EXTNAME "hello"<br />
+<br />
+PHP_MINIT_FUNCTION(hello);<br />
+PHP_MSHUTDOWN_FUNCTION(hello);<br />
+PHP_RINIT_FUNCTION(hello);<br />
+<br />
+PHP_FUNCTION(hello_world);<br />
+PHP_FUNCTION(hello_long);<br />
+PHP_FUNCTION(hello_double);<br />
+PHP_FUNCTION(hello_bool);<br />
+PHP_FUNCTION(hello_null);<br />
+<br />
+extern zend_module_entry hello_module_entry;<br />
+#define phpext_hello_ptr &amp;hello_module_entry<br />
+<br />
+#endif<br />
+</code>
+</td>
+  </tr>
+</table>
+
+<h3>hello.c</h3>
+
+<table class='tutorialExample'>
+  <tr>
+    <td>
+<code>
+#ifdef HAVE_CONFIG_H<br />
+#include "config.h"<br />
+#endif<br />
+<br />
+#include "php.h"<br />
+#include "php_ini.h"<br />
+#include "php_hello.h"<br />
+<br />
+ZEND_DECLARE_MODULE_GLOBALS(hello)<br />
+<br />
+static function_entry hello_functions[] = {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_world, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_long, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_double, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_bool, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_FE(hello_null, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{NULL, NULL, NULL}<br />
+};<br />
+<br />
+zend_module_entry hello_module_entry = {<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_HEADER,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_EXTNAME,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_functions,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MINIT(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_MSHUTDOWN(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_RINIT(hello),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;NULL,<br />
+#if ZEND_MODULE_API_NO &gt;= 20010901<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_HELLO_WORLD_VERSION,<br />
+#endif<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STANDARD_MODULE_PROPERTIES<br />
+};<br />
+<br />
+#ifdef COMPILE_DL_HELLO<br />
+ZEND_GET_MODULE(hello)<br />
+#endif<br />
+<br />
+PHP_INI_BEGIN()<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PHP_INI_ENTRY("hello.greeting", "Hello World",
+PHP_INI_ALL, NULL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;STD_PHP_INI_ENTRY("hello.direction", "1", PHP_INI_ALL,
+OnUpdateBool, direction, zend_hello_globals, hello_globals)<br />
+PHP_INI_END()<br />
+<br />
+static void php_hello_init_globals(zend_hello_globals *hello_globals)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;hello_globals-&gt;direction = 1;<br />
+}<br />
+<br />
+PHP_RINIT_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter) = 0;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+<br />
+PHP_MINIT_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ZEND_INIT_MODULE_GLOBALS(hello, php_hello_init_globals,
+NULL);<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;REGISTER_INI_ENTRIES();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+<br />
+PHP_MSHUTDOWN_FUNCTION(hello)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;UNREGISTER_INI_ENTRIES();<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return SUCCESS;<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_world)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_STRING("Hello World", 1);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_long)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if (HELLO_G(direction)) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter)++;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;} else {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO_G(counter)--;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_LONG(HELLO_G(counter));<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_double)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_DOUBLE(3.1415926535);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_bool)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_BOOL(1);<br />
+}<br />
+<br />
+PHP_FUNCTION(hello_null)<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RETURN_NULL();<br />
+}<br />
+</code>
+</td>
+  </tr>
+</table>
+<br />
+
+<a name='Heading12'></a><h3>What's Next?</h3>
+<p>
+In this tutorial we explored the structure of a simple PHP extension which
+exported functions, returned values, declared <code>INI</code> settings, and tracked
+its internal state during the course of a request.
+</p>
+
+<p>
+In <a href="/node/view/id/1022">the next session</a> we'll explore the internal
+structure of PHP variables, and
+how they're stored, tracked, and maintained within a script environment. We'll use
+<code>zend_parse_parameters</code> to receive parameters from a program when a
+function is called, and explore ways to return more complicated results, including
+the <code>array</code>, <code>object</code>, and <code>resource</code> types
+mentioned in this tutorial.
+</p><br />
+
+<p style='text-align: center'>Copyright &copy; Sara Golemon, 2005. All rights reserved.
+</p>
+</div>
+        </div>
+        
+                <a name="comments"></a>
+        <div class="comments">
+            <h1>
+                Comments
+                                    <span class="needlogin">(Login to leave comments)</span>
+                            </h1>
+
+                                              <a name="comments-1217"></a>
+                            <div class="node_comments_new_day">Tuesday, November 14, 2006</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    THANKS!
+                    <br />
+                    </div>
+                      <span class="node_comments_date">2:04AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                f00bar <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               Hey Sara Goleman,<br />
+thanks for this simple and clear instruction! As I have to rewrite an extension from PHP4 to PHP5 it helped me a lot to get started with that and gain an understanding of the principles of the PHP-Extensions. Part IV of the tutorial would be interesting in special, so I'm very excited about that.<br />
+
+               </div>
+             </div> 
+                                                <a name="comments-1343"></a>
+                            <div class="node_comments_new_day">Thursday, December 7, 2006</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/b2e8f47c06c84ccac1e0014ea76ff9ed?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    WRITING OF WINDOWS
+                    <br />
+                    </div>
+                      <span class="node_comments_date">10:16AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/1750-rrykdotua" title="Author profile and contributions">
+                         rrykdotua
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               How can I write an extension for PHP on Windows? I would appreciate if you'll explain how to do it using Visual Studio 2005.<br />
+<br />
+Maybe I am wrong and just missing an article on this topic - then tell me the URL where I can find it.
+               </div>
+             </div> 
+                                                <a name="comments-1356"></a>
+                            <div class="node_comments_new_day">Wednesday, December 13, 2006</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    LINK TO PART II
+                    <br />
+                    </div>
+                      <span class="node_comments_date">5:00AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                Anonymous User <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               Very nice tutorial! Because it might help other readers here is the link to <br />
+part 2: &lt;a href=&quot;http://devzone.zend.com/node/comment/id/1022&quot;&gt;http://devzone.zend.com/node/comment/id/1022&lt;/a&gt;, part 2/2 is at id 1023 and part 3 at id 1024.
+               </div>
+             </div> 
+                                                <a name="comments-1380"></a>
+                            <div class="node_comments_new_day">Saturday, December 16, 2006</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    BEWARE TYPO
+                    <br />
+                    </div>
+                      <span class="node_comments_date">4:28PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                Wainstead <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               In the INI section of this article look out for the typo &quot;hell_&quot;, which should be &quot;hello_&quot;. You might get this error when trying to restart Apache:<br />
+<br />
+root# apachectl start<br />
+<br />
+Processing config directory: /private/etc/httpd/users/*.conf<br />
+<br />
+ Processing config file: /private/etc/httpd/users/swain.conf<br />
+<br />
+ Processing config file: /private/etc/httpd/users/user.conf<br />
+<br />
+/usr/sbin/apachectl: line 193: 24504 Trace/BPT trap          $HTTPD<br />
+<br />
+/usr/sbin/apachectl start: httpd could not be started<br />
+
+               </div>
+             </div> 
+                                                <a name="comments-2151"></a>
+                            <div class="node_comments_new_day">Saturday, June 9, 2007</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/1694abcb1a4cac158999e92d0c7d4bd3?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    MAKE: *** NO RULE TO MAKE TARGET `/PHP-5.2.3/EXT/HELLO/HELLO.C&#039;, NEEDED BY `HELLO.LO&#039;.  STOP.
+                    <br />
+                    </div>
+                      <span class="node_comments_date">8:50PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3065-jdelmour" title="Author profile and contributions">
+                         jdelmour
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               Hi<br />
+<br />
+thank you very much for this great introduction to building php extensions. even if its very helpful for theory, i get an error after typing &quot;make&quot; (i use openSuse 10.2 with Kernel 2.6.18.8-0.3-default):<br />
+<br />
+make: *** No rule to make target `/php-5.2.3/ext/hello/hello.c', needed by `hello.lo'.  Stop.<br />
+<br />
+I have compiled php and apache successfully like described, i typed in the three example files (config.m4, php_hello.h und php_hello.c). i can run phpize and &quot;./configure --enable-hello&quot; successfully, but after i run &quot;make&quot;, i get this error described above.<br />
+<br />
+what to do now?<br />
+thank you very much for any help!<br />
+<br />
+kind regards<br />
+jdelmour
+               </div>
+             </div> 
+                                                <a name="comments-2152"></a>
+                                                                   <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/1694abcb1a4cac158999e92d0c7d4bd3?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    YOU HAVE AN ERROR IN FILENAMES OF EXAMPLES
+                    <br />
+                    </div>
+                      <span class="node_comments_date">9:34PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3065-jdelmour" title="Author profile and contributions">
+                         jdelmour
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               hello<br />
+<br />
+you take php_hello.h/c as the filename in your example, but in config.m4 you just use &quot;hello.h/c&quot;<br />
+<br />
+if you would correct this, every user outside can safe this time i used for checking this circumstances :)<br />
+<br />
+kind regards<br />
+h. huebel
+               </div>
+             </div> 
+                                                <a name="comments-2382"></a>
+                            <div class="node_comments_new_day">Saturday, July 28, 2007</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/65a95df8681cfe532365163f334a930a?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    BUT IS THERE A SIMPLE WAY TO COMPLIE CUSTOM EXTENSION DURING TEST CASE
+                    <br />
+                    </div>
+                      <span class="node_comments_date">1:37PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3433-sirtoozee" title="Author profile and contributions">
+                         sirtoozee
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               I need to ./configure --prefix=/somewhere to get the custom_extension.so --with-apxs2=/usr/sbin/apxs2 --enable-custome_extension, then make<br />
+<br />
+I have to wait for a while, but is there a simple way to complie custom extension during test case especially just like the ffmpeg-php custom extension provides complex functions.
+               </div>
+             </div> 
+                                                <a name="comments-2383"></a>
+                                                                   <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/65a95df8681cfe532365163f334a930a?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    BUT IS THERE A SIMPLE WAY TO COMPLIE CUSTOM EXTENSION DURING TEST CASE
+                    <br />
+                    </div>
+                      <span class="node_comments_date">1:38PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3433-sirtoozee" title="Author profile and contributions">
+                         sirtoozee
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               I need to ./configure --prefix=/somewhere to get the custom_extension.so --with-apxs2=/usr/sbin/apxs2 --enable-custome_extension, then make<br />
+<br />
+I have to wait for a while, but is there a simple way to complie custom extension during test case especially just like the ffmpeg-php custom extension provides complex functions.
+               </div>
+             </div> 
+                                                <a name="comments-2524"></a>
+                            <div class="node_comments_new_day">Friday, September 7, 2007</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/ced2d278a23ba16bff986d8720e888a7?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    HI, HELP ME OUT !
+                    <br />
+                    </div>
+                      <span class="node_comments_date">11:01AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3682-rakeshs" title="Author profile and contributions">
+                         rakeshs
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               When I run the command php -r 'echo hello_world();' it show me<br />
+<br />
+Fatal error: Call to undefined function hello_world() in Command line code on line 1<br />
+<br />
+what should I do ???<br />
+
+               </div>
+             </div> 
+                                                <a name="comments-2810"></a>
+                            <div class="node_comments_new_day">Tuesday, December 11, 2007</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/92e94aa9e120f4bdd77251a81948611b?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    WONT WORK :((
+                    <br />
+                    </div>
+                      <span class="node_comments_date">11:38AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/4355-netcelli" title="Author profile and contributions">
+                         netcelli
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               I have the same problem :S Still trying to figure out why it doesnt work
+               </div>
+             </div> 
+                                                <a name="comments-2876"></a>
+                            <div class="node_comments_new_day">Thursday, December 27, 2007</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    COMPILING THE EXTENSION
+                    <br />
+                    </div>
+                      <span class="node_comments_date">10:34PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                Scott <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               When compiling the example extension on OS X, I had to use the following:<br />
+<br />
+./configure --enable-hello --with-php-config=/usr/local/bin/php-config<br />
+<br />
+This was after doing a clean build of the latest PHP sources.  If I didn't add the path to php-config, it would use the php-config that came with the system, and PHP would complain on startup that the extension and the PHP core were compiled using different API versions.<br />
+<br />
+Also note that in PHP.ini, the default location for extensions was set to &quot;./&quot;, which meant that the extension would only load if I was calling PHP from the directory in which the .so file resided.  Convenient if you don't feel like copying your .so file into another directory every time you recompile, but confusing if you expect the extensions directory to be set to /usr/local/lib/extensions!
+               </div>
+             </div> 
+                                                <a name="comments-3163"></a>
+                            <div class="node_comments_new_day">Thursday, February 21, 2008</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    CAN WE RETURN A STRUCTURE FROM PHP FUNCTION
+                    <br />
+                    </div>
+                      <span class="node_comments_date">10:13AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                Sathesh <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               This content is very much useful.. I want to return a structure from the PHP_FUNCTION(return_struct). Can anybody help me out?? 
+               </div>
+             </div> 
+                                                <a name="comments-3442"></a>
+                            <div class="node_comments_new_day">Friday, April 25, 2008</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                         <div class="node_comments_info ">
+                                      <div class="node_comments_subject">
+                    INITIALISING GLOBALS VIA PHP.INI
+                    <br />
+                    </div>
+                      <span class="node_comments_date">11:50AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                Anonymous User <span class="node_comments_author_unregistered">[unregistered]</span>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               Hi Sara,<br />
+<br />
+I am currently waiting for my copy of your Extending PHP book to arrive and using this series to get me going in the mean time. I am finding it very helpful but I am stumped by initialising of global variables from within php.ini.<br />
+<br />
+There are number of references to being able to do this in the article but no explanation of how to actually do it.<br />
+<br />
+I have trwalled the PHP.net manuals and can find lot's pertaining to the use of the ini_set() from within scipts and the way to initialise from within .htaccess files but nothing on how to achieve the same thing from within the php.ini file.<br />
+<br />
+Can anyone shed any light on this with an example of the syntax I would need to use.<br />
+<br />
+Thanks in avance,<br />
+<br />
+Alex<br />
+alex[dot]adams[at]uk[dot]thalesgroup[dot]com
+               </div>
+             </div> 
+                                                <a name="comments-4056"></a>
+                            <div class="node_comments_new_day">Friday, November 21, 2008</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/378c17116f19364c979b0fea0228f0c1?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    RETURNING 
+                    <br />
+                    </div>
+                      <span class="node_comments_date">6:33PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/6513-joaorsilva" title="Author profile and contributions">
+                         joaorsilva
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               I know it's a little late but.<br />
+<br />
+No you can't return PHP_FUNCTION(structure).<br />
+<br />
+PHP_FUNCTION just return zval's, therefore of types,<br />
+<br />
+bool<br />
+int<br />
+double<br />
+resource<br />
+array<br />
+object<br />
+<br />
+I think I didn't miss any type<br />
+<br />
+The best thing you can do is creating an associative array and return it.<br />
+<br />
+Cheers<br />
+
+               </div>
+             </div> 
+                                                <a name="comments-4082"></a>
+                            <div class="node_comments_new_day">Thursday, December 4, 2008</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/b7e9fe0a6baaa4b97903a619761a8a8a?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    ERROR &QUOT;SYMBOL NOT FOUND: __ESTRNDUP&QUOT; COMPILLING IN OS X, LEOPARD
+                    <br />
+                    </div>
+                      <span class="node_comments_date">5:08AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/3082-sandovaledwin" title="Author profile and contributions">
+                         sandovaledwin
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               Some one can help me?<br />
+<br />
+I get the error &quot;Symbol not found: __estrndup&quot; at the moment of running the php extension hello world in my Mac Book (OS X - Leopard).<br />
+<br />
+$ phpize<br />
+<br />
+$ ./configure --enable-hello --with-php-config=/usr/bin/php-config<br />
+<br />
+$ make<br />
+<br />
+$ cd modules/<br />
+<br />
+$ ls<br />
+<br />
+<br />
+hello.la	hello.so<br />
+<br />
+<br />
+$ php -r 'hello_world();'<br />
+<br />
+<br />
+<br />
+dyld: lazy symbol binding failed: Symbol not found: __estrndup<br />
+  Referenced from: /Users/carlosedwinsandovaldiaz/NetBeansProjects/test/modules/hello.so<br />
+  Expected in: flat namespace<br />
+<br />
+dyld: Symbol not found: __estrndup<br />
+  Referenced from: /Users/carlosedwinsandovaldiaz/NetBeansProjects/test/modules/hello.so<br />
+  Expected in: flat namespace<br />
+<br />
+Trace/BPT trap<br />
+
+               </div>
+             </div> 
+                                                <a name="comments-4446"></a>
+                            <div class="node_comments_new_day">Sunday, April 12, 2009</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/2e28b16c2a46bddd37f7ea8644b0256e?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    HELPFUL INFORMATION
+                    <br />
+                    </div>
+                      <span class="node_comments_date">10:40AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/7217-jasonglades" title="Author profile and contributions">
+                         jasonglades
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               I must admit these materials are very helpful for the students who are majored in Computer science disciplines.<br />
+&lt;a href=&quot;http://www.customwritings.com&quot;&gt;Writing an essay&lt;/a&gt;
+               </div>
+             </div> 
+                                                <a name="comments-12035"></a>
+                            <div class="node_comments_new_day">Wednesday, April 14, 2010</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/a11392abb06cc2b05682e7af3de38300?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    A SEPARATE PHP.INI FILE FOR CLI
+                    <br />
+                    </div>
+                      <span class="node_comments_date">1:54PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/25542-spoonerj30" title="Author profile and contributions">
+                         spoonerj30
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               If you have gotten the same error as &quot;rakeshs&quot; you should check for a second php.ini file for the CLI.  I am running Ubuntu 9.10; php.ini is located in /etc/php5/cli and /etc/php5/apache2.
+               </div>
+             </div> 
+                                                <a name="comments-12107"></a>
+                            <div class="node_comments_new_day">Friday, May 7, 2010</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/f549c72ba5233084e5fa335beeb8271c?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    MAKE: *** NO RULE TO MAKE TARGET `/PHP-5.2.3/EXT/HELLO/HELLO.C&#039;, NEEDED BY `HELLO.LO&#039;. STOP. 
+                    <br />
+                    </div>
+                      <span class="node_comments_date">1:44PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/25696-factorial" title="Author profile and contributions">
+                         factorial
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               This has been mentioned before, but I feel it's important enough to reiterate. The tutorial is wrong. <br />
+<br />
+1. Name your files hello.c and hello.h, not php_hello.c &amp; php_hello.h.<br />
+2. use &quot;hello.c&quot; instead of &quot;php_hello.c&quot; in your config.m4 file, line 6.<br />
+<br />
+Can someone at devzone please correct this tutorial?
+               </div>
+             </div> 
+                                                <a name="comments-12503"></a>
+                            <div class="node_comments_new_day">Monday, August 30, 2010</div>
+                                                                                  <div class="node_comments_inner_odd">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/e0960cb046272b48301ebf6653204e6f?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    MAKE: *** NO RULE TO MAKE TARGET `/PHP-5.2.3/EXT/HELLO/HELLO.C&#039;, NEEDED BY `HELLO.LO&#039;. STOP. 
+                    <br />
+                    </div>
+                      <span class="node_comments_date">7:52AM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/26435-benqktc" title="Author profile and contributions">
+                         benqktc
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               use ext_skel can save you a lot of trouble.
+               </div>
+             </div> 
+                                                <a name="comments-12783"></a>
+                            <div class="node_comments_new_day">Sunday, November 14, 2010</div>
+                                                                                  <div class="node_comments_inner_even">
+               
+                                                                     <div class="node_comments_info node_comments_info_member">
+                                    <img src="http://www.gravatar.com/avatar/95920bf733eb101928dc465c22cb6e0c?s=30&r=g&d=identicon" alt="" />
+                                      <div class="node_comments_subject">
+                    I WANT TO WRITE A SMALL EXTENSION WHICK RUNS OTHER PHP FUNCTION WITH A NEW THREAD
+                    <br />
+                    </div>
+                      <span class="node_comments_date">12:04PM UTC</span>
+                      &middot;
+                      <span class="node_comments_author">
+                                                <a href="http://devzone.zend.com/member/4987-leinchu" title="Author profile and contributions">
+                         leinchu
+                         </a>
+                                
+                      </span>
+                                     </div>
+               <div class="node_comments_body page_middle_links">
+               my_ext.c:<br />
+---------------------------------------------------------<br />
+PHP_FUNCTION(say_hello)<br />
+{<br />
+	zend_printf(&quot;hello world 6\n&quot;);<br />
+	zval *threaded_func;<br />
+	char *func_name;<br />
+	if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, &quot;z&quot;, &amp;threaded_func) != SUCCESS) {<br />
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, &quot;We need a parameter which is a function.\n&quot;);<br />
+		return;<br />
+	}<br />
+	if (Z_TYPE_P(threaded_func) != IS_NULL) {<br />
+		if (!zend_is_callable(threaded_func, 0, &amp;func_name TSRMLS_CC)) {<br />
+			php_error_docref(NULL TSRMLS_CC, E_WARNING, &quot;'%s' is not a valid read callback&quot;, func_name);<br />
+			efree(func_name);<br />
+			RETURN_FALSE;<br />
+		}<br />
+		efree(func_name);<br />
+	}<br />
+	if (threaded_func) {<br />
+		zval_add_ref(&amp;threaded_func);<br />
+	}<br />
+	<br />
+	pthread_t free_thread;<br />
+	if(<br />
+		(free_thread=(pthread_t)malloc(sizeof(pthread_t)))==0 <br />
+	) <br />
+	{ <br />
+		printf(&quot;Out Of Memory!\n\a&quot;); <br />
+		exit(1); <br />
+	}<br />
+		<br />
+	if(pthread_create(&amp;free_thread,NULL,threaded_func,NULL)!=0) {<br />
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, &quot;Start thread failed.\n&quot;);<br />
+	}<br />
+	zend_printf(&quot;OK\n&quot;);<br />
+}<br />
+---------------------------------------------------------<br />
+test.php<br />
+&lt;?php<br />
+function say()<br />
+{<br />
+        print &quot;==\n&quot;;<br />
+        $i=0;<br />
+        while($i&lt;3)<br />
+        {<br />
+                echo $i.&quot;\n&quot;;<br />
+                $i++;<br />
+                sleep($i);<br />
+        }<br />
+}<br />
+say_hello(say);<br />
+//sleep(10);<br />
+?&gt;<br />
+<br />
+I run test.php by using /usr/local/php/bin/php test.php<br />
+I got the following output:<br />
+hello world 6<br />
+OK<br />
+-------------------------------------------------------------<br />
+It seems that the thread didn't work, <br />
+how to make the thread work?
+               </div>
+             </div> 
+                                           </div>
+              </div>
+                
+                      <div id="col-right">
+                  
+        <div align="center" class="sidebar_inner" style="background: white; margin-left:-20px;" >
+            <p class="freetitle">Free community products:</p>
+            <a href="http://www.eclipse.org/pdt/">
+                <img src="/images/logos/pdt-logo.jpg"  border="0" />
+            </a>
+            <a href="http://framework.zend.com/">
+                <img src="/images/logos/zf-logo.jpg"  border="0" />
+            </a>
+            <a href="http://www.zend.com/community/zend-server-ce">
+                <img src="/images/logos/zend-server-ce-logo.jpg"  border="0" />
+            </a>
+        </div>
+        <p></p>
+        <div align="center" class="sidebar_inner" style="background: white; margin-left:-20px;" >
+            <a href="http://www.zend.com/devzone_webinar">
+                <img src="/images/devzone-free-webinars.jpg"  border="0" />
+            </a>
+        </div>
+        <p></p>
+        <div align="center" class="sidebar_inner" style="background: white; margin-left:-20px;" >
+            Follow DevZone on:<br />
+            <a href="http://twitter.com/devzone"><img
+                 src="http://twitter-badges.s3.amazonaws.com/twitter-b.png"
+                  alt="Follow DevZone on Twitter"/></a>
+        </div>
+      </div>                <div class="clearfix"></div>
+                <div id="footer">
+                    <a href="http://framework.zend.com" title="Powered By Zend Framework"><img src="/images/PoweredBy_ZF_4DarkBG.png" align="right" /></a><strong>Copyright &copy; 1999 - 2010 by Zend Technologies Ltd. All rights reserved.</strong><br />
+                    Zend is a trademark of Zend Technologies Ltd. |
+                    <a href='javascript:window.location="mai"+"lto:"+"devzone"+"@"+"zend"+"."+"com";' > Contact Us</a><br />
+
+                    
+                                    </div>
+            </div>
+        </div>
+
+
+<script type="text/javascript" language="javascript" src="/js/elqNow/elqCfg.js"></script>
+<script type="text/javascript" language="javascript" src="/js/elqNow/elqImg.js"></script>
+
+    </body>
+</html>
