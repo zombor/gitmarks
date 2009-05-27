@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+<html id="www-ehow-com" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+    <head>
+		<title>eHow | How To Do Just About Everything! | How To Videos & Articles</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="wa_lr" scheme="DMINSTR2" content="en-US" />
+		<meta name="studioid" scheme="DMINSTR2" content="" />
+		<meta name="contentid" scheme="DMINSTR2" content="" />
+		<meta name="category" scheme="DMINSTR2" content="" />
+		<meta name="subcategory" scheme="DMINSTR2" content="" />
+		<meta name="subsubcat" scheme="DMINSTR2" content="" />
+		<meta name="siteid" scheme="DMINSTR2" content="EHWC" />
+		<meta name="exp_name" scheme="DMINSTR2" content="Reskin2010" />
+		<meta name="exp_page" scheme="DMINSTR2" content="autocomplete" />
+		<meta name="wa_un" scheme="DMINSTR2" content="" />
+		<meta name="wa_isreg" scheme="DMINSTR2" content="" />
+		<meta name="wa_lgdin" scheme="DMINSTR2" content="" />
+		<meta name="wa_clvl" scheme="DMINSTR2" content="1" />
+		<meta name="wa_lgsrc" scheme="DMINSTR2" content="1" />
+		<meta property="fb:app_id" content="63203377906" />
+		<meta property="fb:admins" content="3403591,100000752303395,653226693" />
+        <meta name="alexaVerifyID" content="xlJch1oUHrXNtOQBpiuUCV0-rlc" />
+		 
+		<link href="http://ui.ehowcdn.com/images/favicon.ico" rel="shortcut icon" />
+		
+    
+		<script type="text/javascript">
+			function getArgs() {
+				var args = {};
+				var pairs = location.search.substring(1).split("&");
+				for(var i=0;i<pairs.length;i++) {
+					var pos = pairs[i].indexOf("=");
+					if(pos==-1) {continue;}
+					args[pairs[i].substring(0,pos)] = unescape(pairs[i].substring(pos+1));
+				}
+				return args;
+			}
+
+			var dlabs = {
+				  settings: {
+						domain: document.domain,
+						queryArgs: getArgs(),
+						scripts: new Array(),
+						urls: {
+							  siteLifeBase: 'http://sitelife.ehow.com/ver1.0',
+							  siteLifeProxy: 'http://cdn-sitelife.ehow.com/ver1.0/Direct/DirectProxy?sid=sitelife.ehow.com',
+							  siteLifeServer: 'http://sitelife.ehow.com/ver1.0/Direct/Process?sid=sitelife.ehow.com',
+							  webServices: 'http://www.ehow.com/ajax/',
+							  media: 'http://ui.ehowcdn.com',
+							  forms: 'https://www.ehow.com/forms/',
+							  web: 'http://www.ehow.com/'
+						}
+				  },
+				  user: {
+						isLoggedIn: false,
+						id: '00000000-0000-0000-0000-000000000000',
+						name: '',
+						displayName: ''
+				  },
+				  utils: new Object(),
+				  objects: new Object(),
+				  exceptions: new Object()
+			};
+			var dmucs = {
+				  demandsiteid      : '1',
+				  objectid          : '',
+				  ownerid                 : dlabs.user.id,
+				  cookie                  : '',
+				  userid                  : dlabs.user.id,
+				  username          : dlabs.user.name
+			};
+			
+			var onFBInit = [];
+			
+			function verisignWindow(obj){
+				vWin = window.open($(obj).attr("href"),'verisignWindow','height=500,width=560');
+				if (window.focus){ vWin.focus() }
+				return false;
+			}
+		    
+		</script>
+		<link rel="stylesheet" type="text/css" href="http://ui.ehowcdn.com/content/compressed/en-US/common-mXhI4A.css"/>
+
+		
+    <style type="text/css">.Expert{position:relative;height:127px;margin:0 0 20px;}.Expert h5{margin:0 0 10px 124px;padding-top:20px;color:#000;}.Expert img{position:absolute;top:0;left:0;background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/skin-sprite.png) -539px 0;padding:10px 9px 27px;}.Expert p{margin-left:124px;font-size:12px;}.Expert p a{color:#0086df;}.SocialProof{width:260px;height:135px;background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/skin-sprite.png) no-repeat -690px 0;padding:0 20px;}.SocialProof h6{font-family:Georgia;font-size:60px;color:#0086df;}.FeaturedCarousel+.Search{margin:0 0 10px;background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/horizontal-sprite.png) repeat-x 0 -96px;padding:10px 96px;}.Search .submitButton{background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/skin-sprite.png) no-repeat -370px -29px;}.ChannelContent{margin:0;}.ChannelContent dt.Style{background:url(http://dummyimage.com/130x70/000/fff.jpg&text=Sponsored) no-repeat right center;}.ChannelContent dt.Style .sponsored{display:inline;position:absolute;bottom:-1px;left:60px;height:14px;background-color:#fff;padding-left:5px;line-height:14px;font-size:14px;font-style:italic;color:#eb4898;}.FollowUs{margin:20px 0;}.NewsletterSignUp{margin:20px 0;}.FeaturedCarousel .mainStage ul li .container .background{opacity:1;}a:hover{color:#0086df;}.todaysTop .promoLogo{margin:8px 10px 0 0;}.BrowseList{margin-bottom:10px;}.promoBanner{display:block;margin-bottom:10px;}#Home .featuredCarousel .featured .controls .prev{background:url(http://ui.ehowcdn.com/_ui/lipstick/images/sprite.png) no-repeat -2px -2018px;float:left;text-indent:-5000px;height:14px;width:7px;margin-top:8px;position:absolute;bottom:5px;left:10px;z-index:10001;}#Home .featuredCarousel .featured .controls .next{background:url(http://ui.ehowcdn.com/_ui/lipstick/images/sprite.png) no-repeat left -2032px;float:left;text-indent:-5000px;height:14px;width:7px;margin-top:8px;position:absolute;bottom:5px;right:10px;}.FeaturedCarousel{margin:0 0 20px;padding-bottom:0;}#Home .Column2 #eHowAtHomeHouseAd{margin:20px 0;margin-bottom:0\9;#margin-bottom:0;}.topHowTos h2{margin:0 0 10px;}.topHowTos ol{margin-left:20px;border-top:1px dotted #acacac;}.topHowTos ol li{color:#ff6013;font-weight:bold;border:1px dotted #acacac;border-width:0 0 1px;list-style-position:outside;}.topHowTos ol li span{display:block;}.topHowTos ol li:hover{background-color:#ecf4f9;}.topHowTos ol li a{font-family:Georgia;font-weight:normal;display:block;padding:5px 0;}.happeningNow .ThumbList li{height:60px;padding:5px 5px 5px 15px;margin:2px 0;}.happeningNow .ThumbList .itemAvatar{overflow:hidden;height:50px;margin:5px 10px 0 0;}.happeningNow .ThumbList .itemAvatar img{width:40px;}.happeningNow .ThumbList .itemContent{width:200px;margin:0;}.todaysTop{padding:0 0 10px;border-bottom:1px dotted #acacac;margin:0 0 20px;margin-bottom:5px\9;#margin-bottom:5px;}.todaysTop h1{margin:0 0 20px;margin-bottom:5px\9;#margin-bottom:5px;}.todaysTop a{display:block;padding:10px 0;}.todaysTop .image{width:220px;float:left;display:inline;height:150px;overflow:hidden;margin:5px 10px 0 0;position:relative;}.todaysTop .image img{display:block;}.todaysTop .image span{display:block;background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/icons-sprite.png) no-repeat center 0;height:22px;width:22px;text-indent:-50000px;position:absolute;left:94px;top:56px;padding:5px;}.todaysTop .content{width:220px;float:left;}.todaysTop .content img{height:10px;display:block;}.todaysTop .content cite{display:block;color:#333;}.todaysTop .content cite span{color:#666;}.todaysTop .content .intro{display:block;margin:10px 0 0;color:#333;}.todaysTop .content .intro span{color:#0074e8;}.todaysTop a:hover{text-decoration:none;}.todaysTop a:hover .Heading1a,.todaysTop a:hover .intro span{text-decoration:underline;color:#0074e8;}.Ad{margin:0 0 10px;}.welcome{margin:10px 0;}.welcome .column{float:left;width:47%;padding:5px;}.welcome .column .Heading1a{text-align:center;margin:0 0 10px;}.welcome .column .column{font-size:11px;color:#4a7195;text-align:center;padding:0;}.welcome .column .first{padding:0 5px;}.welcome .column .column .Button2a,.welcome .column .column .Button3a{margin:5px 0;}.welcome .column .write{margin:20px;}.mobilePromo{background:url('/_ui/lipstick/images/misc/mobile-promo.jpg') no-repeat 330px center;border:1px solid #dde2e6;border-width:0 0 1px;padding:10px 70px;font:bold 14px/1em 'Arial';}.mobilePromo span{color:#900;}.GuideContent{margin:0 0 20px;margin-bottom:5px\9;#margin-bottom:5px;}.ehowEssentials .sponsored{top:0;right:0;position:absolute;}.GuideContent h2{margin:0 0 30px;margin-bottom:15px\9;#margin-bottom:15px;}.GuideContent .image{margin:0 10px 0 0;width:220px;height:150px;overflow:hidden;}.GuideContent .image a{display:block;width:220px;height:150px;overflow:hidden;}.GuideContent .content{width:240px;color:#000;}.GuideContent .content .intro span{color:#0074e8;}.GuideContent .content ul{border-top:1px dotted #acacac;margin-top:4px;}.GuideContent .content ul li{width:auto;height:auto;}.GuideContent .content .intro{display:block;}.GuideContent a{text-decoration:none;}.GuideContent a:hover .Heading1a,.GuideContent a:hover .intro span{text-decoration:underline;color:#0074e8;}#Home .GuideContent .content ul li{padding:0;}.GuideContent .content ul li a{display:block;padding:4px 0;}.GuideContent .content ul li a:hover{background-color:#ecf4f9;}.Column2 .GuideContent .content{width:200px;}.Column2 .GuideContent .content .title{display:block;margin:0 0 10px;}.Column2 .GuideContent .promoLogo{display:block;text-align:right;margin:0 0 10px;line-height:20px;}.Column2 .GuideContent .promoLogo span{font-size:10px;text-decoration:underline;color:#999;width:100px;float:right;}.Column2 .GuideContent .promoLogo img{float:right;width:100px;}.newArticles h3{margin:0 0 10px;}.newArticles ul{border-top:1px dotted #acacac;}.newArticles li{list-style:none;border-bottom:1px dotted #acacac;}.newArticles li a{display:block;padding:5px 0;}.newArticles li a:hover{background-color:#ecf4f9;}.ActivityNow{margin:0 0 20px;}.ActivityNow h3{margin:0 0 10px;}.ActivityNow .container{height:210px;overflow:hidden;}.ActivityNow .container ul{border-top:1px dotted #acacac;}.ActivityNow .container li{font-size:12px;}.ActivityNow li .PrettyDate{color:#676664;font-size:11px;}.ActivityNow li a{font-size:12px;}.ActivityNow li .actionText{float:left;width:170px;height:60px;overflow:hidden;margin:0;}.ActivityNow li .thumbnail{float:left;display:block;margin-right:10px;}.ActivityNow li .thumbnail img{width:40px;}.GuideContent .sliderWindow{width:433px;height:165px;}.GuideContent .sliderWindow ul li{width:433px;height:165px;}.GuideContent .image{margin:5px 10px 0 0;width:220px;overflow:hidden;}.GuideContent .image a{display:block;width:220px;height:150px;overflow:hidden;}.GuideContent .content ul li{width:auto;height:auto;}.Column2 .GuideContent .content{width:200px;}.Column2 .GuideContent .content .title{display:block;margin:0 0 10px;}.Column2 .GuideContent .content .promoLogo{width:200px;display:block;text-align:right;margin:0 0 10px;height:20px;line-height:20px;position:absolute;bottom:0;left:0;}.Column2 .GuideContent .content .promoLogo span{font-size:10px;text-decoration:underline;color:#999;width:100px;float:right;}.Column2 .GuideContent .content .promoLogo img{float:right;width:100px;}.Column3 .GuideContent .sliderWindow,.Column3 .GuideContent .sliderWindow ul li{width:280px;height:370px;}.Column3 .GuideContent .image,.Column3 .GuideContent .image a{width:280px;height:190px;overflow:hidden;}.Column3 .GuideContent .image{margin:0 0 5px;}.Column3 .GuideContent .image a img{width:280px;height:190px;}.Column3 .GuideContent .content{width:280px;}.Column3 .GuideContent .content .subHeading{padding-top:10px;}.Column3 .GuideContent .content ul li{height:auto;}.Column3 .GuideContent h2{margin:0 0 10px;margin-bottom:5px\9;#margin-bottom:5px;}.Column3 .GuideContent a.goRight,.Column3 .GuideContent a.goLeft{top:80px;}.communityChatter{margin-bottom:30px;}.communityChatter .Heading2a{margin:0 0 30px;}.communityChatter .Heading2a a{padding:0 0 5px;border-bottom:7px solid #3d9bf9;}.communityChatter .content{background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/icons-sprite.png) no-repeat left -920px;padding:12px 0 0 100px;}.communityChatter .content p{margin:0;line-height:1.3em;}.featuredItems{margin:0 0 20px;margin-bottom:5px\9;#margin-bottom:5px;}.featuredItems .FeaturedItem,.EOTD{float:left;width:220px;}.EOTD{margin-left:30px;}.EOTD .itemContent .intro{margin:0 0 20px;}#ActivityNowList li{padding:5px 0;border-bottom:1px dotted #acacac;list-style:none;}#ActivityNowList li .actionText{margin:0;}.featuredIDidThis{margin:0 0 20px;}.featuredIDidThis .SliderList{margin:10px 0;-moz-box-shadow:0 0 5px rgba(0,0,0,0.20);-webkit-box-shadow:0 0 5px rgba(0,0,0,0.20);box-shadow:0 0 5px rgba(0,0,0,0.20);position:relative;}.featuredIDidThis .SliderList .viewIndicator{list-style-type:none;width:60px;margin:0 auto;}.featuredIDidThis .SliderList .viewIndicator li{float:left;width:7px;height:22px;background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/icons-sprite.png) no-repeat left 50%;margin-right:5px;}.featuredIDidThis .SliderList .viewIndicator li.current{background-position:-12px 50%;}.featuredIDidThis .sliderWindow{width:286px;height:200px;}.featuredIDidThis .featuredIDTList li{width:286px;height:198px;}.featuredIDidThis .featuredIDTList li .itemAvatar{display:block;overflow:hidden;width:286px;height:142px;}.featuredIDidThis .featuredIDTList li .itemContent{margin:10px 0;}.featuredIDidThis .featuredIDTList li .itemContent span{display:block;margin:3px 0 0;}.featuredIDidThis a.goLeft{background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/icons-sprite.png) no-repeat left -741px;display:block;height:36px;width:36px;position:absolute;top:71px;left:-10px;z-index:999;}.featuredIDidThis a.goRight{background:url(http://ui.ehowcdn.com/_ui/skins/corporate/images/icons-sprite.png) no-repeat left -705px;display:block;height:36px;width:36px;position:absolute;top:71px;right:-10px;z-index:999;}.ehowEssentials .article{display:block;}.FBActivity{margin:10px 0;}.FacebookRecommendedArticles{display:none;}.FacebookRecommendedArticles .container{padding:0 15px 10px;}.FacebookRecommendedArticles li{float:left;width:214px;margin:0 0 10px;}.FacebookRecommendedArticles li.odd{clear:left;}.FacebookRecommendedArticles li li{float:none;margin:0 0 2px;}.FacebookRecommendedArticles li li img{float:left;width:50px;margin-right:5px;}</style>
+
+
+		<style type="text/css">
+			@media screen and (max-width: 1050px) {
+				.ChannelBanner { padding:0 5px; }
+				.ChannelBanner .leftArrow, .ChannelBanner .rightArrow { display:none; }
+			}
+		</style>
+		<script type="text/javascript" src="http://ui.ehowcdn.com/content/compressed/en-US/commonLite-G2xunA.js"></script>
+
+		
+    <script type="text/javascript">(function($){$.ux.behavior('Slider',{initialize:function(){this._pauseRotate=0;this._currentPage=1;this.prevButton=$(".prev",this.element).css("visibility","hidden");this.nextButton=$(".next",this.element);if(this.options.lazyLoad)this.imagesLoaded=false;if(this.options.updateItemNumbers){this.currentPage=$(".current",this.element);this.totalPages=$(".total",this.element);}
+this.updateCounts();this._currentPageItem=1;if(this.options.slideType=='fade'){$.fn.reverse=[].reverse;$("ul.imageSlider",this.element).html($("li",this.element).reverse());$("ul li",this.element).show();}
+if(this.options.lazyLoad){$("li img:last",this.element).lazyImage({callback:function(){$(this).imageContainer({useParentContainer:true})}});}
+var $this=this;UserAction.add(function(){if($this.options.autoAdvance){$this.setDelay();}});},onclick:$.delegate({'.prev':function(element,event){this.prev();},'.next':function(element,event){this.next();}}),onmouseenter:function(){this._pauseRotate=1;},onmouseleave:function(){this._pauseRotate=0;},prev:function(){if(this.options.autoAdvance){this.setDelay();}
+if(this._currentPage>1||this.options.autoRotate){this._currentPage--;this._currentPageItem--;}
+if(this._currentPageItem<1){this._currentPageItem=this._totalPages;}
+if(this.options.autoRotate&&this._currentPage<=1){if(this.options.slideType=='fade'){}else{$("li:first",this.element).before($("li:last",this.element));$("ul",this.element).animate({"left":'-='+this.options.elementWidth+'px'},0);}
+this._currentPage++;}
+this._checkNav();this.nextButton.css("visibility","visible");this.slide('left');this.dispatchEvent("Prev");return false;},next:function(fromAutoAdvance){var self=this;if(!this.imagesLoaded&&this.options.lazyLoad){$('li img:eq('+(this._totalItems-2)+')',this.element).lazyImage({callback:function(){$(this).imageContainer({useParentContainer:true});self.imagesLoaded=true;self.next(fromAutoAdvance);}});}
+if(this.options.autoAdvance){this.setDelay();if(fromAutoAdvance&&this._pauseRotate){return false;}}
+if(this.imagesLoaded||!this.options.lazyLoad){if(this._currentPage<this._totalPages||this.options.autoRotate){this._currentPage++;this._currentPageItem++;}
+if(this._currentPageItem>this._totalPages){this._currentPageItem=1;}
+if(this.options.autoRotate&&this._currentPage>this._totalItems){if(this.options.slideType=='fade'){}else{$("li:last",this.element).after($("li:first",this.element));$("ul",this.element).animate({"left":'+='+this.options.elementWidth+'px'},0);}
+this._currentPage--;}
+this._checkNav();this.prevButton.css("visibility","visible");this.slide('right');this.dispatchEvent("Next");this.imagesLoaded=false;}
+return false;},_checkNav:function(){if(this._currentPage==1&&!this.options.autoRotate){this.prevButton.css("visibility","hidden");}else{this.prevButton.css("visibility","visible");}
+if(this._totalPages<=(this._currentPage)&&!this.options.autoRotate){this.nextButton.css("visibility","hidden");}else{this.nextButton.css("visibility","visible");}
+if(this.options.updateItemNumbers){this._updateItemCounts();}},_updateItemCounts:function(){this.currentPage.html(this._currentPageItem);},setDelay:function(){var self=this;this.clearDelay();this._slideTimer=setTimeout(function(){self.next(true)},this.options.slideDelay);},clearDelay:function(){clearTimeout(this._slideTimer);},slide:function(dir){var self=this;if(dir=="right"){if(this.options.slideType=='fade'){$("ul li:last",this.element).fadeOut('slow',function(){$("li:first",self.element).before($("li:last",self.element));$("li:first",self.element).show();});}else{$("ul",this.element).animate({"left":'-='+(this.options.elementWidth*this.options.numberPerPage)+'px'});}}else{if(this.options.slideType=='fade'){$("li:last",this.element).after($("li:first",this.element));$("li:last",this.element).hide().fadeIn('slow',function(){});}else{$("ul",this.element).animate({"left":'+='+(this.options.elementWidth*this.options.numberPerPage)+'px'});}}},updateCounts:function(){this._totalItems=$("li",this.element).length;this._totalPages=Math.ceil(this._totalItems/this.options.numberPerPage);if(this.options.updateItemNumbers){this.totalPages.html(this._totalItems);}
+this._checkNav();}},{autoRotate:true,autoAdvance:true,slideDelay:5000,updateItemNumbers:false,elementWidth:100,numberPerPage:1,slideType:'slide',lazyLoad:true});})(jQuery);$(document).ready(function(){$('.featuredImageWindow').attach('Slider',{autoRotate:true,elementWidth:470,updateItemNumbers:true,slideDelay:8000,slideType:'fade'});(function(){var scrollWindowOptions={itemList:$("#topicGuidesSlider").find(".guideSlider"),marginWidth:0,itemsPerView:1,viewIndicator:$("#topicGuidesSlider .viewIndicator"),navLeft:$("#topicGuidesSlider .goLeft"),navRight:$("#topicGuidesSlider .goRight")};dlabs.objects.scrollWindow=new scrollWindow(scrollWindowOptions);setTimeout('dlabs.objects.scrollWindow.initAutoRotate($("#topicGuidesSlider"))',8000);})();var calloutOptions={style:'2',childClassToPad:'.Heading1a'};(function(){var scrollWindow2Options={itemList:$("#featuredIDidThis").find(".featuredIDTList"),marginWidth:0,itemsPerView:1,navLeft:$("#featuredIDidThis .goLeft"),navRight:$("#featuredIDidThis .goRight")};if($('body').hasClass('US')){dlabs.objects.scrollWindow2=new scrollWindow(scrollWindow2Options);setTimeout('dlabs.objects.scrollWindow2.initAutoRotate($("#featuredIDidThis"))',8000);}})();});(function($){$.phader=function(element,options){var self=this;self.options=$.extend($.phader.defaults,options||{});var debug=this.options.debug;$.extend(self,{element:element,isMoving:false,isPaused:false,isStopped:false,sideStage:$('.jsPhaderSideStage',this.element),mainStage:$('.jsPhaderMainStage',this.element),sideStageHeight:function(){return(($('li',self.sideStage).length-self.options.sideStageItemsShown)*self.options.sideStageItemSize.height);},reverseStages:function(){var _tmp=$.fn.reverse;$.fn.reverse=[].reverse;$("ul",this.mainStage).html($("ul li",this.mainStage).reverse());$("ul",this.sideStage).html($("ul li",this.sideStage).reverse());$.fn.reverse=_tmp;},setupTooltips:function(){if(self.options.useTooltips){try{$('.jsPhaderContainer .jsPhaderSideStage li a').tooltip(self.options.tooltipOptions);}catch(e){}}},setupSideStage:function(){$('ul li:last',this.sideStage).insertBefore($('ul li:first',this.sideStage));$("ul",this.sideStage).css({bottom:this.sideStageHeight()});this.setupTooltips();},setupMainStage:function(){var self=this;$("li.video a",this.mainStage).bind("click",function(){var $parent=$(this).parent().parent();$(".videoThumbnail",$parent).hide();$(".videoPlayer",$parent).show();self.isStopped=true;$(self.element).trigger("phaderVideoPlaying");return false;});},resetVideos:function(){$("li.video .videoThumbnail",this.mainStage).show();$("li.video .videoPlayer",this.mainStage).hide();},_setTimeout:function(){$this=this;this._main=setTimeout(function(){$this.main()},this.options.delay);},_clearTimeout:function(){clearTimeout(this._main);},advance:function(forced){if(this.isMoving||(this.isPaused&&!forced)||(this.isStopped&&!forced))return;this._clearTimeout();this.isMoving=true;this.imageLoaded=false;$this=this;$("ul",this.sideStage).animate({bottom:'-='+this.options.sideStageItemSize.height+'px'},function(){$("li:last",this).prependTo(this);$(this).css({bottom:$this.sideStageHeight()});$this.isMoving=false;$this._setTimeout();if(self.isStopped){self.resetVideos();self.isStopped=false;}});$("ul li:last",this.mainStage).fadeOut('slow',function(){$("li:first",$this.mainStage).before($("li:last",$this.mainStage));$("li:first",$this.mainStage).show();});this.setupTooltips();this.options.onSwitch(forced);$(this.element).trigger("phaderAdvance");$(this.element).trigger("phaderChanged");},reverse:function(forced){if(this.isMoving||(this.isPaused&&!forced)||(this.isStopped&&!forced))return;this._clearTimeout();this.isMoving=true;this.imageLoaded=false;$this=this;if(this.isStopped){this.resetVideos();this.isStopped=false;}
+$('ul li:first',this.sideStage).clone().insertAfter($('ul li:last',this.sideStage));$("ul",this.sideStage).animate({bottom:'+='+this.options.sideStageItemSize.height+'px'},function(){$("li:first",this).remove();$(this).css({bottom:$this.sideStageHeight()});$this.isMoving=false;$this._setTimeout();if(self.videoPlaying){self.resetVideos();self.videoPlaying=false;}});$("li:last",this.mainStage).after($("li:first",this.mainStage));$("li:last",this.mainStage).hide().fadeIn('slow',function(){});this.setupTooltips();this.options.onSwitch(forced);$(this.element).trigger("phaderReverse");$(this.element).trigger("phaderChanged");},main:function(){this.advance(false);this._setTimeout();}});self.reverseStages();self.setupSideStage();self.setupMainStage();$(window).load(function(){$("img.lazy",self.element).lazyImage({callback:function(){$(this).imageContainer({useParentContainer:true});},completeCallback:function(){self._setTimeout();}});$(self.element).bind("mouseenter",function(){self.isPaused=true;});$(self.element).bind("mouseleave",function(){self.isPaused=false;});});$('.jsPhaderAdvance').click(function(){self.advance(true);return false;});$('.jsPhaderReverse').click(function(){self.reverse(true);return false;});};$.phader.defaults={debug:false,delay:5000,sideStageItemSize:{height:75,width:98},sideStageItemsShown:4,useTooltips:true,tooltipOptions:{offset:[-13,0],useLayout:true},onSwitch:function(){}};$.fn.phader=function(options){return this.each(function(){var element=$(this);if(element.data('phader'))return;var phader=new $.phader(element,options);element.data('phader',phader);});}})(jQuery);(function($){$.tooltip=function(element,options){var self=this;self.options=$.extend({},$.tooltip.defaults,options||{});$.extend(self,{element:element,currentTooltip:$(this.options.layout),content:'',getTooltipContent:function(){var content="";if(self.options.selector!=''){if(self.options.useLayout){content=$(self.options.selector).html();}else{content=self.options.selector;}}
+if(content==""&&self.element.attr('name')!=""){if(self.options.useLayout){content=$("#"+self.element.attr('name')).html();}else{content="#"+self.element.attr('name');}}
+if(self.options.useLayout){if(content==""&&self.element.attr('title')!=""&&self.options.useTitle){content=self.element.attr('title');self.element.attr("title","");self.content=content;}}
+return content;},getElementLocation:function(){return this.element.offset();},removeTooltip:function(){this.currentTooltip.fadeOut(0,function(){if(self.options.useLayout){$(this).remove();}else{$(this).hide();}
+if(self.options.useTitle)self.element.attr('title',self.content);});},createTooltip:function(){var content=this.getTooltipContent();if(content=="")return false;if(this.options.useLayout){var tooltip=$(this.currentTooltip).addClass(this.options.tipClass).html(content).hide().appendTo('body');}else{var tooltip=$(content);self.currentTooltip=tooltip;}
+if(self.options.useLayout){var offsets={left:self.getElementLocation().left+self.options.offset[0],top:self.getElementLocation().top+self.options.offset[1]};if(self.options.offsetSelfWidth){offsets.left=offsets.left-tooltip.width();}
+tooltip.css({position:'absolute',left:offsets.left,top:offsets.top});}else{tooltip.css({left:self.options.offset[0],top:self.options.offset[1]})}
+tooltip.show();}});if(self.options.bindParent){var bindElement=element.parent();}else{var bindElement=element;}
+bindElement.hover(function(){self._timeout=setTimeout(function(){self.createTooltip()},self.options.delay);},function(){self.removeTooltip();clearTimeout(self._timeout);});};$.tooltip.defaults={offset:[0,0],offsetSelfWidth:true,selector:'',layout:'<div/>',tipClass:'Tooltip',useTitle:false,delay:500,useLayout:true,bindParent:false};$.fn.tooltip=function(options){return this.each(function(){var element=$(this);if(element.data('tooltip'))return;var tooltip=new $.tooltip(element,options);element.data('tooltip',tooltip);});};})(jQuery);(function($){$(function(){$('.jsPhaderContainer').phader({sideStageItemSize:{height:75,width:98}});});})(jQuery);</script>
+
+	<meta content="Learn how to do just about everything at eHow. Expert Village is now a part of eHow, adding expert How To videos to eHow, the world's most popular place to find How To instructions and articles." name="description" />
+	<meta content="How, Ehow, ehow.com, how to, how to do, how to instructions, how to articles, expert how to, how to video" name="keywords" />
+	<meta name="y_key" content="4d4cb4ef1ad334cb" />
+	<link rel="canonical" href="http://www.ehow.com/" />
+
+
+	
+
+	<script type="text/javascript">
+		dartAds.defaults.currentCulture = "en-US";
+		dartAds.setParams("homepage", [
+			{ vid: 0 },
+			{ ugc: 0 },
+			{ lvl: 4 }]);
+	</script>
+
+
+
+		<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="http://ui.ehowcdn.com/content/compressed/en-US/ieHacks-EJ3dvQ.css"/>
+
+		<![endif]-->
+
+
+		
+		
+		<!-- AUDIENCESCIENCE AD TAG CODE -->
+		<script type="text/javascript">
+			var rsi_segs = [];
+			var segs_beg=document.cookie.indexOf('rsi_segs=');
+			if (segs_beg>=0){ segs_beg=document.cookie.indexOf('=',segs_beg)+1;
+				if(segs_beg>0){var segs_end=document.cookie.indexOf(';',segs_beg);
+					if(segs_end==-1) segs_end=document.cookie.length;
+					rsi_segs=document.cookie.substring(segs_beg,segs_end).split('|');
+				}
+			}
+			var segLen=20;
+			var segQS="";
+			if (rsi_segs.length<segLen){segLen=rsi_segs.length}
+			for (var i=0;i<segLen;i++){
+				segQS+=("rsi"+"="+rsi_segs[i]+";")
+			}
+		</script>
+		<!-- END AUDIENCESCIENCE AD TAG CODE -->
+
+        
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-709906-67']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+	</head>
+    
+    <body id="Template3a" class="US">
+
+		<div class="Wrapper">
+	
+        
+    			<!-- #Secondary Nav : start -->
+    			<div class="SecondaryNav">
+        	<div class="Frame FLC">
+        	
+							
+
+		        		<div class="blog"><span data-copy="eHow Blog: "></span>
+			
+							<a class="jsNoFollow" rel="http://www.ehow.com/blog/"><span data-copy="How to cope with Christmas"></span></a>
+			
+		        		</div>
+
+        	</div>
+        </div>
+				<!-- Secondary Nav :end -->
+        
+		
+			<!-- #Header : start -->
+		<div class="Header">
+        	<div class="Frame">
+
+					<div class="logo">
+						<a  href="http://www.ehow.com/" title="eHow - How to Videos &amp; Articles"><img src="http://ui.ehowcdn.com/_ui/skins/corporate/images/ehow-logo.png" alt="eHow - How to do just about everything" /></a>
+					</div>
+        		
+	    			<form method="get" action="http://www.ehow.com/search.aspx" id="SearchHeader" class="Search jsSearch">
+    					<fieldset>
+							<input type="text" class="jsDefaultInput jsSearchInput" name="s" value="" autocomplete='off' />
+						</fieldset>
+						<div class="googleLogo"></div>
+						
+						<input type="submit" class="submitButton" value="Search"/>
+					</form>
+					
+					
+					<div class="dartAd">
+						
+		<center><script type="text/javascript">dartAds.renderAd([{ sz: '249x77' }, { dcopt:'ist'}]);</script></center>
+	
+                   	</div>
+                   				
+                </div>
+	        </div>
+			<!-- Header : end -->
+
+			<div class="PrimaryNav">
+				<div class="Frame ChannelBanner">
+					<ul class="main">
+					    <li><a href="http://www.ehow.com/"><div class="homeIcon"></div></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-family/"><span data-copy="Family">Family</span></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-food/"><span data-copy="Food">Food</span></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-health/"><span data-copy="Health">Health</span></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-home/"><span data-copy="Home">Home</span></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-money/"><span data-copy="Money">Money</span></a></li>
+						
+					    <li ><a href="http://www.ehow.com/ehow-style/"><span data-copy="Style">Style</span></a></li>
+						
+                        <li><a href="http://www.ehow.com/how-to.html">More</a></li>
+				    
+						
+					</ul>
+
+					<ul class="community second">
+					    <li >
+							
+<div class="subNav">
+	<div class="container FLC">    
+	    <ul>
+	        <li ><a class="jsNoFollow" rel="http://www.ehow.com/forums.aspx"><span data-copy="Forums"></span></a></li>
+			
+	        <li ><a class="jsNoFollow" rel="http://feedback.ehow.com"><span data-copy="Feedback"></span></a></li>
+			
+	        <li ><a class="jsNoFollow" rel="http://www.ehow.com/members.html"><span data-copy="Members"></span></a></li>
+	        <li ><a class="jsNoFollow" rel="http://www.ehow.com/groups.aspx"><span data-copy="Groups"></span></a></li>
+			
+	        <li class="last "><a class="jsNoFollow" rel="http://www.ehow.com/blog/" target="_blank"><span data-copy="eHow Blog"></span></a></li>
+	        
+	    </ul>
+	</div>
+</div>
+
+							<a class="jsNoFollow" rel="http://www.ehow.com/community.html"><span data-copy="Community"></span></a>
+						</li>							
+						
+							<li  class="last"  ><a class="jsNoFollow" rel="http://www.ehow.com/share.html"><span data-copy="Share"></span></a></li>
+				
+				</ul>
+					<span class="leftArrow"></span>
+					<span class="rightArrow"></span>
+	
+            </div>
+        </div>
+        
+	        <div class="SeasonalNav">
+				<div class="Frame">
+					
+						<dl class="seasonal">
+							<dt><span data-copy="This Season:">This Season:</span></dt>
+							
+								<dd>
+							    	<a href="http://www.ehow.com/ehow-holidays/"><span data-copy="Holidays">Holidays</span></a>
+									
+								</dd>
+							
+						</dl>
+						<dl class="sponsored">
+							<dt><span data-copy="Don't Miss:">Don't Miss:</span></dt>
+							
+								<dd>
+									<a href="http://www.ehow.com/ehow-beauty-guide/"><span data-copy="Beauty Guide">Beauty Guide</span></a>
+									
+								</dd>
+							
+						</dl>
+					
+						<ul class="login">
+							
+									<li><a class="jsNoFollow thinbox" rel="http://www.ehow.com/account/simple_login.aspx"><span data-copy="Sign In"></span></a></li>
+									<li><a class="jsNoFollow thinbox" rel="http://www.ehow.com/account/simple_register.aspx"><span data-copy="Join"></span></a></li>
+									
+									<li class="last"><a class="jsFacebookConnect FacebookConnectButton"><span data-copy="Connect"></span></a></li>
+									
+						</ul>
+					
+		
+        </div>
+        </div>
+        
+        <div class="Content" id="Home">
+				<div class="Frame FLC">
+            
+                        
+
+<div class="Column1">
+	<div class="BrowseList">
+		<h3 class="header Heading2a">Browse How To<span>s</span></h3>
+			<ul>
+				<li id="cat-17"><a href="http://www.ehow.com/arts-and-entertainment/">Arts &amp; Entertainment</a></li><li id="cat-30"><a href="http://www.ehow.com/beauty-and-personal-care/">Beauty &amp; Personal Care</a></li><li id="cat-8"><a href="http://www.ehow.com/business/">Business</a></li><li id="cat-27"><a href="http://www.ehow.com/car-repair-and-maintenance/">Car Repair &amp; Maintenance</a></li><li id="cat-3"><a href="http://www.ehow.com/careers/">Careers</a></li><li id="cat-7"><a href="http://www.ehow.com/cars/">Cars</a></li><li id="cat-32"><a href="http://www.ehow.com/computer-software/">Computer Software</a></li><li id="cat-5"><a href="http://www.ehow.com/computers/">Computers</a></li><li id="cat-18"><a href="http://www.ehow.com/culture-and-society/">Culture &amp; Society</a></li><li id="cat-19"><a href="http://www.ehow.com/education/">Education</a></li><li id="cat-16"><a href="http://www.ehow.com/electronics/">Electronics</a></li><li id="cat-6"><a href="http://www.ehow.com/fashion-and-style/">Fashion &amp; Style</a></li><li id="cat-9"><a href="http://www.ehow.com/food-and-drink/">Food &amp; Drink</a></li><li id="cat-10"><a href="http://www.ehow.com/health/">Health</a></li><li id="cat-11"><a href="http://www.ehow.com/hobbies-games/">Hobbies, Games &amp; Toys</a></li><li id="cat-15"><a href="http://www.ehow.com/holidays-and-celebrations/">Holidays &amp; Celebrations</a></li><li id="cat-12"><a href="http://www.ehow.com/home/">Home &amp; Garden</a></li><li id="cat-20"><a href="http://www.ehow.com/internet/">Internet</a></li><li id="cat-29"><a href="http://www.ehow.com/job-search-and-employment/">Job Search &amp; Employment</a></li><li id="cat-21"><a href="http://www.ehow.com/legal/">Legal</a></li><li id="cat-31"><a href="http://www.ehow.com/music/">Music</a></li><li id="cat-22"><a href="http://www.ehow.com/parenting/">Parenting</a></li><li id="cat-24"><a href="http://www.ehow.com/personal-finance/">Personal Finance</a></li><li id="cat-2"><a href="http://www.ehow.com/pets-and-animals/">Pets &amp; Animals</a></li><li id="cat-28"><a href="http://www.ehow.com/real-estate-and-investment/">Real Estate &amp; Investment</a></li><li id="cat-26"><a href="http://www.ehow.com/recipes/">Recipes</a></li><li id="cat-1"><a href="http://www.ehow.com/relationships-and-family/">Relationships &amp; Family</a></li><li id="cat-4"><a href="http://www.ehow.com/sports/">Sports &amp; Fitness</a></li><li id="cat-14"><a href="http://www.ehow.com/travel/">Travel</a></li><li id="cat-25"><a href="http://www.ehow.com/weddings-and-parties/">Weddings &amp; Parties</a></li>
+			</ul>
+		</div>
+
+    
+<a rel="http://www.ehow.com/MailingList.html" class="NewsletterSignup jsNoFollow">
+	<span class="heading" data-copy="eHow<br />delivers daily."></span>
+	<span class="text" data-copy="Start your day with advice and inspiring ideas."></span>
+	<span class="link" data-copy="Sign up for newsletters"></span>
+	<span class="icon"></span>
+</a>
+	
+	<div class="topHowTos">
+		<h2 class="Heading2a">Top 10 eHows</h2>
+		<ol>
+			
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_9920_roast-chestnuts-oven.html">How to Roast Chestnuts in the Oven</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_1163_boil-egg.html">How to Boil an Egg</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_2284675_tell-cheesecake-done.html">How to Tell if your Cheesecake is Done</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_2091718_set-up-linksys-wireless-router.html">How to Set up a Linksys Wireless Router</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_2187421_transfer-music-ipod-itunes.html">How to Transfer Music From Ipod to Itunes</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_4811027_reheat-smoked-turkey-leg.html">How to Reheat a Smoked Turkey Leg</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_16919_play-uno.html">How to Play UNO</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_114248_keep-pie-crust.html">How to Keep a Pie Crust From Getting Soggy</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_5215115_change-startup-programs-windows-7.html">How to Change Startup Programs in Windows 7</a></span></li>
+				
+				<li class="FLC"><span><a class="jsNoFollow" rel="http://www.ehow.com/how_11530_make-quick-icing.html">How to Make Quick Icing</a></span></li>
+				
+		</ol>
+	</div>
+</div>
+	
+<div class="Column2">
+	
+		
+	<div class="FeaturedCarousel jsPhaderContainer">
+		<div class="mainStage jsPhaderMainStage">
+			<ul>
+        		
+        		<li class="slide-0">
+					
+			
+					<a href="http://www.ehow.com/how_7414870_make-own-printable-holiday-cards.html" class="thumbnail">
+						
+							<img alt="How to Make Your Own Printable Holiday Cards" src="http://i.ehow.com/images/photos/article/000725/70/48/095650/65/02/NzE~NDEz_l.jpg" />
+						
+	      			</a>
+	
+					<div class="container">
+						<div class="background"></div>
+						<div class="content">
+							<div class="title">
+								<a href="http://www.ehow.com/how_7414870_make-own-printable-holiday-cards.html">
+									<span class="heading">DIY Holiday Cards </span>
+									<span class="subHeading">Create a heartfelt gift</span>
+		        				</a>
+							</div>
+						</div>
+					</div>
+        		</li>
+        		
+        		<li class="slide-1">
+					
+			
+					<a href="http://www.ehow.com/list_7595991_5-stuffers-budgets-under-5.html" class="thumbnail">
+						
+							<img alt="5 Best Stocking Stuffers for Budgets Under $5" class="lazy" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000750/91/59/095650/65/02/MTI~NDA3_l.jpg" />
+						
+	      			</a>
+	
+					<div class="container">
+						<div class="background"></div>
+						<div class="content">
+							<div class="title">
+								<a href="http://www.ehow.com/list_7595991_5-stuffers-budgets-under-5.html">
+									<span class="heading">5 Best Stocking Stuffers for Under $5</span>
+									<span class="subHeading">Gifts everyone will appreciate</span>
+		        				</a>
+							</div>
+						</div>
+					</div>
+        		</li>
+        		
+        		<li class="slide-2">
+					
+			
+					<a href="http://www.ehow.com/way_5576974_should-emergency-survival-kit-winter.html" class="thumbnail">
+						
+							<img alt="What Should You Keep in Your Emergency Survival Kit for Winter?" class="lazy" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000550/74/69/095650/65/02/NzA~NDEz_l.jpg" />
+						
+	      			</a>
+	
+					<div class="container">
+						<div class="background"></div>
+						<div class="content">
+							<div class="title">
+								<a href="http://www.ehow.com/way_5576974_should-emergency-survival-kit-winter.html">
+									<span class="heading">Make a Winter Survival Kit </span>
+									<span class="subHeading">Don't be caught without one</span>
+		        				</a>
+							</div>
+						</div>
+					</div>
+        		</li>
+        		
+        		<li class="slide-3">
+					
+			
+					<a href="http://www.ehow.com/how_5524605_cope-holiday-stranding.html" class="thumbnail">
+						
+							<img alt="How to Cope With Airport Strandings" class="lazy" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000550/05/46/095650/65/02/NzI~NDEz_l.jpg" />
+						
+	      			</a>
+	
+					<div class="container">
+						<div class="background"></div>
+						<div class="content">
+							<div class="title">
+								<a href="http://www.ehow.com/how_5524605_cope-holiday-stranding.html">
+									<span class="heading">Cope With Airport Strandings</span>
+									<span class="subHeading">Survive delayed flights</span>
+		        				</a>
+							</div>
+						</div>
+					</div>
+        		</li>
+        		
+        		<li class="slide-4">
+					
+			
+					<a href="http://www.ehow.com/how_2119875_stress-out-holiday-travel.html" class="thumbnail">
+						
+							<img alt="How to Take the Stress Out of Holiday Travel" class="lazy" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000200/75/98/095650/65/02/NzM~NDEz_l.jpg" />
+						
+	      			</a>
+	
+					<div class="container">
+						<div class="background"></div>
+						<div class="content">
+							<div class="title">
+								<a href="http://www.ehow.com/how_2119875_stress-out-holiday-travel.html">
+									<span class="heading">Take the Stress Out of Holiday Travel</span>
+									<span class="subHeading">Reduce travel anxiety and tension</span>
+		        				</a>
+							</div>
+						</div>
+					</div>
+        		</li>
+        		
+	        </ul>
+		</div>
+		<div class="sideStage jsPhaderSideStage">
+			<ul>
+                
+				<li class="slide-0">
+					<a href="http://www.ehow.com/how_7414870_make-own-printable-holiday-cards.html" name="phaderTooltip0">
+						<img alt="How to Make Your Own Printable Holiday Cards" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000725/70/48/095650/65/02/NzE~NDEz_s.jpg" class="lazy" />
+					</a>
+					<div id="phaderTooltip0" class="Tooltip">
+						<p>
+							<strong>DIY Holiday Cards </strong><br>
+							Create a heartfelt gift
+						</p>
+	       		</div>
+				</li>
+		        
+				<li class="slide-1">
+					<a href="http://www.ehow.com/list_7595991_5-stuffers-budgets-under-5.html" name="phaderTooltip1">
+						<img alt="5 Best Stocking Stuffers for Budgets Under $5" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000750/91/59/095650/65/02/MTI~NDA3_s.jpg" class="lazy" />
+					</a>
+					<div id="phaderTooltip1" class="Tooltip">
+						<p>
+							<strong>5 Best Stocking Stuffers for Under $5</strong><br>
+							Gifts everyone will appreciate
+						</p>
+	       		</div>
+				</li>
+		        
+				<li class="slide-2">
+					<a href="http://www.ehow.com/way_5576974_should-emergency-survival-kit-winter.html" name="phaderTooltip2">
+						<img alt="What Should You Keep in Your Emergency Survival Kit for Winter?" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000550/74/69/095650/65/02/NzA~NDEz_s.jpg" class="lazy" />
+					</a>
+					<div id="phaderTooltip2" class="Tooltip">
+						<p>
+							<strong>Make a Winter Survival Kit </strong><br>
+							Don't be caught without one
+						</p>
+	       		</div>
+				</li>
+		        
+				<li class="slide-3">
+					<a href="http://www.ehow.com/how_5524605_cope-holiday-stranding.html" name="phaderTooltip3">
+						<img alt="How to Cope With Airport Strandings" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000550/05/46/095650/65/02/NzI~NDEz_s.jpg" class="lazy" />
+					</a>
+					<div id="phaderTooltip3" class="Tooltip">
+						<p>
+							<strong>Cope With Airport Strandings</strong><br>
+							Survive delayed flights
+						</p>
+	       		</div>
+				</li>
+		        
+				<li class="slide-4">
+					<a href="http://www.ehow.com/how_2119875_stress-out-holiday-travel.html" name="phaderTooltip4">
+						<img alt="How to Take the Stress Out of Holiday Travel" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/photos/article/000200/75/98/095650/65/02/NzM~NDEz_s.jpg" class="lazy" />
+					</a>
+					<div id="phaderTooltip4" class="Tooltip">
+						<p>
+							<strong>Take the Stress Out of Holiday Travel</strong><br>
+							Reduce travel anxiety and tension
+						</p>
+	       		</div>
+				</li>
+		        
+			</ul>
+			<div class="reverse"><a href="" class="jsPhaderReverse"></a></div>
+			<div class="advance"><a href="" class="jsPhaderAdvance"></a></div>
+	    	</div>
+		</div>
+	
+		
+			<div class="AdUnit300" id="eHowAtHomeHouseAd">
+				
+<center>
+<!-- begin ad tag (tile=2) -->
+<script language="javascript" type="text/javascript">
+	var adUrl;
+	
+	adUrl = '<scr'+'ipt type="text/javascript" src="http://ad.doubleclick.net/adj/dmd.ehow/homepage;vid=0;ugc=0%QC%;%RSI%tile=2;sz=470x40;ord=1140622036131388?" width="470" height="40" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"><\/script>';
+		
+	if (typeof quantSegs !== "undefined" && quantSegs.length > 0) {
+		adUrl = adUrl.replace('%QC%', quantSegs);
+	} else {
+		adUrl = adUrl.replace('%QC%', "");
+	}
+	if (typeof segQS!== "undefined" && segQS.length > 0) {
+		adUrl = adUrl.replace('%RSI%', segQS);
+	} else {
+		adUrl = adUrl.replace('%RSI%', "");
+	}
+	
+	
+	document.write(adUrl);
+			
+</script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/dmd.ehow/homepage;vid=0;ugc=0%QC%;%RSI%tile=2;sz=470x40;ord=1140622036131388?" target="_blank">
+		<img src="http://ad.doubleclick.net/ad/dmd.ehow/homepage;vid=0;ugc=0%QC%;%RSI%tile=2;sz=470x40;ord=1140622036131388?" width="470"
+			height="40" border="0" alt="" />
+	</a>
+</noscript>
+</center>
+<!-- end ad tag -->
+
+			</div>
+		
+	
+	<div class="todaysTop">
+		
+				<h1 class="Heading2a Underline"><span>Today's Top How To </span></h1>
+		
+		<a href="http://www.ehow.com/how_4523930_creatively-exercise-winter.html" class="FLC">
+			<span class="image">
+					
+							<img alt="How to Creatively Exercise in the Winter" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a04/a1/sq/creatively-exercise-winter-220X220.jpg" class="jsImageContainerAlignTop" />
+							
+			</span>
+			<span class="content">
+				<span class="Heading1a">How to Creatively Exercise in the Winter</span>
+				<cite>by 
+						
+						<span>Heather Ashare, MPH</span>
+					
+					</cite>
+					
+				<span class="intro">
+						No, you can't start making up excuses to neglect your work out when the weather starts to chill. You have to keep your...
+					<span>More</span>
+				</span>
+			</span>
+		</a>
+			
+		</div>
+	
+	
+				
+	<div class="GuideContent ehowEssentials">
+			<h2 class="Heading2a Underline">
+				
+			<span>eHow Essentials</span>
+			</h2>
+			<a href="http://www.ehow.com/topic_8470_homemade-christmas.html" class="article FLC">
+				<span class="image">
+					<img alt="Have a Homemade Christmas" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/GlobalPhoto/TopicGuides/DS8470/8470-main_Temp1.jpg" />
+				</span>
+				<span class="content">
+					<span class="Heading1a">Have a Homemade Christmas</span>
+					<span class="intro">Nothing says Christmas like homemade crafts and decorations. From Christmas cards to tree ideas...
+						<span>More</span>
+					</span>
+				</span>
+			</a>
+			</div>
+	
+
+	<div class="featuredItems FLC">
+		
+			
+			<div class="FeaturedItem">
+			<h2 class="title Heading2a Underline"><span>Featured How Tos</span></h2>
+				
+			<a href="http://www.ehow.com/how_5781233_print-holiday-pictures-like-pro.html" class="mainArticle">
+				
+				<span class="featuredItemImage">
+					<img alt="How to Print Holiday Photos Like a Pro" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a05/gd/nh/print-holiday-pictures-like-pro-220X220.jpg" class="jsImageContainerAlignCenter" />
+					<span data-copy="play how to video"></span>
+				</span>
+			
+				<span class="featuredItemContent">
+					<span class="Heading2a">How to Print Holiday Photos Like a Pro</span>
+					<cite class="Note">by Richard Burke</cite>
+					<span class="intro">You have survived the holidays. You have opened your presents, eaten too much and have snapped dozens of photos of the family.... <span>More</span></span>
+				</span>
+				</a>
+				
+			<p class="moreArticles Heading5a">More Articles About: <a class="jsNoFollow" rel="http://www.ehow.com/arts-and-entertainment/">Arts & Entertainment</a></p>
+				
+				<ul class="BulletList">
+					
+						<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/list_6060697_handmade-picture-gifts-holidays.html">Handmade Picture Gifts for the Holidays</a></li>
+						
+						<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/how_4556920_choose-good-colors-holiday-picture.html">How to Choose Good Colors for a Holiday Picture</a></li>
+						
+						<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/how_5598069_photograph-holiday-lights-night.html">How to Photograph Holiday Lights at Night</a></li>
+						
+				</ul>
+			</div>			
+			
+
+<div class="EOTD">
+	<h2 class="Underline Heading2a"><span>eHow of the Day</span></h2>
+	
+	<a href="http://www.ehow.com/how_2193549_keep-bathroom-warm-this-winter.html" class="mainArticle">
+	
+		<span class="featuredItemImage">
+	    	<img alt="How to Keep a Bathroom Warm in Winter" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a02/2u/4d/keep-bathroom-warm-this-winter-220X220.jpg" class="jsImageContainerAlignCenter" />
+	    
+	</span>
+	
+	    <span class="itemContent">
+			<span class="Heading2a">How to Keep a Bathroom Warm in Winter</span>
+	    	<cite class="Note">by Murray Anderson</cite>
+	    	<span class="intro">
+	    		Doesn't the idea of a nice, long, warm bath or shower sound great-particularly on a cold winter morning? However, if your next...
+	    		<span>More</span>
+	    	</span>
+		</span>
+	</a>
+
+			
+    	<ul class="BulletList">
+			
+			<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/how_5504_avoid-family-discord.html">How to Avoid Family Discord During the Holidays</a></li>
+            
+			<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/how_5610558_whole-around-tree-half-hate.html">How to Get Your (Not So Merry) Family Around the Tree</a></li>
+            
+			<li class="Heading5a"><a class="jsNoFollow" rel="http://www.ehow.com/video_7573208_make-christmas-rice-pudding.html">How to Make Christmas Rice Pudding</a></li>
+            
+        </ul>
+        
+        <a rel="http://www.ehow.com/MailingList.html" class="jsNoFollow NewsletterSignup email"><span data-copy="Get the <em>eHow of the Day</em><br /> delivered to your inbox"></span><span class="icon"></span></a>
+        
+
+</div>
+
+		</div>
+
+	
+	<div class="communityChatter FLC">
+		<h2 class="Heading2a Underline"><span>Watch How To Videos</span></h2>
+		<div class="content">
+			<p>eHow now has over 150,000 <a class="jsNoFollow" rel="http://www.ehow.com/videos.html">How to videos!</a>  These video tutorials will provide you with even more ways to research, share and discuss all things How To. We value your feedback, so don't hesitate to share your comments with us.</p>
+		</div>
+	</div>
+	
+</div>
+	
+<div class="Column3">
+	<div class="AdUnit300">
+	
+		<div class="DartAd" data-dartAdSize="[300, 250]" data-dartAdParams="[{ sz: '300x250'}]"></div>
+		
+	
+	</div>
+	
+	
+	<div class="GuideContent" id="topicGuidesSlider">
+		<h2 class="Heading2a FLC">eHow Topic Guides</h2>
+			<div class="SliderList box1Content FLC">
+				<div class="sliderWindow">
+					<ul class="guideSlider">
+						
+									<li>
+											
+									<div class="image">
+										
+											<a class="jsNoFollow" rel="http://www.ehow.com/winterize-a-garden/"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a05/nu/0u/garden-flowers-winter-220X220.jpg" alt="How to Garden Flowers in Winter" /></a>
+										
+									</div>
+									<div class="content">
+										<a rel="http://www.ehow.com/winterize-a-garden/" class="Heading2a title jsNoFollow">Winterize a Garden</a>
+									    
+											
+											<div class="subHeading">Related Essentials:</div>
+											<ul>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_8016_outdoor-garden-fountains-guide.html">Outdoor Garden...</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_8047_water-garden-fountains-101.html">Water Garden...</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_7992_floor-water-fountains-101.html">Floor Water Fountains 101</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_7853_floor-fountains-guide.html">Floor Fountains Guide</a></li>
+													
+												</ul>
+											
+										</div>
+									</li>
+								
+									<li>
+											
+									<div class="image">
+										
+											<a class="jsNoFollow" rel="http://www.ehow.com/home-security-alarm/"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a04/ds/cn/home-security-alarms-220X220.jpg" alt="About Home Security Alarms" /></a>
+										
+									</div>
+									<div class="content">
+										<a rel="http://www.ehow.com/home-security-alarm/" class="Heading2a title jsNoFollow">Home Security Alarm</a>
+									    
+											
+											<div class="subHeading">Related Essentials:</div>
+											<ul>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_4127_home-alarm-system-guide.html">Home Alarm System Guide</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_3990_home-security-systems-guide.html">Home Security Systems...</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_401_home-alarms.html">Home Alarms</a></li>
+													
+												</ul>
+											
+										</div>
+									</li>
+								
+									<li>
+											
+									<div class="image">
+										
+											<a class="jsNoFollow" rel="http://www.ehow.com/photos/"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a06/co/3k/sell-photos-stock-photo-website-220X220.jpg" alt="How to Sell Photos on a Stock Photo Website" /></a>
+										
+									</div>
+									<div class="content">
+										<a rel="http://www.ehow.com/photos/" class="Heading2a title jsNoFollow">Photos</a>
+									    
+											
+											<div class="subHeading">Related Essentials:</div>
+											<ul>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_227_take-pictures.html">Take Photos</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_689_black-white-photos.html">Take Black and White...</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_745_capture-enduring-wedding-photos.html">Capture Enduring...</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_4989_photo-sharing-101.html">Photo Sharing 101</a></li>
+													
+												</ul>
+											
+										</div>
+									</li>
+								
+									<li>
+											
+									<div class="image">
+										
+											<a class="jsNoFollow" rel="http://www.ehow.com/christmas-gag-gifts/"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a05/5q/hn/christmas-gag-gifts-make-220X220.jpg" alt="Christmas Gag Gifts to Make" /></a>
+										
+									</div>
+									<div class="content">
+										<a rel="http://www.ehow.com/christmas-gag-gifts/" class="Heading2a title jsNoFollow">Christmas Gag Gifts</a>
+									    
+											
+											<div class="subHeading">Related Essentials:</div>
+											<ul>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_2367_gag-gifts-101.html">Gag Gifts 101</a></li>
+													
+												</ul>
+											
+										</div>
+									</li>
+								
+									<li>
+											
+									<div class="image">
+										
+											<a class="jsNoFollow" rel="http://www.ehow.com/flu-season/"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://i.ehow.com/images/a04/9o/44/prepare-flu-season-220X220.jpg" alt="How to Prepare for Flu Season" /></a>
+										
+									</div>
+									<div class="content">
+										<a rel="http://www.ehow.com/flu-season/" class="Heading2a title jsNoFollow">Flu Season</a>
+									    
+											
+											<div class="subHeading">Related Essentials:</div>
+											<ul>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_4028_preparing-flu-season.html">Preparing for Flu Season</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_3818_flu-guide.html">Flu Guide</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_429_all-flu.html">All About the Flu</a></li>
+													
+														<li><a class="jsNoFollow" rel="http://www.ehow.com/topic_49_treating-colds-flus.html">Treat Colds and Flus</a></li>
+													
+												</ul>
+											
+										</div>
+									</li>
+								
+					</ul>
+				</div>
+			<a class="goLeft"></a>
+			<ul class="viewIndicator"></ul>
+			<a class="goRight"></a>
+			</div>
+		</div>
+	
+	<div class="facebookRecentActivity">
+		<img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/facebook-loading-graphic.gif" />
+	</div>
+	
+		
+</div>
+
+
+					
+            </div>
+        </div>
+        
+			
+
+			<div class="Footer">
+            <div class="Frame">
+			
+					<div class="container">
+			
+						<form method="get" action="http://www.ehow.com/search.aspx" id="SearchFooter" class="Search jsSearch">
+    						<fieldset>
+								<input type="text" class="jsDefaultInput jsSearchInput" name="s" value="" autocomplete='off' />
+    						</fieldset>
+							<input type="submit" class="submitButton" value="Search" />
+                        </form>
+
+						
+						<ul class="FLC">
+							<li><a href="http://www.ehow.com/">Home<sup>&#8224;</sup></a></li>
+							<li><a class="jsNoFollow" rel="http://www.ehow.com/about_us/link_to_us.aspx"><span data-copy="Link to eHow"></span><sup>&#8224;</sup></a></li>
+							<li><a href="http://www.ehow.com/sitemap.html">Article Sitemap</a></li>
+                            <li><a href="http://www.ehow.com/videos.html"><span data-copy="How To Videos">How To Videos</span></a></li>
+                            <li><a class="jsNoFollow" rel="http://www.ehow.com/blog/"><span data-copy="Blog"></span></a></li>
+                            <li><a href="http://www.ehow.com/about_us/about_us.aspx"><span data-copy="About eHow">About eHow</span></a></li>
+                            
+                            <li><a class="jsNoFollow" rel="http://www.ehow.co.uk"><span data-copy="United Kingdom"></span></a></li>
+                            
+							<li><a href="http://www.ehow.com/about_us/contact_us.aspx"><span data-copy="Contact Us">Contact Us</span></a></li>
+							<li><a class="jsNoFollow" rel="http://www.ehow.com/ehow-mobile.aspx"><span data-copy="Mobile"></span></a></li>
+							<li><a href="http://www.ehow.com/about_us/faq_ehow.aspx"><span data-copy="FAQ">FAQ</span></a></li>
+							<li><a class="jsNoFollow" rel="http://www.demandstudios.com/ehow-writers.html?utm_source=EHOWcom&utm_medium=banner&utm_campaign=ehow"><span data-copy="Write for eHow"></span></a></li>
+							
+							<li><a href="http://www.ehow.com/site-map.html">Sitemap</a></li>
+                            
+						    <li><a class="jsNoFollow" rel="http://feedback.ehow.com"><span data-copy="Feedback"></span></a></li>
+						    
+							<li><a href="http://www.ehow.com/how-to.html">How Tos</a></li>
+							
+                        </ul>
+						
+        
+			        	<p>Copyright &copy; 1999-2010 eHow, Inc. Use of this web site constitutes acceptance of the eHow <a href="http://www.ehow.com/terms_use.aspx">Terms of Use</a> <sup>&#8224;</sup> and <a href="http://www.ehow.com/privacy.aspx">Privacy Policy</a> <sup>&#8224;</sup>. <abbr title="">en-US</abbr><br />&#8224; requires javascript</p>
+	            
+           		
+					<div class="verisignSeal jsVerisignSeal" title="Click to Verify - This site chose VeriSign Trust Seal to promote trust online with consumers.">
+						<!--<script type="text/javascript" src="https://trustseal.verisign.com/getseal?host_name=www.ehow.com&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>-->
+						<a href="https://trustsealinfo.verisign.com/splash?dn=www.ehow.com&amp;lang=en" onclick="return verisignWindow(this)"><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" class="LazyLoadImage" longdesc="http://ui.ehowcdn.com/_ui/lipstick/images/misc/verisign-seal.png"></a>
+					</div>
+				
+		
+					<dl>
+			          	<dt>Partner Sites</dt>
+		              	<dd><a href="http://www.answerbag.com/">Answerbag</a></dd>
+						<dd><a href="http://www.livestrong.com/">Livestrong</a></dd>
+					</dl>
+	    
+	            <img class="LazyLoadImage" src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/pixel.gif" longdesc="http://ui.ehowcdn.com/_ui/lipstick/images/comscore/DemandMedia.gif" alt="Demand Media" />
+		
+
+			</div>
+	
+        </div>
+        </div>
+        
+        <span id="CategoryTrackingTag"></span>
+		<script type="text/javascript">
+			$('[data-copy]').each(function(i){
+				var dataText = $(this).attr('data-copy');
+				$(this).html(dataText);
+			});
+		</script>
+		
+        
+	<script type="text/javascript">
+	
+		(function($){
+			addLoadEvent(function(){
+				$(".featuredIDidThis img").lazyImage({ callback: function() { 
+					$(this).imageContainer({useParentContainer: true});
+				}});
+			},0);
+			$('#topicGuidesSlider').onVisible({ onload: true, callback: function() {
+				$('#topicGuidesSlider .image img').lazyImage({ callback: function(){
+					$(this).imageContainer({useParentContainer: true});
+				}});
+			}});
+			$('.todaysTop').onVisible({ onload: true, callback: function(){
+				$('.image img',this).lazyImage({callback: function(){
+					$(this).imageContainer({useParentContainer: true});
+				}});
+			}});
+			$('.ehowEssentials').onVisible({ onload: true, callback: function(){
+				$('.image img',this).lazyImage({callback: function(){
+					$(this).imageContainer({useParentContainer: true});
+				}});
+			}});		
+			$('.featuredItems').onVisible({ onload: true, callback: function() {
+				$('.featuredItemImage img',this).lazyImage({callback: function() {
+					$(this).imageContainer({useParentContainer: true})
+				}});
+			}});		
+			
+			
+			addLoadEvent(function(){
+				$(".facebookRecentActivity").animate({ height: '300px' }, "slow").html('').append('<fb:activity site="http://www.ehow.com/" font="arial" recommendations="false"></fb:activity>');
+			},5);
+			
+		})(jQuery);
+	</script>
+
+        
+        <noscript><img src="http://vs.dmtracker.com/images/zig.gif?Log=1" alt="zig" /></noscript>
+        <script type="text/javascript" src="http://vs.dmtracker.com/tags/vs.js"></script>
+        <script type="text/javascript" src="http://js.revsci.net/gateway/gw.js?csid=F08747"></script>
+        <script type="text/javascript">DM_tag();</script>
+
+        
+        
+		
+
+		</div><!--end wrapper-->
+		
+
+		<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script>
+		
+        <script> COMSCORE.beacon({c1:2,c2:6036385,c3:"",c4:"",c5:"",c6:"",c15:""});</script>
+        <noscript><img src="http://b.scorecardresearch.com/b?c1=2&c2=6036385&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="display:none" width="0" height="0" alt=""/></noscript>
+        <!-- End comScore Tag -->
+		
+		
+
+		<div id="fb-root"></div>
+		<div id="facebookLoading" style="display:none;">
+			<div class="FacebookLoginLoading">
+				<p><span data-copy="Signing you in..."></span></p>
+				<p>&nbsp;</p>
+				<p><img src="http://ui.ehowcdn.com/_ui/lipstick/images/misc/loading.gif" alt="Loading"/></p>
+			</div>
+		</div>
+		
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script>
+				if (google) {
+					google.load('search', '1'); 
+					google.setOnLoadCallback(function() { 
+						attachAutoComplete('All-en-US');
+					}); 
+				}
+
+				var attachAutoComplete = function(type) {
+					if (google) {
+						var autoCompleteIds = {
+							'Articles-en-US': 	'001306696778704498477:clqfwtnu4gw',
+							'Videos-en-US': 	'001306696778704498477:d-ner9pinps',
+							'Members-en-US': 	'',
+							'Web-en-US': 		'001306696778704498477:oqmey3bbw28',
+							'Articles-en-GB': 	'001306696778704498477:e7pcf3zdvr4',
+							'Videos-en-GB': 	'001306696778704498477:vsfounw1igo',
+							'All-en-US': 		'001306696778704498477:folafxbmfpa',
+							'All-en-GB': 		'001306696778704498477:y66jit2rb2c'
+						}
+						if (type == 'Members-en-US') //memebers
+							return
+						var id = autoCompleteIds[type]
+						google.search.CustomSearchControl.attachAutoCompletion( 
+							id, 
+							$(".Search input:text")[0],
+							'SearchHeader');
+						google.search.CustomSearchControl.attachAutoCompletion( 
+							id, 
+							$(".Search input:text")[1], 
+							'SearchFooter');
+					}
+				}
+			</script>
+		
+		<script>
+			$('a.jsNoFollow').noFollow();
+		
+			$("div.jsCustomDropDown").attach("DropDown", { 
+				selected: $("div.jsCustomDropDown ul li a[name='6']"),
+				onSelect: function(data) {
+					var search = data.parents("div.Search");
+					$("input:text", search).focus().select();
+					$("input.searchType", search).val(data.attr("name"));	
+				}
+			});
+			
+
+			addthis_config = {
+				data_ga_tracker: dlabs.analytics,
+				data_track_linkback: true,
+				data_track_clickback: true,
+				services_exclude: 'facebook,favorites,email,print'
+			};
+			
+			addLoadEvent("http://s7.addthis.com/js/250/addthis_widget.js#username=dmseo", function(){
+				addthis.init();
+			}, 5);
+			
+			// window.fbAsyncInit = function() {
+			// 			
+			// 		};
+			
+			$('.jsVerisignSeal').bind("contextmenu", function(){
+				alert('The VeriSign Seal is a trademark of VeriSign, Inc. and its subsidiaries. Unauthorized copying is prohibited.');
+				return false;
+			});
+				
+			tyntVariables = {"ap":"Read more: "};
+
+			addLoadEvent('http://tcr.tynt.com/javascripts/Tracer.js?user=bpZvKQBBer360wadbi-bnq&amp;st=1', 10);
+			addLoadEvent(function(){
+				$.getScript(document.location.protocol + '//connect.facebook.net/en_US/all.js',function(data){
+					if(typeof FB != "undefined") {
+						FB.init({appId: '63203377906', status: true, cookie: true, xfbml: false,
+							channelUrl : (window.location.protocol + '//' + window.location.host + '/xd_receiver.htm')});
+						$('.jsFacebookConnect').css('visibility','visible');
+						FB.XFBML.parse();
+						FB.getLoginStatus(function(response) {
+						if (response.session && dlabs.user.isLoggedIn) {
+							$('.jsFacebookLogout').click(function(){
+								FB.logout(function(response){
+									window.location.reload();
+									return false;
+								});
+							});
+							for (var i = 0; i < onFBInit.length; i++) {
+								onFBInit[i]();
+							}
+						  } else {
+							$("a.jsFacebookConnect").bind("click", function(){
+								//console.log("click");
+								FB.login(function(response) {
+									if (response.session) {
+										if (response.perms) {
+											ThinBox.open('#facebookLoading',{width:250,height:150,_preventBlur:true});
+											$.get("/ajax/loginbyfacebookid.aspx", {facebook_id: response.session.uid}, function(data){
+												if (data.indexOf("Timeout expired") != -1) {
+													alert("There was an error, please try again.");
+													ThinBox.remove();
+												} else if (data.indexOf("existing email found") != -1) {
+													//$("#thinboxModalContent .FacebookLoginLoading").html("<p>The email address you use with Facebook is already registered with eHow.</p><p>Please login to eHow directly with this email address - you can still use Facebook features.</p><p><a class='Button3a' onclick='ThinBox.remove()';>Ok</a>");
+													ThinBox.remove();
+													ThinBox.open('/account/facebook_merge.aspx?error=duplicate_email&email='+data.split(':')[1]+'&fbid='+response.session.uid);
+												} else {
+													setTimeout("window.location.reload()",1000);
+												}
+											});
+										}
+									 }
+								}, {perms:'email,user_interests'});
+							});
+						  }
+						});
+					}
+				});
+			});
+		
+			$('.SecondaryNav ul.main').subNav();
+			$('.PrimaryNav ul.main').subNav();
+			$('.PrimaryNav ul.community').subNav();
+
+//			$('.jsSearchDropdown').searchDropdown({input:'input.jsDefaultInput', autocomplete: true });
+
+			
+				addLoadEvent(function() {
+					dartAds.renderAdElements($("div[data-dartAdSize]"));
+				}, 3);
+			
+			
+			addLoadEvent(function(){
+				$("img.LazyLoadImage").lazyImage();
+			});
+
+			addLoadEvent(function(){
+				
+				SiteLifeAvatars.Request();
+
+
+			}, 10);
+
+			UserAction.execute();
+		</script>
+
+    </body>
+</html>
