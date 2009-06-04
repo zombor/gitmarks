@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.apple.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.apple.com" r (n 0 s 0 v 0 l 0))' />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	
+
+	<title>Apple - Education - Resources - Teachers and Administrators</title>
+	<meta name="omni_page" content="Education - Resources - Teachers and Administrators" />
+	<meta name="Category" content="markets" />
+	<meta name="Description" content="Documents and video tutorials to help teachers, administrators, and IT professionals work with Apple products." />
+	<script src="http://images.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+
+	
+<script src="http://images.apple.com/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	if (typeof(tracker) == 'undefined') {
+		tracker = false;
+	}
+
+	Event.onDOMReady(function() {
+		if (!tracker) {
+			tracker = new AC.ViewMaster.Tracker('click');
+		}
+	});
+</script>
+
+
+
+	
+
+<script src="http://images.apple.com/global/scripts/ac_media.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="http://images.apple.com/global/styles/ac_media.css" type="text/css" />
+
+
+
+	<script src="http://images.apple.com/global/scripts/slyder.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	Event.onDOMReady(function() {
+		$$('div.slider').each(function(slyder) {
+			new Slyder(slyder);
+		});
+	})
+</script>
+<link rel="stylesheet" href="http://images.apple.com/education/styles/slyder.css" type="text/css" />
+
+	<script src="http://images.apple.com/education/scripts/signup.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		Event.onDOMReady(function() {
+			new AC.ViewMaster.Viewer(null, 'swap', 'tutorial-link', { shouldAnimateContentChange:false, ensureInView:true });
+		});
+	</script>
+	<link rel="stylesheet" href="http://images.apple.com/global/styles/base.css" type="text/css" />
+	<link rel="stylesheet" href="http://images.apple.com/education/styles/education.css" type="text/css" />
+	<link rel="stylesheet" href="http://images.apple.com/education/resources/styles/resources.css" type="text/css" />
+</head>
+<body class="gallery education teachers" id="resources">
+	<script src="http://images.apple.com/global/nav/scripts/shortcuts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'us';
+</script>
+<div id="globalheader">
+	<!--googleoff: all-->
+	<ul id="globalnav">
+		<li id="gn-apple"><a href="/">Apple</a></li>
+		<li id="gn-store"><a href="http://store.apple.com">Store</a></li>
+		<li id="gn-mac"><a href="/mac/">Mac</a></li>
+		<li id="gn-ipod"><a href="/ipod/">iPod</a></li>
+		<li id="gn-iphone"><a href="/iphone/">iPhone</a></li>
+		<li id="gn-ipad"><a href="/ipad/">iPad</a></li>
+		<li id="gn-itunes"><a href="/itunes/">iTunes</a></li>
+		<li id="gn-support"><a href="/support/">Support</a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+			<form action="http://searchcgi.apple.com/cgi-bin/sp/nph-searchpre11.pl" method="post" class="search" id="g-search">
+			<div>
+				<input type="hidden" value="utf-8" name="oe" id="search-oe">
+				<input type="hidden" value="p" name="access" id="search-access">
+				<input type="hidden" value="us_only" name="site" id="search-site">
+				<input type="hidden" value="lang_en" name="lr" id="search-lr">
+				<label for="sp-searchtext"><span class="prettyplaceholder">Search</span><input type="search" name="q" id="sp-searchtext" class="g-prettysearch applesearch" accesskey="s"></label>
+			</div>
+		</form>
+		<div id="sp-results"><div class="inside"></div></div>
+	</div>
+</div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleuseducation"
+</script>
+
+
+<script type="text/javascript" src="http://images.apple.com/global/metrics/js/s_code_h.js"></script>
+
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName()+" (US)";
+s.server=""
+s.channel="www.us.education"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=document.URL;
+s.prop5=""
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+	<div id="productheader">
+	<h2><a href="/education/"><img src="http://images.apple.com/education/images/product_title_20100409.png" alt="Apple in Education" width="237" height="29" /></a></h2>
+	<ul>
+		<li id="pn-why"><a href="/education/why-apple/">Why Apple?</a></li>
+		<li id="pn-mac"><a href="/education/mac/">Mac</a></li>
+		<li id="pn-ipad"><a href="/education/ipad/">iPad</a></li>
+		<li id="pn-ipodtouch-iphone"><a href="/education/ipodtouch-iphone/">iPod touch and iPhone</a></li>
+		<li id="pn-profiles"><a href="/education/profiles/">Profiles</a></li>
+		<li id="pn-resources"><a href="/education/resources/">Resources</a></li>
+
+
+		<li><a class="howtobuys" href="/education/how-to-buy/">How to buy Apple products for education.</a></li>
+
+	</ul>
+</div>
+
+	
+	<script type="text/javascript">
+	   var hostProtocol = (("https:" == document.location.protocol) ? "https" : "http");
+	   document.write('<scr'+'ipt src="', hostProtocol+
+	   '://123.xg4ken.com/media/getpx.php?cid=19dae3d3-9356-4c63-880e-b0fa184e9cd4','" type="text/JavaScript"><\/scr'+'ipt>');
+	</script>
+	<script type="text/javascript">
+	   track('19dae3d3-9356-4c63-880e-b0fa184e9cd4');
+	   var params = new Array();
+	   params[0]='id=19dae3d3-9356-4c63-880e-b0fa184e9cd4';
+	   params[1]='type=resources';
+	   params[2]='val=';
+	   params[3]='orderId=';
+	   params[4]='promoCode=';
+	   params[5]='valueCurrency=USD';
+	   k_trackevent(params,'123');
+	</script>
+	
+	<div id="main" class="content">
+		<ul class="page-nav roundedtop">
+	<li class="caret"></li>
+	<li id="pn-teachers"><a href="/education/resources/">Teachers and Administrators</a></li>
+	<li id="pn-it" class="last-child"><a href="/education/resources/information-technology.html">Information Technology</a></li>
+</ul>
+
+		<h2>Tutorials</h2>
+		<div id="swap">
+			<div class="tutorial clicktoplay" id="clicktoplay">
+				<img src="http://images.apple.com/education/resources/images/cover_frame_ta_20100409.jpg" width="640" height="400" alt="" />
+				<p><a class="pillbutton tutorial-link" href="/education/resources/tutorials/leopard-basics.html#leopard-basics"><span>Click to Play</span><b>&amp;gt;</b></a></p>
+			</div>
+		</div>
+		<div id="resources-slider" class="slider dark">
+			<div class="mask">
+				<div class="container">
+					<div class="action first">
+	<a class="tutorial-link" href="/education/resources/tutorials/leopard-basics.html#leopard-basics">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_planning_organization_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Mac OS X Snow Leopard Basics</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/materials-resources.html#materials-resources">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_distributing_materials_resources_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Distributing Materials and Resources</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/planning-organizing.html#planning-organizing">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_accessibility_tools_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Planning and Organizing</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/classroom-workflow.html#classroom-workflow">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_managing_classroom_workflow_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Managing Classroom Workflow</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/preparation-teaching.html#preparation-teaching">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_planning_organizing_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Lesson Preparation and Teaching</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/sharing-student-products.html#sharing-student-products">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_communicating_collaborating_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Sharing Student Products</p>
+	</a>
+</div>
+
+<div class="action first">
+	<a class="tutorial-link" href="/education/resources/tutorials/supporting-classroom-learning.html#supporting-classroom-learning">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_supporting_student_work_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Supporting Classroom Learning</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/accessibility-voiceover.html#accessibility-voiceover">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_accessibility_voiceover_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Accessibility: VoiceOver</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/accessibility-screen-magnification.html#accessibility-screen-magnification">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_accessibility_screen_magnification_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Accessibility: Screen Magnification</p>
+	</a>
+</div>
+
+<div class="action">
+	<a class="tutorial-link" href="/education/resources/tutorials/accessibility-desktop-finder.html#accessibility-desktop-finder">
+		<span class="selected-state"><img src="http://images.apple.com/education/resources/images/state.png" width="117" height="270" alt="State"></span>
+		<span><img src="http://images.apple.com/education/resources/images/ta_accessibility_desktop_finder_t20100409.png" width="109" height="82" alt="" /></span>
+		<p>Accessibility: Setting up Desktop and Finder</p>
+	</a>
+</div>
+
+				</div><!--/container-->
+			</div><!--/mask-->
+		</div><!--/slider-->
+		<div class="resources">
+			<h3>Resources</h3>
+			<div class="grid3col">
+				<div class="column first">
+					<h4>Why Apple</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-10ReasonsforAppleinEdu021909.pdf">10 Reasons Why: Apple in Education</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-10-Reasons-MacBook-in-Education.pdf">10 Reasons Why: MacBook in Education</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-10-Reasons-iLife-in-Education.pdf">10 Reasons Why: iLife in Education</a></li>
+					</ul>
+					<h4>Professional Development</h4>
+					<ul>
+						<li><a class="html" href="/education/professional-development/">Apple Professional Development</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L422526B_APD_Catalog_acc.pdf">Apple Professional Development Catalog </a></li>
+						<li><a class="html" href="http://training.apple.com/certification/associate">iLife Associate Certification Training</a></li>
+						<li><a class="html" href="/education/tuneinseries/index.html">Tune-in Series</a></li>
+					</ul>
+
+					<h4>Curriculum</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L419312A_EarlyLearning_K-2.pdf">Early Learning (Grades K-12) Curriculum</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L419313A-UpperEl_3-5.pdf">Upper Elementary (Grades 3-5) Curriculum</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L419314A_Middle_HS_LangArts.pdf">Middle and High School Language Arts Curriculum</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L419315AMiddle_HS_MathScience.pdf">Middle and High School Math and Science Curriculum</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-Moviemakingcurriculum.pdf">Moviemaking Curriculum</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Documentary_Guide_10-09.pdf">A Guide to Creating Student-Led Documentaries</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L416304A_Laptop_WP-1.pdf">How Notebook Computers, Digital Media&nbsp;and Probeware Can Transform Science Learning</a></li>
+						<li><a class="html" href="/education/challenge-based-learning">Challenge Based Learning</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-ChallengedBasedLearning.pdf">Challenge Based Learning Curriculum</a></li>
+						<li><a class="html" href="/education/challenge-based-learning/includes/cbl-video.html#cbl-video">Challenge Based Learning Webinar</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<h4>Labs and Mobile Learning</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-MacBookLabBrochureL333724L092909.pdf">Apple MacBook Learning Lab Brochure</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-MacBookLearningLabGettingStarted.pdf">Getting Started: A Guide for Your Apple MacBook Learning Lab</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-iPod-Learning-Solutions-Brochure.pdf">Apple iPod Learning Solutions Brochure</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-iPodGettingStartedGuide081809.pdf">Getting Started: iPod touch and iTunes for Teaching and Learning</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/PerfectLab.pdf">Find the Perfect Mac for Your Lab</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/IT.pdf">Why IT Will Love a Mac Lab</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-MacManagement.pdf">Mac Management Made Easy</a></li>
+					</ul>
+					
+					<h4>Special Education</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L360989C-US_L360989C_DiverseLearners_ff_acc.pdf">Getting Started: Apple Technology for Diverse Learners (Mac OS X v. 10.6 Snow Leopard, iPod touch and iPad)</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/L419373A-US_L419373A_AppleTechDisabilities.pdf">Using Apple Technology to Support Learning for Students with Sensory and Learning Disabilities</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-Accessibility_DS_L417450A.pdf">Apple Technology: Uniquely Equipped to Let Every Student Succeed</a></li>
+						<li><a class="html" href="/accessibility/resources/">Accessibility Resources</a></li>
+					</ul>
+
+					<h4>Frameworks and Standards</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-ISTE-NETS-Admin.pdf">ISTE NETS for Administrators</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-ISTE-NETS-Students.pdf">ISTE NETS for Students</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-ISTE-NETS-Teachers.pdf">ISTE NETS for Teachers</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-P21Framework.pdf">P21 Framework</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-ACOT2Whitepaper.pdf">ACOT2 White Paper</a></li>
+					</ul>
+
+
+				</div>
+				<div class="column last">
+					<h4>Stimulus Information</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-K12_Stimulus_Solutions033109.pdf">Apple K-12 Stimulus Solutions</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-HiEd_Stimulus_Solutions033109.pdf">Apple Higher Education Stimulus Solutions</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-Education_Stimulus_White_Paper.pdf">Economic Stimulus for Education White&nbsp;Paper</a></li>
+					</ul>
+
+					<h4>Funding</h4>
+					<ul>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-RaisingAchievement20090129.pdf">Raising Student Achievement</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-PerkinsFunding.pdf">Getting Creative with Perkins</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-FinanceBrochure.pdf">Apple Financial Services Brochure</a></li>
+						<li><a class="pdf" href="http://images.apple.com/education/docs/Apple-Trade-InProgram.pdf">Apple Trade-in Program for Education</a></li>
+					</ul>
+	
+					<h4>Profiles</h4>
+					<ul>
+						<li><a class="html" href="http://itunes.apple.com/us/podcast/apple-education/id334296685">Podcast Directory</a></li>
+						<li><a class="html" href="/education/profiles/escondido/">Central Elementary School Profile</a></li>
+						<li><a class="html" href="/education/profiles/ohio-state/">The Ohio State University, School of Medicine Profile</a></li>
+						<li><a class="html" href="/education/profiles/greene-county/">Greene County Schools Profile</a></li>
+						<li><a class="html" href="/education/profiles/science-leadership-academy/">Science Leadership Academy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!--/main-->
+
+	<div id="contact" class="content">
+	<div class="padder">
+		<div class="info">
+			<p><strong>Keep Me Informed.</strong> Catch up on all the latest Apple Education news and special offerings.</p>
+			<p class="sosumi">To learn how Apple safeguards your personal information, please review the <a href="/legal/privacy/">Apple Customer Privacy Policy</a>.</p>
+		</div>
+		<div id="contact_wrap">
+			<iframe id="contact_frame" src="/education/includes/signup.html" height="19" width="224" frameborder="0" scrolling="no"></iframe>
+		<div id="contact_submit">Submit</div>
+		<div id="contact_error" style="display:none"><p>Please enter a valid email address.</p><div></div></div>
+			<p id="contact_thankyou" style="display:none"><strong>Thank you for signing up.</strong></p>
+		</div>
+	</div><!--/padder-->
+</div><!--/signup-->
+
+	<div id="promofooter">
+	<ul id="promos">
+		<li class="promo">
+	<h4><a href="/education/special-education/"><img src="http://images.apple.com/promos/2010/edu_special_education/header_20100409.png" alt="Special Education." width="214" height="17" /></a></h4>
+	<p><a href="/education/special-education/">Learn how Apple provides universal access for all.</a></p>
+	<a class="image" href="/education/special-education/"><img src="http://images.apple.com/promos/2010/edu_special_education/image_20101001.png" alt="" width="244" height="180" /></a>
+</li>
+
+		
+		
+		
+		
+		<li class="promo">
+	<h4><a href="/education/professional-development/"><img src="http://images.apple.com/promos/2010/edu_professional_development/header20100721.png" alt="Professional Development" width="214" height="17" /></a></h4>
+	<p><a href="/education/professional-development/">Workshops to help you integrate Apple products into your curriculum.</a></p>
+	<a class="image" href="/education/professional-development/"><img src="http://images.apple.com/promos/2010/edu_professional_development/image20100721.png" alt="" width="244" height="180" /></a>
+</li>
+
+		
+		
+		<li class="promo">
+	<h4><a href="/retail/fieldtrip/"><img src="http://images.apple.com/promos/2010/edu_field_trip/header_20100921.png" alt="Field Trip to the Apple Store." width="211" height="17" /></a></h4>
+	<p><a style="padding-right: 9px;" href="http://www.apple.com/retail/fieldtrip/">Bring students to the Apple Store for an unforgettable learning experience.</a></p>
+	<a class="image" href="/retail/fieldtrip/"><img src="http://images.apple.com/promos/2010/edu_field_trip/image_20100921.png" alt="" width="244" height="180" /></a>
+</li>
+
+		<li class="promo">
+	<h4><a href="/education/why-apple/"><img src="http://images.apple.com/promos/2010/edu_why_apple/header_20100409.png" alt="Why Apple?" width="214" height="17" /></a></h4>
+	<p><a href="/education/why-apple/">Apple products help teachers and students create and learn together.</a></p>
+	<a class="image" href="/education/why-apple/"><img src="http://images.apple.com/promos/2010/edu_why_apple/image_20101001.png" alt="" width="244" height="180" /></a>
+</li>
+
+	</ul>
+</div>
+
+	<div id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/">Home</a></li>
+				<li><a href="/education/">Education</a></li>
+				<li>Resources</li>
+			</ol><!--/breadcrumbs-->
+		</div>
+		<p class="gf-buy">Shop the <a href="/store/">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="/retail/">Apple Retail Store</a>, or find a <a href="/buy/">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a href="/about/" class="first">Apple Info</a></li>
+	<li><a href="/sitemap/">Site Map</a></li>
+	<li><a href="/hotnews/">Hot News</a></li>
+	<li><a href="/rss/">RSS Feeds</a></li>
+	<li><a href="/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="http://images.apple.com/home/elements/worldwide_us.png" alt="United States" width="22" height="22"></a></li>
+</ul>
+
+<div class="gf-sosumi">
+	<p>Copyright © 2010 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/legal/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/privacy/">Privacy Policy</a></li>
+	</ul>
+</div>
+
+	</div><!--/globalfooter-->
+</body>
+</html>
