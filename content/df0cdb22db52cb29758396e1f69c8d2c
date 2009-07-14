@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+<title>Walls Come Tumbling Down presentation slides and transcript | For A Beautiful Web</title>
+<meta charset=utf-8>
+<meta name="Description" content="For A Beautiful Web. Web design master-class training workshops and DVDs covering topics including visual design for the web, best-practice mark-up and CSS, Microformats and practical web accessibility for designers.">
+<meta name="verify-v1" content="Baik4Dq4vJx1ad3s6OXzznAQXt36VS3yaJOhnbbm8uE=">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta id="viewport" name="viewport" content="width=960">
+
+<link rel="alternate" type="application/rss+xml" title="And All That Malarkey RSS" href="http://forabeautifulweb.com/feeds/blog_rss">
+<link rel="alternate" type="application/rss+xml" title="And All That Malarkey Atom" href="http://forabeautifulweb.com/feeds/blog_atom">
+<link rel="alternate" type="application/rss+xml" title="For A Beautiful Web RSS" href="http://forabeautifulweb.com/feeds/dates_rss">
+<link rel="alternate" type="application/rss+xml" title="For A Beautiful Web Atom" href="http://forabeautifulweb.com/feeds/dates_atom">
+
+<link rel="shortcut icon" href="http://stuffandnonsense.co.uk/build/fabw/assets/img/favicon.gif" type="image/gif">
+<link rel="shortcut icon" href="http://stuffandnonsense.co.uk/build/fabw/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://stuffandnonsense.co.uk/build/fabw/assets/img/apple-touch-icon.png">
+
+<!-- CSS -->
+<!--[if ! lte IE 6]><!--><link rel="stylesheet" href="http://stuffandnonsense.co.uk/build/fabw/assets/css/main.css?20100125" media="screen, projection"><!--<![endif]-->
+<!--[if gte IE 7]><link rel="stylesheet" href="http://stuffandnonsense.co.uk/build/fabw/assets/css/ie7.css?21072009" media="screen, projection"><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.0b.css" media="screen, projection"><![endif]-->
+
+<!-- JS -->
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/scrollto.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/ui.core.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/ui.tabs.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/onload.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/modernizr-1.0.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/jquery.dropdownPlain.js" type="text/javascript"></script>
+<script src="http://stuffandnonsense.co.uk/build/fabw/assets/js/jquery.colorbox.js" type="text/javascript"></script>
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="http://use.typekit.com/xox1rlh.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--<![endif]-->
+<link rev="canonical" href="http://forabeautifulweb.com/s/606" />
+</head>
+
+<body id="forabeautifulweb-com" class="entry">
+
+<nav class="main" role="navigation">
+<ul>
+<li><a href="http://forabeautifulweb.com/classes">Our master-classes and upcoming dates</a></li>
+<li><a href="http://forabeautifulweb.com/buy/dvds">For A Beautiful Web, yours to own on DVD</a></li>
+<li><a href="http://forabeautifulweb.com/reviews/category/masterclasses">Master-classes and DVD reviews</a></li>
+<li><a href="http://forabeautifulweb.com/blog">Blogging on And All That Malarkey</a></li>
+<li><a href="http://stuffandnonsense.co.uk/company/contact">Contact us about For A Beautiful Web</a></li>
+</ul>
+</nav>
+
+<header class="branding" role="banner">
+<h2 id="logo"><a href="http://forabeautifulweb.com/" title="Home page">For A Beautiful Web</a></h2>
+</header>
+
+<article class="hentry" role="main">
+
+<div class="hentry">
+
+<header>
+<h1 class="entry-title">Walls Come Tumbling Down presentation slides and transcript</h1>
+</header>
+
+<div class="entry-summary">
+<p>It&#8217;s been one helluva busy, tiring but inspiring week, traveling first to speak at <a href="http://aneventapart.com/2009/boston/">An  Event Apart Boston</a>, then, with <a href="http://twitter.com/adactio">Jeremy Keith</a> and <a href="http://twitter.com/jasonsantamaria">Jason Santa Maria</a> onto London for @media2009. At both events, I presented Walls Come Tumbling Down. Here are the presentation slides and transcript.
+</p>
+</div>
+
+<h3>Presentation slides and transcript</h3>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-001.jpg"alt="" /></p>
+
+<p>I've been wanting to give this talk for a while. This is a different type of talk for me to give. I know that people largely expect me to talk about design or style-sheets or <a href="http://microformats.org">Microformats</a> or any of that other malarkey.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-002.jpg"alt="" /></p>
+
+<p>Now I am aware that not everything that I'll talk about will resonate for everybody. Because not everybody shares the same experiences, personal or political. But I can only speak from my own perspective and experiences: I'm a designer and I run <a href="http://stuffandnonsense.co.uk">a small business</a>.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-003.jpg"alt="" /></p>
+
+<p>It seems like a long time ago, but in 1985 I left home to go art school. Where did those years go? Where did that mullet go?</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-004.jpg"alt="" /></p>
+
+<p>I grew up in a small town called <a href="http://en.wikipedia.org/wiki/Corby">Corby</a> in the East Midlands (UK). It was steel-making town until the plant was closed under <a href="http://en.wikipedia.org/wiki/Margaret_Thatcher">Margaret Thatcher</a>.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-005.jpg"alt="" /></p>
+
+<p>Unemployment hit 21% and there was very little hope, even for people coming out of school with a decent education.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-006.jpg"alt="" /></p>
+
+<p>I remember that people there were genuinely fearful about how the economy was affecting them and their families. You know what? No one should be made to suffer that agony, not then, not now.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-007.jpg"alt="" /></p>
+
+<h3>Red Wedge</h3>
+
+<p>In the run-up to the general election in 1987, a few of my musical heroes; <a href="http://en.wikipedia.org/wiki/Paul_weller">Paul Weller</a> and <a href="http://en.wikipedia.org/wiki/Billy_Bragg">Billy Bragg</a> formed <a href="http://en.wikipedia.org/wiki/Red_Wedge">Red Wedge</a>, playing concerts to raise support for the Labour Party (as it was then). Actually support for the Labour Party was largely coincidental, and the Labour Party was really just the most convenient vehicle for people (like me) who despised Margaret Thatcher and the Tories.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-008.jpg"alt="" /></p>
+
+<p>What I learned during that time was that it was the pride, ingenuity and determination of working people to change things for the better, for themselves, for their fellow workers and for their communities that helped them to survive, better than any government scheme ever could do.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-009.jpg"alt="" /></p>
+
+<p>There were several songs from that Red Wedge period that I still listen to today. <a href="http://en.wikipedia.org/wiki/Ghost_Town">Ghost Town</a> by <a href="http://en.wikipedia.org/wiki/The_Specials">The Specials</a> is one favorite.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-010.jpg"alt="" /></p>
+
+<p>Between The Wars and There's Power In A Union by Billy Bragg are others.</p> 
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-011.jpg"alt="" /></p>
+
+<p>As you were taking your seats, I don't know if you noticed the song that was playing over the PA? In case you were wondering, it was Walls Come Tumbling Down by <a href="http://en.wikipedia.org/wiki/The_Style_Council">The Style Council</a>. It was from their Internationalists album (as it was called in the US) in 1985, Our Favourite Shop in the UK.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-012.jpg"alt="" /></p>
+
+<p>Walls Come Tumbling Down can tell us a lot about how to handle today's troubles. The words still resonate today.</p>
+
+<p>To justify recession, we're told that economies have natural cycles, like tides and that we should expect periods of growth (and) recession to come like waves. These are theories that go back to the French economist <a href="http://en.wikipedia.org/wiki/Clement_Juglar">Clement Juglar</a> who theorized that the capitalist economy cycles every 8-11 years. This recession might be not be 'natural' and I'm not an economist.</p> 
+
+<p>One thing that I do know is that the people who are hit hardest by recession are working people, you and me, who have little or no control over the causes. If you're affected by this recession (or any other) it is so important to remember that it's not your fault. It is important to stay positive.</p>
+
+<p>What has all this to do with the web? We sometimes forget that recessions can be creatively stimulating. You only have to think back to how <a href="http://en.wikipedia.org/wiki/Thatcherism">Thatcherism</a> and the social depravation that it created affected popular music at that time. This recession can affect the web in similar ways, because the limitations that a recession imposes makes us to think and work in new ways.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-013.jpg"alt="" /></p>
+
+<p>The constraints that recessions impose; on budgets and on time can help us focus more sharply on what matters most, and sharpen our methods and skills to make us more competitive and better at what we do.</p>
+
+<p>We might not have the power (yet) to prevent a recession, but we do have the power to affect its outcome on ourselves, rather than, as the song says, <q>rely on those in authority</q>. We have the knowledge and the skills and the power to change things for the better. Changing things is part of what this talk is about:</p>
+
+<ul>
+<li>Changing working methods</li>
+<li>Cooperating rather than competing</li> 
+<li>Changing attitudes and expectations</li>
+</ul>
+
+<p>But it is also about us taking control over what we know better than anyone &mdash; working on the web. We know it better than any client, any manager, any employer, because we live it every day.</p>
+
+<p>We know it better because it's highly likely that we learned by our own initiative, rather than having knowledge passed down to us from above. We learned about the tools that we use and the way that we work best in our own time. This is particularly true of web standards, CSS or accessibility.</p>
+
+<p>It's also important to remember that <em>we</em> own that knowledge and those skills, no one else. It's up to us to use them to make sure that we look after ourselves and our livelihoods and those of our colleagues. Now is the time to improve what we do to make it more efficient and profitable but also more creative.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-014.jpg"alt="" /></p>
+
+<p>It's important that we take these steps, not wait for our clients or employers to impose new ways of working on us. Particularly when their reasons for change will likely be based on improving the bottom-line or appeasing shareholders, rather than on improving our situations.</p>
+
+<p>It's also the time for us to take stock of what we know and use that to plan how we can take control of our futures. That means making our skills portable, so that we can take them with us to another organization, perhaps even one that we own, if the worst should happen.</p>
+
+<p>When I think about the work that I do, every day is roughly divided into:</p>
+
+<ul>
+<li>Getting work</li>
+<li>Doing work</li>
+<li>Working on my business</li>
+<li>(Oh, and <a href="http://twitter.com/malarkey">Twitter</a>)</li>
+</ul>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-015.jpg"alt="" /></p>
+
+<p>How to get work, how to present and how to sell, they will have to wait for another day. <a href="http://twitter.com/zeldman">Jeffrey Zeldman</a> wrote about these on <a href="http://24ways.org/2008/recession-tips-for-web-designers">24ways</a> last year. So in the time that we have, I'd like to focus on the aspect that I find most satisfying &mdash; designing.</p>
+
+<p>It is also an area where I've found it possible to improve productivity and quality by finding new ways to work, at the same time making things better for me and the people I work with.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-016.jpg"alt="" /></p>
+
+<h3>Creativity is the essential ingredient</h3>
+
+<p>I know it to be very common that when they are faced with appeasing shareholders or boosting short-term profitability, clients, business owners and managers look at creative departments to cut costs first. I think that this approach fundamentally misunderstands the value of creativity in business.</p>
+
+<p>Creativity is the single most important aspect of a business, because it drives innovation and ideas. Ideas sell, even during a recession.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-017.jpg"alt="" /></p>
+
+<h3>You should make more time to be creative</h3>
+
+<p>One of the ways that we can do this is by cutting out-dated methods and processes to make us more efficient. Becoming more efficient isn't only about reducing costs. It should also be about making more time to be creative. So if businesses and organizations are looking to maximize value for money, we need to find ways to make more time for creativity.</p>
+
+<p>We also need to take a long, hard look at attitudes, preconceptions and misconceptions that our clients and employers might have about what we do.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-018.jpg"alt="" /></p>
+
+<p>When I spend more time designing and developing than I do managing, my clients get a better job and I am more satisfied with the result. These are some of the areas that have made a big difference to me.</p>
+
+<ul>
+<li>Coming up with new and better workflows</li>
+<li>Designing in the browser</li>
+<li>Learning to live with constraints</li>
+<li>Designing systems, rather than sites</li>
+</ul>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-019.jpg"alt="" /></p>
+
+<h3>Time to discard outdated workflows</h3>
+
+<p>When I was working in digital photography in the mid-nineties, I saw the backwards and forwards, trial and error workflow that had been commonplace in digital repro change in just a few years. I can see parallels with the largely waterfall process for web design and development that is so common today.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-020.jpg"alt="" /></p>
+
+<ul>
+<li>Designers and developers often work separately</li>
+<li>Designers work on static look and feel visuals</li>
+<li>Clients are shown and sign-off on static comps</li>
+<li>Developers translate those visuals into the browser</li>
+<li>Back-end developers work on back-end systems</li>
+<li>Testing, by users and for browsers and accessibility comes last</li>
+</ul>
+
+<p>In this workflow, changes and corrections mean regularly going back to the drawing board and there is often tension between the people involved in the process. This workflow, the workflow that most us continue to work inside is overly time-consuming, inefficient and wasteful.</p>
+
+<p>It is also history, period. When this recession is over, we will look back at how we work today with the same sense of disbelief that I remember from the mid-nineties. What will it be replaced by? That is going to be up to you.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-021.jpg"alt="" /></p>
+
+<h3>Developing new workflows based on creativity</h3>
+
+<p>I'm no expert in workflow methodologies. I don't think that any single process will work for everybody, or for every project. I hope that you'll find your own ways for everyone; designers, developers and clients to interact that will waste less time, allow more time for creativity, and give a real, overall boost in quality from concept to production.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-022.jpg"alt="" /></p>
+
+<p>What I know from my own work is that a more agile process, one that includes:</p>
+
+<ul>
+<li>Designing in a browser with markup and CSS</li>
+<li>Working in short, focussed bursts (or sprints)</li>
+<li>Designing iteratively</li>
+<li>Working in groups </li>
+<li>And side-by-side with developers and clients</li> 
+</ul>
+
+<p>Is incredibly efficient and also very creatively stimulating. Clients understand this process and they enjoy it. They also have more input during it, and in my experience, consider it better value for money.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-023.jpg"alt="" /></p>
+
+<h3>Designing in a browser</h3>
+
+<p>I think that now, in a recession, more so than ever before, that creating one single point around which designers and developers can work cooperatively, in parallel rather than in series, immediately creates a better workflow. That central point need not be a functional specification or a static visual design but instead &mdash; content &mdash; expressed as HTML or XHTML and worked on in a browser. For example by using browsers as design tools rather than seeing their differences as irritations has helped me enormously.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-024.jpg"alt="" /></p>
+
+<p>Most sites and applications today start as static design visuals. Often designers will create static visuals of dozens of templates or pages. I'm sure that it's happened to everybody. You work for hours or days in Photoshop or Fireworks, making a series of designs and your client (rightfully) asks to see alternative versions of layouts, typography or color themes. Designing in a browser eliminates the need to design more than one template in a graphic tool like Photoshop or Fireworks.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-025.jpg"alt="" /></p>
+
+<p>But why use a graphics application when there are more effective, browser-based tools that are better suited to designing for the web? Photoshop and Fireworks are perfect tools for sketching look and feel and for creating elements, but almost by definition they fail at the job that many people still put them to, designing web pages.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-026.jpg"alt="" /></p>
+
+<p>Static visuals fail by definition</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-027.jpg"alt="" /></p>
+
+<p>Designing in a browser makes the design process more fluid, efficient and accurate because it addresses issues that are difficult when making static visuals, if they are addressed at all.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-028.jpg"alt="" /></p>
+
+<p>You might have read on my blog that I've been working on a <a href="/blog/about/a_top_down_look_at_the_new_internationalist_redesign/">redesign for New Internationalist</a>. It's been an open, public, design process (scary, but great fun) and one where I have designed entirely in a browser. The next examples are all issues that came about during that project.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-029.jpg"alt="" /></p>
+
+<p>Static visuals cannot demonstrate the effects of liquid or elastic layouts, at least not easily and without multiple files.</p> 
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-030.jpg"alt="" /></p>
+
+<p>When you design using markup and CSS, a few small changes to code will allow you to correct potential liquid design problems in just a few seconds.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-031.jpg"alt="" /></p>
+
+<p>Likewise, static visuals cannot easily demonstrate the effect of resizing text in a browser. Take this example of where this entry title collides with the comment count. Being able to spot potential problems like these at the design stage, problems that would, in a traditional workflow, not present themselves until development or even testing, means that as designers you achieve greater creative control.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-032.jpg"alt="" /></p>
+
+<p>If even the simplest interactions such as :hover or :target states can be time-consuming to demonstrate and explain to developers or clients through static visuals, what about more complex JavaScript behaviours or AJAX? I know from experience that when you show clients static visuals, it can take as long to explain to a client how a feature will work, as it does to design it.</p>
+
+<p><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-033.jpg"alt="" /></p>
+
+<p>Most times, designers leave these details out of their static design comps which means that decisions about them will have to be made later in the process and then often not by designers.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-034.jpg"alt="" /></p>
+
+<p>In contrast, when you design using markup and CSS, clients (whether they are internal or external) don't need to use their imagination. I know that I when I design in a browser I spend less time explaining to my clients how a page or an interface will work because they can readily interact with them in their browser, no matter how old or capable that browser might be. Your designs become more <em>tactile</em> as a result.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-035.jpg"alt="" /></p>
+
+<h3>It's time to stop showing clients static design visuals</h3>
+
+<p>Worse still are the expectations that static visuals set in the minds of clients, particularly when designers use them as a method to get sign-off for a design. I often wonder, <q>is the fact that so many web pages are fixed-width and centered, a direct result of clients signing off fixed-width design visuals?</q></p>
+
+<p>I would even go so far and say that when you demonstrate a design as a static image, you are reinforcing a mistaken notion that a web page will be a facsimile of a frozen image. And when you demonstrate a design or ask for sign-off on a frozen image, you immediately leave yourself open to the problems that often come when you later implement that design. </p>
+
+<p>(See also <a href="/blog/time_to_stop_showing_clients_static_design_visuals/">It's time to stop showing clients static design visuals</a>.)</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-036.jpg"alt="" /></p>
+
+<h3>Web sites should not look the same in every browser</h3>
+
+<p>For example, what about the issues of how a browser renders code? We all know that it is impossible today for a design to render exactly the same in every browser or device.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-037.jpg"alt="" /></p>
+
+<p>You need only look at the different ways that Gecko and Webkit and Opera anti-alias text. The browser landscape is more diverse today than it ever has been before.</p>
+
+<p>I know that many designers and developers understand that it's neither practical, economical or desirable to attempt cross-browser pixel perfection, but what about the clients and managers that we work for? They still often subscribe to the outdated notion that you should strive for pixel perfection.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-038.jpg"alt="" /></p>
+
+<p>Static design visuals reinforce this outdated notion and they fail to help you easily demonstrate those natural differences between browsers.</p>
+
+<p>How do you demonstrate even the simple matter of border-radius generated rounded corners in modern browsers and square corners in Internet Explorer without making multiple visuals and then often a great deal of time spent explaining these natural differences between browsers?</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-039.jpg"alt="" /></p>
+
+<h3>Repeat: Web sites should not look the same in every browser</h3>
+
+<p>On the other hand, demonstrating designs to clients using markup and CSS helps them to more easily understand the natural differences between browsers and then to make informed decisions as to when those differences are acceptable. There are no misconceptions. What they see and sign off is so close to the final product as makes no difference.</p>
+
+<p><a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">Web sites need not look the same in all browsers</a>. I know that I've said this before and I believe that this issue is going to become even more important as budgets and time-scales are squeezed during the recession.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-040.jpg"alt="" /></p>
+
+<p>Please allow me to clear up a common misconception. When I talk about designs not looking exactly the same in all browsers, I am not talking about making bad designs for people using older or abandoned software. I would never accept that:</p>
+
+<ul>
+<li>A design should look poor or broken</li>
+<li>A person should be denied access to content or services if they are using a less capable browser</li>
+</ul>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-041.jpg"alt="" /></p>
+
+<h3>Designing alternatives</h3>
+
+<p>What I am talking about is creating a visual design that looks best to people who are using modern software, while at the same time thinking carefully about what a person using less capable software will see. This is an approach based around designing alternatives. It's little different to the way that I hope we have been taught to think about web accessibility.</p>
+
+<p>You might be thinking that it's strange for me, as a designer, to promote an approach where some people see a lesser design than others. But I'm also a pragmatist and I know that in my business, I would rather ask my clients to spend their money wisely on things that will improve their business, than to waste it on hours of unnecessary development.</p>
+
+<p>How far you take this will depend on several factors and your own circumstances. I have my limits too. So here are five examples of CSS design differences that I can live with and do live with every day.</p>
+
+<p>(See also <a href="/blog/five_css_design_browser_differences_i_can_live_with/">Five browser differences I can live with</a>.)</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-042.jpg"alt="" /></p>
+
+<p>CSS pseudo-elements offer far greater control over type without requiring unnecessary, presentational markup. For example, when I want to style the first line of a first paragraph by increasing the font-size and weight, I would use the first-line pseudo element. People using Internet Explorer 6 will see a regular first line. I can live with that.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-043.jpg"alt="" /></p>
+
+<p>Perhaps I want to add a drop-cap using the first-letter pseudo element. IE6 will render a normal first letter. I can live with that too.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-044.jpg"alt="" /></p>
+
+<p> In the same vein, I often like to visually emphasize and separate the first, often most important, paragraphs of text that follow a heading. I find it improves readability enormously. Using an adjacent selector, I can style specific paragraphs without needing unnecessary class or id attributes. Of course people using Internet Explorer 6 will again see a normal paragraph, but guess what? I can live with that.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-045.jpg"alt="" /></p>
+
+<p>If you love to add those tiny icons to links, perhaps a PDF icon or RSS icon for feeds or an external link icon,  why add additional class attributes such a <code>class="twitter"</code> when you can just as easily use the more meaningful rel attribute, <code>rel="me twitter"</code>? People using browsers that did not implement CSS attribute selectors will simply not notice what they are missing, so they can live with that too.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-046.jpg"alt="" /></p>
+
+<p>Unless rounded corners are an integral part of a design and not simply a visual flourish &mdash;</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-047.jpg"alt="" /></p>
+
+<p>It makes sense to avoid unnecessary markup (directly in the document or inserted by DOM scripting) and to use border-radius.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-048.jpg"alt="" /></p>
+
+<p>Opera and Internet Explorer will see square corners instead of rounded ones, but I can live with that.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-049.jpg"alt="" /></p>
+
+<p>CSS offers an easy way to add a subtle shadow to text. This can be particularly effective if you place white text over a darker background.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-050.jpg"alt="" /></p>
+
+<p>I wish all browsers would implement text-shadow, but until they do I'll have to live with that.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-051.jpg"alt="" /></p>
+
+<p>I often also utilize the box-shadow property instead of making a compound of additional elements, attributes and images.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-052.jpg"alt="" /></p>
+
+<p>Not every browser will see these generated shadows, but unless they are an integral part of a design, I can live with that too.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-053.jpg"alt="" /></p>
+
+<h3>Exactly what CSS3 was designed to do</h3>
+
+<p>Each of these CSS properties helps me to reduce unwanted markup and make my designs less reliant on presentational elements or attributes. So I can and I do live with these differences.</p>
+
+<p>I also know that it is highly unlikely that every browser will ever support every CSS property at the same time. You should learn to live with that, because it's exactly how the CSS3 modules were designed to work. When you explain the issues to them clearly, your clients will learn to live with these differences too and will stop asking you for cross-browser pixel-perfection long before that utopian day when all browsers render a design the same way.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-054.jpg"alt="" /></p>
+
+<p>Letting go of the notion that we should spend hours of remedial development time in an impossible quest for cross-browser, pixel-perfection allows more time for the details in a  design. It allows us time to design the different experiences that people using different software will always have, by designing around browser differences rather than attempting to hack around them.</p>
+
+<p>How far you take browser differences will depend on several factors including your brand requirements and the needs of your target audience. As <a href="http://24ways.org/2008/the-ie6-equation">Jeremy Keith wrote last year on 24ways</a>:</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-055.jpg"alt="" /></p>
+
+<blockquote>
+<p>The different methods for dealing with IE6 demonstrate that there's no one single answer that works for everyone. This isn't a binary issue. There is no Boolean answer. Instead, there's a sliding scale of support.</p>
+</blockquote>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-056.jpg"alt="" /></p>
+
+<p>That was one of the reasons why I developed <a href="/blog/about/universal_internet_explorer_6_css/">Universal Internet Explorer CSS</a>, a single CSS file for Internet Explorer 6, <a href="http://code.google.com/p/universal-ie6-css">hosted on Google Code</a>, that where it is appropriate I serve to all sites, universally (give or take a little branding here, or a touch of customization there).</p>
+
+<p>When I ask why people visit my sites, and the ones that I make for other people, the answer is always <q>for the content</q>. That content is almost always written words and that means type. That is why I'm now advocating to my clients, that where feasible, not to waste hours of my time and their money on lengthy workarounds in an unnecessary attempt at cross-browser perfection.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-057.jpg"alt="" /></p>
+
+<p>Instead I provide simple but effectively designed HTML elements. This means great typography for headings, paragraphs, quotations, lists, tables and forms and no styling of layout. I think that Universal Internet Explorer 6 CSS pushes all the right buttons as a concept, but I know that it won't be appropriate in every situation. That's for you and your clients to judge. As <a href="http://www.zeldman.com/2009/05/21/a-new-answer-to-the-ie6-question/">Jeffrey Zeldman wrote in response</a>: </p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-058.jpg"alt="" /></p>
+
+<blockquote>
+<p>No hammer fits all nails, and no solution, however elegant, will work for every situation. If we're open minded, Andy's proposal may work in more situations than we first suspect.</p>
+</blockquote>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-059.jpg"alt="" /></p>
+
+<h3>Selling Universal IE6 CSS to clients</h3>
+
+<p>What I do know is that using Universal Internet Explorer 6 CSS saves me hours if not days per project; time that I can spend on work that will bring better business benefits for my clients and for me. Letting go of the notion that not all browsers see the same design isn't only so designers can use new technologies and do cool things, it is now a business decision.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-060.jpg"alt="" /></p>
+
+<h3>How to design in a browser</h3>
+
+<p>So what does designing in a browser mean for the design process and what does it practically entail? What advantages have I and my clients seen from me working in this way? Designing in a browser for New Internationalist allowed me to design around thirty templates, from sketches to finished design, with full client approval in less than three weeks of studio time.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-061.jpg"alt="" /></p>
+
+<p>I was able to see the effects of design decisions across all thirty templates in a few seconds after changing just a few lines of CSS. That is why I honestly believe that designing in a browser makes the process of design more spontaneous, more fun and more accurate than making designs in Photoshop or Fireworks. Rather than spending hours or days at the start, creating a look-and-feel direction, I now build designs more gradually and naturally in a more considered way.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-062.jpg"alt="" /></p>
+
+<p>Sometimes I work on a design in short bursts, often for only a few minutes a day.  Most of the time I leave a design open on my second monitor so that I can live with it for a while, then I move on to the next step. Often I''ll work on a design to where I'm happy to show it to a client, then I'll schedule a series of days to intensively work side-by-side with them while we build the final design.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-063.jpg"alt="" /></p>
+
+<p>Most often I'll start my design process by designing a system grid.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-064.jpg"alt="" /></p>
+
+<p>My process involves designing a structural grid and applying that grid as background image to a page.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-065.jpg"alt="" /></p>
+
+<p>Then, working with CSS makes it simple to adjust grid proportions and experiment with layout combinations across dozens of templates.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-066.jpg"alt="" /></p>
+
+<p>I can make sure that every element that I add to a page conforms perfectly to my system grid. There is no guess work. It's faster, cleaner and more flexible in allowing me or my clients the ability to work on and test a variety of layouts ‚Äî¬†all in a real-world browser environment that is so close to the end product as makes no difference.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-067.jpg"alt="" /></p>
+
+<p>Working with CSS when designing in a browser makes it simple to experiment with different typefaces and treatments, adjusting sizes and leading on content site-wide, something that can be highly time-consuming when working in Photoshop or Fireworks.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-068.jpg"alt="" /></p>
+
+<p> All modern browsers (except the one lashed together in Redmond) have also implemented RGBa; red, green, blue and alpha transparency. It is this transparency that allows elements behind, often background colors and images, to show through. This is a great way to make designs that look more <em>layered</em>. Using RGBa is also a fantastic way to experiment with color while designing. When I'm designing I use RGBa to move very quickly through iterations, checking how color changes affect different elements in a design across several templates.</p>
+
+<p>Instead of specifying a whole host of different color values, I use hues of black and white with alpha transparency over a single base color bound to either HTML or body elements. This allows me to experiment and demonstrate a range of color options by changing just one value. It's also a device that I used in my design for <a href="http://tweetcc.com">tweetCC</a>.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-069.jpg"alt="" /></p>
+
+<p>Staying with transparency for a moment, alpha-transparent PNG images are perfect when you're designing in a browser, particularly when you are experimenting with different color options.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-070.jpg"alt="" /></p>
+
+<p>You can use the same approach by making a single, alpha-transparent PNG graduated image.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-071.jpg"alt="" /></p>
+
+<p>Or in the case of New Internationalist, a semi-transparent halftone dot pattern that can be applied to any number of base colors.
+</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-072.jpg"alt="" /></p>
+
+<p>Instead of making one or several completed designs before I demonstrate to a client, I prefer a design to build gradually and naturally through a series of iterations. This approach allows me to live with a design for a period of time and my clients to experiment with it in their browser, perhaps testing it with their colleagues or customers before we move onto the next iteration. It also helps a client to focus on specific aspects of a design while we iterate.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-073.jpg"alt="" /></p>
+
+<p>I've mostly watched developers use tools such as Firebug for Firefox to debug CSS and JavaScript. But Firebug is just as useful to designers working in a browser.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-074.jpg"alt="" /></p>
+
+<p>Browser tools make it easy to experiment with design options:</p>
+
+<ul>
+<li>Switching layout directions with just a few characters of CSS</li>
+<li>Experimenting with typeface and leading combinations</li>
+<li>Working with different color combinations</li>
+</ul>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-075.jpg"alt="" /></p>
+
+<p>When you are designing side-by-side with a client, they can make requests, see the results of changes, then make immediate sign-off decisions based on how the design will display in a browser.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-076.jpg"alt="" /></p>
+
+<p>If you need to demonstrate different page <em>states</em>, for example logged in or logged out, there are Javascript tools including <a href="http://24ways.org/2008/easier-page-states-for-wireframes">plugins</a> for <a href="http://jquery.com/">jQuery</a> that will help you do that.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-077.jpg"alt="" /></p>
+
+<p>During this process, I often catalogue the iterations using <a href="http://www.realmacsoftware.com/littlesnapper/">LittleSnapper</a>. This process is far more spontaneous and interactive than proofing with static visuals. It is also more efficient, leaving you more time to spend on the nuances of a design.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-078.jpg"alt="" /></p>
+
+<p>What about testing? In the out-dated, backwards and forwards, wash-rinse-repeat, workflow that many people are forced to work with, testing usually takes place at the end of the process; after days of design and development. Designing in a browser makes it easier for testing to take place during even the earliest phases. If you spot problems, you can correct them far closer to the source and without the need to burn down what has already been produced.</p>
+
+<p>These issues might range from simple display problems to more fundamental issues such as inaccessible color combinations. If I'm honest, at times in the past, I rarely concerned myself with checking that the color combinations I chose were accessible to people with color deficiencies.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-079.jpg"alt="" /></p>
+
+<p>Browser based tools such as <a href="http://twitter.com/snookca">Jonathon Snook</a>'s <a href="http://snook.ca/technical/colour_contrast/colour.html">Colour Contrast Check</a> make it easy for everyone involved in the design process to check for color contrast issues from the very beginning. I've found that the best time to use Jonathon's tool is before I demonstrate a design to a client. This avoids any embarrassment should a client sign-off on a design that contains inaccessible color combinations &mdash;</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-080.jpg"alt="" /></p>
+
+<p>like the one on the left that I originally chose for the New Internationalist teaser bar.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-081.jpg"alt="" /></p>
+
+<h3>Designing a system, not a page</h3>
+
+<p> Many clients still look at their site as a collection of pages or templates.  When timescales and budgets are being squeezed, how can you better deliver a large scale project, for example like New Internationalist. One answer is to design a system, not a web page or site.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-082.jpg"alt="" /></p>
+
+<p>Designing a system involves working from the <em>content-out</em> to design a toolkit of modular, reusable content components and an underlying grid structure. The decision over my choice of grid for New Internationalist was based on three factors:</p>
+
+<ul>
+<li>Advertising sizes</li>
+<li>A 950 width that their research told them would best suit their readers</li> 
+<li>Their developers were already familiar with the Blueprint CSS framework and its dimensions</li>
+</ul>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-083.jpg"alt="" /></p>
+
+<p>Dividing up this grid into several larger column widths allowed me to design a framework that could support a range of content module sizes.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-084.jpg"alt="" /></p>
+
+<p>In the limited time available, designing full-page templates that cover ever every eventuality was unrealistic. Instead I designed a series of content modules, ranging from full articles to teaser titles and summaries, versions with images and versions without.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-085.jpg"alt="" /></p>
+
+<p>Each of these content modules was designed to fit the supporting grid with simple CSS class-switches to allow New Internationalist to change the visual presentation of an article or teaser by adding nothing more than an extra class via their CMS.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-086.jpg"alt="" /></p>
+
+<p>As important as designing visual systems, developing reusable markup and CSS is essential to making designing in a browser fast and the overall project more efficient. I'm convinced that developing a set of markup patterns and naming conventions for id and class attributes makes design and development faster. Naming conventions take the guess work out of writing reusable content modules.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-087.jpg"alt="" /></p>
+
+<p>Microformats also play a huge part in standardized markup patterns (There, I knew I wouldn't be able to resist talking about Microformats)  because their attributes combine semantics with more elements and attributes than you can hang a parka on.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-088.jpg"alt="" /></p>
+
+<p>By building a toolkit and system, a client can easily place these components in the grid in various configurations to create the site. This gives them incredible flexibility but also the best value for money for the time that they spend with you. This is the approach that I took with New Internationalist. I estimate that by designing a system for New Internationalist in a browser, I achieved 100% of the work in only 30% of the time. This with fewer issues and less, but more focussed, communication.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-089.jpg"alt="" /></p>
+
+<h3>What do you do with the time you save?</h3>
+
+<p>All of these changes to conventional web design and development workflow will help you to save time by reducing wasted effort; that has definitely been my experience. So what can you do with the time that you save? Does spending less time mean that you should charge less?</p>
+
+<p>Of course making more in less time does make you more competitive. But remember, you clients or employers are not paying you for the hours that you work, but for the years of knowledge you've learned and the skills that you've gained. 
+It's vital that you remember your worth and that it's in your clients' and employers' interest that you'll be around and willing to support them even after the tough times are over.</p>
+
+<p>This isn't only going to benefit the people that you work for, internally and externally, it will benefit you and the people that you work with. You might choose to invest the extra time in doing more work, in learning new skills or, if you run a business like I do, in working <em>on</em> rather than <em>for</em> that business.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-090.jpg"alt="" /></p>
+
+<p>This could mean <a href="http://24ways.org/2008/contract-killer">writing better contracts</a>, keeping on top of sales or possibly even developing your own products to give you a second (or third) income stream. What matters is that we use difficult times as an opportunity to make things better, for ourselves but also for other people.</p>
+
+<p>This might mean sharing your skills and knowledge with your co-workers or others by blogging about your work. After-all none of us would be where we are today if it weren't for the generosity of sharing by people like the speakers here and so many others. Sharing could also mean devoting some of your extra time to community or non-profit projects. So many are underfunded and could put a few hours a week with your skills to use helping many more people.</p>
+
+<p class="entry-caption"><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-091.jpg"alt="" /></p>
+
+<p>When I was writing this talk, people asked me if I was nostalgic for the protests of the 1980's. I had to think about that, but no, I don't miss them. I don't miss Thatcher, <a href="http://en.wikipedia.org/wiki/Youth_Opportunities_Programme">YOP schemes</a> or being told to <q><a href="http://en.wikipedia.org/wiki/Norman_Tebbit">get on my bike</a></q>. I'm not nostalgic for the tension, or for <a href="http://en.wikipedia.org/wiki/Duran_Duran">Duran Duran</a>.</p>
+
+<p>What I am nostalgic for is the sense of common purpose and a real desire to change the status quo that I felt existed then, that I think is lacking today. But I do have faith that as an industry and as a community that we can come together to change things for the better, and that conferences like this are a strong sign of that.</p>
+
+<p>Now isn't the time to be worried about the future or what might happen. Now is the time to focus efforts on redefining why we do what we love so much. After all, what is the alternative? As the song says:</p>
+
+<blockquote>
+<p>Are you gonna try to make this work, <br />
+Or spend your days down in the dirt? <br />
+You see things can change &mdash; <br />
+Yes and walls can come tumbling down!</p>
+</blockquote>
+
+<p><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-092.jpg"alt="" /></p>
+<p><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-093.jpg"alt="" /></p>
+<p><img src="http://stuffandnonsense.co.uk/content/img/2009-06-26-094.jpg"alt="" /></p>
+
+<p>Thank you so much for listening (reading). Comments?</p>
+
+<h4>More</h4>
+<ul>
+<li><a href="http://www.slideshare.net/malarkey/walls-come-tumbling-down-1586152">View on Slideshare</a></li>
+<li><a href="http://stuffandnonsense.co.uk/content/dl/slides/wallscometumblingdown.pdf">Download PDF</a> (25Mb)</li>
+</ul>
+
+
+
+<footer>
+<p class="vcard author">
+<span class="fn">Andy Clarke</span></span>
+<time datetime="2009-06-27" class="updated published">27/06/09 <span class='value-title' title="2009-06-27"></span></time> 
+<a href="http://twitter.com/home?status=http://forabeautifulweb.com/s/606 %23sn_606">Tweet this</a> with the URL: <a rev="canonical" href="http://forabeautifulweb.com/s/606">http://forabeautifulweb.com/s/606</a>
+</p>
+</footer>
+
+</div>
+</article>
+
+
+<section class="hfeed">
+
+<h2 id="replies">There have been 20 replies</h2>
+
+<div class="content-main">
+<ol class="entry-comments">
+
+<li id="r2116"} ">
+<a href="#r2116" title="Permalink this reply" rel="bookmark">#1</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=2dcaf28598c69bd12b1d9d7447020869&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/ritcheyer">Eric Ritchey</a></span></h4>
+<blockquote><p>Thanks so much for posting these! I very much enjoyed listening to you during An Event Apart, Boston.
+</p></blockquote>
+
+<p><time datetime="2009-06-27" class="updated published">27th Jun 2009 <span class='value-title' title="2009-06-27"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2117"} ">
+<a href="#r2117" title="Permalink this reply" rel="bookmark">#2</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=797eaf79f0fd5469ba53af0d56f2689c&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/phillipadsmith">Phillip Smith</a></span></h4>
+<blockquote><p>Great write up. Nicely done.
+</p></blockquote>
+
+<p><time datetime="2009-06-27" class="updated published">27th Jun 2009 <span class='value-title' title="2009-06-27"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2118"} ">
+<a href="#r2118" title="Permalink this reply" rel="bookmark">#3</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=a504e2614040adce7a8290b777774f8e&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/chaseswindler">Chase Swindler</a></span></h4>
+<blockquote><p>Saw you present this at AEA:Boston this year, and I thought it was absolutely amazing. Thanks for posting this with the transcript!
+</p></blockquote>
+
+<p><time datetime="2009-06-27" class="updated published">27th Jun 2009 <span class='value-title' title="2009-06-27"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2119"} ">
+<a href="#r2119" title="Permalink this reply" rel="bookmark">#4</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=3ff5ba0dbe4c75f69f74bea4ccf4c1eb&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/prendio2">Oisin Prendiville</a></span></h4>
+<blockquote><p>Andy thank you for sharing this in such detail. Throughly enjoyable read.</p>
+
+<p>I cannot find a working technique that I disagree with here and the benefits are certainly obvious. However I do find it difficult to justify the notion, unless I have misunderstood it, that although these methods help us complete a job in a third time we should still be billing clients clients more hours and using that time to blog, learn new skills, and develop our own projects at their expense.</p>
+
+<p>I do feel that clients are paying me for the hours that I work. They are paying more for each of those hours because of the items you mention (knowlege, skills, experience) and that can give me the liberty to focus on other things as opposed to needing to be billing out 160 hours a month.</p>
+
+<p>I&#8217;d also be really interested to hear more about working side-by-side with clients to finalise a design over a few days. Do you literally sit at the same desk making tweaks to the CSS etc? I find this idea really interesting because I&#8217;ve seen it in the video post-production industry but until now had never considered it in web design.</p>
+
+<p>Thanks again comrade!
+</p></blockquote>
+
+<p><time datetime="2009-06-27" class="updated published">27th Jun 2009 <span class='value-title' title="2009-06-27"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2120"} ">
+<a href="#r2120" title="Permalink this reply" rel="bookmark">#5</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=40324a65c60787a466eac93339353d75&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/paulrandall">Paul Randall</a></span></h4>
+<blockquote><p>A great writeup. I totally see the benefits of creating sites like this. There should be more conversation with the client as to why a 10 year-old browser cannot, and should not look exactly the same as the latest Safari or Firefox nightly build.</p>
+
+<p>If we as designers try to make a pixel-perfect version in each browser, we are inevitable adding more work, creating bloated code and additional images to create the effects the modern browsers achieve so easily. We are doing a disservice to the client in the end.
+</p></blockquote>
+
+<p><time datetime="2009-06-27" class="updated published">27th Jun 2009 <span class='value-title' title="2009-06-27"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2121"} ">
+<a href="#r2121" title="Permalink this reply" rel="bookmark">#6</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=49b619f92393bed93c8f3760895aecd5&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://www.twitter.com/cssquirrel/">Kyle Weems</a></span></h4>
+<blockquote><p>Thanks for putting this presentation online! I&#8217;ve been looking forward to the content of it since your first apprehensive tweets about the topic.</p>
+
+<p>I couldn&#8217;t agree more about the needed changes to the design process, the need to realize that browser results can&#8217;t (nor shouldn&#8217;t) be identical, etc. I&#8217;m hoping by seeing this repeated enough that it will actually sink in with designers that agree a change is needed but keep clinging to their old methodologies.</p>
+
+<p>Thanks, Andy!
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2122"} ">
+<a href="#r2122" title="Permalink this reply" rel="bookmark">#7</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=883ae3c4e678b49895cf0775ff52803d&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://tucson-labs.com">Josh Williams</a></span></h4>
+<blockquote><p>Thanks for taking the time to post your talk! Posting slides is common, but they aren&#8217;t usually worth much without the commentary. <br />
+I totally agree with you about designing in the browser. I&#8217;ve been doing that for some time now and it just seems so much easier for all of the reasons you mentioned.
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2123"} ">
+<a href="#r2123" title="Permalink this reply" rel="bookmark">#8</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=2c24211edec86c2f19c7fe54260b2893&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/prisca_eyedea">prisca</a></span></h4>
+<blockquote><p>Andy, thanks so much for posting the slides and transcript of your talk - looks beautiful :) Wonderful to be able to read your talk along with the visuals - thanks for sharing it with the rest of us, much appreciated :)</p>
+
+<p>And what a great read! Great to get your thoughts on designing in the broswer. I&#8217;ve been going from sketchbook straight to the code and browser for designing for a while now. It started out of necessity initially with time being tight and me wanting to do a few &#8216;favours for friends&#8217;-type projects in the midst of other work. I noticed how much more efficient my workflow became - and also how the live previews were so much better for my clients, being able to discuss aspects like the browser differences as well as the nature and importance of fluid layouts was such a bonus that I stuck with it. <br />
+I don&#8217;t think it works for all projects equally well - but when it does fit the project it is definitely my preferred choice of working now.</p>
+
+<p>Thanks again, Andy :)
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2124"} ">
+<a href="#r2124" title="Permalink this reply" rel="bookmark">#9</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=d490e2deff6e553d42503ddb03ef62de&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/ChrisPacheco">Chris Pacheco</a></span></h4>
+<blockquote><p>Thank you for posting your presentation slides and transcript, it was a great read :D</p>
+
+<p>I completely agree with you about designing in the browser, it makes sense in so many more ways as you say. People say we need a alternative to Photoshop but maybe that alternative is already here with us in our browser.</p>
+
+<p>I look forward to your DVDs also.
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2125"} malarkey">
+<a href="#r2125" title="Permalink this reply" rel="bookmark">#10</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=fe157cc7bba1bd73ee9b1b9c518991ea&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://www.stuffandnonsense.co.uk">Andy Clarke</a></span></h4>
+<blockquote><p>Thanks everyone for your kind compliments. I really was more nervous about giving this talk than any other I&#8217;ve given. At An Event Apart in Boston, I was literally shaking!</p>
+
+<p><a href="#r2119">@ Oisin Prendiville</a>: <em>However I do find it difficult to justify the notion, unless I have misunderstood it, that although these methods help us complete a job in a third time we should still be billing clients clients more hours and using that time to blog, learn new skills, and develop our own projects at their expense.</em></p>
+
+<p>— The way I look at it is, my clients are neither paying me for the hours that I work, nor even what I make for them. Instead they are paying for a &#8216;solution&#8217; (I hate that word) to their business needs. I solve problems and enable their business to do what they need on line.
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2126"} ">
+<a href="#r2126" title="Permalink this reply" rel="bookmark">#11</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=24d4b879a7c3813df82d804b9158e4da&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/hairyegg">Josh</a></span></h4>
+<blockquote><p>Jolly good stuff. Thanks for sharing this with those of us who don&#8217;t go to conferences.</p>
+
+<p>A few typos which I thought I&#8217;d be helpful/annoying by pointing out:</p>
+
+<p>Under &#8216;How to design in a browser&#8217;: &#8216;with full client approval in less <em>that</em> three weeks of studio time&#8217;.</p>
+
+<p>&#8216;There, I <em>new</em> I wouldn&#8217;t be able to resist talking about Microformats&#8217;
+</p></blockquote>
+
+<p><time datetime="2009-06-28" class="updated published">28th Jun 2009 <span class='value-title' title="2009-06-28"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2127"} ">
+<a href="#r2127" title="Permalink this reply" rel="bookmark">#12</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=91e46f0414c24141a016e48e52f5f305&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://www.twitter.com/bengilman/">Ben Gilman</a></span></h4>
+<blockquote><p>A really good read as well as, I imagine, a great presentation. I&#8217;m lucky that my work has developed an agile-esque design workflow which I&#8217;d agree is far more productive and creates far less tension than traditional ones. Really liked the part on CSS3, off to investigate right now. Lots to consider - thanks for posting this.
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2128"} ">
+<a href="#r2128" title="Permalink this reply" rel="bookmark">#13</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=7cebc2a5f1c3a4346b3ad336c679b620&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/littlelaura">Laura Whitehead</a></span></h4>
+<blockquote><p>In agreement that designing in the browser works best, and how I mostly work.<br />
+Thanks for sharing and in so much detail, always enjoy your slides!
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2129"} ">
+<a href="#r2129" title="Permalink this reply" rel="bookmark">#14</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=b31a38c074775c5c202bfe17a8afc821&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/voidnothings">Smiling Face</a></span></h4>
+<blockquote><p>Awesome Andy! :) Thanks for sharing the slides.
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2130"} ">
+<a href="#r2130" title="Permalink this reply" rel="bookmark">#15</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=e3504ba61dfd4ae677334eab4874b4ce&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/erwinheiser">Erwin Heiser</a></span></h4>
+<blockquote><p>Inspirational as always, can&#8217;t say I agree with everything here but certainly food for thought and something I&#8217;ll seriously consider for future projects.
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2131"} ">
+<a href="#r2131" title="Permalink this reply" rel="bookmark">#16</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=95ad688be2bfb2756528f3d647e19783&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url">Ricky Onsman</span></h4>
+<blockquote><p>Nice work, Andy.</p>
+
+<p>Re &#8220;I can live with that&#8221;, it does get difficult when the client has IE6 though.</p>
+
+<p>Re billing clients, I agree with you. While the fees I charge are based on a calculated and stated rate, ultimately each client pays me a lump sum to deliver what they want delivered. They&#8217;re buying a result, not my time.</p>
+
+<p>Like the Universal CSS file idea. Will we be wanting an IE7 version in a year or two?
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2132"} ">
+<a href="#r2132" title="Permalink this reply" rel="bookmark">#17</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=e20fe1f6e3fcacd146beb0492efdddf8&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/brainofj">James Thompson</a></span></h4>
+<blockquote><p>Thanks so much for sharing this in it&#8217;s entirety Andy. Too often the deck is shared without the transcript. </p>
+
+<p>I found the whole thing entertaining and informative. Some of the comments on the pitfalls of the waterfall method are just scary how dead on you/ they are. I see them daily in my job. Our designers are stuck designing psd&#8217;s instead of webpages, and it really shows in the end product.</p>
+
+<p>Thanks again.
+</p></blockquote>
+
+<p><time datetime="2009-06-29" class="updated published">29th Jun 2009 <span class='value-title' title="2009-06-29"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2133"} ">
+<a href="#r2133" title="Permalink this reply" rel="bookmark">#18</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=af570d0db4d5a1d86cc5e54935a3c5ec&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://www.twitter.com/davidhughes">David Hughes</a></span></h4>
+<blockquote><p>Great keynote Andy; beautiful slides and I loved the use of lyrics.</p>
+
+<p>Your talk has had me revisiting music I haven&#8217;t played for ages.</p>
+
+<p>It was great to get a chance to meet you at @Media.
+</p></blockquote>
+
+<p><time datetime="2009-06-30" class="updated published">30th Jun 2009 <span class='value-title' title="2009-06-30"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2141"} ">
+<a href="#r2141" title="Permalink this reply" rel="bookmark">#19</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=a0760401b84fb37554c3e2698bc2f328&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://twitter.com/ldexterldesign">Lewis Litanzios</a></span></h4>
+<blockquote><p>&#8216;Microformats also play a huge part in standardized markup patterns (There, I knew I wouldn&#8217;t be able to resist talking about Microformats) because their attributes combine semantics with more elements and attributes than you can hang a parka on.&#8217;</p>
+
+<p>*They* should put that paragraph right at the top of the <a href="http://microformats.org/">http://microformats.org/</a> website.
+</p></blockquote>
+
+<p><time datetime="2009-07-02" class="updated published">2nd Jul 2009 <span class='value-title' title="2009-07-02"></span></time>
+<span class="origin"></span></p>
+</li>
+
+<li id="r2144"} ">
+<a href="#r2144" title="Permalink this reply" rel="bookmark">#20</a>
+<img src="http://www.gravatar.com/avatar.php?gravatar_id=324a2706798e6fcbe18073eeb680c4af&amp;size=40" alt="" />
+<h4 class="vcard"><span class="fn url"><a href="http://www.twitter.com/etoxin">Adam</a></span></h4>
+<blockquote><p>Great. I will start using some of these principles right now. </p>
+
+<p>cheers
+</p></blockquote>
+
+<p><time datetime="2009-07-03" class="updated published">3rd Jul 2009 <span class='value-title' title="2009-07-03"></span></time>
+<span class="origin"></span></p>
+</li>
+
+</ol>
+
+<h3>Leave your comment</h3>
+
+Commenting is not available in this weblog entry.
+
+
+<div class="entry-tweets">
+<h3>Tweet a reply using the hash tag #sn_606</h3>
+
+<p>There are currently no tweet replies. <a href="http://twitter.com/home?status=sn_606">Add one?</a></p>
+
+ 
+</div>
+
+</div>
+
+<div class="content-sub">
+<div class="box">
+<h3>Search <a href="http://forabeautifulweb.com/blog/archives">blog archives</a></h3>
+<form id='search_form' method="post" action="http://forabeautifulweb.com/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="19" />
+<input type="hidden" name="XID" value="39f0cf6401fc208c00eb5fbd594d98fe764fdf42" />
+<input type="hidden" name="RP" value="search&amp;#47;results" />
+<input type="hidden" name="NRP" value="" />
+<input type="hidden" name="RES" value="" />
+<input type="hidden" name="status" value="" />
+<input type="hidden" name="weblog" value="blog" />
+<input type="hidden" name="search_in" value="everywhere" />
+<input type="hidden" name="where" value="all" />
+<input type="hidden" name="show_future_entries" value="yes" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+<fieldset>
+<input type="text" name="keywords" id="keywords" value=""  title="Search blog archives" />
+<input type="submit" value="Go" />
+</fieldset>
+</form>
+</div>
+
+<nav class="box">
+<h3>Blog categories</h3>
+<ul>
+<li><a href="http://forabeautifulweb.com/write">Articles published elsewhere</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/accessibility/">Accessibility</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/css/">Cascading Style Sheets</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/design/">Design</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/markup/">HTML, XHTML and Microformats</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/news/">News</a></li>
+
+<li><a href="http://forabeautifulweb.com/blog/category/typography/">Typography</a></li>
+
+</ul>
+</nav>
+</div>
+</section>
+
+<div class="info" role="contentinfo">
+<div class="inner">
+<div class="vcard">
+<div><a class="fn org url" rel="me" href="http://www.stuffandnonsense.co.uk/">Stuff and Nonsense Ltd.</a></div>
+<div class="adr">
+<div class="street-address">The Cow Shed Studio, Eversleigh</div>
+<div class="locality">Gwaenysgor</div>
+<div class="region">Flintshire, North Wales</div>
+<div class="postal-code">LL18 6EJ</div>
+</div>
+</div>
+
+<nav class="supp">
+<ul>
+<li><a href="http://forabeautifulweb.com/company/about">About</a></li>
+<li><a href="http://stuffandnonsense.co.uk/company/contact">Contact</a></li>
+<li><a href="http://forabeautifulweb.com/company/privacy">Privacy policy</a></li>
+<li><a href="http://forabeautifulweb.com/company/terms">Terms and conditions</a></li>
+</ul>
+</nav>
+
+<div class="copyright">
+<p>&copy; 2004 &#8211; 2010 <a href="http://www.stuffandnonsense.co.uk/">Stuff and Nonsense Ltd.</a> All Rights Reserved.
+CSS released  under <a href="http://creativecommons.org/licenses/by/2.5/" rel="license">CC Attribution 2.5</a>.
+<a href="http://mediatemple.net">Hosted by (mt)</a>  and built on <a href="http://www.expressionengine.com/index.php?affiliate=malarkey">ExpressionEngine </a>. Videos hosted by <a href="http://vzaar.com?affiliate=malarkey">vzaar</a>.</p>
+</div>
+
+<ul id="thirdparty">
+<li id="facebook"><a href="http://www.facebook.com/pages/Stuff-and-Nonsense/104374094184" rel="me facebook">Our Facebook page</a></li>
+<li id="twitter"><a href="http://twitter.com/cowshedstudio" rel="me twitter">Follow us on Twitter</a></li>
+<li id="gsfn"><a href="http://getsatisfaction.com/stuffandnonsense" rel="gsfn">Get Satisfaction</a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-608765-7");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
