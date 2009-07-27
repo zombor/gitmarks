@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<title>Creating video thumbnails using ffmpeg &#8211; Prashanth Ellina</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />	
+	<link rel="stylesheet" type="text/css" href="http://blog.prashanthellina.com/wp-content/themes/satorii/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://blog.prashanthellina.com/wp-content/themes/satorii/css/fancy.yuic.css" />			
+	<link rel="alternate" type="application/rss+xml" href="http://blog.prashanthellina.com/feed/" title="Prashanth Ellina latest posts" />
+	<link rel="alternate" type="application/rss+xml" href="http://blog.prashanthellina.com/comments/feed/" title="Prashanth Ellina latest comments" />
+	<link rel="pingback" href="http://blog.prashanthellina.com/xmlrpc.php" />	
+	<script type="text/javascript" src="http://blog.prashanthellina.com/wp-content/themes/satorii/js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://blog.prashanthellina.com/wp-content/themes/satorii/js/jquery.fancybox.yuic.js"></script>
+	<!--[if lt IE 7]><script src="http://blog.prashanthellina.com/wp-content/themes/satorii/js/jquery.pngFix.pack.js" type="text/javascript"></script><![endif]-->
+	<script type="text/javascript" src="http://blog.prashanthellina.com/wp-content/themes/satorii/js/satorii.js"></script>
+		
+	<link rel="alternate" type="application/rss+xml" title="Prashanth Ellina &raquo; Creating video thumbnails using ffmpeg Comments Feed" href="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/feed/" />
+<script type='text/javascript' src='http://blog.prashanthellina.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.prashanthellina.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.prashanthellina.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Prashanth Ellina' href='http://blog.prashanthellina.com/' />
+<link rel='start' title='Back to blogging' href='http://blog.prashanthellina.com/2004/05/23/back-to-blogging/' />
+<link rel='prev' title='Songza &#8211; music search engine and jukebox' href='http://blog.prashanthellina.com/2008/03/27/songza-music-search-engine-and-jukebox/' />
+<link rel='next' title='Visualizing mpeg4 motion compensation vectors using mplayer' href='http://blog.prashanthellina.com/2008/03/30/visualizing-mpeg4-motion-compensation-vectors-using-mplayer/' />
+<meta name="generator" content="WordPress 3.0.1" />
+<link rel='canonical' href='http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/' />
+<link rel='shortlink' href='http://blog.prashanthellina.com/?p=55' />
+
+<!-- All in One SEO Pack 1.6.5 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="keywords" content="ffmpeg,linux,thumbnail,video,ubuntu" />
+<!-- /all in one seo pack -->
+	
+</head>
+<body class="wordpress y2010 m12 d21 h19 single postid-55 s-y2008 s-m03 s-d29 s-h00 s-category-linux s-category-ubuntu s-category-video s-tag-ffmpeg s-tag-linux s-tag-thumbnail s-tag-video s-author-prashanthellina">
+
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<h1 id="blog-title"><span><a href="http://blog.prashanthellina.com/" title="Prashanth Ellina" rel="home">Prashanth Ellina</a></span></h1>
+		<div id="blog-description">In Pursuit of Truth</div>
+	</div><!--  #header -->
+
+	<div id="access">
+		<div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+		<div id="menu"><ul><li class="page_item page-item-15"><a href="http://blog.prashanthellina.com/about/">About</a></li></ul></div>
+	</div><!-- #access -->
+
+	<div id="container">
+		<div id="content">
+
+
+			<div id="nav-above" class="navigation yui-g">
+				<div class="nav-previous yui-u first"><a href="http://blog.prashanthellina.com/2008/03/27/songza-music-search-engine-and-jukebox/" rel="prev"><span class="meta-nav">&laquo;</span> Songza &#8211; music search engine and jukebox</a></div>
+				<div class="nav-next yui-u"><a href="http://blog.prashanthellina.com/2008/03/30/visualizing-mpeg4-motion-compensation-vectors-using-mplayer/" rel="next">Visualizing mpeg4 motion compensation vectors using mplayer <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="post-55" class="hentry p1 post publish author-prashanthellina category-linux category-ubuntu category-video tag-ffmpeg tag-linux tag-thumbnail tag-video y2008 m03 d29 h00">
+				<h2 class="entry-title">Creating video thumbnails using ffmpeg</h2>
+				<div class="entry-content">
+<p>Generating thumbnails/screenshots of a video is useful in many ways. Youtube and many other video sites use this to show a preview of the video as a small thumbnail. Google video captures a series of thumbnails from a video at various time intervals to show a better video preview.<br />
+<span id="more-55"></span><br />
+There is a simple way to generate thumbnails in Linux using ffmpeg, a very very useful tool for processing videos. Let us generate a thumbnail for this <a href="http://www.prashanthellina.com/images/motion_vector_video.avi">video</a>. Download the video and rename it to test.avi.</p>
+<p>Then, run this command,</p>
+<pre lang="bash">
+ffmpeg  -itsoffset -4  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320x240 test.jpg
+</pre>
+<p><br/><br/></p>
+<p>This command generates a 320&#215;240 sized PNG thumbnail at the 4th second in the video. The output looks like this.<br />
+<img src="http://www.prashanthellina.com/images/vid_thumb.jpg" alt="video thumbnail"/></p>
+<p>If you do not have ffmpeg installed and are using Debian/Ubuntu, do,</p>
+<pre lang="bash">
+sudo apt-get install ffmpeg
+</pre>
+<p><br/><br/></p>
+<p>A series of thumbnails, at 4, 8, 12 and 16 seconds.<br />
+<img src="http://www.prashanthellina.com/images/vid_thumb.jpg" alt="video thumbnail"/><br />
+<img src="http://www.prashanthellina.com/images/vid_thumb_8.jpg" alt="video thumbnail"/><br />
+<img src="http://www.prashanthellina.com/images/vid_thumb_12.jpg" alt="video thumbnail"/><br />
+<img src="http://www.prashanthellina.com/images/vid_thumb_16.jpg" alt="video thumbnail"/></p>
+<pre lang="bash">
+ffmpeg  -itsoffset -4  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320x240 test.jpg
+ffmpeg  -itsoffset -8  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320x240 test.jpg
+ffmpeg  -itsoffset -12  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320x240 test.jpg
+ffmpeg  -itsoffset -16  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320x240 test.jpg
+</pre>
+<p><br/><br/></p>
+<h3>useful links</h3>
+<ul>
+<li> <a href="http://blog.amnuts.com/2007/06/22/create-a-random-thumbnail-of-a-video-file/">Create a random thumbnail of a video file</a>
+<li> <a href="http://www.danielfischer.com/2007/06/27/how-to-use-ffmpeg-to-convert-video-via-ruby-on-rails/">http://www.danielfischer.com/2007/06/27/how-to-use-ffmpeg-to-convert-video-via-ruby-on-rails/</a>
+</ul>
+<p>Happy thumbnailing!</p>
+<p class="tag-links"><span>Tagged:</span> <a href="http://blog.prashanthellina.com/tag/ffmpeg/" rel="tag">ffmpeg</a>, <a href="http://blog.prashanthellina.com/tag/linux/" rel="tag">linux</a>, <a href="http://blog.prashanthellina.com/tag/thumbnail/" rel="tag">thumbnail</a>, <a href="http://blog.prashanthellina.com/tag/video/" rel="tag">video</a></p>				</div>
+				
+				<dl class="entry-meta">
+					<dt>Published:</dt>
+						<dd class="entry_date"><abbr class="published" title="2008-03-29T00:28:13+0000">March 29, 2008 &#8211; 12:28 am</abbr></dd>
+					<dt>Author:</dt>
+						<dd class="author vcard">By <a class="url fn n" href="http://blog.prashanthellina.com/author/prashanthellina/" title="View all posts by prashanthellina">prashanthellina</a></dd>
+					<dt>Categories:</dt>
+						<dd class="cat-links">
+						<ul class="post-categories">
+	<li><a href="http://blog.prashanthellina.com/category/linux/" title="View all posts in linux" rel="category tag">linux</a></li>
+	<li><a href="http://blog.prashanthellina.com/category/ubuntu/" title="View all posts in ubuntu" rel="category tag">ubuntu</a></li>
+	<li><a href="http://blog.prashanthellina.com/category/video/" title="View all posts in video" rel="category tag">video</a></li></ul>						</dd>
+					<dt>Comments:</dt>
+						<dd class="comments-link">
+						<ul>
+							<li><a href="#comments">24 Comments</a></li>
+							<li><a href='http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/feed/'>Comments RSS Feed</a></li>
+																				</ul>
+						</dd>
+									</dl>
+				
+				<!-- <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/"
+    dc:identifier="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/"
+    dc:title="Creating video thumbnails using ffmpeg"
+    trackback:ping="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/trackback/" />
+</rdf:RDF> -->
+			</div><!-- .post -->
+
+			<div id="nav-below" class="navigation yui-g">
+				<div class="nav-previous yui-u first"><a href="http://blog.prashanthellina.com/2008/03/27/songza-music-search-engine-and-jukebox/" rel="prev"><span class="meta-nav">&laquo;</span> Songza &#8211; music search engine and jukebox</a></div>
+				<div class="nav-next yui-u"><a href="http://blog.prashanthellina.com/2008/03/30/visualizing-mpeg4-motion-compensation-vectors-using-mplayer/" rel="next">Visualizing mpeg4 motion compensation vectors using mplayer <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="comments">
+
+
+				<div class="yui-gd">
+
+				<div id="trackbacks-list" class="comments yui-u first">
+
+					<h3><span>3</span> Trackbacks</h3>
+																			<ol>
+						<li id="comment-13500" >
+							<div class="comment-author">By <a href='http://tech.b.chickenandporn.com/2008/12/15/audio-stitching-with-ffmpeg/' rel='external nofollow' class='url'>Tech Musing on C&amp;P &raquo; Blog Archive &raquo; Audio Stitching with ffmpeg</a> on December 15, 2008 at 7:32 am</div>
+							<div class="trackback-text"><p>[...] Creating Video Thumbnails using FFmpeg (for -itsoffset) [...]</p>
+</div>
+</li>
+						<li id="comment-25390" >
+							<div class="comment-author">By <a href='http://www.rationalplanet.com/2009/05/create-video-preview-thumbnails-with-ffmpeg/' rel='external nofollow' class='url'>How to Create Preview Thumbnails with Ffmpeg for Your Movies | Alec's Notes</a> on May 4, 2009 at 11:29 am</div>
+							<div class="trackback-text"><p>[...] Create Video Preview Thumbnails with Ffmpeg VN:F [1.2.3_620]please wait&#8230;Rating: 0.0/10 (0 votes cast)See <a href="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/" rel="nofollow">http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/</a> [...]</p>
+</div>
+</li>
+						<li id="comment-30748" >
+							<div class="comment-author">By <a href='http://elliot.orwells.org/?p=298' rel='external nofollow' class='url'>Walkman X - Video encoding in Linux / Mac OS X | the paranoid android</a> on July 19, 2009 at 5:35 am</div>
+							<div class="trackback-text"><p>[...] <a href="http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/" rel="nofollow">http://blog.prashanthellina.com/2008/03/29/creating-video-thumbnails-using-ffmpeg/</a> [...]</p>
+</div>
+</li>
+					</ol>
+				</div><!-- #trackbacks-list .comments -->
+				
+				<div id="comments-list" class="comments yui-u">
+
+
+					<h3><span>21</span> Comments</h3>
+					<ol>
+						<li id="comment-3055" class="comment c0 c-y2008 c-m04 c-d13 c-h06 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/3c9298b6cb43c6b257ddda0d0499ea46?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">aris</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>how if my filename is with space instead?!<br />
+ex: my video.avi</p>
+<p>thanks for reply</p>
+</div>
+							<div class="comment-meta">Posted April 13, 2008 at 6:49 am <span class="meta-sep">|</span> <a href="#comment-3055" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-3056" class="comment c1 byuser comment-author-prashanthellina bypostauthor c-y2008 c-m04 c-d13 c-h07 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/b780d855a41025813831a1c810a948b9?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://www.prashanthellina.com' rel='external nofollow' class='url url'>prashanthellina</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Try enclosing the filename in double quotes like this &#8211;> &#8220;my video.avi&#8221;</p>
+</div>
+							<div class="comment-meta">Posted April 13, 2008 at 7:42 am <span class="meta-sep">|</span> <a href="#comment-3056" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-3060" class="comment c2 c-y2008 c-m04 c-d13 c-h07 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/3c9298b6cb43c6b257ddda0d0499ea46?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">aris</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>still no effect..<br />
+i trying to upload<br />
+$filePath = $uploadDir.$fileName;</p>
+<p>ffmpeg -i &#8220;.$filePath.&#8221; -y -s 320&#215;240 -ab 32000 -ar 22050 -g 160 -cmp 3 -subcmp 3 -mbd 2 -flags aic+cbp+mv0+mv4+trell &#8220;.$convPath</p>
+<p>where $filePath is source path where files is already uploaded.<br />
+upload is successfull but when ffmpeg start to conversion i got no files at $convPath.but vice versa if i use filename with no spaces instead.</p>
+</div>
+							<div class="comment-meta">Posted April 13, 2008 at 7:53 am <span class="meta-sep">|</span> <a href="#comment-3060" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-3104" class="comment c3 byuser comment-author-prashanthellina bypostauthor c-y2008 c-m04 c-d13 c-h18 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/b780d855a41025813831a1c810a948b9?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://www.prashanthellina.com' rel='external nofollow' class='url url'>prashanthellina</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>The command you posted here is missing a &#8221; at the end. When the command runs, does it throw any errors?</p>
+</div>
+							<div class="comment-meta">Posted April 13, 2008 at 6:48 pm <span class="meta-sep">|</span> <a href="#comment-3104" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-4107" class="comment c4 c-y2008 c-m05 c-d20 c-h23 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/17a97e09a1b23bc733ae22880a961b59?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">mike</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Using &#8220;-ss&#8221; rather than &#8220;-itsoffset&#8221; is considerably faster.  e.g. ffmpeg  -ss 12  -i test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 test.jpg</p>
+</div>
+							<div class="comment-meta">Posted May 20, 2008 at 11:35 pm <span class="meta-sep">|</span> <a href="#comment-4107" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-4235" class="comment c5 byuser comment-author-prashanthellina bypostauthor c-y2008 c-m06 c-d01 c-h22 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/b780d855a41025813831a1c810a948b9?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://www.prashanthellina.com' rel='external nofollow' class='url url'>prashanthellina</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Thanks for the info, Mike.</p>
+</div>
+							<div class="comment-meta">Posted June 1, 2008 at 10:34 pm <span class="meta-sep">|</span> <a href="#comment-4235" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-4754" class="comment c6 c-y2008 c-m07 c-d17 c-h10 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/89262fd05fef4aef76096f830e7dd5e4?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">sagar</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Hi, is there any possibility to create thumbnails in windows environment</p>
+</div>
+							<div class="comment-meta">Posted July 17, 2008 at 10:24 am <span class="meta-sep">|</span> <a href="#comment-4754" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-4763" class="comment c7 byuser comment-author-prashanthellina bypostauthor c-y2008 c-m07 c-d17 c-h20 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/b780d855a41025813831a1c810a948b9?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://www.prashanthellina.com' rel='external nofollow' class='url url'>prashanthellina</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Sagar, I have not tried it, but I think ffmpeg can be compiled for windows.</p>
+</div>
+							<div class="comment-meta">Posted July 17, 2008 at 8:43 pm <span class="meta-sep">|</span> <a href="#comment-4763" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-4780" class="comment c8 c-y2008 c-m07 c-d18 c-h09 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/89262fd05fef4aef76096f830e7dd5e4?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">sagar</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Thanks Prashanth Ellina&#8230;</p>
+</div>
+							<div class="comment-meta">Posted July 18, 2008 at 9:39 am <span class="meta-sep">|</span> <a href="#comment-4780" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-8643" class="comment c9 c-y2008 c-m10 c-d13 c-h23 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/13d0d197e098346f75f94af67ef8267c?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">Roger</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>if you canot instal ffmpeg on the server is there another option to generate thumbnails on linux</p>
+</div>
+							<div class="comment-meta">Posted October 13, 2008 at 11:00 pm <span class="meta-sep">|</span> <a href="#comment-8643" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-11527" class="comment c10 c-y2008 c-m11 c-d23 c-h22 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/d10ca8d11301c2f4993ac2279ce4b930?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://-' rel='external nofollow' class='url url'>jojo</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>@mike , Very useful command , thanks .</p>
+</div>
+							<div class="comment-meta">Posted November 23, 2008 at 10:52 pm <span class="meta-sep">|</span> <a href="#comment-11527" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-13163" class="comment c11 c-y2008 c-m12 c-d12 c-h12 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/bbeae8288b3cc439d190dcfe180bd80e?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">dong</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>It is not work on Linux</p>
+</div>
+							<div class="comment-meta">Posted December 12, 2008 at 12:32 pm <span class="meta-sep">|</span> <a href="#comment-13163" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-13164" class="comment c12 c-y2008 c-m12 c-d12 c-h12 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/bbeae8288b3cc439d190dcfe180bd80e?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">dong</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Help?? Please make it work on Linux</p>
+</div>
+							<div class="comment-meta">Posted December 12, 2008 at 12:35 pm <span class="meta-sep">|</span> <a href="#comment-13164" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-19280" class="comment c13 c-y2009 c-m02 c-d26 c-h20 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/613f14cabaef359e237680eb14224693?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">Mariana</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Sorry, I can creat video thumbnails using ffmpeg when the video is in other server????? for example:<br />
+ffmpeg  -itsoffset -4  -i <a href="http://www.otherserver.com/test.avi" rel="nofollow">http://www.otherserver.com/test.avi</a> -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 <a href="http://www.myserver.com/test.jpg" rel="nofollow">http://www.myserver.com/test.jpg</a></p>
+</div>
+							<div class="comment-meta">Posted February 26, 2009 at 8:36 pm <span class="meta-sep">|</span> <a href="#comment-19280" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-24124" class="comment c14 c-y2009 c-m04 c-d24 c-h17 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/435d8b4a9f424073e04e8417223b4e27?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">shashi k. sharma</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>Hi<br />
+is it possible to execute the following command on server1 and the video is situated at server two and we want to create thumbnail at server 3<br />
+ffmpeg  -itsoffset -16  -i server2/home/test/test.avi -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 server3/home/test/test.jpg</p>
+</div>
+							<div class="comment-meta">Posted April 24, 2009 at 5:19 pm <span class="meta-sep">|</span> <a href="#comment-24124" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-26121" class="comment c15 c-y2009 c-m05 c-d14 c-h12 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/155bfe911dec401613590ade31c9f3ad?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n"><a href='http://www.damtv-alld.com' rel='external nofollow' class='url url'>shahbaz ahmad</a></span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);<br />
+$myphoto = &#8220;user/&#8221;.$v.&#8221;/photo/&#8221;.$rname[0].&#8221;.jpg&#8221;;</p>
+<p>exec (&#8220;ffmpeg  -itsoffset -4  -i &#8220;.$target_path.&#8221; -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 &#8220;.$myphoto);</p>
+<p>when i run this command in photo directory there is no thumbnails &#8230;&#8230;.<br />
+when i run this command on command prompt as<br />
+ffmpeg  -itsoffset -4  -i life.jpg -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 life.flv<br />
+errors comes as&#8230;&#8230;.<br />
+could not find codec parameters<br />
+when i run this command on command prompt as<br />
+ffmpeg  -itsoffset -4  -i life.flv -vcodec mjpeg -vframes 1 -an -f rawvideo -s 320&#215;240 life.jpg<br />
+again errors comes as&#8230;&#8230;.<br />
+could not find codec parameters</p>
+</div>
+							<div class="comment-meta">Posted May 14, 2009 at 12:45 pm <span class="meta-sep">|</span> <a href="#comment-26121" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-29296" class="comment c16 c-y2009 c-m06 c-d29 c-h16 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/92b28376bdc5daca4c2f3e7785938fad?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">sree</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>instead of extracting one image,can i extract  a number of images in a single line command(not using loop)?</p>
+</div>
+							<div class="comment-meta">Posted June 29, 2009 at 4:20 pm <span class="meta-sep">|</span> <a href="#comment-29296" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-32204" class="comment c17 c-y2009 c-m08 c-d10 c-h11 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/752fa5ae2d649b16a82902516980711b?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">vipin</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>hi i want to extract(thumbnails) images from video in equal interval im using ffmpeg for image extraction but i dont know how to generate images in equal interval is there any shell script to fulfill this operation (E.G. suppose that i uploaded a video and i dont know the length of the video and it extracts 5 images from the video in equal interval )</p>
+<p>please help</p>
+</div>
+							<div class="comment-meta">Posted August 10, 2009 at 11:58 am <span class="meta-sep">|</span> <a href="#comment-32204" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-32452" class="comment c18 c-y2009 c-m08 c-d14 c-h16 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://1.gravatar.com/avatar/5b0d61e263cbceb8d73067b50c23eb28?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">Evan</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>If you&#8217;re trying to do this server side and you have physical access to the server, you can run ffmpeg directly from the CLI using exec().</p>
+</div>
+							<div class="comment-meta">Posted August 14, 2009 at 4:20 pm <span class="meta-sep">|</span> <a href="#comment-32452" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-33431" class="comment c19 c-y2009 c-m09 c-d03 c-h16 yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/a7f595d3f6b358b73261ac9afe06d27c?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">dilton</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>I&#8217;ve been trying to create video thumbnail file using wampserver. I managed to install ffmpeg but I don&#8217;t know how to use in my script. I&#8217;m new to php. please any suggestion. Thank in advance</p>
+</div>
+							<div class="comment-meta">Posted September 3, 2009 at 4:28 pm <span class="meta-sep">|</span> <a href="#comment-33431" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+						<li id="comment-39571" class="comment c20 c-y2009 c-m12 c-d26 c-h15 alt yui-gf fw">
+							<div class="comment-author vcard yui-u first"><img alt='' src='http://0.gravatar.com/avatar/2e8e1656e6f2b50e92401d5565acee33?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='photo avatar avatar-32 photo' height='32' width='32' /> <span class="fn n">Sean</span></div>
+							<div class="yui-u">
+							<div class="comment-text"><p>It works! thanks</p>
+</div>
+							<div class="comment-meta">Posted December 26, 2009 at 3:52 pm <span class="meta-sep">|</span> <a href="#comment-39571" title="Permalink to this comment">Permalink</a></div>
+							</div>
+						
+</li>
+					</ol>
+				</div><!-- #comments-list .comments -->
+
+				</div>
+
+
+
+
+			</div><!-- #comments -->
+
+		</div><!-- #content -->
+	</div><!-- #container -->
+
+	<div id="footer">
+		<p><strong>Prashanth Ellina</strong> <a href="http://blog.prashanthellina.com/feed/">(RSS)</a> + <strong>Sator-ii</strong> theme by <a href="http://yukei.net">Felipe Lavín</a></p>
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2476413-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>  
+	</div><!-- #footer -->
+</div><!-- #wrapper .hfeed -->
+</body>
+</html>
