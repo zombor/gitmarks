@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Installing MacBook Core Duo Right Hinge Mount - Page 5 - iFixit</title>
+
+      
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <meta name="description" content="iFixit - Installing MacBook Core Duo Right Hinge Mount" />
+      <meta name="title" content="Installing MacBook Core Duo Right Hinge Mount - Page 5 - iFixit" />
+      <meta name="keywords" content="Installing MacBook Core Duo Right Hinge Mount, MacBook Core Duo, Parts, Tools, Free Repair Guides, Manual, Teardowns" />
+      <meta name="robots" content="index, follow" />
+
+            <link rel="canonical" href="/Guide/Repair/Installing-MacBook-Core-Duo-Right-Hinge-Mount/303/5" />
+      
+            
+            <meta name="verify-v1" content="jw37yaG9O4vmztqkH8xsZEeQtGHqzC3GZXfwk5xUCeM=" />
+
+            <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon-20100611.ico" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      
+                  <link rel="image_src" href="http://www.ifixit.com/igi/GQXPAJIW6MgohcYG.standard" />
+            
+            
+      
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/a61cc46c.ifixit-packed-css-cdn-en-UTF-8.all.css" />
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/f7764b97.ifixit-packed-css-cdn-en-UTF-8.guide_view.css" />
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/ad9f7272.ifixit-packed-css-cdn-en-UTF-8.guide_flags.css" />
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/973ed789.ifixit-packed-css-cdn-en-UTF-8.comments.css" />
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/9c4c5464.ifixit-packed-css-cdn-en-UTF-8.FrameModules-moderator_vote.css" />
+               <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/1d9fcec5.ifixit-packed-css-cdn-en-UTF-8.FrameModules-Sidebar-ads.css" />
+      
+                     <link rel="coolirisfeed" href="/Guide/Cooliris/Installing-MacBook-Core-Duo-Right-Hinge-Mount/303" type="application/rss+xml" title="Cooliris Gallery" 
+          id="gallery" />
+      
+                     <link rel="alternate" type="application/json+oembed" 
+          href="http://www.ifixit.com/Embed?url=http%3A%2F%2Fwww.ifixit.com%2FGuide%2FRepair%2FInstalling-MacBook-Core-Duo-Right-Hinge-Mount%2F303%2F1&format=json" title="iFixit Guide Embed" />
+      
+      <!--[if IE 6]>
+                     <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/6493e8c8.ifixit-packed-css-cdn-en-UTF-8.ie6.css" />
+                              <![endif]-->
+
+      <!--[if IE 7]>
+                                 <link rel="stylesheet" type="text/css" href="http://cacher.ifixit.net/Includes/Guide/ifixit/css/bdfe1d7b.ifixit-packed-css-cdn-en-UTF-8.ie7.css" />
+                  <![endif]-->
+   </head>
+
+   <body >
+      <div id="hiddenTimezone" style="display:none">
+         <form action="">
+            <div><input id="timezone" type="hidden" value="none"/></div>
+         </form>
+      </div>
+
+            <div id="topContainer">
+                     <div id="notifications" style="display:none;">
+   <span class="close">click to close</span>
+   </div>               </div>
+      
+      
+                                 
+<div id="headerBar">
+   <div id="headerBarContent">
+      <h1 id="name"><a href="/"><img src="http://static.ifixit.net/static/images/layout/logo.gif"
+       alt="iFixit" width="76" height="25" /></a></h1>
+
+            <ul id="loggedInNav" style="display:none">
+                                                        <li><a href="/User"><span id="userReputation"></span></a></li>
+                  <li><a href="/Guide/logout">Logout</a></li>
+      </ul>
+
+      <ul id="loggedOutNav">
+         <li><a id="navSignup" href="/Guide/login/register">Join Us</a></li>
+         <li><a id="navLogin" href="/Guide/login">Login</a></li>
+      </ul>
+
+            <div id="headerBarAvatar"
+       style="display:none"
+       >
+                                                   <a href="/User">
+            <img src="" width="25" height="25" alt="" title="" />
+         </a>
+      </div>
+            
+            <form id="searchForm" method="get" action="/Guide/search">
+         <div>
+            <input type="image" src="http://static.ifixit.net/static/images/blank.gif" id="searchSubmit" alt="Go" />
+            <input type="text" name="text" id="searchBox" maxlength="200"
+                           value=""
+              />
+         </div>
+      </form>
+      
+      <ul id="headerBarIcons">
+         <li id="headerBarParts">
+         <a href="/Parts-Store"
+            title="Parts"
+                      ><span>Parts</span></a></li>
+
+         <li id="headerBarRepair">
+         <a href="/Guide"
+            title="Repair"
+            class="active"          ><span>Repair</span></a></li>
+
+         <li id="headerBarAnswers">
+         <a href="/Answers/"
+            title="Answers"
+                      ><span>Answers</span></a></li>
+
+         <li id="headerBarContribute">
+         <a href="/Contribute"
+            title="Contribute"
+                      ><span>Contribute</span></a></li>
+      </ul>
+   </div>
+</div>
+      
+      <div id="container">
+         <!-- MAIN CONTENT -->
+                     <div id="banner" style="height:8px;margin:0px">
+                        </div>
+         
+         <div id="content" class="fullWidth">
+
+                        
+                        
+                        <div id="contentMain" class="fullWidth">
+                                                <div id="sidebar">
+   <div class="hrSidebarNavigation" ></div>
+
+   <div id="sidebarEditNav" class="sidebarBox">
+      <ul>
+                  <li class="activeNav" 
+            >
+            <a href="/Guide/Repair/Installing-MacBook-Core-Duo-Right-Hinge-Mount/303/1">View</a></li>
+                           <li            >
+            <a href="/Guide/edit/303">Edit</a></li>
+                           <li            >
+            <a href="/Guide/history/303">History</a></li>
+               </ul>
+      <div class="clearer"></div>
+   </div>
+</div>
+
+<div id="guideMain">
+      
+   <div id="guideSteps">
+      <div id="guideIntro">
+      <div class="hrFocus hrTop"></div>
+   <div class="pagination">
+      <p class="left">   <a href="/Guide/Repair/Installing-MacBook-Core-Duo-Right-Hinge-Mount/303/4"><span class="arrow">&laquo;</span> Previous</a>
+</p><p class="right"></p><p class="middle">Page 5 of 5</p>
+   </div>
+   
+    
+   <div class="clearer"></div>
+</div>
+
+
+                                                            
+                                                   
+                        <div class="hrContentMinor"></div>
+            
+               
+   
+
+
+<a id="s1179"></a>
+<div class="step">
+   <div class="stepImages">
+      <div class="stepImage">
+                  <img src="http://guide-images.ifixit.net/igi/GQXPAJIW6MgohcYG.medium"
+          alt="first image"
+          class="hasMenu hasLarge" />
+               </div>
+         </div>
+   <div class="stepText">
+            
+            <h3 class="stepTitle">
+      <span class="edit">
+                        <a class="addNote iconLink" href="#addNote" rel="nofollow" data-context="step"
+ data-contextid="1179" title="Add Step 13 Note"><span class="iconToggle"><img src="http://static.ifixit.net/static/images/icons/comment.png" alt="Add Note" class="hidden" style="vertical-align:middle" /><img src="http://static.ifixit.net/static/images/icons/comment_off.png" alt="Add Note" style="vertical-align:middle" /></span></a>   </span>
+            <span class="edit"><a class="muted" rel="nofollow" href="/Guide/edit/303/1179">Edit</a></span>
+      <span class="stepValue">Step 13</span>
+                        &mdash;
+                     Right Hinge Mount
+                     
+   <a class="anchor" href="#s1179" title="Link to this step">&nbsp;&para;&nbsp;</a>
+</h3>
+
+<ul class="stepLines"><li><div class="bullet bullet_black"><!-- IE6 needs this comment. --></div><p>Remove the following 2 screws from the right hinge mount:</p><div class="clearer"><!-- IE6 needs this comment. --></div><ul><li><div class="bullet bullet_red"><!-- IE6 needs this comment. --></div><p>One 6 mm Phillips on the left side of the hinge mount.</p><div class="clearer"><!-- IE6 needs this comment. --></div></li><li><div class="bullet bullet_orange"><!-- IE6 needs this comment. --></div><p>One 10 mm Phillips on the right side of the hinge mount.</p><div class="clearer"><!-- IE6 needs this comment. --></div></li></ul></li><li><div class="bullet bullet_black"><!-- IE6 needs this comment. --></div><p>Lift the hinge mount and attached plastic dust cover out of the computer.</p><div class="clearer"><!-- IE6 needs this comment. --></div></li></ul>   </div>
+   <div class="clearer"></div>
+</div>
+            
+                                                         
+                                                   
+            
+               
+   
+
+
+<a id="s1180"></a>
+<div class="step lastStep">
+   <div class="stepImages">
+      <div class="stepImage">
+                  <img src="http://guide-images.ifixit.net/igi/vDDO4uqmhdbPOVOk.medium"
+          alt="first image"
+          class="hasMenu hasLarge" />
+               </div>
+         </div>
+   <div class="stepText">
+            
+            <h3 class="stepTitle">
+      <span class="edit">
+                        <a class="addNote iconLink" href="#addNote" rel="nofollow" data-context="step"
+ data-contextid="1180" title="Add Step 14 Note"><span class="iconToggle"><img src="http://static.ifixit.net/static/images/icons/comment.png" alt="Add Note" class="hidden" style="vertical-align:middle" /><img src="http://static.ifixit.net/static/images/icons/comment_off.png" alt="Add Note" style="vertical-align:middle" /></span></a>   </span>
+            <span class="edit"><a class="muted" rel="nofollow" href="/Guide/edit/303/1180">Edit</a></span>
+      <span class="stepValue">Step 14</span>
+      
+   <a class="anchor" href="#s1180" title="Link to this step">&nbsp;&para;&nbsp;</a>
+</h3>
+
+<ul class="stepLines"><li><div class="bullet bullet_black"><!-- IE6 needs this comment. --></div><p>Slide the plastic dust cover out of its slot in the right hinge mount.</p><div class="clearer"><!-- IE6 needs this comment. --></div></li></ul>   </div>
+   <div class="clearer"></div>
+</div>
+                        <p id="stepNavigation">
+                              <a class="buttonLink disabledButton" id="nextPageButton"
+                href="#no-more"
+                >Next &raquo;</a>
+               
+                              <a class="buttonLink" id="prevPageButton"
+                href="/Guide/Repair/Installing-MacBook-Core-Duo-Right-Hinge-Mount/303/4"
+                >&laquo; Previous</a>
+                           </p>
+            
+                                 
+      <div class="hrContentMinor"></div>
+
+<form id="wasHelpfulForm" action="">
+      <div style="font-size: 1.2em">
+                  <p>To reassemble your device, follow these instructions in reverse order.</p>
+               </div>
+
+      <p style="font-size:1.4em">
+         
+                  For more information, check out the          <a href="/Device/MacBook_Core_Duo">MacBook Core Duo
+          device page</a>.      </p>
+
+      <div id="userDidHaveSuccess" style="display: none">
+         
+         <h4 style="font-size: 14px" class="userSuccessText">Fantastic! Great work!          <a href="/User">
+         Your profile</a> has been updated to show that you completed Installing MacBook Core Duo Right Hinge Mount.<br /><br />Change your mind?</h4>
+         
+         <p><button type="submit" class="buttonLink wasHelpfulButton">Oops, I actually didn't do it.</button></p>
+      </div>
+
+      <div id="userDidNotHaveSuccess">
+         <h4 style="font-size:1.4em" class="userSuccessText">Did you successfully follow this guide?</h4>
+
+         <p><button type="submit" class="buttonLink wasHelpfulButton">I did it! Success!</button></p>
+      </div>
+</form>
+
+
+<div class="clearer"></div>
+   </div>
+
+      <div id="guideBottom">
+      <div class="pagination paginationBottom">
+         <p class="middle">
+            Page 5 of 5         </p>
+      </div>
+
+            <div id="guideBottomColumns">
+                  <div class="column column3 firstColumn">
+                              <div class="hrSidebarMuted"></div>
+   <div class="sidebarBoxLightGray">
+<h3>Required Tools</h3>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Phillips-00-Screwdriver/IF145-006"><img src="http://cart-products.ifixit.net/cart-products/GGXkxBRrmZg6iRdE.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Phillips-00-Screwdriver/IF145-006">Phillips #00 Screwdriver</a></h4>
+      <p class="productDetails">
+         <strong>$4.95</strong> 
+          &middot; 50+ in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Coin/IF145-095"><img src="http://cart-products.ifixit.net/cart-products/CDpMNvBsmbEthegL.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Coin/IF145-095">Coin</a></h4>
+      <p class="productDetails">
+         <strong>$2.95</strong> 
+          &middot; 2 in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Spudger/IF145-002"><img src="http://cart-products.ifixit.net/cart-products/lA2kL1NUD3IvKNhV.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Spudger/IF145-002">Spudger</a></h4>
+      <p class="productDetails">
+         <strong>$2.95</strong> 
+          &middot; 50+ in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+</div>                                 </div>
+                           <div class="column column3">
+                              <div class="hrSidebarMuted"></div>
+   <div class="sidebarBoxLightGray">
+<h3>Required Products</h3>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/MacBook-Parts/MacBook-Core-Duo-Right-Hinge-Cover/IF186-012"><img src="http://cart-products.ifixit.net/cart-products/obGmyVpMTQHNUnQD.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/MacBook-Parts/MacBook-Core-Duo-Right-Hinge-Cover/IF186-012">MacBook Core Duo Right Hinge Cover</a></h4>
+      <p class="productDetails">
+         <strong>$9.95</strong> 
+          &middot; 8 in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+</div>                                 </div>
+                           <div class="column column3">
+                              <div class="hrSidebarMuted"></div>
+   <div class="sidebarBoxLightGray">
+<h3>Recommended Tools</h3>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Anti-Static-Mat/IF145-036"><img src="http://cart-products.ifixit.net/cart-products/uXc1PEaqgaU4Owpl.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Anti-Static-Mat/IF145-036">Anti-Static Mat</a></h4>
+      <p class="productDetails">
+         <strong>$19.95</strong> 
+          &middot; 20 in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Anti-Static-Wrist-Strap/IF145-071"><img src="http://cart-products.ifixit.net/cart-products/3nBEGDigqDeSwAFX.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Anti-Static-Wrist-Strap/IF145-071">Anti-Static Wrist Strap</a></h4>
+      <p class="productDetails">
+         <strong>$7.95</strong> 
+          &middot; 50+ in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/54-Piece-Bit-Driver-Kit/IF145-022"><img src="http://cart-products.ifixit.net/cart-products/2uY6TdYOlgN5gGLq.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/54-Piece-Bit-Driver-Kit/IF145-022">54 Piece Bit Driver Kit</a></h4>
+      <p class="productDetails">
+         <strong>$19.95</strong> 
+          &middot; 50+ in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/Magnetic-Pickup-Tool/IF145-078"><img src="http://cart-products.ifixit.net/cart-products/JrveaQPbkwTDuUVJ.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/Magnetic-Pickup-Tool/IF145-078">Magnetic Pickup Tool</a></h4>
+      <p class="productDetails">
+         <strong>$4.95</strong> 
+          &middot; 50 in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+<div class="sidebarBlurb">
+   <div class="blurbImage"><a href="/Tools/18-Compartment-Sorting-Tray/IF145-066"><img src="http://cart-products.ifixit.net/cart-products/pqCiNLq1A5RXWdoP.mini" alt="Product image" class="noBorder" /></a></div>
+   <div class="blurbText">
+      <h4 class="productTitle"><a class="muted" href="/Tools/18-Compartment-Sorting-Tray/IF145-066">18 Compartment Sorting Tray</a></h4>
+      <p class="productDetails">
+         <strong>$6.95</strong> 
+          &middot; 38 in stock       </p>
+   </div>
+   <div class="clearer"></div>
+</div>
+</div>                                 </div>
+                  <div class="clearer"></div>
+      </div>
+      
+         </div>
+   </div>                                 <div id="guideCommentsContainer">
+
+      
+   <h2 class="muted" id="notesHeader">Notes
+                                          <a class="addNote iconLink" href="#addNote" rel="nofollow" data-context="guide"
+ data-contextid="303" title="Add Guide Note"><span class="iconToggle"><img src="http://static.ifixit.net/static/images/icons/comment.png" alt="Add Note" class="hidden" style="vertical-align:middle" /><img src="http://static.ifixit.net/static/images/icons/comment_off.png" alt="Add Note" style="vertical-align:middle" /></span></a>       
+      <span class="noteToggle headerLink">Notes are
+                  <span id="notesState">off</span> | <a id="notesControl" data-notes-active="0" href="#on">turn on</a>
+               </span>
+
+      
+
+         </h2>
+
+   <div id="notesDiv">
+         </div>
+
+   <form style="display:none" action="" id='addCommentForm' method="post">
+   <div class="hrEdit"></div>
+   <h2 class="muted" id="addCommentTitle"></h2>
+   <div class="formBody">
+      <div class="formField">
+         <textarea name="comment_content" id="comment_content" rows="6" 
+          class="fullWidth countCharacters" cols="20"></textarea>
+      </div>
+         <div class="maxCharacters" data-minimum="12" style="display:none">1024</div>
+   </div>
+
+   <div>
+      <input type="hidden" name="csrf_check" value="HEhMd" style="margin:0px;padding:0px" />      <input id="comment_context" type="hidden" value="" />
+      <input id="comment_contextid" type="hidden" value="" />
+      <input id="comment_preview" class="buttonLink" type="submit" value="Preview" />
+      <input id="comment_add" class="buttonLink" type="submit" value="Add note" />
+      <h5 style="margin-left: 5px; display: inline">
+         <a class="muted" href="#syntax" id="syntaxToggle"
+          >Formatting Help</a>
+      </h5>
+      <div id="formatting" style="display:none; margin-top: 10px">
+         <h3>Formatting Help</h3>
+         <table>
+   <tr>
+      <th style="width: 190px">Input Text</th>
+      <th>Preview</th>
+   </tr>
+   <tr>
+      <td>'''Bold'''</td>
+      <td><strong>Bold</strong></td>
+   </tr>
+   <tr>
+      <td>''Italic''</td>
+      <td><em>Italic</em></td>
+   </tr>
+   <tr>
+      <td>[http://www.ifixit.com|Hyperlink]</td>
+      <td><a href="http://www.ifixit.com/">Hyperlink</a></td>
+   </tr>
+   <tr>
+      <td>[quote] Quote [/quote]</td>
+      <td>Quote</td>
+   </tr>
+   <tr>
+      <td>[raw] ''Unformatted Text'' [/raw]</td>
+      <td>''Unformatted Text''</td>
+   </tr>
+   <tr>
+      <td>[product|IF137-001|iPhone LCD]</td>
+      <td><a href="/iPhone-Parts/iPhone-3G-Display/IF137-001">iPhone LCD</a></td>
+   </tr>
+</table>      </div>
+   </div>
+</form>
+
+   <div id="previewNote" class="noteContent"></div>
+   <div id="commentsLoading" style="display:none; height:150px;">&nbsp;</div>
+</div>                           </div>
+            <div class="clearer"></div>
+         </div>
+
+                  <div id="footer" style="clear:both">
+            <div style="clear:both">
+   <div class="footerContent">
+      <div class="hrFooter"></div>
+
+      <div id="whyBuyFooter">
+         <h2>Fixing the world, one piece of hardware at a time.</h2>
+
+         <div class="footerBlurb" id="whyBuyFree">
+            <p><strong class="title">Free Repair Manuals</strong>
+            We <a href="/Guide/Info/what">make it easy</a> for you to fix things yourself with our online step-by-step <a href="/Guide">repair guides</a>, 
+            <a href="/Troubleshoot">troubleshooting tips</a>,
+            and thriving community of <a href="/Answers">repair technicians</a>
+            who want to help. Or, check out our <a href="/Teardown">teardowns</a>
+            &mdash; sneak-peeks inside the latest new gadgets.</p>
+         </div>
+
+         <div class="footerBlurb" id="whyBuyEnvironment">
+            <p><strong class="title">Fix the Planet</strong>
+            Repair is recycling! The best way to keep electronics out of landfills is to keep them working longer. Toxic electronic waste is a global problem that we are working to solve. Self repair saves you money and <a href="/Guide/Info/environment">helps the environment</a>!</p>
+         </div>
+
+         <div class="footerBlurb" id="whyBuyTeach">
+            <p><strong class="title">Help us teach repair</strong>
+            What if everyone had access to a free repair manual for everything
+            they owned? That's our mission. <a href="/Contribute">Share your knowledge</a>
+            and help us fix the world.
+            </p>
+         </div>
+
+         <div class="footerBlurb" id="whyBuyParts">
+            <p><strong class="title">We sell parts</strong>
+            We fund our mission of helping people fix things by selling useful <a href="/Parts-Store">service parts</a> and <a href="/Tools">tools</a>.
+           </p>
+         </div>
+
+      </div>
+
+      <div id="newsletterFrameModule" class="sidebarBoxLightBlue">
+         <h2>Join Us</h2>
+         <ul>
+            <li><a href="/Answers">Solve a <strong>problem</strong></a>.</li>
+            <li><a href="http://twitter.com/ifixit">Follow us on <strong>twitter</strong></a>.</li>
+            <li><a href="/blog">Read our <strong>blog</strong></a>.</li>
+         </ul>
+
+         <h3 id="newsletterHeader">Join over 75,000 people reading our repair newsletter!</h3>
+         <p id="newsletterMsg" style="display:none"></p>
+         <form id="newsletterForm" action="" method="post">
+            <div class="emailInputFrame">
+               <input class="inactive" id="newsletterInput" type="text" 
+                value="Enter email address" />
+            </div>
+            <p><input type="submit" value="Subscribe"/></p>
+         </form>
+      </div>
+
+      <br class="clearer" />
+  </div>
+</div>
+
+<div style="clear:both">
+   <div class="footerLinks">
+         
+      <ul class="horizontal">
+         <li><a href="/Info">About</a></li>
+         <li><a href="/Info/background">Our background</a></li>
+         <li><a href="/Contribute">Contribute</a></li>
+         <li><a href="/Manifesto">Manifesto</a></li>
+         <li><a href="/Info/what">Our mission</a></li>
+         <li><a href="/api">API</a></li>
+         <li><a href="/Services">Services</a></li>
+         <li><a href="/Info/media">Media</a></li>
+         <li><a href="/Info/Licensing">Licensing</a></li>
+         <li><a href="http://meta.ifixit.com"><strong>Feedback always welcome</strong></a></li>
+      </ul>
+
+      <ul class="horizontal" style="font-size: 0.9em;">
+         <li>&copy; 2010 <a href="/" title="iFixit">iFixit</a> &mdash; Licensed under <a href="/Info/Licensing">Creative Commons BY-NC-SA</a></li>
+         <!-- ClickTaleExcludeBlock -->
+         <li><span id="footerStats">0.1864 seconds (Ostrich) &mdash; 12</span> &mdash; App 0</li>
+         <!-- EndClickTaleExcludeBlock -->
+      </ul>
+
+   </div>
+</div>         </div>
+               </div>
+
+      
+      
+                  <script type="text/javascript">
+/* <![CDATA[ */
+var CSRFCheck = 'HEhMd';
+/* ]]> */
+</script>
+      
+                  <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/605ba9f2.ifixit-packed-js-cdn-en-UTF-8.all.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/72101a2b.ifixit-packed-js-cdn-en-UTF-8.guide_view.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/a1fd2ee3.ifixit-packed-js-cdn-en-UTF-8.FrameModules-comments.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/a6fb32ae.ifixit-packed-js-cdn-en-UTF-8.FrameModules-moderator_vote.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/31770ec0.ifixit-packed-js-cdn-en-UTF-8.Shared-Autocompleter-Autocompleter.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/bba3f112.ifixit-packed-js-cdn-en-UTF-8.Shared-blurb_finder.js"></script>
+            <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/e752abb4.ifixit-packed-js-cdn-en-UTF-8.FrameModules-single_field_editor.js"></script>
+      
+      <!--[if IE 6]>
+                     <script type="text/javascript" src="http://cacher.ifixit.net/Includes/Guide/ifixit/js/25f236d4.ifixit-packed-js-cdn-en-UTF-8.ie6_pngfix_tilebg.js"></script>
+                  <![endif]-->
+
+      <!--[if IE 7]>
+                        <![endif]-->
+
+            
+                     <script type="text/javascript" 
+          src="http://lite.piclens.com/current/piclens.js"></script>
+      
+            
+            <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+      /* <![CDATA[ */
+         var pageTracker = _gat._getTracker("UA-30506-1");
+         pageTracker._trackPageview();
+
+               /* ]]> */
+      </script>
+
+            
+               </body>
+</html>
