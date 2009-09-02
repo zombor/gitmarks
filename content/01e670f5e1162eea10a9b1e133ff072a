@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+  <title>AWS::S3 - Ruby Library for Amazon Simple Storage Service (S3)</title>
+  <link rel="Stylesheet" href="screen.css" type="text/css" media="screen" />
+  <link rel="Stylesheet" href="ruby.css" type="text/css" media="screen" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="page_area">
+    <div class="left_column">
+      <img id="logo" src="images/box-and-gem.gif" />
+    </div>
+    <div class="column">
+      <div class="header">
+        <h2>AWS::S3</h2>
+        <h3>A Ruby Library for Amazon's Simple<br />Storage Service's (S3) REST API.</h3>
+      <p class="links">
+      <a href="http://github.com/marcel/aws-s3/tree/master">Browse code</a> |
+      <a href="http://amazon.rubyforge.org/doc/">Docs</a> |
+      <a href="http://rubyforge.org/frs/?group_id=2409">Downloads</a> |
+      <a href="http://rubyforge.org/tracker/?group_id=2409">Bugs &amp; Patches</a> |
+      <a href="http://rubyforge.org/mailman/listinfo/amazon-s3-dev">Mailing list</a></p>
+        <h4>Download with RubyGems</h4>
+        <pre>sudo gem i aws-s3</pre>
+        <h4>Clone from the master git repository</h4>
+        <pre>git clone git://github.com/marcel/aws-s3.git</pre>
+      </div>
+
+      <div class="readme">
+
+<h2>Readme</h2>
+<h4 class="first">Getting started</h4>
+<p>
+To get started you need to require &#8216;aws/s3&#8217;:
+</p>
+<div class="ruby"><pre>  <span class="punct">%</span> <span class="ident">irb</span> <span class="punct">-</span><span class="ident">rubygems</span>
+  <span class="ident">irb</span><span class="punct">(</span><span class="ident">main</span><span class="punct">):</span><span class="number">001</span><span class="punct">:</span><span class="number">0</span><span class="punct">&gt;</span> <span class="ident">require</span> <span class="punct">'</span><span class="string">aws/s3</span><span class="punct">'</span>
+  <span class="comment"># =&gt; true</span>
+</pre></div><p>
+The AWS::S3 library ships with an interactive shell called <tt>s3sh</tt>.
+From within it, you have access to all the operations the library exposes
+from the command line.
+</p>
+<div class="ruby"><pre>  <span class="punct">%</span> <span class="ident">s3sh</span>
+  <span class="punct">&gt;&gt;</span> <span class="constant">Version</span>
+</pre></div><p>
+Before you can do anything, you must establish a connection using
+Base.establish_connection!. A basic connection would look something like
+this:
+</p>
+<div class="ruby"><pre>  <span class="constant">AWS</span><span class="punct">::</span><span class="constant">S3</span><span class="punct">::</span><span class="constant">Base</span><span class="punct">.</span><span class="ident">establish_connection!</span><span class="punct">(</span>
+    <span class="symbol">:access_key_id</span>     <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">abc</span><span class="punct">',</span>
+    <span class="symbol">:secret_access_key</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">123</span><span class="punct">'</span>
+  <span class="punct">)</span>
+</pre></div><p>
+The minimum connection options that you must specify are your access key id
+and your secret access key.
+</p>
+<p>
+(If you don&#8217;t already have your access keys, all you need to sign up
+for the S3 service is an account at Amazon. You can sign up for S3 and get
+access keys by visiting http://aws.amazon.com/s3.)
+</p>
+<p>
+For convenience, if you set two special environment variables with the
+value of your access keys, the console will automatically create a default
+connection for you. For example:
+</p>
+<div class="ruby"><pre>  <span class="punct">%</span> <span class="ident">cat</span> <span class="punct">.</span><span class="ident">amazon_keys</span>
+  <span class="ident">export</span> <span class="constant">AMAZON_ACCESS_KEY_ID</span><span class="punct">='</span><span class="string">abcdefghijklmnop</span><span class="punct">'</span>
+  <span class="ident">export</span> <span class="constant">AMAZON_SECRET_ACCESS_KEY</span><span class="punct">='</span><span class="string">1234567891012345</span><span class="punct">'</span>
+</pre></div><p>
+Then load it in your shell&#8217;s rc file.
+</p>
+<div class="ruby"><pre>  <span class="punct">%</span> <span class="ident">cat</span> <span class="punct">.</span><span class="ident">zshrc</span>
+  <span class="keyword">if</span> <span class="punct">[[</span> <span class="punct">-</span><span class="ident">f</span> <span class="punct">&quot;</span><span class="string">$HOME/.amazon_keys</span><span class="punct">&quot;</span> <span class="punct">]];</span> <span class="keyword">then</span>
+    <span class="ident">source</span> <span class="punct">&quot;</span><span class="string">$HOME/.amazon_keys</span><span class="punct">&quot;;</span>
+  <span class="ident">fi</span>
+</pre></div><p>
+See more connection details at
+AWS::S3::Connection::Management::ClassMethods.
+</p>
+<h2>AWS::S3 Basics</h2>
+<h3>The service, buckets and objects</h3>
+<p>
+The three main concepts of S3 are the service, buckets and objects.
+</p>
+<h4>The service</h4>
+<p>
+The service lets you find out general information about your account, like
+what buckets you have.
+</p>
+<div class="ruby"><pre>  <span class="constant">Service</span><span class="punct">.</span><span class="ident">buckets</span>
+  <span class="comment"># =&gt; []</span>
+</pre></div><h4>Buckets</h4>
+<p>
+Buckets are containers for objects (the files you store on S3). To create a
+new bucket you just specify its name.
+</p>
+<div class="ruby"><pre>  <span class="comment"># Pick a unique name, or else you'll get an error</span>
+  <span class="comment"># if the name is already taken.</span>
+  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">create</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><p>
+Bucket names must be unique across the entire S3 system, sort of like
+domain names across the internet. If you try to create a bucket with a name
+that is already taken, you will get an error.
+</p>
+<p>
+Assuming the name you chose isn&#8217;t already taken, your new bucket will
+now appear in the bucket list:
+</p>
+<div class="ruby"><pre>  <span class="constant">Service</span><span class="punct">.</span><span class="ident">buckets</span>
+  <span class="comment"># =&gt; [#&lt;AWS::S3::Bucket @attributes={&quot;name&quot;=&gt;&quot;jukebox&quot;}&gt;]</span>
+</pre></div><p>
+Once you have succesfully created a bucket you can you can fetch it by name
+using Bucket.find.
+</p>
+<div class="ruby"><pre>  <span class="ident">music_bucket</span> <span class="punct">=</span> <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">find</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><p>
+The bucket that is returned will contain a listing of all the objects in
+the bucket.
+</p>
+<div class="ruby"><pre>  <span class="ident">music_bucket</span><span class="punct">.</span><span class="ident">objects</span><span class="punct">.</span><span class="ident">size</span>
+  <span class="comment"># =&gt; 0</span>
+</pre></div><p>
+If all you are interested in is the objects of the bucket, you can get to
+them directly using Bucket.objects.
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">objects</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">').</span><span class="ident">size</span>
+  <span class="comment"># =&gt; 0</span>
+</pre></div><p>
+By default all objects will be returned, though there are several options
+you can use to limit what is returned, such as specifying that only objects
+whose name is after a certain place in the alphabet be returned, and etc.
+Details about these options can be found in the documentation for
+Bucket.find.
+</p>
+<p>
+To add an object to a bucket you specify the name of the object, its value,
+and the bucket to put it in.
+</p>
+<div class="ruby"><pre>  <span class="ident">file</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">black-flowers.mp3</span><span class="punct">'</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">(</span><span class="ident">file</span><span class="punct">,</span> <span class="ident">open</span><span class="punct">(</span><span class="ident">file</span><span class="punct">),</span> <span class="punct">'</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><p>
+You&#8217;ll see your file has been added to it:
+</p>
+<div class="ruby"><pre>  <span class="ident">music_bucket</span><span class="punct">.</span><span class="ident">objects</span>
+  <span class="comment"># =&gt; [#&lt;AWS::S3::S3Object '/jukebox/black-flowers.mp3'&gt;]</span>
+</pre></div><p>
+You can treat your bucket like a hash and access objects by name:
+</p>
+<div class="ruby"><pre>  <span class="ident">jukebox</span><span class="punct">['</span><span class="string">black-flowers.mp3</span><span class="punct">']</span>
+  <span class="comment"># =&gt; #&lt;AWS::S3::S3Object '/jukebox/black-flowers.mp3'&gt;</span>
+</pre></div><p>
+In the event that you want to delete a bucket, you can use Bucket.delete.
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">delete</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><p>
+Keep in mind, like unix directories, you can not delete a bucket unless it
+is empty. Trying to delete a bucket that contains objects will raise a
+BucketNotEmpty exception.
+</p>
+<p>
+Passing the :force =&gt; true option to delete will take care of deleting
+all the bucket&#8217;s objects for you.
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">delete</span><span class="punct">('</span><span class="string">photos</span><span class="punct">',</span> <span class="symbol">:force</span> <span class="punct">=&gt;</span> <span class="constant">true</span><span class="punct">)</span>
+  <span class="comment"># =&gt; true</span>
+</pre></div><h4>Objects</h4>
+<p>
+S3Objects represent the data you store on S3. They have a key (their name)
+and a value (their data). All objects belong to a bucket.
+</p>
+<p>
+You can store an object on S3 by specifying a key, its data and the name of
+the bucket you want to put it in:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">('</span><span class="string">me.jpg</span><span class="punct">',</span> <span class="ident">open</span><span class="punct">('</span><span class="string">headshot.jpg</span><span class="punct">'),</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">')</span>
+</pre></div><p>
+The content type of the object will be inferred by its extension. If the
+appropriate content type can not be inferred, S3 defaults to
+<tt>binary/octet-stream</tt>.
+</p>
+<p>
+If you want to override this, you can explicitly indicate what content type
+the object should have with the <tt>:content_type</tt> option:
+</p>
+<div class="ruby"><pre>  <span class="ident">file</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">black-flowers.m4a</span><span class="punct">'</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">(</span>
+    <span class="ident">file</span><span class="punct">,</span>
+    <span class="ident">open</span><span class="punct">(</span><span class="ident">file</span><span class="punct">),</span>
+    <span class="punct">'</span><span class="string">jukebox</span><span class="punct">',</span>
+    <span class="symbol">:content_type</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">audio/mp4a-latm</span><span class="punct">'</span>
+  <span class="punct">)</span>
+</pre></div><p>
+You can read more about storing files on S3 in the documentation for
+S3Object.store.
+</p>
+<p>
+If you just want to fetch an object you&#8217;ve stored on S3, you just
+specify its name and its bucket:
+</p>
+<div class="ruby"><pre>  <span class="ident">picture</span> <span class="punct">=</span> <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">find</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+</pre></div><p>
+N.B. The actual data for the file is not downloaded in both the example
+where the file appeared in the bucket and when fetched directly. You get
+the data for the file like this:
+</p>
+<div class="ruby"><pre>  <span class="ident">picture</span><span class="punct">.</span><span class="ident">value</span>
+</pre></div><p>
+You can fetch just the object&#8217;s data directly:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">value</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+</pre></div><p>
+Or stream it by passing a block to <tt>stream</tt>:
+</p>
+<div class="ruby"><pre>  <span class="ident">open</span><span class="punct">('</span><span class="string">song.mp3</span><span class="punct">',</span> <span class="punct">'</span><span class="string">w</span><span class="punct">')</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">file</span><span class="punct">|</span>
+    <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">stream</span><span class="punct">('</span><span class="string">song.mp3</span><span class="punct">',</span> <span class="punct">'</span><span class="string">jukebox</span><span class="punct">')</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">chunk</span><span class="punct">|</span>
+      <span class="ident">file</span><span class="punct">.</span><span class="ident">write</span> <span class="ident">chunk</span>
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+</pre></div><p>
+The data of the file, once download, is cached, so subsequent calls to
+<tt>value</tt> won&#8217;t redownload the file unless you tell the object
+to reload its <tt>value</tt>:
+</p>
+<div class="ruby"><pre>  <span class="comment"># Redownloads the file's data</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">value</span><span class="punct">(</span><span class="symbol">:reload</span><span class="punct">)</span>
+</pre></div><p>
+Other functionality includes:
+</p>
+<div class="ruby"><pre>  <span class="comment"># Check if an object exists?</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">exists?</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+
+  <span class="comment"># Copying an object</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">copy</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">headshot2.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+
+  <span class="comment"># Renaming an object</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">rename</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">portrait.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+
+  <span class="comment"># Deleting an object</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">delete</span> <span class="punct">'</span><span class="string">headshot.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">photos</span><span class="punct">'</span>
+</pre></div><h4>More about objects and their metadata</h4>
+<p>
+You can find out the content type of your object with the
+<tt>content_type</tt> method:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span><span class="punct">.</span><span class="ident">content_type</span>
+  <span class="comment"># =&gt; &quot;audio/mpeg&quot;</span>
+</pre></div><p>
+You can change the content type as well if you like:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span><span class="punct">.</span><span class="ident">content_type</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">application/pdf</span><span class="punct">'</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">store</span>
+</pre></div><p>
+(Keep in mind that due to limitiations in S3&#8217;s exposed API, the only
+way to change things like the content_type is to PUT the object onto S3
+again. In the case of large files, this will result in fully re-uploading
+the file.)
+</p>
+<p>
+A bevie of information about an object can be had using the <tt>about</tt>
+method:
+</p>
+<div class="ruby"><pre>  <span class="ident">pp</span> <span class="ident">song</span><span class="punct">.</span><span class="ident">about</span>
+  <span class="punct">{&quot;</span><span class="string">last-modified</span><span class="punct">&quot;</span>    <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">Sat, 28 Oct 2006 21:29:26 GMT</span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">content-type</span><span class="punct">&quot;</span>     <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">binary/octet-stream</span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">etag</span><span class="punct">&quot;</span>             <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string"><span class="escape">\&quot;</span>dc629038ffc674bee6f62eb64ff3a<span class="escape">\&quot;</span></span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">date</span><span class="punct">&quot;</span>             <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">Sat, 28 Oct 2006 21:30:41 GMT</span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">x-amz-request-id</span><span class="punct">&quot;</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">B7BC68F55495B1C8</span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">server</span><span class="punct">&quot;</span>           <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">AmazonS3</span><span class="punct">&quot;,</span>
+   <span class="punct">&quot;</span><span class="string">content-length</span><span class="punct">&quot;</span>   <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">3418766</span><span class="punct">&quot;}</span>
+</pre></div><p>
+You can get and set metadata for an object:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span><span class="punct">.</span><span class="ident">metadata</span>
+  <span class="comment"># =&gt; {}</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">metadata</span><span class="punct">[</span><span class="symbol">:album</span><span class="punct">]</span> <span class="punct">=</span> <span class="punct">&quot;</span><span class="string">A River Ain't Too Much To Love</span><span class="punct">&quot;</span>
+  <span class="comment"># =&gt; &quot;A River Ain't Too Much To Love&quot;</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">metadata</span><span class="punct">[</span><span class="symbol">:released</span><span class="punct">]</span> <span class="punct">=</span> <span class="number">2005</span>
+  <span class="ident">pp</span> <span class="ident">song</span><span class="punct">.</span><span class="ident">metadata</span>
+  <span class="punct">{&quot;</span><span class="string">x-amz-meta-released</span><span class="punct">&quot;</span> <span class="punct">=&gt;</span> <span class="number">2005</span><span class="punct">,</span>
+    <span class="punct">&quot;</span><span class="string">x-amz-meta-album</span><span class="punct">&quot;</span>   <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">A River Ain't Too Much To Love</span><span class="punct">&quot;}</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">store</span>
+</pre></div><p>
+That metadata will be saved in S3 and is hence forth available from that
+object:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span> <span class="punct">=</span> <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">find</span><span class="punct">('</span><span class="string">black-flowers.mp3</span><span class="punct">',</span> <span class="punct">'</span><span class="string">jukebox</span><span class="punct">')</span>
+  <span class="ident">pp</span> <span class="ident">song</span><span class="punct">.</span><span class="ident">metadata</span>
+  <span class="punct">{&quot;</span><span class="string">x-amz-meta-released</span><span class="punct">&quot;</span> <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">2005</span><span class="punct">&quot;,</span>
+    <span class="punct">&quot;</span><span class="string">x-amz-meta-album</span><span class="punct">&quot;</span>   <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">A River Ain't Too Much To Love</span><span class="punct">&quot;}</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">metada</span><span class="punct">[</span><span class="symbol">:released</span><span class="punct">]</span>
+  <span class="comment"># =&gt; &quot;2005&quot;</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">metada</span><span class="punct">[</span><span class="symbol">:released</span><span class="punct">]</span> <span class="punct">=</span> <span class="number">2006</span>
+  <span class="ident">pp</span> <span class="ident">song</span><span class="punct">.</span><span class="ident">metada</span>
+  <span class="punct">{&quot;</span><span class="string">x-amz-meta-released</span><span class="punct">&quot;</span> <span class="punct">=&gt;</span> <span class="number">2006</span><span class="punct">,</span>
+   <span class="punct">&quot;</span><span class="string">x-amz-meta-album</span><span class="punct">&quot;</span>    <span class="punct">=&gt;</span> <span class="punct">&quot;</span><span class="string">A River Ain't Too Much To Love</span><span class="punct">&quot;}</span>
+</pre></div><h4>Streaming uploads</h4>
+<p>
+When storing an object on the S3 servers using S3Object.store, the
+<tt>data</tt> argument can be a string or an I/O stream. If <tt>data</tt>
+is an I/O stream it will be read in segments and written to the socket
+incrementally. This approach may be desirable for very large files so they
+are not read into memory all at once.
+</p>
+<div class="ruby"><pre>  <span class="comment"># Non streamed upload</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">('</span><span class="string">greeting.txt</span><span class="punct">',</span> <span class="punct">'</span><span class="string">hello world!</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">')</span>
+
+  <span class="comment"># Streamed upload</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">('</span><span class="string">roots.mpeg</span><span class="punct">',</span> <span class="ident">open</span><span class="punct">('</span><span class="string">roots.mpeg</span><span class="punct">'),</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">')</span>
+</pre></div><h2>Setting the current bucket</h2>
+<h4>Scoping operations to a specific bucket</h4>
+<p>
+If you plan on always using a specific bucket for certain files, you can
+skip always having to specify the bucket by creating a subclass of Bucket
+or S3Object and telling it what bucket to use:
+</p>
+<div class="ruby"><pre>  <span class="keyword">class </span><span class="class">JukeBoxSong</span> <span class="punct">&lt;</span> <span class="constant">AWS</span><span class="punct">::</span><span class="constant">S3</span><span class="punct">::</span><span class="constant">S3Object</span>
+    <span class="ident">set_current_bucket_to</span> <span class="punct">'</span><span class="string">jukebox</span><span class="punct">'</span>
+  <span class="keyword">end</span>
+</pre></div><p>
+For all methods that take a bucket name as an argument, the current bucket
+will be used if the bucket name argument is omitted.
+</p>
+<div class="ruby"><pre>  <span class="ident">other_song</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">baby-please-come-home.mp3</span><span class="punct">'</span>
+  <span class="constant">JukeBoxSong</span><span class="punct">.</span><span class="ident">store</span><span class="punct">(</span><span class="ident">other_song</span><span class="punct">,</span> <span class="ident">open</span><span class="punct">(</span><span class="ident">other_song</span><span class="punct">))</span>
+</pre></div><p>
+This time we didn&#8217;t have to explicitly pass in the bucket name, as
+the JukeBoxSong class knows that it will always use the
+&#8216;jukebox&#8217; bucket.
+</p>
+<p>
+&quot;Astute readers&quot;, as they say, may have noticed that we used the
+third parameter to pass in the content type, rather than the fourth
+parameter as we had the last time we created an object. If the bucket can
+be inferred, or is explicitly set, as we&#8217;ve done in the JukeBoxSong
+class, then the third argument can be used to pass in options.
+</p>
+<p>
+Now all operations that would have required a bucket name no longer do.
+</p>
+<div class="ruby"><pre>  <span class="ident">other_song</span> <span class="punct">=</span> <span class="constant">JukeBoxSong</span><span class="punct">.</span><span class="ident">find</span><span class="punct">('</span><span class="string">baby-please-come-home.mp3</span><span class="punct">')</span>
+</pre></div><h2>BitTorrent</h2>
+<h4>Another way to download large files</h4>
+<p>
+Objects on S3 can be distributed via the BitTorrent file sharing protocol.
+</p>
+<p>
+You can get a torrent file for an object by calling <tt>torrent_for</tt>:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">torrent_for</span> <span class="punct">'</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">'</span>
+</pre></div><p>
+Or just call the <tt>torrent</tt> method if you already have the object:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span> <span class="punct">=</span> <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">find</span> <span class="punct">'</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">'</span>
+  <span class="ident">song</span><span class="punct">.</span><span class="ident">torrent</span>
+</pre></div><p>
+Calling <tt>grant_torrent_access_to</tt> on a object will allow anyone to
+anonymously fetch the torrent file for that object:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">grant_torrent_access_to</span> <span class="punct">'</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">'</span>
+</pre></div><p>
+Anonymous requests to
+</p>
+<div class="ruby"><pre>  <span class="ident">http</span><span class="punct">:/</span><span class="regex"></span><span class="punct">/</span><span class="ident">s3</span><span class="punct">.</span><span class="ident">amazonaws</span><span class="punct">.</span><span class="ident">com</span><span class="punct">/</span><span class="ident">marcel</span><span class="punct">/</span><span class="ident">kiss</span><span class="punct">.</span><span class="ident">jpg?torrent</span>
+</pre></div><p>
+will serve up the torrent file for that object.
+</p>
+<h2>Access control</h2>
+<h4>Using canned access control policies</h4>
+<p>
+By default buckets are private. This means that only the owner has access
+rights to the bucket and its objects. Objects in that bucket inherit the
+permission of the bucket unless otherwise specified. When an object is
+private, the owner can generate a signed url that exposes the object to
+anyone who has that url. Alternatively, buckets and objects can be given
+other access levels. Several canned access levels are defined:
+</p>
+<ul>
+<li><tt>:private</tt> - Owner gets FULL_CONTROL. No one else has any access
+rights. This is the default.
+
+</li>
+<li><tt>:public_read</tt> - Owner gets FULL_CONTROL and the anonymous principal
+is granted READ access. If this policy is used on an object, it can be read
+from a browser with no authentication.
+
+</li>
+<li><tt>:public_read_write</tt> - Owner gets FULL_CONTROL, the anonymous
+principal is granted READ and WRITE access. This is a useful policy to
+apply to a bucket, if you intend for any anonymous user to PUT objects into
+the bucket.
+
+</li>
+<li><tt>:authenticated_read</tt> - Owner gets FULL_CONTROL, and any principal
+authenticated as a registered Amazon S3 user is granted READ access.
+
+</li>
+</ul>
+<p>
+You can set a canned access level when you create a bucket or an object by
+using the <tt>:access</tt> option:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">store</span><span class="punct">(</span>
+    <span class="punct">'</span><span class="string">kiss.jpg</span><span class="punct">',</span>
+    <span class="ident">data</span><span class="punct">,</span>
+    <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span>
+    <span class="symbol">:access</span> <span class="punct">=&gt;</span> <span class="symbol">:public_read</span>
+  <span class="punct">)</span>
+</pre></div><p>
+Since the image we created is publicly readable, we can access it directly
+from a browser by going to the corresponding bucket name and specifying the
+object&#8217;s key without a special authenticated url:
+</p>
+<div class="ruby"><pre> <span class="ident">http</span><span class="punct">:/</span><span class="regex"></span><span class="punct">/</span><span class="ident">s3</span><span class="punct">.</span><span class="ident">amazonaws</span><span class="punct">.</span><span class="ident">com</span><span class="punct">/</span><span class="ident">marcel</span><span class="punct">/</span><span class="ident">kiss</span><span class="punct">.</span><span class="ident">jpg</span>
+</pre></div><h4>Building custum access policies</h4>
+<p>
+For both buckets and objects, you can use the <tt>acl</tt> method to see
+its access control policy:
+</p>
+<div class="ruby"><pre>  <span class="ident">policy</span> <span class="punct">=</span> <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">acl</span><span class="punct">('</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">')</span>
+  <span class="ident">pp</span> <span class="ident">policy</span><span class="punct">.</span><span class="ident">grants</span>
+  <span class="punct">[</span><span class="comment">#&lt;AWS::S3::ACL::Grant FULL_CONTROL to noradio&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::ACL::Grant READ to AllUsers Group&gt;]</span>
+</pre></div><p>
+Policies are made up of one or more grants which grant a specific
+permission to some grantee. Here we see the default FULL_CONTROL grant to
+the owner of this object. There is also READ permission granted to the
+Allusers Group, which means anyone has read access for the object.
+</p>
+<p>
+Say we wanted to grant access to anyone to read the access policy of this
+object. The current READ permission only grants them permission to read the
+object itself (for example, from a browser) but it does not allow them to
+read the access policy. For that we will need to grant the AllUsers group
+the READ_ACP permission.
+</p>
+<p>
+First we&#8217;ll create a new grant object:
+</p>
+<div class="ruby"><pre>  <span class="ident">grant</span> <span class="punct">=</span> <span class="constant">ACL</span><span class="punct">::</span><span class="constant">Grant</span><span class="punct">.</span><span class="ident">new</span>
+  <span class="comment"># =&gt; #&lt;AWS::S3::ACL::Grant (permission) to (grantee)&gt;</span>
+  <span class="ident">grant</span><span class="punct">.</span><span class="ident">permission</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">READ_ACP</span><span class="punct">'</span>
+</pre></div><p>
+Now we need to indicate who this grant is for. In other words, who the
+grantee is:
+</p>
+<div class="ruby"><pre>  <span class="ident">grantee</span> <span class="punct">=</span> <span class="constant">ACL</span><span class="punct">::</span><span class="constant">Grantee</span><span class="punct">.</span><span class="ident">new</span>
+  <span class="comment"># =&gt; #&lt;AWS::S3::ACL::Grantee (xsi not set yet)&gt;</span>
+</pre></div><p>
+There are three ways to specify a grantee: 1) by their internal amazon id,
+such as the one returned with an object&#8217;s Owner, 2) by their Amazon
+account email address or 3) by specifying a group. As of this writing you
+can not create custom groups, but Amazon does provide three already:
+AllUsers, Authenticated and LogDelivery. In this case we want to provide
+the grant to all users. This effectively means &quot;anyone&quot;.
+</p>
+<div class="ruby"><pre>  <span class="ident">grantee</span><span class="punct">.</span><span class="ident">group</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">AllUsers</span><span class="punct">'</span>
+</pre></div><p>
+Now that our grantee is setup, we&#8217;ll associate it with the grant:
+</p>
+<div class="ruby"><pre>  <span class="ident">grant</span><span class="punct">.</span><span class="ident">grantee</span> <span class="punct">=</span> <span class="ident">grantee</span>
+  <span class="ident">grant</span>
+  <span class="comment"># =&gt; #&lt;AWS::S3::ACL::Grant READ_ACP to AllUsers Group&gt;</span>
+</pre></div><p>
+Are grant has all the information we need. Now that it&#8217;s ready,
+we&#8217;ll add it on to the object&#8217;s access control policy&#8217;s
+list of grants:
+</p>
+<div class="ruby"><pre>  <span class="ident">policy</span><span class="punct">.</span><span class="ident">grants</span> <span class="punct">&lt;&lt;</span> <span class="ident">grant</span>
+  <span class="ident">pp</span> <span class="ident">policy</span><span class="punct">.</span><span class="ident">grants</span>
+  <span class="punct">[</span><span class="comment">#&lt;AWS::S3::ACL::Grant FULL_CONTROL to noradio&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::ACL::Grant READ to AllUsers Group&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::ACL::Grant READ_ACP to AllUsers Group&gt;]</span>
+</pre></div><p>
+Now that the policy has the new grant, we reuse the <tt>acl</tt> method to
+persist the policy change:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">acl</span><span class="punct">('</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span> <span class="ident">policy</span><span class="punct">)</span>
+</pre></div><p>
+If we fetch the object&#8217;s policy again, we see that the grant has been
+added:
+</p>
+<div class="ruby"><pre>  <span class="ident">pp</span> <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">acl</span><span class="punct">('</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">').</span><span class="ident">grants</span>
+  <span class="punct">[</span><span class="comment">#&lt;AWS::S3::ACL::Grant FULL_CONTROL to noradio&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::ACL::Grant READ to AllUsers Group&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::ACL::Grant READ_ACP to AllUsers Group&gt;]</span>
+</pre></div><p>
+If we were to access this object&#8217;s acl url from a browser:
+</p>
+<div class="ruby"><pre>  <span class="ident">http</span><span class="punct">:/</span><span class="regex"></span><span class="punct">/</span><span class="ident">s3</span><span class="punct">.</span><span class="ident">amazonaws</span><span class="punct">.</span><span class="ident">com</span><span class="punct">/</span><span class="ident">marcel</span><span class="punct">/</span><span class="ident">kiss</span><span class="punct">.</span><span class="ident">jpg?acl</span>
+</pre></div><p>
+we would be shown its access control policy.
+</p>
+<h4>Pre-prepared grants</h4>
+<p>
+Alternatively, the ACL::Grant class defines a set of stock grant policies
+that you can fetch by name. In most cases, you can just use one of these
+pre-prepared grants rather than building grants by hand. Two of these stock
+policies are <tt>:public_read</tt> and <tt>:public_read_acp</tt>, which
+happen to be the two grants that we built by hand above. In this case we
+could have simply written:
+</p>
+<div class="ruby"><pre>  <span class="ident">policy</span><span class="punct">.</span><span class="ident">grants</span> <span class="punct">&lt;&lt;</span> <span class="constant">ACL</span><span class="punct">::</span><span class="constant">Grant</span><span class="punct">.</span><span class="ident">grant</span><span class="punct">(</span><span class="symbol">:public_read</span><span class="punct">)</span>
+  <span class="ident">policy</span><span class="punct">.</span><span class="ident">grants</span> <span class="punct">&lt;&lt;</span> <span class="constant">ACL</span><span class="punct">::</span><span class="constant">Grant</span><span class="punct">.</span><span class="ident">grant</span><span class="punct">(</span><span class="symbol">:public_read_acp</span><span class="punct">)</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">acl</span><span class="punct">('</span><span class="string">kiss.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span> <span class="ident">policy</span><span class="punct">)</span>
+</pre></div><p>
+The full details can be found in ACL::Policy, ACL::Grant and ACL::Grantee.
+</p>
+<h4>Accessing private objects from a browser</h4>
+<p>
+All private objects are accessible via an authenticated GET request to the
+S3 servers. You can generate an authenticated url for an object like this:
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">url_for</span><span class="punct">('</span><span class="string">beluga_baby.jpg</span><span class="punct">',</span> <span class="punct">'</span><span class="string">marcel_molina</span><span class="punct">')</span>
+</pre></div><p>
+By default authenticated urls expire 5 minutes after they were generated.
+</p>
+<p>
+Expiration options can be specified either with an absolute time since the
+epoch with the <tt>:expires</tt> options, or with a number of seconds
+relative to now with the <tt>:expires_in</tt> options:
+</p>
+<div class="ruby"><pre>  <span class="comment"># Absolute expiration date</span>
+  <span class="comment"># (Expires January 18th, 2038)</span>
+  <span class="ident">doomsday</span> <span class="punct">=</span> <span class="constant">Time</span><span class="punct">.</span><span class="ident">mktime</span><span class="punct">(</span><span class="number">2038</span><span class="punct">,</span> <span class="number">1</span><span class="punct">,</span> <span class="number">18</span><span class="punct">).</span><span class="ident">to_i</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">url_for</span><span class="punct">('</span><span class="string">beluga_baby.jpg</span><span class="punct">',</span>
+                   <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span>
+                   <span class="symbol">:expires</span> <span class="punct">=&gt;</span> <span class="ident">doomsday</span><span class="punct">)</span>
+
+  <span class="comment"># Expiration relative to now specified in seconds</span>
+  <span class="comment"># (Expires in 3 hours)</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">url_for</span><span class="punct">('</span><span class="string">beluga_baby.jpg</span><span class="punct">',</span>
+                   <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span>
+                   <span class="symbol">:expires_in</span> <span class="punct">=&gt;</span> <span class="number">60</span> <span class="punct">*</span> <span class="number">60</span> <span class="punct">*</span> <span class="number">3</span><span class="punct">)</span>
+</pre></div><p>
+You can specify whether the url should go over SSL with the
+<tt>:use_ssl</tt> option:
+</p>
+<div class="ruby"><pre>  <span class="comment"># Url will use https protocol</span>
+  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">url_for</span><span class="punct">('</span><span class="string">beluga_baby.jpg</span><span class="punct">',</span>
+                   <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span>
+                   <span class="symbol">:use_ssl</span> <span class="punct">=&gt;</span> <span class="constant">true</span><span class="punct">)</span>
+</pre></div><p>
+By default, the ssl settings for the current connection will be used.
+</p>
+<p>
+If you have an object handy, you can use its <tt>url</tt> method with the
+same objects:
+</p>
+<div class="ruby"><pre>  <span class="ident">song</span><span class="punct">.</span><span class="ident">url</span><span class="punct">(</span><span class="symbol">:expires_in</span> <span class="punct">=&gt;</span> <span class="number">30</span><span class="punct">)</span>
+</pre></div><p>
+To get an unauthenticated url for the object, such as in the case when the
+object is publicly readable, pass the <tt>:authenticated</tt> option with a
+value of <tt>false</tt>.
+</p>
+<div class="ruby"><pre>  <span class="constant">S3Object</span><span class="punct">.</span><span class="ident">url_for</span><span class="punct">('</span><span class="string">beluga_baby.jpg</span><span class="punct">',</span>
+                   <span class="punct">'</span><span class="string">marcel</span><span class="punct">',</span>
+                   <span class="symbol">:authenticated</span> <span class="punct">=&gt;</span> <span class="constant">false</span><span class="punct">)</span>
+  <span class="comment"># =&gt; http://s3.amazonaws.com/marcel/beluga_baby.jpg</span>
+</pre></div><h2>Logging</h2>
+<h4>Tracking requests made on a bucket</h4>
+<p>
+A bucket can be set to log the requests made on it. By default logging is
+turned off. You can check if a bucket has logging enabled:
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">logging_enabled_for?</span> <span class="punct">'</span><span class="string">jukebox</span><span class="punct">'</span>
+  <span class="comment"># =&gt; false</span>
+</pre></div><p>
+Enabling it is easy:
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">enable_logging_for</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><p>
+Unless you specify otherwise, logs will be written to the bucket you want
+to log. The logs are just like any other object. By default they will start
+with the prefix &#8216;log-&#8217;. You can customize what bucket you want
+the logs to be delivered to, as well as customize what the log
+objects&#8217; key is prefixed with by setting the <tt>target_bucket</tt>
+and <tt>target_prefix</tt> option:
+</p>
+<div class="ruby"><pre>  <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">enable_logging_for</span><span class="punct">(</span>
+    <span class="punct">'</span><span class="string">jukebox</span><span class="punct">',</span> <span class="punct">'</span><span class="string">target_bucket</span><span class="punct">'</span> <span class="punct">=&gt;</span> <span class="punct">'</span><span class="string">jukebox-logs</span><span class="punct">'</span>
+  <span class="punct">)</span>
+</pre></div><p>
+Now instead of logging right into the jukebox bucket, the logs will go into
+the bucket called jukebox-logs.
+</p>
+<p>
+Once logs have accumulated, you can access them using the <tt>logs</tt>
+method:
+</p>
+<div class="ruby"><pre>  <span class="ident">pp</span> <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">logs</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+  <span class="punct">[</span><span class="comment">#&lt;AWS::S3::Logging::Log '/jukebox-logs/log-2006-11-14-07-15-24-2061C35880A310A1'&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::Logging::Log '/jukebox-logs/log-2006-11-14-08-15-27-D8EEF536EC09E6B3'&gt;,</span>
+   <span class="comment">#&lt;AWS::S3::Logging::Log '/jukebox-logs/log-2006-11-14-08-15-29-355812B2B15BD789'&gt;]</span>
+</pre></div><p>
+Each log has a <tt>lines</tt> method that gives you information about each
+request in that log. All the fields are available as named methods. More
+information is available in Logging::Log::Line.
+</p>
+<div class="ruby"><pre>  <span class="ident">logs</span> <span class="punct">=</span> <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">logs</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+  <span class="ident">log</span>  <span class="punct">=</span> <span class="ident">logs</span><span class="punct">.</span><span class="ident">first</span>
+  <span class="ident">line</span> <span class="punct">=</span> <span class="ident">log</span><span class="punct">.</span><span class="ident">lines</span><span class="punct">.</span><span class="ident">first</span>
+  <span class="ident">line</span><span class="punct">.</span><span class="ident">operation</span>
+  <span class="comment"># =&gt; 'REST.GET.LOGGING_STATUS'</span>
+  <span class="ident">line</span><span class="punct">.</span><span class="ident">request_uri</span>
+  <span class="comment"># =&gt; 'GET /jukebox?logging HTTP/1.1'</span>
+  <span class="ident">line</span><span class="punct">.</span><span class="ident">remote_ip</span>
+  <span class="comment"># =&gt; &quot;67.165.183.125&quot;</span>
+</pre></div><p>
+Disabling logging is just as simple as enabling it:
+</p>
+<div class="ruby"><pre> <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">disable_logging_for</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+</pre></div><h2>Errors</h2>
+<h4>When things go wrong</h4>
+<p>
+Anything you do that makes a request to S3 could result in an error. If it
+does, the AWS::S3 library will raise an exception specific to the error.
+All exception that are raised as a result of a request returning an error
+response inherit from the ResponseError exception. So should you choose to
+rescue any such exception, you can simple rescue ResponseError.
+</p>
+<p>
+Say you go to delete a bucket, but the bucket turns out to not be empty.
+This results in a BucketNotEmpty error (one of the many errors listed at
+http://docs.amazonwebservices.com/AmazonS3/2006-03-01/ErrorCodeList.html):
+</p>
+<div class="ruby"><pre>  <span class="keyword">begin</span>
+    <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">delete</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+  <span class="keyword">rescue</span> <span class="constant">ResponseError</span> <span class="punct">=&gt;</span> <span class="ident">error</span>
+    <span class="comment"># ...</span>
+  <span class="keyword">end</span>
+</pre></div><p>
+Once you&#8217;ve captured the exception, you can extract the error message
+from S3, as well as the full error response, which includes things like the
+HTTP response code:
+</p>
+<div class="ruby"><pre>  <span class="ident">error</span>
+  <span class="comment"># =&gt; #&lt;AWS::S3::BucketNotEmpty The bucket you tried to delete is not empty&gt;</span>
+  <span class="ident">error</span><span class="punct">.</span><span class="ident">message</span>
+  <span class="comment"># =&gt; &quot;The bucket you tried to delete is not empty&quot;</span>
+  <span class="ident">error</span><span class="punct">.</span><span class="ident">response</span><span class="punct">.</span><span class="ident">code</span>
+  <span class="comment"># =&gt; 409</span>
+</pre></div><p>
+You could use this information to redisplay the error in a way you see fit,
+or just to log the error and continue on.
+</p>
+<h4>Accessing the last request&#8217;s response</h4>
+<p>
+Sometimes methods that make requests to the S3 servers return some object,
+like a Bucket or an S3Object. Othertimes they return just <tt>true</tt>.
+Other times they raise an exception that you may want to rescue. Despite
+all these possible outcomes, every method that makes a request stores its
+response object for you in Service.response. You can always get to the last
+request&#8217;s response via Service.response.
+</p>
+<div class="ruby"><pre>  <span class="ident">objects</span> <span class="punct">=</span> <span class="constant">Bucket</span><span class="punct">.</span><span class="ident">objects</span><span class="punct">('</span><span class="string">jukebox</span><span class="punct">')</span>
+  <span class="constant">Service</span><span class="punct">.</span><span class="ident">response</span><span class="punct">.</span><span class="ident">success?</span>
+  <span class="comment"># =&gt; true</span>
+</pre></div><p>
+This is also useful when an error exception is raised in the console which
+you weren&#8217;t expecting. You can root around in the response to get
+more details of what might have gone wrong.
+</p>
+
+</body>
+</html>
