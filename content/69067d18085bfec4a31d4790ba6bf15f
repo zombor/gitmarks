@@ -1,0 +1,458 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+
+
+
+  <base href="http://www.op5.org/community/plugin-inventory/op5-projects/ninja" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Nagios, Ninja, GUI, user interface" />
+  <meta name="title" content="Ninja" />
+  <meta name="author" content="Bharath Narayanan" />
+  <meta name="description" content="The Ninja project is an effort to develop an alternative Nagios gui with the aim of being the most useful Open Source web front end for Nagios." />
+  <meta name="generator" content="" />
+  <title>Ninja</title>
+  <link href="http://www.op5.org/community/plugin-inventory/op5-projects/ninja" rel="canonical"  />
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="http://www.op5.org/modules/mod_superfishmenu/tmpl/css/superfish.css" type="text/css" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="http://www.op5.org/modules/mod_superfishmenu/tmpl/js/jquery.js"></script>
+  <script type="text/javascript" src="http://www.op5.org/modules/mod_superfishmenu/tmpl/js/jquery.event.hover.js"></script>
+  <script type="text/javascript" src="http://www.op5.org/modules/mod_superfishmenu/tmpl/js/jquery.bgiframe.min.js"></script>
+  <script type="text/javascript" src="http://www.op5.org/modules/mod_superfishmenu/tmpl/js/supersubs.js"></script>
+  <script type="text/javascript" src="http://www.op5.org/modules/mod_superfishmenu/tmpl/js/superfish.js"></script>
+  <script type="text/javascript">
+jQuery.noConflict();
+jQuery(function($){ $("ul.sf-menu").supersubs({minWidth:10, maxWidth:30, extraWidth:0}).superfish({hoverClass:'sfHover', pathClass:'active', pathLevels:0, delay:800, animation:{opacity:'0.95', height:'show', width:'show'}, speed:200, autoArrows:1, dropShadows:1}).find('ul').bgIframe({top:'auto', left:'auto', width:'auto', height:'auto', opacity:1, src:'javascript:false;'}) });
+jQuery.event.special.hover.delay = 100;
+jQuery.event.special.hover.speed = 100;
+
+  </script>
+  <script src="http://www.op5.org/components/com_mtree/js/jquery-1.2.6.min.js" type="text/javascript"></script>
+  <script src="http://www.op5.org/components/com_mtree/js/vote.js" type="text/javascript"></script>
+  <script type="text/javascript"><!-- 
+jQuery.noConflict();
+var mtoken="89718a900ddf32e4f7971e32b546f053";
+var mosConfig_live_site="http://www.op5.org";
+var langRateThisListing="Rate this listing";
+var ratingText=new Array();
+ratingText[5]="Excellent!";
+ratingText[4]="Good";
+ratingText[3]="Average";
+ratingText[2]="Fair";
+ratingText[1]="Very Poor";
+//--></script>
+  <link href="http://www.op5.org/components/com_mtree/templates/kinabalu/template.css" rel="stylesheet" type="text/css"/>
+
+<meta name="verify-v1" content="dBm5RgEd8weyJLQaYeB+20uSBaTFX6l7CNHJo/XIHwc=" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link href="/templates/rt_equinox_j15/css/template_css.css" rel="stylesheet" type="text/css" />
+<link href="/templates/rt_equinox_j15/css/style2.css" rel="stylesheet" type="text/css" />
+<link href="/templates/rt_equinox_j15/rokzoom/rokzoom.css" rel="stylesheet" type="text/css" />
+<link href="/templates/rt_equinox_j15/css/rokslidestrip.css" rel="stylesheet" type="text/css" />
+<!-- Optimized <link href="/templates/rt_equinox_j15/css/login.css" rel="stylesheet" type="text/css" /> -->
+<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+<!-- Optimized <link href="/templates/rt_equinox_j15/html/mod_random_image/imageslider.css"  rel="stylesheet" type="text/css" /> -->
+<link href="/templates/rt_equinox_j15/css/mod_jw_srfr.css" rel="stylesheet" type="text/css" />
+
+<!-- Missing CSS FILE Commented on 0704 <link href="/templates/rt_equinox_j15/css/press.css" rel="stylesheet" type="text/css" /> -->
+
+
+<!-- Optimized <script type="text/javascript" src="/templates/rt_equinox_j15/html/mod_random_image/imageslider.js"></script>
+<link href="/templates/rt_equinox_j15/html/mod_newsflash/contentslider.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templates/rt_equinox_j15/html/mod_newsflash/contentslider.js"></script> 
+<link href="/templates/rt_equinox_j15/css/support.css" rel="stylesheet" type="text/css" /> -->
+<style type="text/css">
+div.wrapper {
+
+
+margin: 0 auto; width: 965px;/*Mel 2302 */
+margin-top:-20px;
+}
+#sidecol {
+width: 222px;
+}
+#secondcol {
+width: 0;
+}
+
+ 
+#top-module {
+margin-left:5px;
+}
+#maincontainer {min-height:100%; position:relative;}
+</style>
+<!--[if lt IE 7]>
+	<style media="screen" type="text/css">
+	#container {
+		height:100%;
+	}
+	</style>
+	<![endif]-->
+<script type="text/javascript" src="/templates/rt_equinox_j15/rokzoom/rokzoom.js"></script>
+<script type="text/javascript">
+window.addEvent('load', function() {
+	RokZoom.init({
+		imageDir: '/templates/rt_equinox_j15/rokzoom/images/',
+		resizeFX: {
+			duration: 700,
+			transition: Fx.Transitions.Cubic.easeOut,
+			wait: true
+		},
+		opacityFX: {
+		duration: 500,
+		wait: false	
+		}
+	});
+});
+</script>
+</head>
+<!-- Melvin 1504 -->
+<body class="f-default style2" style="height:100%;">
+<div id="maincontainer">
+<!-- Creates shadow border -->
+<div id="encapsulate">
+<div id="pagehead">
+<div class="wrapper" style="margin-top:35px;">
+  <div id="masthead"> <a href="/" class="nounder"><img src="/templates/rt_equinox_j15/images/style2/logo.gif" style="border:0;" alt="op5 Open source network monitoring | op5" id="logo" /></a>
+<div id="chooselanguage" class="topRightNav">   
+    		    	      		<div class="moduletable">
+					<img src="/op5media/op5/images/banners/language5.jpg" alt="choose language" usemap="#m_chooselanguage" title="choose_language" height="20" width="20" /> 
+<map name="m_chooselanguage" id="m_chooselanguage">
+<area href="/" shape="rect" coords="8,0,20,9" alt="English"></area>
+<area href="http://www.op5.se" shape="rect" coords="8,20,20,13" alt="Svenska"></area> 
+</map>		</div>
+	
+	    	    <div class="tl"></div><div class="tr"></div>
+	    <ul class="menu"><li class="item317"><a href="http://www.op5.com/"><span>op5</span></a></li><li class="item318"><a href="http://www.op5.com/support"><span>Support</span></a></li><li class="item319"><a href="http://www.op5.com/partner-portal"><span>Partner Portal</span></a></li><li class="parent active item1"><a href="/community" class="topdaddy"><span>Community</span></a></li></ul>       
+    </div>
+  
+
+            <div id="mod-top">
+       		<div class="moduletable">
+					<!-- Google CSE Search Box Begins  --><div style="margin-top:15px;"> <form action="http://www.op5.org/search"> <input name="cx" value="015530819924116668598:zxjajiifc3o" type="hidden" /> <input name="cof" value="FORID:11" type="hidden" /> Search <input name="q" size="10" type="text" /> <input name="sa" value="Search" style="display: none;" type="submit" /> </form></div> <!-- Google CSE Search Box Ends -->		</div>
+	
+    </div>
+    </div>
+</div></div>
+<div id="menus">
+<div class="wrapper">    
+<div id="primary-nav">
+      <div class="nav2">
+        <div class="nav3">
+          <div id="horiz-menu" class="splitmenu">
+				<ul class="menu sf-menu sf-horizontal"><li id="current" class="first-child active item335"><a href="http://www.op5.org/"><span>Community Exchange</span></a></li><li class="parent item309"><a href="http://www.op5.org/community/plugin-inventory/op5-projects"><span>Projects</span></a><ul><li class="first-child item308"><a href="http://www.op5.org/community/plugin-inventory/op5-projects/ninja"><span>Ninja</span></a></li><li class="item329"><a href="http://www.op5.org/community/plugin-inventory/op5-projects/merlin"><span>Merlin</span></a></li><li class="item326"><a href="/community/projects/nacoma"><span>Nacoma</span></a></li><li class="item320"><a href="http://www.op5.org/community/plugin-inventory/op5-projects/op5-plugins"><span>op5 Plugins</span></a></li><li class="item334"><a href="http://www.op5.org/community/plugin-inventory/op5-projects/check-esx-plugin"><span>Check ESX Plugin</span></a></li><li class="last-child item298"><a href="http://git.op5.org/git/"><span>Code Library</span></a></li></ul></li><li class="item332"><a href="http://git.op5.org/git/"><span>Code</span></a></li><li class="item333"><a href="https://wiki.op5.com"><span>Wiki</span></a></li><li class="item296"><a href="/community/contribute"><span>Contribute</span></a></li><li class="parent item307"><a href="/community/mailing-lists"><span>Mailing lists</span></a><ul><li class="first-child item324"><a href="/community/mailing-lists/op5-users-mailing-lists"><span>op5 Users Mailing lists</span></a></li><li class="last-child item325"><a href="/community/mailing-lists/archive"><span>Archive</span></a></li></ul></li><li class="item330"><a href="/community/suggestion-box"><span>Suggestion Box</span></a></li><li class="item306"><a href="http://blogs.op5.com/blog/op5/op5-tech-blog/"><span>Blogs</span></a></li><li class="last-child item295"><a href="/community/about"><span>About</span></a></li></ul><div class="superfish_clear"></div>
+
+            <div class="clr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="wrapper" style="padding-bottom:150px;">
+    
+  <div class= "wrapper">
+<div style="margin-bottom: -20px; margin-top: 40px;"><img src="http://www.op5.org/topw.png" width="965px"></div>
+</div>
+<div class="wrapper" style="background:white;">  
+  <div id="mainbody">
+    
+            <div id="sidecol">
+      <div class="col1">
+        <div class="col2">
+                    		<div class="module_menu">
+			<div>
+				<div>
+					<div>
+													<h3>Menu</h3>
+											<ul class="menu">
+		<li><a href="/community/plugin-inventory">All Categories</a></li>
+		<li><a href="/community/plugin-inventory/op5-projects/add">Add Listing</a></li>
+		<li><a href="/community/plugin-inventory/op5-projects/add-category">Add Category</a></li>
+		<li><a href="/community/plugin-inventory/updated">Recently Updated</a></li>
+	  	<li><a href="/community/plugin-inventory/featured">Featured Listings</a></li>
+		
+</ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Search Directory</h3>
+											<form action="index.php" method="post" onsubmit="if(document.getElementById('mod_mt_search_searchword').value=='Search...') document.getElementById('mod_mt_search_searchword').value='';">
+	<div class="search">
+	<input type="text" id="mod_mt_search_searchword" name="searchword" maxlength="20" class="inputbox" size="10" value="Search..."  onblur="if(this.value=='') this.value='Search...';" onfocus="if(this.value=='Search...') this.value='';" />
+		
+			<br /><input type="submit" value="Search" class="button" />
+	
+	
+	</div>
+	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_mtree" />
+</form>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module_menu">
+			<div>
+				<div>
+					<div>
+													<h3>Categories</h3>
+											<ul class="menu"><li><a href="/community/plugin-inventory/check-commands">Check Commands <small>(0)</small></a></li><li><a href="/community/plugin-inventory/documentation">Community Documentation <small>(2)</small></a></li><li><a href="/community/plugin-inventory/language-files">Language Files <small>(0)</small></a></li><li><a href="/community/plugin-inventory/log-filters">Log Filters <small>(0)</small></a></li><li class="parent active"><a href="/community/plugin-inventory/op5-projects">op5 Projects</a></li><li><a href="/community/plugin-inventory/plugins">Plugins <small>(1)</small></a></li><li><a href="/community/plugin-inventory/widgets">Widgets <small>(3)</small></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module">
+			<div>
+				<div>
+					<div>
+											<iframe style="border: medium none; overflow: hidden;" src="http://www.facebook.com/plugins/activity.php?site=http%3A%2F%2Fwww.op5.com&amp;width=220&amp;height=300&amp;header=true&amp;colorscheme=light&amp;font=verdana&amp;recommendations=false" width="220px" frameborder="0" height="300px" scrolling="no"></iframe>					</div>
+				</div>
+			</div>
+		</div>
+	
+        </div>
+      </div>
+    </div>
+                  <!-- Start Topcontent -->
+	<div id="top-content" class="extraspace">	
+          <div id="top-module">
+          	
+	 </div>
+ 	</div>
+<!-- start secondary column area -->
+
+	    	<!-- start main content area -->
+	<div id="content" class="extraspace">
+                                      
+      </div>
+
+            <!-- Melvin 1803 checks if component position is found -->
+
+                                      <div id="component">
+                             <div class="padding">
+                                <div class="padding2">
+                                      <div id="listing">
+<h2>Ninja <sup class="featured">Featured</sup> </h2>
+
+<div class="column first"><div class="images">
+	<div class="content">				<div class="thumbnail first"><a id="mainimagelink" href="/community/plugin-inventory/image/4"><img id="mainimage" src="http://www.op5.org/components/com_mtree/img/listings/m/4.png" alt="4.png" /></a></div>		<div class="thumbnail-left"><a href="/community/plugin-inventory/image/4" onclick="jQuery('#mainimage').attr('src','http://www.op5.org/components/com_mtree/img/listings/m/4.png'); jQuery('#mainimagelink').attr('href','/community/plugin-inventory/image/4'); return false;"><img src="http://www.op5.org/components/com_mtree/img/listings/s/4.png" alt="4.png" /></a></div>		<div class="thumbnail-left"><a href="/community/plugin-inventory/image/5" onclick="jQuery('#mainimage').attr('src','http://www.op5.org/components/com_mtree/img/listings/m/5.png'); jQuery('#mainimagelink').attr('href','/community/plugin-inventory/image/5'); return false;"><img src="http://www.op5.org/components/com_mtree/img/listings/s/5.png" alt="5.png" /></a></div>		<div class="thumbnail-left"><a href="/community/plugin-inventory/image/3" onclick="jQuery('#mainimage').attr('src','http://www.op5.org/components/com_mtree/img/listings/m/3.png'); jQuery('#mainimagelink').attr('href','/community/plugin-inventory/image/3'); return false;"><img src="http://www.op5.org/components/com_mtree/img/listings/s/3.png" alt="3.png" /></a></div>	</div>
+</div>
+</div><div class="column second"><h3>Listings details</h3><div class="fields"><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Website</div><div class="output"><a href="/community/plugin-inventory/op5-projects/ninja/visit" target="_blank">www.op5.org/community/plugin-inventory/op5-projects/ninja</a></div></div></div><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Tags</div><div class="output"><a class="tag" href="/community/plugin-inventory/search-by/tags/NInja">NInja</a>, <a class="tag" href="/community/plugin-inventory/search-by/tags/Nagios%20GUI">Nagios GUI</a>, <a class="tag" href="/community/plugin-inventory/search-by/tags/GUI">GUI</a>, <a class="tag" href="/community/plugin-inventory/search-by/tags/User%20Interface">User Interface</a></div></div></div><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Image</div><div class="output"><img src="http://www.op5.org/index.php?option=com_mtree&amp;task=att_download&amp;link_id=2&amp;cf_id=23" /></div></div></div><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Source</div><div class="output"><a href="http://www.op5.org/op5media/op5.org/downloads/ninja-1.1.0.tar.gz" target="_blank">www.op5.org/op5media/op5.org/downloads/ninja-1.1.0.tar.gz</a></div></div></div><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Name of owner</div><div class="output">Per Åsberg</div></div></div><div class="row0"><div class="fieldRow lastFieldRow" style="width:98%"><div class="caption">Contact</div><div class="output"><a href="http://lists.op5.com/mailman/listinfo/op5-users" target="_blank">lists.op5.com/mailman/listinfo/op5-users</a></div></div></div></div></div><div class="listing-desc bottom"><p>The Ninja project is an effort to develop an alternative Nagios gui with the aim of being the most useful Open Source web front end for Nagios. You will be able to use them as a combination or replacement to the existing Nagios CGI's. Ninja is in steady development so we would love to get your input, ideas or most preferibly patches ;)</p>
+<hr />
+<table style="text-align: center;" align="center" border="0" cellspacing="0">
+<tbody style="text-align: left;">
+<tr style="text-align: left;">
+<td style="text-align: left;"><a title="Ninja Nagios GUI documentation" href="#documentation"><img alt="tab_doc" src="/op5media/op5/images/buttons/tab_doc.png" height="45" width="165" /></a></td>
+<td style="text-align: left;"><a title="Download the Ninja code" href="#download"><img alt="tab_download" src="/op5media/op5/images/buttons/tab_download.png" height="45" width="165" /></a></td>
+<td style="text-align: left;"><a title="Contribute to the Ninja project" href="#contribute"><img alt="tab_contribute" src="/op5media/op5/images/buttons/tab_contribute.png" height="45" width="165" /></a></td>
+<td style="text-align: left;"><a title="Join the mailing list" href="/community/mailing-lists"><img style="border: 0px none #000000; vertical-align: middle;" alt="tab_mailinglist" src="/op5media/op5/images/buttons/tab_mailinglist.png" height="45" width="165" /></a></td>
+</tr>
+</tbody>
+</table>
+<table style="text-align: center;" border="0" cellspacing="3">
+</table>
+<br />
+<h2>Brief description of Ninja</h2>
+<table style="text-align: center;" border="0" cellspacing="3">
+</table>
+<h2></h2>
+<ul>
+<li>Create New PHP versions of the existing .cgi's with effort put into removing "obvious problems" such as:                                                                                                                                           
+<ul>
+<li>Lack of good search and filtering. Today's host search can be so much better</li>
+<li>Scalability. Ways to present large data sets, host lists, service lists, etc</li>
+</ul>
+</li>
+<li>Multi language support (gettext)</li>
+<li>Template/skin support for easy customization of look and feel</li>
+<li>Support for several databases</li>
+<li>Session based authentication with support for common auth protocols</li>
+</ul>
+<p> </p>
+<h3><strong>Non-functional requirements (other stuff that we think about)<br /></strong></h3>
+<ul>
+<li>Offer similar or better functionality then the existing cgi's</li>
+<li>Be contributor friendly</li>
+<li>Be scalable enough to support gigantic installations, good performance etc</li>
+<li>Be easy to extend with other Nagios addons such as <a href="http://www.pnp4nagios.org/">pnp4nagios</a>, <a href="http://www.nagvis.org/">nagvis</a> etc</li>
+</ul>
+<p> </p>
+<h2>Download the latest stable release of Ninja<br /></h2>
+<p><a title="Download Ninja tar.gz" href="/op5media/op5.org/downloads/ninja-0.3.2.tar.gz"><img style="margin-right: 10px; vertical-align: middle;" alt="download_inverse25x25" src="/op5media/op5/images/illu/download_inverse25x25.png" height="25" width="25" /></a>Download <a class="mceSCRIPT" _src="http://www.op5.org/plugins/editors/jce/tiny_mce/themes/advanced/langs/en.js?version=152" href="/op5media/op5.org/downloads/ninja-1.1.0.tar.gz">Ninja 1.1.0</a> as tar.gz. Note that you need merlin version &gt;= 0.9.0 for Ninja to function properly.</p>
+<ul>
+<li>Browse and download the code by from <a href="http://git.op5.org/git/?p=nagios/ninja.git;a=summary" title="Source code of the Ninja Nagios GUI project">git</a>.</li>
+</ul>
+<p><br />Check out our wiki for <a href="https://wiki.op5.org/start">intallation instructions</a> for Ninja and the reports-module.</p>
+<h2></h2>
+<h2>Documentation<a name="documentation"></a></h2>
+<ul>
+<li><a title="Ninja API documentation" href="/op5media/op5.org/ninja/documentation/ninja_apidocs.zip">Ninja API documentation (zip-file)</a></li>
+<li><a title="Ninja community documentation" href="https://wiki.op5.org/ninja:start">Community Wiki documentation</a></li>
+<li><a title="Ninja Change Log" href="http://git.op5.org/git/?p=nagios/ninja.git;a=shortlog;h=3e1af1cd997582462cb0f826961ab4d37fe2a62d">Change log</a><a title="Ninja community documentation" href="https://wiki.op5.org/ninja:start"><br /></a></li>
+</ul>
+<h2><br />Guides<a name="guides" id="guides"></a></h2>
+<div class="level3">
+<ul>
+<li class="level1">
+<div class="li"><a href="https://wiki.op5.org/ninja:docs:quickstart-centos5" class="wikilink1" title="ninja:docs:quickstart-centos5">Quick start guide for Ninja on CentOS 5</a></div>
+</li>
+</ul>
+</div>
+<h2><br />Other Resources</h2>
+<ul>
+<li>Read the op5 developer <a title="op5 developer Blogs" href="http://blogs.op5.com/category/op5-tech-blog/">blogs</a><a href="/community/blogs" title="op5 Community Blogs"></a></li>
+<li>Subscribe to the <a href="/community/mailing-lists" title="op5 Users Mailing list">op5-users</a> list or </li>
+<li>Browse the <a href="http://lists.op5.com/pipermail/op5-users/">mailing list archives</a></li>
+</ul>
+<br />
+<h2><br /><a name="demo"></a>Demo</h2>
+<table border="0">
+<tbody>
+<tr>
+<td><a title="Ninja Demo" href="http://www.op5.com/op5/demo/sandbox"><img style="margin-right: 20px; vertical-align: middle;" alt="ninjalogin" src="/op5media/op5.org/ninja/ninjalogin.png" height="150" width="190" /></a></td>
+<td>
+<p>We have a <a href="http://www.op5.com/op5/demo/sandbox" title="View ninja in action, op5 Sandbox">online SandBox</a> where you can look at and test the implemented Ninja GUI in op5 Monitor. You will have to sign up in order to recieve log in credentials.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h2>Get involved - Contribute to the Ninja project<a name="contribute"></a><br /></h2>
+<p>It is easy to get involved in the Ninja project and to contribute!</p>
+<ul>
+<li>Start using the code and if you like what you see, help by spreading the word on blogs and forums</li>
+<li>Post your <a title="comment the ninja nagios gui here" href="#comment">comments and feedback here</a> </li>
+<li>Sign up at the <a title="op5 users mailing list" href="/community/mailing-lists">op5-users mailing list</a> to join the conversation and help other users by ansering questions.where you can follow the project and contribute your code and bugfixes. (The mailing list is it's not a project specific)</li>
+<li>If you find a bug you can <a title="Report a bug" href="https://bugs.op5.com/my_view_page.php">report the bug here</a></li>
+<li>If you miss any documentation or know how to solve a undocumented problem you can <a title="Ninja wiki" href="https://wiki.op5.org/ninja:start">write documentation</a> at op5 community wiki</li>
+</ul>
+<p> </p>
+<h2>Ninja Bug Tracking</h2>
+<ul>
+<li><a title="Ninja bugs and features" href="https://bugs.op5.com/my_view_page.php">Report a bug or view list of known bugs <br /></a></li>
+</ul>
+<h2><br /></h2>
+<h2>Change Log<a name="change log"></a></h2>
+<p>The changelog for Ninja is mostly kept in <a title="ChangeLog" href="http://git.op5.org/git/">git</a> at the moment. Check  out the change log <a title="Ninja Change Log" href="http://git.op5.org/git/?p=nagios/ninja.git;a=shortlog;h=3e1af1cd997582462cb0f826961ab4d37fe2a62d">here</a>.</p>
+<p><br /><a name="comment"></a></p></div><div class="rating-fav"><div class="rating"><div id="rating-msg">Rating</div><img src="http://www.op5.org/components/com_mtree/img/star_00.png" width="16" height="16" hspace="1" vspace="3" alt="" /><img src="http://www.op5.org/components/com_mtree/img/star_00.png" width="16" height="16" hspace="1" vspace="3" alt="" /><img src="http://www.op5.org/components/com_mtree/img/star_00.png" width="16" height="16" hspace="1" vspace="3" alt="" /><img src="http://www.op5.org/components/com_mtree/img/star_00.png" width="16" height="16" hspace="1" vspace="3" alt="" /><img src="http://www.op5.org/components/com_mtree/img/star_00.png" width="16" height="16" hspace="1" vspace="3" alt="" /><div id="total-votes">0 vote</div></div>	<div class="favourite">
+	<span class="fav-caption">Favoured:</span>
+	<div id="fav-count">0</div>	</div></div>	<div class="actions-rating-fav">
+		<div class="actions">
+	<a href="/community/plugin-inventory/op5-projects/ninja/review" rel="nofollow">Submit review</a><a href="/community/plugin-inventory/op5-projects/ninja/recommend" rel="nofollow">Recommend</a><a href="/community/plugin-inventory/op5-projects/ninja/print?tmpl=component" onclick="javascript:void window.open(this.href, 'win2', 'status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print">Print</a><a href="/community/plugin-inventory/op5-projects/ninja/visit" target="_blank">Visit</a><a href="/community/plugin-inventory/op5-projects/ninja/report" rel="nofollow">Report</a></div></div></div><div class="reviews">
+	<div class="title">Reviews (0)</div>
+
+	
+	<p class="mbutton">
+		<a href="/community/plugin-inventory/op5-projects/ninja/review">Be the first to review this listing!<span class="lucida button-arrow">»</span></a>
+	</p>
+	
+</div>
+                          		</div>
+                             </div>
+                           </div>
+                
+    	<!-- Begin Bottom Content MELVIN 2803 -->
+	<div id="bottomContent">
+	  		<div class="modulethumbnails">
+			<div>
+				<div>
+					<div>
+													<h3>Featured Projects from op5</h3>
+											<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr style="margin-top:5px;"><td valign="top" style="width: 33%; margin-left:5px; position:relative;"><br/><b>1</b>. <a href="/community/plugin-inventory/op5-projects/merlin" class="thumbnails"><strong>Merlin</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/community/plugin-inventory/op5-projects/merlin"><img align="bottom" style="max-height:100px; float:right;" border="0" src="http://www.op5.org/components/com_mtree/img/listings/s/9.png" alt="Merlin" /></a><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Category:</strong><small> <a href="/community/plugin-inventory/op5-projects">op5 Projects</a></small><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hits:</strong> 569<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Created:</strong> 2010-06-18<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Source:</strong> <a href="http://www.op5.org/op5media/op5.org/downloads/merlin-0.9.0.tar.gz" target="_blank">www.op5.org/op5media/op5.org/downloads/merlin-0.9.0.tar.gz</a></td></tr><tr style="margin-top:5px;"><td valign="top" style="width: 33%; margin-left:5px; position:relative;"><br/><b>2</b>. <a href="/community/plugin-inventory/op5-projects/ninja" class="thumbnails"><strong>Ninja</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/community/plugin-inventory/op5-projects/ninja"><img align="bottom" style="max-height:100px; float:right;" border="0" src="http://www.op5.org/components/com_mtree/img/listings/s/4.png" alt="Ninja" /></a><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Category:</strong><small> <a href="/community/plugin-inventory/op5-projects">op5 Projects</a></small><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hits:</strong> 1196<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Created:</strong> 2010-06-21<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Source:</strong> <a href="http://www.op5.org/op5media/op5.org/downloads/ninja-1.1.0.tar.gz" target="_blank">www.op5.org/op5media/op5.org/downloads/ninja-1.1.0.tar.gz</a></td></tr><tr style="margin-top:5px;"><td valign="top" style="width: 33%; margin-left:5px; position:relative;"><br/><b>3</b>. <a href="/community/plugin-inventory/op5-projects/check-esx-plugin" class="thumbnails"><strong>Check ESX Plugin</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/community/plugin-inventory/op5-projects/check-esx-plugin"><img align="bottom" style="max-height:100px; float:right;" border="0" src="http://www.op5.org/components/com_mtree/img/listings/s/10.gif" alt="Check ESX Plugin" /></a><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Category:</strong><small> <a href="/community/plugin-inventory/op5-projects">op5 Projects</a></small><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hits:</strong> 544<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Created:</strong> 2010-06-21<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Source:</strong> <a href="http://git.op5.org/git/?p=nagios/op5plugins.git;a=summary" target="_blank">git.op5.org/git/?p=nagios/op5plugins.git;a=summary</a></td></tr><tr style="margin-top:5px;"><td valign="top" style="width: 33%; margin-left:5px; position:relative;"><br/><b>4</b>. <a href="/community/plugin-inventory/op5-projects/op5-plugins" class="thumbnails"><strong>op5 Plugins</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/community/plugin-inventory/op5-projects/op5-plugins"><img align="bottom" style="max-height:100px; float:right;" border="0" src="http://www.op5.org/components/com_mtree/img/listings/s/11.jpg" alt="op5 Plugins" /></a><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Category:</strong><small> <a href="/community/plugin-inventory/op5-projects">op5 Projects</a></small><br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hits:</strong> 472<br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>Created:</strong> 2010-07-22</td></tr></table>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<!-- END BottomFooter MELVIN 2803 -->
+	<!-- Begin Content Footer MELVIN 2803 -->
+	<div id="contentFooter">
+	  
+	</div>
+	<!-- END Content Footer MELVIN 2803 -->
+  </div>
+  
+  <div id="bottom">
+        <div id="footer-outer-container">
+      <div class="centred-container" id="centred-container-footer">
+                              </div>
+    </div>
+      </div></div>
+<div style="margin-top: -5px; margin-bottom: 40px;" class="wrapper"> <img src="http://www.op5.com/bottomw.png" width="965px"></div>
+</div>
+<div id="footers" style="bottom:0;height:150px;position:absolute;width:100%;">
+<div id="footer" class="wrapper">
+  		<div class="module">
+			<div>
+				<div>
+					<div>
+											<div style="margin-left:30px;">
+<table style="margin-left: auto; margin-right: auto; text-align: center; height: 51px;" border="0" cellpadding="0" cellspacing="0">
+<tbody style="text-align: left;">
+<tr style="text-align: left;">
+<td style="text-align: left;" colspan="2" height="11"><br /></td>
+</tr>
+<tr style="text-align: left;">
+<td style="text-align: center;"><a href="http://www.europe.redhat.com/sweden/"><br /></a></td>
+<td style="text-align: left;">
+<table style="height: 46px;" width="632" border="0" cellpadding="5" cellspacing="0">
+<tbody style="text-align: left;">
+<tr style="text-align: left;">
+<td style="text-align: left;" class="footer"><span style="color: #000000;"> <span style="color: #ffffff;"> © Copyright 2010 op5 AB</span></span></td>
+<td style="text-align: left;" class="footer"><span style="color: #ffffff;"><a href="/sitemap">Sitemap</a></span><br /></td>
+<td style="text-align: left;" class="footer"><span style="color: #ffffff;"><a href="http://shop.op5.com/privacy-policy.php?language=en">Privacy Policy</a></span></td>
+<td style="text-align: left;" class="footer"><span style="color: #ffffff;">Phone +46 (0)8-23 02 25</span></td>
+<td><a title="op5 LinkedIn group" href="http://www.linkedin.com/groupInvitation?groupID=660957&amp;sharedKey=341D9E2F6F22"><img alt="icon-linkedin" src="/op5media/op5/images/buttons/icon-linkedin.png" height="20" width="20" /></a></td>
+<td><a title="op5 Blogs" href="/op5/news/blogs"><img alt="Blog_Logo" src="/op5media/op5/images/buttons/Blog_Logo.jpg" height="20" width="20" /></a></td>
+<td><a title="op5s facebook group" href="http://www.facebook.com/home.php#/group.php?gid=20118919978"><img alt="FaceBook-icon" src="/op5media/op5/images/buttons/FaceBook-icon.jpg" height="20" width="20" /></a></td>
+<td><a title="op5 on youtube" href="http://www.youtube.com/op5video"><img alt="Youtube-icon" src="/op5media/op5/images/buttons/Youtube-icon.jpg" height="20" width="20" /></a></td>
+<td><a title="op5 in delicious" href="http://delicious.com/search?p=op5&amp;u=&amp;chk=&amp;context=&amp;fr=del_icio_us&amp;lc=0"><img alt="delicious-icon" src="/op5media/op5/images/buttons/delicious-icon.jpg" height="20" width="20" /></a></td>
+<td><a title="op5 RSS feeds" href="http://www.op5.com/op5/news/rss-feeds"><img alt="rssfeeds" src="/op5media/op5/images/buttons/rssfeeds.jpg" height="20" width="20" /></a></td>
+<td><a title="Twitter" href="http://twitter.com/op5ab"><img alt="Twitter-icon" src="/op5media/op5/images/buttons/Twitter-icon.jpg" height="20" width="20" /></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;"><span style="color: #ffffff;"><span class="footer" style="font-size: 8pt;">You are free to use sourcecode and programs found on this site without further restrictions than those implied by the software license specified for the sourcecode or </span></span></div>
+<div style="text-align: center;"><span style="color: #ffffff;"><span class="footer" style="font-size: 8pt;">programs you choose to use. However, op5 accepts no responsibility what so ever for damage or breakages caused by or related to the sourcecode or programs.</span></span></div>					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+</div>
+
+<!-- Ends shadow border -->
+</div>
+<div id="end">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-691226-8");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Woopra Code Start -->
+<script type="text/javascript">
+var _woopraScript = document.location.protocol + "//static.woopra.com/js/woopra.js";
+document.write(unescape("%3Cscript src='"+_woopraScript+"' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- Woopra Code End -->
+</body>
+</html>
