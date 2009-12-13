@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>Installation/FromImgFiles - Community Ubuntu Documentation</title>
+<script type="text/javascript" src="/htdocs/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/htdocs/ubuntunew/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/htdocs/ubuntunew/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/htdocs/ubuntunew/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/htdocs/ubuntunew/css/projection.css">
+
+<!-- css only for MSIE browsers -->
+<!--[if IE]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/htdocs/ubuntunew/css/msie.css">
+<![endif]-->
+
+
+
+<link rel="Start" href="/community/UserDocumentation">
+<link rel="Alternate" title="Wiki Markup" href="/community/Installation/FromImgFiles?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/community/Installation/FromImgFiles?action=print">
+<link rel="Up" href="/community/Installation">
+<link rel="Appendix" title="toupload" href="/community/Installation/FromImgFiles?action=AttachFile&amp;do=view&amp;target=toupload">
+<link rel="Appendix" title="usb-imagewriter.png" href="/community/Installation/FromImgFiles?action=AttachFile&amp;do=view&amp;target=usb-imagewriter.png">
+<link rel="Appendix" title="win32imagewriter.jpg" href="/community/Installation/FromImgFiles?action=AttachFile&amp;do=view&amp;target=win32imagewriter.jpg">
+<link rel="Search" href="/community/FindPage">
+<link rel="Index" href="/community/TitleIndex">
+<link rel="Glossary" href="/community/WordIndex">
+<link rel="Help" href="/community/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="round" class="roundme">
+<img id="topcap" alt="" src="https://help.ubuntu.com/htdocs/ubuntunew/img/cap-top.png">
+<div id="layout" class="container clear-block">
+<div id="header">
+<div id="logo-floater">
+<h1><a href="http://help.ubuntu.com" title="Ubuntu Documentation"><img alt="Ubuntu" id="logo" src="https://help.ubuntu.com/htdocs/ubuntunew/img/logo.png" /></a></h1>
+</div>
+
+<noscript>
+ <form action="http://www.google.com/cse" id="cse-search-box">
+   <div>
+     <input type="hidden" name="cx" value="004599128559784038176:vj_p0xo-nng" />
+     <input type="hidden" name="ie" value="UTF-8" />
+     <input type="text" name="q" size="27" />
+     <input type="submit" name="sa" value="Search" />
+   </div>
+ </form>
+</noscript>
+
+<script>
+ document.write('<form action="https://help.ubuntu.com/search.html" id="cse-search-box">');
+ document.write('  <div>');
+ document.write('    <input type="hidden" name="cof" value="FORID:9" />');
+ document.write('    <input type="hidden" name="cx" value="004599128559784038176:vj_p0xo-nng" />');
+ document.write('    <input type="hidden" name="ie" value="UTF-8" />');
+ document.write('    <input type="text" name="q" size="27" />');
+ document.write('    <input type="submit" name="sa" value="Search" />');
+ document.write('  </div>');
+ document.write('</form>');
+</script>
+
+<div id="sitename"><a href="https://help.ubuntu.com/community"><img src="https://help.ubuntu.com/htdocs/ubuntunew/img/help-faq.png" /><span>Community Documentation</span></a></div>
+</div> <!--header-->
+<ul id="loginbar"><li><a href="/community/Installation/FromImgFiles?action=login" id="login" rel="nofollow">Login to Edit</a></li></ul>
+
+
+<!--1-->
+<div id="page" lang="en" dir="ltr">
+
+<!--2-->
+
+<div id="breadcrumbs">
+<a href="https://help.ubuntu.com/">Ubuntu Documentation</a> &gt; <a href="https://help.ubuntu.com/community">Community Documentation</a> &gt; <a href="/community/Installation">Installation</a><a class="backlink" href="/community/Installation/FromImgFiles?action=fullsearch&amp;context=180&amp;value=linkto%3A%22Installation/FromImgFiles%22" rel="nofollow" title="Click to do a full-text search for this title">FromImgFiles</a>
+</div>
+
+
+<ul id="pagelocation">
+<li><a href="/community/Installation">Installation</a></li><li><a class="backlink" href="/community/Installation/FromImgFiles?action=fullsearch&amp;context=180&amp;value=linkto%3A%22Installation/FromImgFiles%22" rel="nofollow" title="Click to do a full-text search for this title">FromImgFiles</a></li>
+</ul>
+
+<!--3--><div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><div><table style="float:right;  font-size: 0.9em;  width:30%;  background:#F1F1ED;  margin: 0 0 1em 1em;"><tbody><tr>  <td style="padding:0.5em;"><p class="line891"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li><a href="#Windows">Windows</a></li><li><a href="#Ubuntu">Ubuntu</a></li><li><a href="#Mac OS X">Mac OS X</a></li><li><a href="#External USB disc drives">External USB disc drives</a></li></ol></div></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867"><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867"><span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line862">Ubuntu is distributed over the Internet as two types of files: CD image files, called ISOs, and flash image files, called IMGs.  [<strong>Warning</strong>: This applies just to Ubuntu 9.04. Ubuntu is <strong>NO LONGER</strong> distributed in IMG format, except for some machines <img alt=":-(" height="15" src="/htdocs/ubuntunew/img/sad.png" title=":-(" width="15" /> ]. To install Ubuntu from flash media, you first need to write the downloaded IMG image to your flash device.  This requires a working flash writer (e.g. USB stick, SD reader, etc.), and flash media with sufficient capacity for the install (1 GB or larger is recommended) formatted in FAT32.  Commonly, a single USB stick is used to fulfill both requirements. <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><p class="line874">Warning: This will destroy all data on the USB device. Please backup all data to other media before proceeding. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line874">Be sure to verify that your computer supports booting from the device you have selected for installation.  Many computers can boot from a USB drive, and some from other sources.  Check the documentation on your specific model of computer for the procedure to boot from the selected device. <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><p class="line862">If you have downloaded an ISO image, please refer to <a href="/community/BurningIsoHowto">BurningIsoHowto</a>. <span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span><p class="line862">The <a href="/community/GettingUbuntu">GettingUbuntu</a> page has links to the IMG and ISO image files, as well as other methods of <a href="/community/GettingUbuntu">GettingUbuntu</a>. <span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><p class="line867">
+<h3 id="MD5 Sums">MD5 Sums</h3>
+<span class="anchor" id="line-18"></span><p class="line862">Before writing your flash, it is <em>highly recommended</em> that you verify the md5 sum (hash) of the .img file.  For instructions, please see <a href="/community/HowToMD5SUM">HowToMD5SUM</a>.  For the current list of Official Ubuntu MD5 hashes, see the MD5SUMS file for the release you're using under <a class="http" href="http://releases.ubuntu.com">http://releases.ubuntu.com</a> (and optionally the <a href="/community/GnuPrivacyGuardHowto">PGP</a> signatures in the MD5SUMS.gpg file), or see <a href="/community/UbuntuHashes">UbuntuHashes</a>.  This ensures that the file was not damaged during the download process and is 100% intact. <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867">
+<h2 id="Windows">Windows</h2>
+<span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line867">
+<h3 id="Graphical Interface">Graphical Interface</h3>
+<span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><p class="line867"><img alt="win32imagewriter.jpg" class="attachment" src="/community/Installation/FromImgFiles?action=AttachFile&amp;do=get&amp;target=win32imagewriter.jpg" title="win32imagewriter.jpg" /> <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><ol type="1"><li>Download the desired .img file <span class="anchor" id="line-27"></span></li><li><p class="line862">Download Disk Imager from <a class="https" href="https://launchpad.net/win32-image-writer/+download">https://launchpad.net/win32-image-writer/+download</a> <span class="anchor" id="line-28"></span></li><li>Insert your flash media <span class="anchor" id="line-29"></span></li><li>Note the drive letter assigned to your flash media <span class="anchor" id="line-30"></span></li><li>Start Disk Imager <span class="anchor" id="line-31"></span></li><li>Select the downloaded file and target device, and click "Write" <span class="anchor" id="line-32"></span></li><li>Remove your flash media when the operation is complete <span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span></li></ol><p class="line867">
+<h3 id="Command Line Interface">Command Line Interface</h3>
+<span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><ol type="1"><li>Download the desired .img file <span class="anchor" id="line-37"></span></li><li><p class="line862">Download flashnul from <a class="http" href="http://shounen.ru/soft/flashnul">http://shounen.ru/soft/flashnul</a> <span class="anchor" id="line-38"></span></li><li>Attach your USB drive <span class="anchor" id="line-39"></span></li><li><p class="line862">Run <tt>flashnul&nbsp;-p</tt> <span class="anchor" id="line-40"></span></li><li>Note the physical device number for the USB drive <span class="anchor" id="line-41"></span></li><li><p class="line862">Run <tt>flashnul&nbsp;&lt;number&nbsp;obtained&nbsp;in&nbsp;prior&nbsp;step&gt;&nbsp;-L&nbsp;\path\to\downloaded.img</tt> <span class="anchor" id="line-42"></span></li><li>Answer "yes" if the selected destination device is correct <span class="anchor" id="line-43"></span></li><li>Remove your USB drive when the command completes <span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span></li></ol><p class="line867">
+<h2 id="Ubuntu">Ubuntu</h2>
+<span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span><p class="line867">
+<h3 id="Graphical Interface">Graphical Interface</h3>
+<span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><p class="line867"><img alt="usb-imagewriter.png" class="attachment" src="/community/Installation/FromImgFiles?action=AttachFile&amp;do=get&amp;target=usb-imagewriter.png" title="usb-imagewriter.png" /> <span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><ol type="1"><li>Download the desired .img file <span class="anchor" id="line-52"></span></li><li>Install the usb-imagewriter package <span class="anchor" id="line-53"></span><ul><li><p class="line862">If your release does not include this, download it from <a class="https" href="https://launchpad.net/~ogra/+archive">Oliver's PPA</a> <span class="anchor" id="line-54"></span></li><li><p class="line862">If imagewriter fails to launch, you may need to install python glade2 support. Install the python-glade2 package or Run <tt>sudo&nbsp;apt-get&nbsp;install&nbsp;python-glade2</tt> <span class="anchor" id="line-55"></span></li><li>If your release does not include it and you are running 9.04 Jaunty Jackalope then run this command from the console: <span class="anchor" id="line-56"></span><ul><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;apt-get&nbsp;install&nbsp;usb-imagewriter</tt> <span class="anchor" id="line-57"></span></li></ul></li></ul></li><li><p class="line862">Open Applications -&gt; Accessories -&gt; Image Writer <span class="anchor" id="line-58"></span><ul><li><p class="line862">KDE users will find this in Applications -&gt; Utilities -&gt; Image Writer <span class="anchor" id="line-59"></span></li><li>from the command line, from the console: <span class="anchor" id="line-60"></span><ul><li style="list-style-type:none"><p class="line891"><tt>sudo&nbsp;imagewriter</tt> <span class="anchor" id="line-61"></span></li></ul></li><li><p class="line862">on some usb-imagewriter versions (console command: imagewriter) the application fails to write if the image path contains blank spaces, exiting with "<a class="nonexistent" href="/community/IndexError">IndexError</a>: list index out of range".  <span class="anchor" id="line-62"></span></li></ul></li><li>Insert your flash media <span class="anchor" id="line-63"></span></li><li>Select the downloaded file and flash device, and click "Write to Device" <span class="anchor" id="line-64"></span></li><li>Remove your device when the operation is complete <span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span></li></ol><p class="line867">
+<h3 id="Command Line Interface">Command Line Interface</h3>
+<span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><p class="line874">Be very careful about which /dev device you write to. If your machine is booted up off of disk /dev/sda, and your usb stick is on /dev/sdc, and you accidentally write to /dev/sda instead of /dev/sdc, your filesystem will be irreparably damaged and you will lose all of your files.  <span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><ol type="1"><li>Download the desired .img file <span class="anchor" id="line-71"></span></li><li>Open a terminal and insert your flash media <span class="anchor" id="line-72"></span></li><li><p class="line862">Look at the output of <tt>sudo&nbsp;dmesg&nbsp;|&nbsp;tail&nbsp;-20</tt> to determine the device node assigned to your flash media (ignore the device number; e.g. /dev/sdc, not sdc1) <span class="anchor" id="line-73"></span><ul><li>Example output of dmesg, where the device node is 'sdc':  <span class="anchor" id="line-74"></span></li><li><p class="line891"><tt>[&nbsp;5046.396364]&nbsp;usb-storage:&nbsp;device&nbsp;scan&nbsp;complete</tt> <span class="anchor" id="line-75"></span></li><li><p class="line891"><tt>[&nbsp;5046.397075]&nbsp;scsi&nbsp;10:0:0:0:&nbsp;Direct-Access&nbsp;USB&nbsp;Flash&nbsp;Memory&nbsp;1.00&nbsp;PQ:&nbsp;0&nbsp;ANSI:&nbsp;0&nbsp;CCS</tt> <span class="anchor" id="line-76"></span></li><li><p class="line891"><tt>[&nbsp;5047.068761]&nbsp;sd&nbsp;10:0:0:0:&nbsp;[sdc]&nbsp;Mode&nbsp;Sense:&nbsp;23&nbsp;00&nbsp;00&nbsp;00</tt> <span class="anchor" id="line-77"></span></li><li><p class="line891"><tt>[&nbsp;5047.068769]&nbsp;sd&nbsp;10:0:0:0:&nbsp;[sdc]&nbsp;Assuming&nbsp;drive&nbsp;cache:&nbsp;write&nbsp;through</tt> <span class="anchor" id="line-78"></span></li><li><p class="line891"><tt>[&nbsp;5047.075021]&nbsp;&nbsp;sdc:&nbsp;sdc1</tt> <span class="anchor" id="line-79"></span></li><li><p class="line891"><tt>[&nbsp;5047.076459]&nbsp;sd&nbsp;10:0:0:0:&nbsp;[sdc]&nbsp;Attached&nbsp;SCSI&nbsp;removable&nbsp;disk</tt> <span class="anchor" id="line-80"></span></li></ul></li><li><p class="line862">Run <tt>sudo&nbsp;umount&nbsp;/dev/devicenode</tt>    <span class="anchor" id="line-81"></span></li><li><p class="line862">Run <tt>sudo&nbsp;dd&nbsp;if=/path/to/downloaded.img&nbsp;of=/dev/devicenode&nbsp;bs=1M</tt> <span class="anchor" id="line-82"></span></li><li>Remove your flash media when the command completes (you may need to wait a few extra seconds for it to finish) <span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span></li></ol><p class="line867">
+<h2 id="Mac OS X">Mac OS X</h2>
+<span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><p class="line867">
+<h3 id="Command Line Interface">Command Line Interface</h3>
+<span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><ol type="1"><li>Download the desired .img file <span class="anchor" id="line-89"></span></li><li>Open a Terminal (in /Applications/Utilities/) <span class="anchor" id="line-90"></span></li><li><p class="line862">Run <tt>diskutil&nbsp;list</tt> to get the current list of devices <span class="anchor" id="line-91"></span></li><li>Insert your flash media <span class="anchor" id="line-92"></span></li><li><p class="line862">Run <tt>diskutil&nbsp;list</tt> again and determine the device node assigned to your flash media (e.g. /dev/disk2) <span class="anchor" id="line-93"></span></li><li><p class="line862">Run <tt>diskutil&nbsp;unmountDisk&nbsp;/dev/disk</tt><em>N</em> (replace <em>N</em> with the disk number from the last command; in the previous example, <em>N</em> would be <tt>2</tt>) <span class="anchor" id="line-94"></span></li><li><p class="line862">Execute <tt>sudo&nbsp;dd&nbsp;if=/path/to/downloaded.img&nbsp;of=/dev/rdisk</tt><em>N</em> <tt>bs=1m</tt> (replace <tt>/path/to/downloaded.img</tt> with the path where the image file is located; for example, <tt>./ubuntu.img</tt>, <tt>/dev/rdiskN</tt> is faster than <tt>/dev/diskN</tt>).  If you see the error <tt>dd:&nbsp;Invalid&nbsp;number&nbsp;`1m'</tt>, you are using GNU dd.  Use the same command but replace <tt>bs=1m</tt> with <tt>bs=1M</tt>. <span class="anchor" id="line-95"></span></li><li><p class="line862">Run <tt>diskutil&nbsp;eject&nbsp;/dev/disk</tt><em>N</em> and remove your flash media when the command completes <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span></li></ol><p class="line867">
+<h2 id="External USB disc drives">External USB disc drives</h2>
+<span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><p class="line874">IMG files can also be written to external USB hard discs and installed by having the computer boot from the external USB disc drive.  <span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><p class="line867"><hr /><p class="line874"> <span class="anchor" id="line-102"></span><a href="/community/CategoryLive">CategoryLive</a> <a href="/community/CategoryLive">CategoryLive</a> <span class="anchor" id="line-103"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">Installation/FromImgFiles  (last edited 2010-10-23 16:22:17 by <span title="https://login.launchpad.net/+id/PQD37pC @ d206-116-30-126.bchsia.telus.net[206.116.30.126]"><a class="interwiki" href="https://launchpad.net/~jknight0" title="https://login.launchpad.net/+id/PQD37pC @ d206-116-30-126.bchsia.telus.net[206.116.30.126]">Judith Knight</a></span>)</p>
+
+<ul class="pagelinks">
+<li><a href="/community/Installation">Parent Page</a></li>
+<li><a class="nbinfo" href="/community/Installation/FromImgFiles?action=info" rel="nofollow">Page History</a></li>
+</ul>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<hr width="550px">
+
+  <div id="ubuntulinks">
+	<p>
+	      The material on this wiki is available under a free license, see <a href="https://help.ubuntu.com/community/License">Copyright / License</a> for details<br /><b>You</b> can contribute to this wiki, see <a href="https://help.ubuntu.com/community/WikiGuide">Wiki Guide</a> for details
+	</p><br>
+  </div>
+<script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1018242-7";
+urchinTracker();
+__utmSetVar('UbuntuWiki');
+</script>
+<script type="text/javascript">
+function togglebar() {
+    obj = document.getElementById('editbar');
+    obj2 = document.getElementById('showbarspan');
+    obj3 = document.getElementById('showbar');
+    if (obj.style.position == 'fixed') {
+        obj.style.position = 'static';
+	obj3.style.bottom = '0';
+        obj2.innerHTML = 'Show';
+    } else {
+        obj.style.position = 'fixed';
+        obj2.innerHTML = 'Hide';
+        obj3.style.bottom = '25px';
+    }
+    return false;
+}
+</script>
+
+
+</div> <!-- footer -->
+</div> <!-- layout -->
+<img id="bottomcap" alt="" src="https://help.ubuntu.com/htdocs/ubuntunew/img/cap-bottom.png">
+</div> <!-- round -->
+</body>
+</html>
+
