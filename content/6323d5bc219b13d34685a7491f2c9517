@@ -1,0 +1,430 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<!-- DW6 -->
+<HEAD>
+<TITLE>Mitsubishi HC3800 Projection Calculator - Throw Distance and Screen Size</TITLE>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> <META NAME="description" CONTENT="Find screen size and throw distance for all projectors, as well as seating and lighting recommendations.">
+<META NAME="keywords" CONTENT="projectors,projector,projection,screen,calculator,throw distance,zoom,screen size,seating,room,lighting,economy,mode">
+<META NAME="rating" CONTENT="General">
+
+
+<link rel="stylesheet" href="/images/wrap1/style.css" type="text/css">
+
+
+
+</head>
+
+<BODY> 
+
+<table id="motherTable" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr id="pageHeader"><td colspan="3" width="100%">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+	<td id="siteName">
+		<a href="http://www.projectorcentral.com"><img src="/images/wrap1/pc_logo_wrap1.png" alt="ProjectorCentral.com" border=0></a>
+	</td>
+	<td id="headerBanner">
+		<TABLE CELLSPACING=0 CELLPADDING=0 STYLE="margin-bottom:10px;" ><TR><TD ALIGN="center"><DIV ALIGN="center" STYLE="font-size:10px;color:#888888;">- advertisement -</DIV><SCRIPT LANGUAGE='JavaScript1.1' TYPE="text/javascript" SRC="/bblaster.cfm?bid=4143&s=1&pg=Mitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm&cb=12-21-2010-11-32-54"></SCRIPT><NOSCRIPT><A HREF="/bredir.cfm?bid=4143&cb=12-21-2010-11-32-54" TARGET="_4143"><IMG SRC="/bblaster.cfm?bid=4143&i=1&cb=12-21-2010-11-32-54" BORDER=0 ALT="EPSON"></A></NOSCRIPT></TD></TR></TABLE> 
+	</td>
+</tr></table>
+</tr>
+
+<tr>
+<td colspan="3" id="globalNav">
+	<table id="headStrip" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="5"><img src="/images/wrap1/HeaderBackgroundLeftCapActive.png" id="gnl"></td>
+			<td>
+				<div id="globalLink">
+					<a href="http://www.projectorcentral.com" id="gl1" class="activeSite firstLink"><div class="left_highlight"></div><div class="site_icon"></div>PROJECTORS<div class="right_shadow"></div></a>
+					<a href="http://www.hdtvsolutions.com" id="gl2"><div class="left_highlight"></div><div class="site_icon"></div>HDTVs<div class="right_shadow"></div></a>
+					<a href="http://www.bigscreenforums.com" id="gl3"><div class="left_highlight"></div><div class="site_icon"></div>FORUMS<div class="right_shadow"></div></a>
+					<a><div class="left_highlight"></div></a>
+				</div>
+				
+			</td>
+			<td>
+				<FORM NAME="gs" ACTION="/search_results.cfm" METHOD="GET" id="search">
+					<INPUT TYPE="TEXT" STYLE="font-size:11px" NAME="q" SIZE="25" MAXLENGTH="256" VALUE=''>
+					<INPUT TYPE="submit" STYLE="font-size:11px" NAME="btng" VALUE="Search">
+					<INPUT TYPE="hidden" NAME="site" VALUE="pc">
+					<INPUT TYPE="hidden" NAME="output" VALUE="xml_no_dtd">
+					<INPUT TYPE="hidden" NAME="client" VALUE="pc">
+					<INPUT TYPE="hidden" NAME="proxystylesheet" VALUE="pc">
+					<INPUT TYPE="hidden" NAME="filter" VALUE="0">
+					<INPUT TYPE="hidden" NAME="as_sitesearch" VALUE="www.projectorcentral.com">
+					
+				</FORM>
+			</td>
+			<td>
+				<img src="/images/wrap1/HeaderBackgroundRightCap.png" id="gnr">
+			</td>
+		</tr>
+	</table>
+
+	
+	
+</td>
+</tr>
+
+<tr id="utility">
+	<td colspan="3">
+	<div id="utilityLinks">
+	<a href="http://www.projectorcentral.com" TITLE="Projector Central Home Page" CLASS="">Home</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<A HREF="register_member.cfm" TITLE="Register on ProjectorCentral" >Register</A>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</A>
+			<a href="/login.cfm" TITLE="Login to the ProjectorCentral Member Center" REL="nofollow" CLASS="">Login</a>
+		<SPAN CLASS="countrySelector">&nbsp;&nbsp;&bull;&nbsp;&nbsp;<A HREF="/country_choose.cfm" TITLE="You are viewing ProjectorCentral.com from the United States" CLASS="imgLink"><IMG SRC="/images/flags/FL223.gif" ALIGN="BOTTOM" BORDER="0" WIDTH="35" HEIGHT="18"></A></SPAN>
+	</div>
+	<div id="subNav">
+		<a href="/projector_faq.cfm" class="">FAQs</a>
+		&bull;
+		<a href="/home_theater_projector_resource_center.cfm" class="">Home Theater</a>
+		&bull;
+		<a href="/classroom_projector_resource_center.cfm" class="">Classroom</a>
+	</div>
+	</td>
+</tr>
+
+
+
+<tr id="topBorder">
+	<td id="tl_img" colspan="2"><div><img alt="" src="/images/wrap1/tl_curve_white_PC.gif"></div></td>
+	<td id="tr_img"><div><img alt="" src="/images/wrap1/tr_curve_white_PC.gif"></div></td>
+</tr>
+
+
+<tr id="contentWrapper">
+<td id="pageNav">
+	<div id="pageNavDiv"><nobr> 
+		<div class="sectionLinks"> 
+			Top 10 Projectors
+		</div>
+		<div class="SubsectionLinks">
+			<a href="/home-theater-multimedia-projectors.htm">Home Theater</a>
+			<a href="/popular-pico-projectors.htm">Pico Projectors</a>
+			<a href="/portable-computer-projectors.htm">Portable</a>
+			<a href="/conference-video-projectors.htm">Conference Room</a>
+			<a href="/education-dlp-lcd-projectors.htm">Classroom</a>
+		</div>
+		<div class="sectionLinks">
+			Where to Buy
+		</div>
+		<div class="SubsectionLinks">
+			<a href="/online_prices.cfm">Projectors</a>
+			<a href="/package_deals.cfm">Package Deals</a>
+			<A HREF="/lamp-suppliers.htm" TITLE="Projector Lamp Suppliers">Lamps</A><A HREF="/screen-suppliers.htm" TITLE="Projector Screen Suppliers">Screens</A><A HREF="/ceiling-mount-suppliers.htm" TITLE="Projector Ceiling Mount Suppliers">Ceiling Mounts</A><A HREF="/wall-mount-suppliers.htm" TITLE="Projector Wall Mounts">Wall Mounts</A><A HREF="/repair-suppliers.htm" TITLE="Projector Repair Centers">Repairs</A><A HREF="/cable-suppliers.htm" TITLE="Projector Cable Suppliers">Cables</A>
+			<a href="/used_projectors.cfm">Used Projectors</a>
+			<A HREF="/av_equipment_suppliers.cfm" TITLE="More Audio Visual Equipment Suppliers">&nbsp;&nbsp;<img src="/images/redarrow.gif" border="0">&nbsp;More...</A>
+		</div>
+		<div class="sectionLinks">
+			Research
+		</div>
+		<div class="SubsectionLinks">
+			<a href="/buyers_guide.cfm">Buyer's Guide</a>
+			<a href="/projector-reviews.cfm">Projector Reviews </a>
+			<a href="/projector-commentary.cfm">Commentary</a>
+			<div class="spacer"> </div>
+			<a href="/parts_compare.cfm">Compare Projectors</a>
+			<a href="/projectors.cfm">Search by Feature</a>
+			<a href="/search.cfm">Search by Model</a>
+			<a href="/get_bids_post.cfm">Get a Quote</a>
+			<div class="spacer"> </div>
+			<a href="/mfg.cfm">Projector Brands</a>
+			<a href="/screen_brands.cfm"> Screen Brands</a>
+			<a href="/dealer_locator.cfm">Find Merchants</a>
+			<div class="spacer"> </div>
+			<a href="/projection-calculator-pro.cfm" class="activeSection">Calculator Pro </a>
+			<a href="/glossary.cfm">Dictionary</a>
+			<a href="/donation.cfm">School Donations</a>
+		</div>
+		
+		
+		<div id="NavAds">
+			<TABLE CELLSPACING=0 CELLPADDING=0 STYLE="margin-bottom:10px;" ALIGN="center"><TR><TD ALIGN="center"><DIV ALIGN="center" STYLE="font-size:10px;color:#888888;">- advertisement -</DIV><SCRIPT LANGUAGE='JavaScript1.1' TYPE="text/javascript" SRC="/bblaster.cfm?bid=4169&s=1&pg=Mitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm&cb=12-21-2010-11-32-54"></SCRIPT><NOSCRIPT><A HREF="/bredir.cfm?bid=4169&cb=12-21-2010-11-32-54" TARGET="_4169"><IMG SRC="/bblaster.cfm?bid=4169&i=1&cb=12-21-2010-11-32-54" BORDER=0 ALT="Panasonic"></A></NOSCRIPT><A HREF="/bredir.cfm?bid=4169&cb=12-21-2010-11-32-54" STYLE="padding-top:5px;" TARGET="_4169"><SPAN STYLE="margin-bottom:15px;font-weight:bold;font-size:10px;">Click for more info!</SPAN></A></TD></TR></TABLE> 
+		</div></nobr>
+	</div>
+</td>
+<td id="content">
+	
+	
+		<DIV ID="headerIcons">
+			<A HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fwww%2Efacebook%2Ecom%2Fshare%2Ephp%3Fu%3Dhttp%3A%2F%2Fwww%2Eprojectorcentral%2Ecom%2FMitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm" TITLE="Send this page to Facebook" REL="nofollow" TARGET="_fb"><IMG SRC="images/facebook_icon.png"></A>
+			
+			<A HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Ftwitter%2Ecom%2Fhome%3Fstatus%3DCurrently%20reading%20%3Chttp%3A%2F%2Fwww%2Eprojectorcentral%2Ecom%2FMitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm%3E" TITLE="Send this page to Twitter" REL="nofollow" TARGET="_twit"><IMG SRC="images/twitter_icon.png"></A>
+			<A HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fwww%2Eprojectorcentral%2Ecom%2Fsend%5Fpage%2Ecfm%3Ficon%3D1%26page%3D%2FMitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm%26amp%3Btitle%3DMitsubishi%20HC3800%20Projection%20Calculator%20%2D%20Throw%20Distance%20and%20Screen%20Size" TITLE="Send this page to a friend" REL="nofollow"><IMG SRC="/images/email.png"></A>
+			<A HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fdigg%2Ecom%2Fsubmit%3Furl%3Dhttp%3A%2F%2Fwww%2Eprojectorcentral%2Ecom%2FMitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm%26title%3DMitsubishi%20HC3800%20Projection%20Calculator%20%2D%20Throw%20Distance%20and%20Screen%20Size%26topic%3Dtech%5Fnews" TITLE="Send this page to Digg" REL="nofollow"><IMG SRC="/images/digg-it-tiny.gif"></A>
+		</DIV>
+		
+		<DIV ID="breadCrumb">
+			<a href="http://www.projectorcentral.com" TITLE="Home">PROJECTORS</a> / <a href="mfg.cfm" TITLE="Projector Manufacturers">Manufacturers</a> / <A HREF="Mitsubishi.htm" TITLE="Mitsubishi HC3800 Manufacturer">Mitsubishi</a> / <A HREF="Mitsubishi-HC3800.htm" TITLE="Mitsubishi HC3800 Specs">Mitsubishi HC3800</a> / HC3800 Projection Calculator 
+		</DIV>
+	
+		<DIV ID="pageName">
+			<H2>
+				
+				<DIV CLASS="pg_feedback">
+					<A HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fwww%2Eaddthis%2Ecom%2Fbookmark%2Ephp%3Ftop%3D1%26v%3D250%26pub%3Dliz4addthis">Share this Page</A>
+				</DIV>
+			Projection Calculator Pro
+			</H2> 
+		</DIV>
+	
+
+	<div class="feature">
+
+	<FONT FACE="Arial,Helvetica" SIZE="2">
+	<B>Will your projector fit the available space?</B> What about your screen? What about seating and room lighting? To find out, use our <i>Projection Calculator Pro</i> by
+	following these 2 easy steps:</FONT>
+	<BR><BR>
+	<FORM ACTION="projection-calculator-pro.cfm" METHOD="post"> 
+		<FONT FACE="Arial,Helvetica" SIZE=2><B>1.</B>&nbsp;<SELECT NAME="mfg_id" onchange="submit()">
+			<OPTION VALUE="0">Choose a Manufacturer: <OPTION VALUE="1" > 3M <OPTION VALUE="144" > A+K * <OPTION VALUE="364" > AAXA <OPTION VALUE="126" > Acer <OPTION VALUE="329" > ACTO <OPTION VALUE="358" > Anthem <OPTION VALUE="18" > Apollo * <OPTION VALUE="127" > APTi * <OPTION VALUE="383" > Artec <OPTION VALUE="20" > ASK * <OPTION VALUE="193" > ASK Proxima <OPTION VALUE="343" > Atlantis <OPTION VALUE="148" > AVIO <OPTION VALUE="26" > Barco <OPTION VALUE="169" > BenQ <OPTION VALUE="362" > Bonitor <OPTION VALUE="42" > Boxlight <OPTION VALUE="138" > Buhl * <OPTION VALUE="135" > Canon <OPTION VALUE="333" > Canon Europe <OPTION VALUE="179" > Casio <OPTION VALUE="44" > Chisholm * <OPTION VALUE="157" > Christie <OPTION VALUE="297" > CineVERSUM <OPTION VALUE="143" > Compaq * <OPTION VALUE="153" > CTX * <OPTION VALUE="128" > Davis * <OPTION VALUE="173" > Dell <OPTION VALUE="162" > Delta * <OPTION VALUE="325" > Digital Galaxy <OPTION VALUE="56" > Digital Projection <OPTION VALUE="142" > Dream Vision <OPTION VALUE="58" > Dukane <OPTION VALUE="160" > DWIN * <OPTION VALUE="59" > EIKI <OPTION VALUE="66" > Elmo <OPTION VALUE="225" > eLux <OPTION VALUE="67" > Epson <OPTION VALUE="332" > Epson Europe <OPTION VALUE="146" > Everest <OPTION VALUE="152" > Faroudja * <OPTION VALUE="371" > FAVI <OPTION VALUE="150" > Fujitsu * <OPTION VALUE="178" > Gateway * <OPTION VALUE="394" > H-PEC <OPTION VALUE="76" > Hitachi <OPTION VALUE="172" > HP <OPTION VALUE="77" > Hughes-JVC * <OPTION VALUE="164" > IBM * <OPTION VALUE="163" > iiyama * <OPTION VALUE="78" > InFocus <OPTION VALUE="170" > InFocus Home <OPTION VALUE="87" > JVC <OPTION VALUE="335" > JVC Europe <OPTION VALUE="324" > KAGA Components <OPTION VALUE="229" > Knoll Systems <OPTION VALUE="94" > Kodak * <OPTION VALUE="149" > Lasergraphics * <OPTION VALUE="338" > Leica * <OPTION VALUE="303" > Lenovo * <OPTION VALUE="147" > LG Electronics <OPTION VALUE="95" > Liesegang <OPTION VALUE="330" > Lightspeed Design <OPTION VALUE="99" > Lightware * <OPTION VALUE="161" > Luxeon * <OPTION VALUE="151" > Marantz <OPTION VALUE="101" > Megapower * <OPTION VALUE="190" > Microtek * <OPTION VALUE="102" SELECTED> Mitsubishi <OPTION VALUE="141" > Mustek * <OPTION VALUE="103" > NEC <OPTION VALUE="395" > NuVision <OPTION VALUE="105" > nView * <OPTION VALUE="191" > Olympus * <OPTION VALUE="51" > Optoma <OPTION VALUE="331" > Optoma Europe <OPTION VALUE="106" > Panasonic <OPTION VALUE="334" > Panasonic Europe <OPTION VALUE="175" > Panasonic Home <OPTION VALUE="107" > Philips <OPTION VALUE="108" > Pioneer * <OPTION VALUE="328" > Pioneer Europe * <OPTION VALUE="261" > Pixa * <OPTION VALUE="306" > Planar <OPTION VALUE="109" > PLUS * <OPTION VALUE="171" > PLUS Home * <OPTION VALUE="110" > Polaroid * <OPTION VALUE="176" > projectiondesign <OPTION VALUE="113" > Proxima * <OPTION VALUE="167" > Quanix * <OPTION VALUE="365" > Ray Displays <OPTION VALUE="136" > Runco <OPTION VALUE="265" > Sagem * <OPTION VALUE="300" > Sahara * <OPTION VALUE="129" > Samsung <OPTION VALUE="116" > Sanyo <OPTION VALUE="137" > Sayett * <OPTION VALUE="117" > Sharp PG Series <OPTION VALUE="166" > Sharp XG Series <OPTION VALUE="165" > SharpVision <OPTION VALUE="130" > SIM2 Multimedia <OPTION VALUE="119" > Sony <OPTION VALUE="174" > Studio Experience * <OPTION VALUE="323" > TAXAN <OPTION VALUE="168" > Toshiba DPD * <OPTION VALUE="336" > Toshiba Europe <OPTION VALUE="121" > Toshiba TACP * <OPTION VALUE="132" > Vidikron <OPTION VALUE="122" > ViewSonic <OPTION VALUE="351" > VisionQuest <OPTION VALUE="177" > Vivitar * <OPTION VALUE="133" > Vivitek <OPTION VALUE="340" > WowWee <OPTION VALUE="240" > XEROX * <OPTION VALUE="159" > Yamaha * <OPTION VALUE="145" > Yokogawa * <OPTION VALUE="123" > Zenith * 
+		</SELECT>
+		<FONT FACE="Arial,Helvetica" SIZE=1>&nbsp;&nbsp;* = not currently producing projectors</FONT>
+		<INPUT TYPE="hidden" NAME="lang" VALUE="English"></FORM>
+	<P>
+		<FONT FACE="Arial,Helvetica" SIZE=2><B>2.</B>&nbsp;<SELECT onchange="window.location.href=this.value;"><OPTION VALUE="projection-calculator-pro.cfm">Select a Model:</OPTION>
+				<OPTGROUP LABEL="Home Theater"><OPTION VALUE="Mitsubishi-HC4000-projection-calculator-pro.htm" > HC4000 <OPTION VALUE="Mitsubishi-HC6800-projection-calculator-pro.htm" > HC6800 <OPTION VALUE="Mitsubishi-HC7000-projection-calculator-pro.htm" > HC7000 <OPTION VALUE="Mitsubishi-HC100U_ColorView-projection-calculator-pro.htm" > HC100U ColorView * <OPTION VALUE="Mitsubishi-HC1500-projection-calculator-pro.htm" > HC1500 * <OPTION VALUE="Mitsubishi-HC1600-projection-calculator-pro.htm" > HC1600 * <OPTION VALUE="Mitsubishi-HC2_ColorView-projection-calculator-pro.htm" > HC2 ColorView * <OPTION VALUE="Mitsubishi-HC2000-projection-calculator-pro.htm" > HC2000 * <OPTION VALUE="Mitsubishi-HC3_ColorView-projection-calculator-pro.htm" > HC3 ColorView * <OPTION VALUE="Mitsubishi-HC3000U-projection-calculator-pro.htm" > HC3000U * <OPTION VALUE="Mitsubishi-HC3100U-projection-calculator-pro.htm" > HC3100U * <OPTION VALUE="Mitsubishi-HC3800-projection-calculator-pro.htm" SELECTED> HC3800 * <OPTION VALUE="Mitsubishi-HC4900-projection-calculator-pro.htm" > HC4900 * <OPTION VALUE="Mitsubishi-HC5000BL-projection-calculator-pro.htm" > HC5000BL * <OPTION VALUE="Mitsubishi-HC5500-projection-calculator-pro.htm" > HC5500 * <OPTION VALUE="Mitsubishi-HC6000-projection-calculator-pro.htm" > HC6000 * <OPTION VALUE="Mitsubishi-HC6500U-projection-calculator-pro.htm" > HC6500U * <OPTION VALUE="Mitsubishi-HC900U-projection-calculator-pro.htm" > HC900U * <OPTION VALUE="Mitsubishi-HD1000U-projection-calculator-pro.htm" > HD1000U * <OPTION VALUE="Mitsubishi-HD8000-projection-calculator-pro.htm" > HD8000 * <OPTION VALUE="Mitsubishi-XD200-projection-calculator-pro.htm" > XD200 * <OPTION VALUE="Mitsubishi-XD450U_ColorView-projection-calculator-pro.htm" > XD450U ColorView * </OPTGROUP><OPTGROUP LABEL="Portable"><OPTION VALUE="Mitsubishi-XD95U-projection-calculator-pro.htm" > XD95U <OPTION VALUE="Mitsubishi-ES100U_ColorView-projection-calculator-pro.htm" > ES100U ColorView * <OPTION VALUE="Mitsubishi-EX100U_ColorView-projection-calculator-pro.htm" > EX100U ColorView * <OPTION VALUE="Mitsubishi-PK-20_PocketProjector-projection-calculator-pro.htm" > PK-20 PocketProjector * <OPTION VALUE="Mitsubishi-S50-projection-calculator-pro.htm" > S50 * <OPTION VALUE="Mitsubishi-S50UX-projection-calculator-pro.htm" > S50UX * <OPTION VALUE="Mitsubishi-SD10-projection-calculator-pro.htm" > SD10 * <OPTION VALUE="Mitsubishi-SD105U-projection-calculator-pro.htm" > SD105U * <OPTION VALUE="Mitsubishi-SD110R-projection-calculator-pro.htm" > SD110R * <OPTION VALUE="Mitsubishi-SD110U-projection-calculator-pro.htm" > SD110U * <OPTION VALUE="Mitsubishi-SD200U-projection-calculator-pro.htm" > SD200U * <OPTION VALUE="Mitsubishi-SD205R-projection-calculator-pro.htm" > SD205R * <OPTION VALUE="Mitsubishi-SD205U-projection-calculator-pro.htm" > SD205U * <OPTION VALUE="Mitsubishi-SD420U-projection-calculator-pro.htm" > SD420U * <OPTION VALUE="Mitsubishi-SD430U-projection-calculator-pro.htm" > SD430U * <OPTION VALUE="Mitsubishi-SE1U-projection-calculator-pro.htm" > SE1U * <OPTION VALUE="Mitsubishi-SE2U-projection-calculator-pro.htm" > SE2U * <OPTION VALUE="Mitsubishi-SL1U-projection-calculator-pro.htm" > SL1U * <OPTION VALUE="Mitsubishi-SL2U_ColorView-projection-calculator-pro.htm" > SL2U ColorView * <OPTION VALUE="Mitsubishi-SL4SU_ColorView-projection-calculator-pro.htm" > SL4SU ColorView * <OPTION VALUE="Mitsubishi-SL4U_ColorView-projection-calculator-pro.htm" > SL4U ColorView * <OPTION VALUE="Mitsubishi-X30U-projection-calculator-pro.htm" > X30U * <OPTION VALUE="Mitsubishi-X50-projection-calculator-pro.htm" > X50 * <OPTION VALUE="Mitsubishi-X70-projection-calculator-pro.htm" > X70 * <OPTION VALUE="Mitsubishi-XD10U-projection-calculator-pro.htm" > XD10U * <OPTION VALUE="Mitsubishi-XD110U-projection-calculator-pro.htm" > XD110U * <OPTION VALUE="Mitsubishi-XD205R-projection-calculator-pro.htm" > XD205R * <OPTION VALUE="Mitsubishi-XD205U-projection-calculator-pro.htm" > XD205U * <OPTION VALUE="Mitsubishi-XD205U-G-projection-calculator-pro.htm" > XD205U-G * <OPTION VALUE="Mitsubishi-XD206U-projection-calculator-pro.htm" > XD206U * <OPTION VALUE="Mitsubishi-XD206U-G-projection-calculator-pro.htm" > XD206U-G * <OPTION VALUE="Mitsubishi-XD400U_ColorView-projection-calculator-pro.htm" > XD400U ColorView * <OPTION VALUE="Mitsubishi-XD420U-projection-calculator-pro.htm" > XD420U * <OPTION VALUE="Mitsubishi-XD430U-projection-calculator-pro.htm" > XD430U * <OPTION VALUE="Mitsubishi-XD435U-projection-calculator-pro.htm" > XD435U * <OPTION VALUE="Mitsubishi-XD435U-G-projection-calculator-pro.htm" > XD435U-G * <OPTION VALUE="Mitsubishi-XD460U-projection-calculator-pro.htm" > XD460U * <OPTION VALUE="Mitsubishi-XD470U-G-projection-calculator-pro.htm" > XD470U-G * <OPTION VALUE="Mitsubishi-XD480U_ColorView-projection-calculator-pro.htm" > XD480U ColorView * <OPTION VALUE="Mitsubishi-XD490U-projection-calculator-pro.htm" > XD490U * <OPTION VALUE="Mitsubishi-XD50U_Mini-Mits-projection-calculator-pro.htm" > XD50U Mini-Mits * <OPTION VALUE="Mitsubishi-XD60U-projection-calculator-pro.htm" > XD60U * <OPTION VALUE="Mitsubishi-XD70U-projection-calculator-pro.htm" > XD70U * <OPTION VALUE="Mitsubishi-XD80U-projection-calculator-pro.htm" > XD80U * <OPTION VALUE="Mitsubishi-XD90U-projection-calculator-pro.htm" > XD90U * <OPTION VALUE="Mitsubishi-XL1U-projection-calculator-pro.htm" > XL1U * <OPTION VALUE="Mitsubishi-XL1XU-projection-calculator-pro.htm" > XL1XU * <OPTION VALUE="Mitsubishi-XL2U_ColorView-projection-calculator-pro.htm" > XL2U ColorView * <OPTION VALUE="Mitsubishi-XL4U_ColorView-projection-calculator-pro.htm" > XL4U ColorView * <OPTION VALUE="Mitsubishi-XL5900LU-projection-calculator-pro.htm" > XL5900LU * <OPTION VALUE="Mitsubishi-XL5U_ColorView-projection-calculator-pro.htm" > XL5U ColorView * <OPTION VALUE="Mitsubishi-XL8U_ColorView-projection-calculator-pro.htm" > XL8U ColorView * <OPTION VALUE="Mitsubishi-XL9U-projection-calculator-pro.htm" > XL9U * </OPTGROUP><OPTGROUP LABEL="Conference Room"><OPTION VALUE="Mitsubishi-EW230U-ST-projection-calculator-pro.htm" > EW230U-ST <OPTION VALUE="Mitsubishi-EW270U-projection-calculator-pro.htm" > EW270U <OPTION VALUE="Mitsubishi-EX200U-projection-calculator-pro.htm" > EX200U <OPTION VALUE="Mitsubishi-EX240U-projection-calculator-pro.htm" > EX240U <OPTION VALUE="Mitsubishi-FD630U-projection-calculator-pro.htm" > FD630U <OPTION VALUE="Mitsubishi-FD630U-G-projection-calculator-pro.htm" > FD630U-G <OPTION VALUE="Mitsubishi-FL6900U-projection-calculator-pro.htm" > FL6900U <OPTION VALUE="Mitsubishi-WD3300U-projection-calculator-pro.htm" > WD3300U <OPTION VALUE="Mitsubishi-WD620U-projection-calculator-pro.htm" > WD620U <OPTION VALUE="Mitsubishi-WD620U-G-projection-calculator-pro.htm" > WD620U-G <OPTION VALUE="Mitsubishi-WL2650U-projection-calculator-pro.htm" > WL2650U <OPTION VALUE="Mitsubishi-XD221U-D-projection-calculator-pro.htm" > XD221U-D <OPTION VALUE="Mitsubishi-XD221U-GD-projection-calculator-pro.htm" > XD221U-GD <OPTION VALUE="Mitsubishi-XD221U-ST-D-projection-calculator-pro.htm" > XD221U-ST-D <OPTION VALUE="Mitsubishi-XD250U-projection-calculator-pro.htm" > XD250U <OPTION VALUE="Mitsubishi-XD250U-G-projection-calculator-pro.htm" > XD250U-G <OPTION VALUE="Mitsubishi-XD250U-ST-projection-calculator-pro.htm" > XD250U-ST <OPTION VALUE="Mitsubishi-XD280U-D-projection-calculator-pro.htm" > XD280U-D <OPTION VALUE="Mitsubishi-XD280U-GD-projection-calculator-pro.htm" > XD280U-GD <OPTION VALUE="Mitsubishi-XD3200U-projection-calculator-pro.htm" > XD3200U <OPTION VALUE="Mitsubishi-XD600U-projection-calculator-pro.htm" > XD600U <OPTION VALUE="Mitsubishi-XD600U-G-projection-calculator-pro.htm" > XD600U-G <OPTION VALUE="Mitsubishi-XL2550U-projection-calculator-pro.htm" > XL2550U <OPTION VALUE="Mitsubishi-EX51U-projection-calculator-pro.htm" > EX51U * <OPTION VALUE="Mitsubishi-EX53E-projection-calculator-pro.htm" > EX53E * <OPTION VALUE="Mitsubishi-EX53U-projection-calculator-pro.htm" > EX53U * <OPTION VALUE="Mitsubishi-HD4000U-projection-calculator-pro.htm" > HD4000U * <OPTION VALUE="Mitsubishi-HL2750U-projection-calculator-pro.htm" > HL2750U * <OPTION VALUE="Mitsubishi-HL650U-projection-calculator-pro.htm" > HL650U * <OPTION VALUE="Mitsubishi-MH2850U-projection-calculator-pro.htm" > MH2850U * <OPTION VALUE="Mitsubishi-S120-projection-calculator-pro.htm" > S120 * <OPTION VALUE="Mitsubishi-S290-projection-calculator-pro.htm" > S290 * <OPTION VALUE="Mitsubishi-S490U-projection-calculator-pro.htm" > S490U * <OPTION VALUE="Mitsubishi-SD510U-projection-calculator-pro.htm" > SD510U * <OPTION VALUE="Mitsubishi-WD2000U-projection-calculator-pro.htm" > WD2000U * <OPTION VALUE="Mitsubishi-WD500U-ST-projection-calculator-pro.htm" > WD500U-ST * <OPTION VALUE="Mitsubishi-WD510U-projection-calculator-pro.htm" > WD510U * <OPTION VALUE="Mitsubishi-WD510U-G-projection-calculator-pro.htm" > WD510U-G * <OPTION VALUE="Mitsubishi-WL639U-projection-calculator-pro.htm" > WL639U * <OPTION VALUE="Mitsubishi-X120-projection-calculator-pro.htm" > X120 * <OPTION VALUE="Mitsubishi-X200-projection-calculator-pro.htm" > X200 * <OPTION VALUE="Mitsubishi-X300-projection-calculator-pro.htm" > X300 * <OPTION VALUE="Mitsubishi-X390-projection-calculator-pro.htm" > X390 * <OPTION VALUE="Mitsubishi-X490U-projection-calculator-pro.htm" > X490U * <OPTION VALUE="Mitsubishi-X80-projection-calculator-pro.htm" > X80 * <OPTION VALUE="Mitsubishi-XD1000U-projection-calculator-pro.htm" > XD1000U * <OPTION VALUE="Mitsubishi-XD2000U-projection-calculator-pro.htm" > XD2000U * <OPTION VALUE="Mitsubishi-XD211U-projection-calculator-pro.htm" > XD211U * <OPTION VALUE="Mitsubishi-XD221U-projection-calculator-pro.htm" > XD221U * <OPTION VALUE="Mitsubishi-XD221U-G-projection-calculator-pro.htm" > XD221U-G * <OPTION VALUE="Mitsubishi-XD221U-ST-projection-calculator-pro.htm" > XD221U-ST * <OPTION VALUE="Mitsubishi-XD280U-projection-calculator-pro.htm" > XD280U * <OPTION VALUE="Mitsubishi-XD470U-projection-calculator-pro.htm" > XD470U * <OPTION VALUE="Mitsubishi-XD500U-projection-calculator-pro.htm" > XD500U * <OPTION VALUE="Mitsubishi-XD500U-G-projection-calculator-pro.htm" > XD500U-G * <OPTION VALUE="Mitsubishi-XD500U-ST-projection-calculator-pro.htm" > XD500U-ST * <OPTION VALUE="Mitsubishi-XD510U-projection-calculator-pro.htm" > XD510U * <OPTION VALUE="Mitsubishi-XD510U-G-projection-calculator-pro.htm" > XD510U-G * <OPTION VALUE="Mitsubishi-XD520U-projection-calculator-pro.htm" > XD520U * <OPTION VALUE="Mitsubishi-XD520U-G-projection-calculator-pro.htm" > XD520U-G * <OPTION VALUE="Mitsubishi-XD530U-projection-calculator-pro.htm" > XD530U * <OPTION VALUE="Mitsubishi-XL1550U-projection-calculator-pro.htm" > XL1550U * <OPTION VALUE="Mitsubishi-XL25U_ColorView-projection-calculator-pro.htm" > XL25U ColorView * <OPTION VALUE="Mitsubishi-XL30U_ColorView-projection-calculator-pro.htm" > XL30U ColorView * <OPTION VALUE="Mitsubishi-XL550U-projection-calculator-pro.htm" > XL550U * <OPTION VALUE="Mitsubishi-XL5900U-projection-calculator-pro.htm" > XL5900U * </OPTGROUP><OPTGROUP LABEL="Large Venue"><OPTION VALUE="Mitsubishi-FL7000LU-projection-calculator-pro.htm" > FL7000LU <OPTION VALUE="Mitsubishi-FL7000U-projection-calculator-pro.htm" > FL7000U <OPTION VALUE="Mitsubishi-UD8400U-projection-calculator-pro.htm" > UD8400U <OPTION VALUE="Mitsubishi-WD8200LU-projection-calculator-pro.htm" > WD8200LU <OPTION VALUE="Mitsubishi-WD8200U-projection-calculator-pro.htm" > WD8200U <OPTION VALUE="Mitsubishi-WL6700LU-projection-calculator-pro.htm" > WL6700LU <OPTION VALUE="Mitsubishi-WL6700U-projection-calculator-pro.htm" > WL6700U <OPTION VALUE="Mitsubishi-XD3500U-projection-calculator-pro.htm" > XD3500U <OPTION VALUE="Mitsubishi-XD8100LU-projection-calculator-pro.htm" > XD8100LU <OPTION VALUE="Mitsubishi-XD8100U-projection-calculator-pro.htm" > XD8100U <OPTION VALUE="Mitsubishi-XL6500LU-projection-calculator-pro.htm" > XL6500LU <OPTION VALUE="Mitsubishi-XL6500U-projection-calculator-pro.htm" > XL6500U <OPTION VALUE="Mitsubishi-XL6600LU-projection-calculator-pro.htm" > XL6600LU <OPTION VALUE="Mitsubishi-XL6600U-projection-calculator-pro.htm" > XL6600U <OPTION VALUE="Mitsubishi-X400-projection-calculator-pro.htm" > X400 * <OPTION VALUE="Mitsubishi-X500U-projection-calculator-pro.htm" > X500U * <OPTION VALUE="Mitsubishi-XL5950LU_ColorView-projection-calculator-pro.htm" > XL5950LU ColorView * <OPTION VALUE="Mitsubishi-XL5950U_ColorView-projection-calculator-pro.htm" > XL5950U ColorView * <OPTION VALUE="Mitsubishi-XL5980LU-projection-calculator-pro.htm" > XL5980LU * <OPTION VALUE="Mitsubishi-XL5980U-projection-calculator-pro.htm" > XL5980U * <OPTION VALUE="Mitsubishi-XL650U-projection-calculator-pro.htm" > XL650U * </OPTGROUP></SELECT><FONT FACE="Arial,Helvetica" SIZE=1>&nbsp;&nbsp;* = projector is discontinued</FONT>
+		
+	<FONT FACE="Arial,Helvetica" SIZE="2">
+		<P>If you wish to find all projectors that can meet your requirements for screen size and throw distance, use <A HREF="projectors.cfm">Search by Feature</A>. Our previous Projection Calculator is available at <A HREF="Mitsubishi-HC3800-projection-calculator.htm">Projection Calculator Classic</A>.</P>
+	</FONT>
+	<TABLE BGCOLOR="#EFEFEF">
+		<TR>
+			<TD><FONT SIZE="2"><FONT COLOR='#ff0000'><B>Caution:</B></FONT> Numbers are based on manufacturer supplied information which may have changed or is inaccurate. Check with your supplier before making any final decisions.</FONT></TD>
+		</TR>
+	</TABLE>
+	<CENTER><FONT FACE="Arial,Helvetica" SIZE="1">Share your comments and suggestions with us on the <a href="mail_send.cfm?box_id=11">Projection Calculator Pro</a>.</FONT></CENTER>
+	</FONT>
+
+	
+	
+
+	
+			<TABLE CELLSPACING="0">
+			<TR><TD>&nbsp;
+			<TR>
+			<TD VALIGN="TOP">
+				<IMG SRC="/img.cfm?pid=5127&w=75" ALIGN="left">
+			<TD VALIGN="BOTTOM">
+				<FONT FACE="Arial,Helvetica" SIZE="-1">
+
+					
+					
+							<A HREF="Mitsubishi-HC3800-projection-calculator-pro.htm&add=5127" TITLE="Add Projector to my Compare List" REL="nofollow"><IMG src="images/chk-empty.gif" STYLE="margin-bottom:-2px;" BORDER="0" ALT=""></A>
+						
+
+					<B><a href="Mitsubishi-HC3800.htm">Mitsubishi HC3800</a></B>
+					 &mdash; $1,995 MSRP (USD)<BR>
+					<FONT SIZE="-2">1920x1080 resolution DLP, 1300 ANSI lumens, 4000:1 contrast, 1.50:1 zoom,   7.7 lbs</FONT><BR>
+					
+				</FONT>
+			</TABLE>
+		
+
+	
+		<TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="550">
+			<TR>
+				<TD ALIGN="center">
+					
+					
+		<script type="text/javascript" charset="utf-8">
+			var debugOutput = false;
+		</script>
+	
+		<script src="/AC_OETags.js" type="text/javascript" charset="utf-8"></script>
+		<script language="JavaScript" type="text/javascript">
+		<!-- //
+			
+		// Version check based upon the values entered above in "Globals"
+		var hasReqestedVersion = DetectFlashVer(6, 0, 0);
+
+		// Check to see if the version meets the requirements for playback
+		if (hasReqestedVersion) {
+			// if we've detected an acceptable version
+			// embed the Flash Content SWF when all tests are passed
+			AC_FL_RunContent(
+						"src", "CalculatorLoader.swf?CHARSET=latin&MET=0&VERSION=2.21&PART_ID=5127",
+						"width", "550",
+						"height", "530",
+						"align", "",
+						"id", "",
+						"quality", "high",
+						"bgcolor", "#ffffff",
+						"name", "",
+						"wmode","opaque",
+						"allowScriptAccess","sameDomain",
+						"type", "application/x-shockwave-flash",
+						'codebase', 'http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab',
+						"pluginspage", "http://www.adobe.com/go/getflashplayer"
+			);
+		} else {  // flash is too old or we can't detect the plugin
+			var alternateContent = '<BR><BR><FONT FACE=\"Arial,Helvetica\" SIZE=2>The ProjectorCentral <EM>Projection Calculator</EM> requires a free Flash plug-in.<BR><a href=\"http://www.macromedia.com/go/getflashplayer\">Click here to download</a><BR></FONT>';
+			document.write(alternateContent);  // insert non-flash content
+		}
+	
+		// -->
+		</script>
+		<noscript><BR><BR><FONT FACE="Arial,Helvetica" SIZE=2>The ProjectorCentral <EM>Projection Calculator</EM> requires a free Flash plug-in.<BR><a href="http://www.macromedia.com/go/getflashplayer">Click here to download</a><BR></FONT></noscript>
+	
+				</TD>
+			</TR>
+			<TR>
+				
+				<TD><DIV STYLE="font-size:10px">
+					<FONT COLOR='#ff0000'><B>Caution:</B></FONT> Numbers are based on manufacturer supplied information which may have changed or is inaccurate. Check with your supplier before making any final decisions.<br><br>
+					The Projection Calculator Pro requires Adobe Flash Player plug-in version 6 or newer. If you have installed Flash and are still having problems
+					viewing the calculator, <a href="/flash_test.cfm">click here</a> to see what version of Flash you have installed.
+					<br><br>
+					If you are positive that you have Flash installed, but the calculator is still not appearing,
+					
+						<a href="/Mitsubishi-HC3800-projection-calculator-pro.htm?haveflashipromise">
+					
+						try viewing this page with our Flash detection disabled.
+					</A>
+				</DIV></TD>
+				
+			</TR>
+		</TABLE>
+	
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide From Other Browsers
+
+function saveMetric(setting) {
+	var expireDate = new Date ("September 28, 2037");
+	var gmt = expireDate.toGMTString();
+    document.cookie="METRIC="+setting+";expires="+gmt+";domain=.projectorcentral.com";
+}
+
+// -- Stop Hiding -->
+</SCRIPT>
+
+
+	
+			</div>
+			<div id="siteInfo">
+				
+				
+				<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="center" ID="footPageLinks">
+					<TR>
+						
+							<TD ALIGN="center">
+								<A CLASS="footerIcon" ID="sharePage" HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fwww%2Eaddthis%2Ecom%2Fbookmark%2Ephp%3Fbot%3D1%26v%3D250%26pub%3Dliz4addthis">Share this Page</a>
+							</TD>
+						
+								<TD ALIGN="center">
+									
+									<A CLASS="footerIcon" ID="bigSendPage" HREF="/exit_link_redir.cfm?earl=http%3A%2F%2Fwww%2Eprojectorcentral%2Ecom%2Fsend%5Fpage%2Ecfm%3Fbot%3D1%26page%3D%2FMitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm%26amp%3Btitle%3DMitsubishi%20HC3800%20Projection%20Calculator%20%2D%20Throw%20Distance%20and%20Screen%20Size" TITLE="Send this page to a friend" REL="nofollow">Send this Page</A>
+								</TD>
+							
+						<TD ALIGN="center">
+							
+							<A HREF="/mail_send.cfm?box_id=20" CLASS="footerIcon" ID="reportError">Report Errors</A>
+						</TD>
+					</TR>
+				</TABLE>
+				
+
+				<DIV ID="corpLinks">
+					<A HREF="/rss_feeds.htm">RSS Feeds</A> |
+					<A HREF="/advertise.htm">Advertise</A> |
+					<A HREF="/register_dealer.cfm">Dealer Registration</A> |
+					<A HREF="/policies.htm">Policies</A> |
+					<A HREF="/about_us.htm">About Us</A> |
+					<A HREF="/contact_us.cfm">Contact Us</A>
+					<BR>
+					<A HREF="/copyright.htm">Copyright Permissions</A> |
+					<A HREF="/donation.cfm">School Donations</A> |
+					<A HREF="/parts_stolen.cfm">Lost & Found</A> |
+					<A HREF="/site-guide.cfm">Site Guide</A>
+					
+				</DIV>
+				12/21/2010 - 11:32 AM&nbsp;PST&nbsp;|&nbsp;&copy;1999-2010&nbsp;ProjectorCentral.com
+			</div>
+	</td>
+	
+	<td id="pageAds">
+		<div id="pageAdsDiv"> 
+			<!-- 10 -->
+			<TABLE CELLSPACING=0 CELLPADDING=0 STYLE="margin-bottom:10px;" ><TR><TD ALIGN="center"><DIV ALIGN="center" STYLE="font-size:10px;color:#888888;">- advertisement -</DIV><SCRIPT LANGUAGE='JavaScript1.1' TYPE="text/javascript" SRC="/bblaster.cfm?bid=3972&s=1&pg=Mitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm&cb=12-21-2010-11-32-54"></SCRIPT><NOSCRIPT><A HREF="/bredir.cfm?bid=3972&cb=12-21-2010-11-32-54" TARGET="_3972"><IMG SRC="/bblaster.cfm?bid=3972&i=1&cb=12-21-2010-11-32-54" BORDER=0 ALT="Samsung LED"></A></NOSCRIPT><A HREF="/bredir.cfm?bid=3972&cb=12-21-2010-11-32-54" STYLE="padding-top:5px;" TARGET="_3972"><SPAN STYLE="margin-bottom:15px;font-weight:bold;font-size:10px;">Samsung LED projectors</SPAN></A></TD></TR></TABLE> 
+			
+			<div class="towerBanner"><!-- 7 -->
+			<TABLE CELLSPACING=0 CELLPADDING=0 STYLE="margin-bottom:10px;" ><TR><TD ALIGN="center"><DIV ALIGN="center" STYLE="font-size:10px;color:#888888;">- advertisement -</DIV><A HREF="/bredir.cfm?bid=4312&cb=12-21-2010-11-32-54" TARGET="_4312"><IMG SRC="/bblaster.cfm?bid=4312&i=1&cb=12-21-2010-11-32-54&pg=Mitsubishi%2DHC3800%2Dprojection%2Dcalculator%2Dpro%2Ehtm" BORDER=0 ALT="Visual Apex"></A><A HREF="/bredir.cfm?bid=4312&cb=12-21-2010-11-32-54" STYLE="padding-top:5px;" TARGET="_4312"><SPAN STYLE="margin-bottom:15px;font-weight:bold;font-size:10px;">Click for more info!</SPAN></A></TD></TR></TABLE> 
+			</div>
+
+			<div class="towerBanner"><!-- 8 -->
+			
+			</div>
+
+			<div class="towerBanner"><!-- 9 -->
+			
+			</div>
+			
+
+		</div>
+	</td>
+	</tr>
+	
+	</table> 
+
+	
+	<SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript"></SCRIPT>
+	<SCRIPT TYPE="text/javascript">_uacct = "UA-3018570-1";urchinTracker();</SCRIPT>
+
+
+
+</BODY>
+<SCRIPT LANGUAGE="JavaScript">
+	<!-- //
+	function windowpopper(earl, nw_width, nw_height) {
+		if (earl.substr(earl.length-3,3) == 'cfm' ) {
+			earl = earl + '?return_target=' + window.name;
+		} else {
+			earl = earl + '&return_target=' + window.name;
+		}
+		window.open(earl, 'PopupWindow', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,titlebar=no,width=' + nw_width + ',height=' + nw_height);
+	}
+
+	function windowspawn(earl) {
+		spawn_win=window.open(earl, 'SpawnWindow');
+		spawn_win.focus();
+	}
+
+	function clearDefault(el) {
+		if (el.defaultValue==el.value) el.value = ""
+	}
+
+	// Login Timer Globals
+	var loginTID = 0;
+	var startTime = null;
+	var loginTimeout=30*(60*1000) + 0*1000 - 5*(60*1000); // 20:00 minutes, as milliseconsd
+	function initLoginTimer() {
+	   startTime = new Date();
+	   loginTID  = setTimeout("loginWarning()", loginTimeout);
+	   if (typeof pc_init == 'undefined') {
+		  return;
+	   }
+	   else {
+		  pc_init();
+	   }
+	}
+	function loginWarning() {
+		if(loginTID){
+			clearTimeout(loginTID);
+		}
+		var date = new Date();
+		var diff = date.getTime() - startTime.getTime();
+		if (diff >= loginTimeout) {
+			focus();
+			alert("Warning: Your ProjectorCentral session will expire in five minutes unless you click to a new page or click your browser refresh button.  If you are entering information, complete your task, save your changes, and resume your activities.");
+		} else {
+			loginTID = setTimeout("loginWarning()", loginTimeout);
+		}
+	}
+	// -->
+</SCRIPT>
+</HTML> 
