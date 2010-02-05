@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>1700 Free "Farm-Fresh Web Icons" by FatCow Web Hosting</title>
+<LINK REL="SHORTCUT ICON" HREF="http://images.fatcow.com/icons/favicons/favicon_moo.ico">
+<meta name="description" content="
+			Free Farm-Fresh web icons set includes both 16 and 32 pixel versions. Images have been saved in PNG format on transparent background for your convenience. Download and enjoy this enormous free icons set designed by FatCow - a leading provider of web hosting for individuals and small businesses.		
+		">
+<link rel="image_src" href="http://images.fatcow.com/icons/favicons/facebook-fatcow.jpg">
+<link rel="stylesheet" href="/xslt/elements/fatcow_csscomponent.css" type="text/css">
+<script src="/generalAppC/scriptcat/87ae207201c55b84c5270851159260e1.1"></script>
+
+
+
+	 	<link rel="canonical" href="http://www.fatcow.com/free-icons">
+	
+	
+	</head>
+
+<body>
+<table height="100%" width="100%" cellspacing="0" cellpadding="0" align="center">
+<tr><td height="100" align="center"><div class="master_header">
+<div id="contact_info">
+<div class="ph">
+<div class="ph-sales">
+<em>Sales</em><strong>866.544.9343</strong>
+</div>
+<div class="ph-support">
+<em>Support</em><strong>888.278.9780</strong>
+</div>
+</div>
+<div class="support-badge">North American Phone Support</div>
+<span class="live-chat"><a href="http://server.iad.liveperson.net/hc/66651396/?cmd=file&amp;file=visitorWantsToChat&amp;site=66651396&amp;byhref=1" target="chat66651396" onClick="javascript:window.open('http://server.iad.liveperson.net/hc/66651396/?cmd=file&amp;file=visitorWantsToChat&amp;site=66651396&amp;referrer='+escape(document.location),'chat66651396','width=472,height=320');return false;">Live Chat</a></span>
+</div>
+<div id="master_header_login">
+<b>Customer Login:</b> <a href="/controlpanel/">Control Panel</a> | <a href="/mail/">WebMail</a>
+</div>
+<div style="position: absolute; right: 3px; top: 33px;" class="norm">
+</div>
+<ul id="master_header_nav">
+<h1 id="master_header_logo"><a href="/">Web Hosting by FatCow</a></h1>
+<li><a href="/fatcow/fatcow.bml?ref=tn">Web Hosting</a></li>
+<li><a href="/product/services.bml">Products &amp; Services</a></li>
+<li><a href="/support/">Help Desk</a></li>
+<li><a href="/fatcow/testimonials.bml">Testimonials</a></li>
+<li><a href="/fatcow/about.bml">Who's That Cow</a></li>
+</ul>
+</div></td></tr>
+<tr><td height="100%" valign="top" align="center"><table width="900" height="300" cellspacing="0" cellpadding="0" style="text-align:left;"><tr><td valign="top" width="100%">
+	<block>	
+<style>		
+	#iconscontainer{
+		width: 914px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	#iconhero{
+		background-image: url(/fatcow-icons/moo-icons-hero.png);
+		height: 220px;
+		width: 905px;
+		color: #fff;
+		text-align:left;
+	}
+	#iconhero a{
+		color: #ffff66;
+	}
+	#iconhero h2{
+		font-size: 27px;
+		color: #fdda53;
+		font-weight: bold;
+		padding-top:35px;
+		margin: 0 0 10px 35px;
+	}
+	
+	#iconhero h2 a{
+		color: #fdda53;
+		text-decoration: none;
+	}
+	
+	#iconhero h2 a:hover{
+		text-decoration: underline;
+	}
+	
+	#iconhero p{
+		width: 445px;
+		margin-left: 35px;
+		font-size: 14px;
+	}
+	#iconsdownload{
+		background-image: url(/fatcow-icons/moo-icons-100-preview.png);
+		height: 875px;
+		width: 905px;
+		text-align: left;
+		position: relative;
+		margin-left: -10px;
+		background-repeat:no-repeat;
+	}
+	#iconsdownload h2{
+		margin: 0px;
+		padding: 0px;
+		color: #000;
+		border-bottom: 3px solid #000;
+		position: absolute;
+		width:578px;
+		top:-29px;
+
+	}
+	.iconsetcontainer{
+		background-image: url(http://images.fatcow.com/backgrounds/moo-icon-bubble.png);
+		height: 166px;
+		width: 457px;
+		float:left;
+		text-align: center;
+	}
+	.previewheader{
+		font-size: 16px;
+		font-weight:bold;
+		color:#fff;
+		padding-top: 10px;
+		margin-bottom: 15px;
+	}
+
+#btncont { background: none repeat scroll 0 0 #fff; float:right; padding:2em; width:260px; *width:300px; border-radius: 1em; -moz-border-radius: 1em; -webkit-border-radius: 1em; text-align: center; }
+
+	
+#btncont h2{
+		color: #000;
+		font-weight: bold;
+		font-size: 18px;
+		margin-top: 0;
+		text-align: left;
+	}
+	#rightcont {
+		position: absolute;
+		width: 240px; 
+		height: 200px;
+		left: 650px;
+		top: 160px;
+	}
+	#samples {
+		width: 578px;
+		position: absolute;
+		left:17px;
+		top:50px;
+	}
+	
+	#para{
+		border-bottom: 1px dashed #003366;
+		padding-bottom: 15px;
+	}
+	
+	#left-side {
+		width: 570px;
+		padding-right: 20px;
+		margin-left: 10px;
+	}
+	
+	.added-more {
+		background: url(/fatcow-icons/400-icon-add-box.png) no-repeat;
+		padding: 0 0 20px 70px;
+	}
+	
+#tweetmeme { float: right; margin: 0 0 1em 1em; text-align: left; }
+</style>
+	<div id="iconscontainer">
+
+		<div id="iconhero">
+			<h2><a href="/fatcow-icons/fatcow-hosting-icons-1700.zip">1700 Free "Farm-Fresh Web Icons"</a></h2>
+			
+			
+				<p>
+				Download hundreds of FREE, beautifully designed icons from FatCow Web Hosting! Icon set includes both 
+			16 and 32 pixel versions of icons shown below. 
+			<br><br>
+			<a href="/fatcow-icons/fatcow-hosting-icons-1700.zip">Download Free Icons &#187;</a>
+
+				</p>
+				
+			
+			<a href="/fatcow-icons/fatcow-icons-4.png" target="blank"><img src="/images/trans.gif" style="width: 360px; height: 170px; position: absolute; left: 525px; top: 30px;"></a>
+			
+		</div>
+		
+		</div>
+		
+		<div id="btncont">
+			<h2>Free Web Icons</h2>
+				<div id="tweetmeme">
+					<script type="text/javascript">
+						tweetmeme_url = 'http://www.fatcow.com/free-icons';
+					</script>
+					<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js" rel="nofollow"></script>
+				</div>
+				<p style="text-align: left;">Download 1700 icons today and enjoy this enormous, free icon set!</p>
+				
+				
+<style type="text/css">
+#btnbg { background-image:url(/fatcow-icons/icons-dl-button.png);width:265px;height:98px;position:relative;text-align:left;display:block;clear:both; }
+#btnbg a { color:#000;text-decoration:none;width:265px;height:98px;position:relative;text-align:left;display:block; }
+#btnbg a:hover { background-image:url(/fatcow-icons/icons-dl-button_hover.png); }
+#freedl { font-size:19px;font-weight:bold;padding:15px 0 0 70px; }
+#set { padding-left:70px;font-size:11px; }
+</style>
+<div id="btnbg">
+	<a href="/fatcow-icons/fatcow-hosting-icons-1700.zip" onclick="pageTracker._trackPageview('/fatcow-icons/fatcow-hosting-icons-1700.zip')">
+		<div id="freedl">FREE Download</div>
+		<div id="set">Set of 1700 (.png) web icons<br>
+			16x16 &amp; 32x32 (.zip) - <b>5.9MB</b>
+</div>
+	</a>
+</div>
+
+				<div style="margin-top: 5px;">Last Updated: Sep 9, 2010</div>
+				<i>150K+ Downloads from 08/2009</i>
+				<br><br>
+				<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=6c2c48b2-9fde-4bb8-b778-a3a166893510&amp;type=website&amp;buttonText=Spread%20the%20Word&amp;post_services=email%2Cfacebook%2Ctwitter%2Cgbuzz%2Cmyspace%2Cdigg%2Csms%2Cwindows_live%2Cdelicious%2Cstumbleupon%2Creddit%2Cgoogle_bmarks%2Clinkedin%2Cbebo%2Cybuzz%2Cblogger%2Cyahoo_bmarks%2Cmixx%2Ctechnorati%2Cfriendfeed%2Cpropeller%2Cwordpress%2Cnewsvine"></script>
+<br>	
+				
+		<div id="content">
+<br>
+		<a rel="license" style="cursor:help" title="These icon sets are licensed under a Creative Commons Attribution 3.0 License. This means you can freely use these icons for any purpose, private and commercial, including online services, templates, themes and software. However, you should include a link to this page in your credits. The icons may not be resold, sublicensed, rented, transferred or otherwise made available for use (including uploading the font archive to publicly available websites). Please link to this page on fatcow.com if you would like to spread the word." href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png"></a>
+
+						
+					
+					<p class="displaybox" style="min-height: 35px; text-align:left;"><img src="http://images.fatcow.com/icons/32/font.png" alt=" " class="img-left" /> <a href="/free-font"><strong>Free Font</strong></a><br />Also <a href="/free-font">check out our free web font</a>, Slimpact &#151; new from FatCow!</p>
+						
+							</div>	
+			
+				
+			</div>
+				
+			
+		
+		<div id="left-side">
+		<div id="para">
+		<h2>We've added 300 MORE icons!</h2>
+				<div class="added-more">
+				<a href="/fatcow-icons/fatcow-hosting-icons-1700.zip">Download the updated icon set</a> today and get an incredible 1700 free icons in 16x16 and 32x32 pixel format.
+				</div>
+			</div>
+		<div id="para">
+		<h2>Link To Us</h2>
+					Get the word out about this amazing new FREE icon set with these easy-to-use preview images.<br>
+					
+					<p>
+						<a href="/fatcow-icons/fatcow-icons-1.jpg" target="blank">Preview 1</a> | 
+						<a href="/fatcow-icons/fatcow-icons-2.jpg" target="blank">Preview 2</a> | 
+						<a href="/fatcow-icons/fatcow-icons-3.jpg" target="blank">Preview 3</a> | 
+						<a href="/fatcow-icons/full.png" target="blank">Preview (First 1000)</a>
+					</p>
+			</div>
+			<div id="para">
+		<h2>As Seen on reddit</h2>			
+			<a href="http://www.reddit.com/r/programming/comments/9r217/free_icons_for_developers_from_fatcowcom/"><img src="/fatcow-icons/reddit-featured.png" style="border: 5px solid #fff;"></a>
+				</div>
+				
+				
+			   
+			   <div id="para">
+			   
+			   <h2 style="margin-top:20px;">Who's That Cow?</h2>
+			   <p>FatCow is a leading provider of web hosting, domain registration and related marketing services, and continuously provides great value to its customers, while making a difference inside and outside of the web hosting world. Recently, FatCow committed to powering its offices and data centers with 100% wind energy, and now FatCow is contributing to the web design community!</p>
+				</div>
+	</div>
+		
+	</block>
+</td></tr></table></td></tr>
+<tr><td class="rolling-hills" height="187"><img src="/images/trans.gif" height="187" alt=" "></td></tr>
+<tr><td id="bottom-container" align="center"><div id="footer-container">
+<div class="footer-column">
+<a href="/fatcow/hosting.bml"><b>Hosting Solutions</b></a><br><a href="/fatcow/fatcow.bml">FatCow Plan</a><br><a href="/fatcow/minimoo.bml">Domain Parking</a><br><a href="/fatcow/minimoo.bml">Email Hosting</a><br><br><a href="/product/domainRegistration.bml"><b>Domain Registration</b></a><br><br><a href="/fatcow-icons/"><b>Free Farm-Fresh Web Icons</b></a><br><br>
+</div>
+<div class="footer-column">
+<a href="/product/services.bml"><b>Products &amp; Services</b></a><br><a href="/product/services.bml?service=website">Website Management</a><br><a href="/product/services.bml?service=domains">Domain Services</a><br><a href="/product/services.bml?service=mail">Email Services</a><br><a href="/product/services.bml?service=commerce">E-Commerce Services</a><br><a href="/product/services.bml?service=scripting">Scripting &amp; Add-Ons</a><br><a href="/product/services.bml?service=marketing">Marketing Services</a><br>
+</div>
+<div class="footer-column">
+<a href="/support/"><b>Help Desk</b></a><br><a href="/support/needhelp.bml">Need Help?</a><br><a href="/knowledgebase/beta/">Knowledgebase</a><br><a href="/knowledgebase/faqs.bml">FAQs</a><br><a href="/support/addResources.bml">Additional Resources</a><br><a href="/support/tutorials/">Tutorials</a><br>
+</div>
+<div class="footer-column">
+<a href="/fatcow/about.bml"><b>Who's that Cow?</b></a><br><a href="/fatcow/news.bml">News Room</a><br><a href="/fatcow/testimonials.bml">Testimonials</a><br><a href="http://twitter.com/fatcow" target="blank">Twitter</a><br><a href="http://blog.fatcow.com/" target="blank">Blog</a><br><a href="/support/contact.bml">Contact FatCow</a><br><a href="/referral/programs.bml">Partnerships</a><br><a href="/directory/">Community Directory</a><br>
+</div>
+<div class="footer-column" id="foot-highlight">
+<font color="#ffff99"><b>Existing Customer Tools</b></font><br><a href="/controlpanel/">Control Panel</a><br><a href="/mail/">WebMail Login</a><br><a href="/support/">Support Console</a><br>
+</div>
+<div id="footer-bottom"><font color="#CCCCCC">&copy; Copyright <script type="text/javascript"> document.write(new Date().getFullYear()) </script> FatCow Web Hosting. All rights reserved.     <a href="/legal">Terms of Service</a> | <a href="/legal/legal_privacy.bml">Privacy</a> | <a href="/support/sitemap.bml">Sitemap</a></font></div>
+</div></td></tr>
+</table>
+<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+				</script><script type="text/javascript">
+					try {
+					var pageTracker = _gat._getTracker("UA-456224-5");
+					pageTracker._trackPageview();
+					} catch(err) {}
+				</script>
+<script language="javascript"> var lpMTagConfig = {'lpServer' : "server.iad.liveperson.net",'lpNumber' : "66651396",'lpProtocol' : "https"}; function lpAddMonitorTag(src){if(typeof(src)=='undefined'||typeof(src)=='object'){src=lpMTagConfig.lpMTagSrc?lpMTagConfig.lpMTagSrc:'/hcp/html/mTag.js';}if(src.indexOf('http')!=0){src=lpMTagConfig.lpProtocol+"://"+lpMTagConfig.lpServer+src+'?site='+lpMTagConfig.lpNumber;}else{if(src.indexOf('site=')<0){if(src.indexOf('?')<0)src=src+'?';else src=src+'&';src=src+'site='+lpMTagConfig.lpNumber;}};var s=document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('charset','iso-8859-1');s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s);} if (window.attachEvent) window.attachEvent('onload',lpAddMonitorTag); else window.addEventListener("load",lpAddMonitorTag,false);</script>
+
+
+</body>
+</html>
