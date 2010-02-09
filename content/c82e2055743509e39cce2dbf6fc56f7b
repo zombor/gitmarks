@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <title>1DayLater - Keep track of your Time, Money and Business Miles</title>
+  
+  <link rel="stylesheet" href="/style.css?v=57" />
+  
+  <script type="text/javascript" src="/js/core-min.js?v=2"></script>
+  <script type="text/javascript" src="/js/odl-min.js?v=97"></script>
+  <script type="text/javascript" src="/js/intro-min.js?v=9"></script>
+  <script type="text/javascript">
+    OAuth.correctTimestamp (1292959972);
+  </script>
+</head>
+<body id="m2010-12">
+
+  <!-- Feedback -->
+  <a href="#" onclick="return ODL.feedback.click ();" id="feedback">feedback</a>
+
+  <div id="footerWrap">
+
+    <!-- Warning -->
+    <noscript>
+      <div class="readme" id="noscript">
+        <p>1DayLater requires that you have javascript turned on - Follow <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">this walkthrough</a> to enable javascript</p>
+      </div>
+    </noscript>
+
+          <!-- Navigation (logged out) -->
+      <div id="nav">
+        <h1 title="Manage your time, mileage and money">1DayLater</h1>
+        <ul>
+            <li><a href="/about_us">About Us</a></li>
+            <li><a href="/#register" onclick="if (ODL.intro) { ODL.intro.register (); }">Register</a></li>
+            <li><a href="/#signin"   onclick="if (ODL.intro) { ODL.intro.signin (); }">Sign in</a></li>
+            <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    
+    <!-- CONTENT -->
+    <div id="intro">
+      <div id="content">
+        <!-- Popups -->
+        <div id="popupBG" onclick="ODL.popup.hide ();"></div>
+        <div id="popup">
+          <div id="popupClose"><a href="#" onclick="return ODL.popup.hide ();">CLOSE</a></div>
+          <div id="popupInner" class="content"><div id="popupSwf"></div></div>
+        </div>
+        <!-- The page -->
+        
+<div class="content" id="introOverview">
+  <div class="cols cols_2">
+    <!-- Intro -->
+    <div class="col" id="introIntro">
+      <h1>Beautiful time tracking</h1>
+      <p>1DayLater lets you keep an exact record of your activities and will give you confidence in your business, invoices and productivity.</p>
+      <p>Track your time, money and mileage, then use our reporting features to create invoices, mileage claims and visualise your activities.</p>
+      <p>Whether you freelance or run your own small business, tracking your time, mileage and daily cashflow is super important.</p>
+      <p id="introAnim" onclick="ODL.popup.flash ('/flash/intro.swf?v=31', 710, 285);">
+        <img src="/gfx/intro/animation_play.gif" width="405" height="150" alt="During our working lives we need to keep track of how we spend our time, day to day cashflow &amp; business miles Usually we jot notes onto paper, post-it notes, napkins, envelopes - Eventually we end up with a mess of papers. With 1DayLater you can write these same notes into your browser or mobile phone to safely store them for the future. Now, instead of the usual mess you have a valuable resource that can be searched, visualised and exported - 1DayLater can even create your mileage claims and invoices. Register today for a 1 month free trial" />
+        1DayLater in 30 seconds
+      </p>
+    </div>
+    <!-- Sign in -->
+    <div class="col" id="introSignin">
+      <h2>Login</h2>
+      <form action="/noRobots" onsubmit="return false;">
+        <label class="introLabelA">email address<input type="text" name="email" tabindex="1" /></label>
+        <label class="introLabelB">password (<a href="/password_reset">forgot password?</a>)<input type="password" name="pass" tabindex="2" /></label>
+        <div class="clear"></div>
+        <label id="introRemember"><input type="checkbox" name="remember" value="true" tabindex="3" /> keep me logged in</label>
+        <label class="button introButton"><button type="submit" tabindex="4">&gt; login &lt;</button></label>
+        <div class="clear"></div>
+        <div class="introResponse"></div>
+      </form>
+    </div>
+    <!-- Register -->
+    <div class="col" id="introRegister">
+      <h2>Register</h2>
+      <form action="/noRobots" onsubmit="return false;">
+        <label class="introLabelC">Email address<input type="text" name="email" tabindex="5" /></label>
+                <div class="clear"></div>
+        <label class="introLabelA">First name<input type="text" name="first_name" tabindex="6" /></label>
+        <label class="introLabelB">Last name<input type="text" name="last_name" tabindex="7" /></label>
+        <div class="clear"></div>
+        <label class="introLabelA">Password - min 6 characters<input type="password" name="password1" tabindex="8" /></label>
+        <label class="introLabelB">Password - again<input type="password" name="password2" tabindex="9" /></label>
+        <div class="clear"></div>
+        <label class="button"><button type="submit" tabindex="12">&gt; register &lt;</button></label>
+        <div class="clear"></div>
+        <input type="hidden" name="terms_and_conditions" value="true" />
+        <div class="introResponse">By registering, you agree to our terms of business.</div>
+      </form>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script type="text/javascript">
+    ODL.intro.forms.init ();
+  </script>
+</div>
+
+<div class="arrow"></div>
+
+<div class="content" id="introStats">
+  <h2>Currently tracking 205,278 hours, 63,995,721 miles and &pound;18,643,910 in expenses and receipts!</h2>
+</div>
+
+<div class="arrow"></div>
+
+<div class="content" id="introFeatures">
+  <h1>Our features at a glance</h1>
+  <div class="cols cols_2">
+    <div class="col">
+      <h2>Super-simple interface</h2>
+      <img src="/gfx/intro/interface.png?v=30" width="425" height="160" alt="the 1DayLater interface, shows the main input form with suggestion dropdown active" />
+      <p>We <em>love</em> our interface and so will you! It's so simple that you'll master it within minutes, leaving you free to get on with your real work. Our customers call us <em>&quot;the Twitter of time tracking&quot;</em>.</p>
+    </div>
+    <div class="col">
+      <h2>Your habits are beautiful</h2>
+      <img src="/gfx/intro/visualize.png?v=31" width="425" height="160" alt="a fluid graph showing the activities of a user over time" />
+      <p>Our visuals will shed a new light on how you work - knowing how you use your assets will motivate you and your team, and help you to understand and run your business more effectively.</p>      </div>
+    <div class="clear"></div>
+    <div class="col">
+      <h2>We're mad about support</h2>
+      <img src="/gfx/intro/helper.png?v=30" width="425" height="160" alt="part of our support system, it shows the guide explaining part of the input form" />
+      <p>We've thrown away the rule-book and built a new and revolutionary help and feedback system that will keep you up-to-date and in direct contact with our team.</p>
+    </div>
+    <div class="col">
+      <h2>Become a master of your assets</h2>
+      <img src="/gfx/intro/money.png?v=30" width="425" height="160" alt="a whole lod of currency symbols, representing the value of your assets" />
+      <p>By keeping an accurate log of your time, money and mileage you can be sure that your invoicing and timesheets are airtight and you never lose track of another billable hour again.</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="tabs tabs_1" id="introFeaturesRegisterLink">
+    <div class="tab" onclick="ODL.intro.register ();">Register today to find out more</div>
+    <div class="clear"></div>
+  </div>
+  </div>
+
+<div class="arrow"></div>
+
+<div class="content" id="introQuotes">
+  <span class="roundbutton prev">&laquo;</span>
+  <span class="roundbutton next">&raquo;</span>
+  <ul>
+    <li>&quot;The simpler things are, the better... 1DayLater is nothing if not straightforward.&quot;<cite>Georgina Laidlaw, <a href="http://webworkerdaily.com/">Webworker Weekly</a></cite></li>
+    <li>&quot;The Twitter of time management&quot; <cite>Wayne Smith, <a href="http://touchscape.org/">Touchscape</a></cite></li>
+    <li>&quot;For me the simple interface makes keeping track of your finances a pleasure rather than a pain&quot; <cite>Kate Russel, <a href="http://news.bbc.co.uk/1/hi/programmes/click_online/8837933.stm">BBC Webscape</a></cite></li>
+    <li>&quot;A feisty time tracking solution from the North East of England.&quot; <cite>Steve O'Hear, <a href="http://eu.techcrunch.com/2010/01/05/1daylater-a-feisty-time-tracking-solution-from-the-north-east-of-england/">Techcrunch</a></cite></li>
+    <li>&quot;1DayLater would've made a worthy addition to our top ten tips and tools for freelancers had we seen it earlier&quot; <cite>Gina Tripali, <a href="http://lifehacker.com/5467598/1daylater-tracks-and-graphs-your-time-money-and-mileage">Lifehacker</a></cite></li>
+    <li>&quot;Best free software of 2010&quot; <cite><a href="http://www.pcmag.com/article2/0,2817,2361889,00.asp">PCmag</a></cite></li>
+    <li>&quot;The practicality and simplicity of the interface makes 1DayLater as easy to use as it is beautiful to look at&quot; <cite>David Coxon, ICT manager, <a href="http://balticmill.com">Baltic centre for contemporary art</a></cite></li>
+    <li>&quot;1DayLater has helped me visualize how I spend my time - a perfect tool to improve productivity&quot; <cite>Tim Van Loan, <a href="http://recurly.com">Recurly</a></cite></li>
+    <li>&quot;Now that I have a record of my activities I feel more organised and am confident to invoice my real value&quot; <cite>Cassim Ladha, <a href="http://cascomltd.com/">Cascom</a></cite></li>
+    <li>&quot;This an innovative, easy to use and extremely versatile application which has the potential to transform working life&quot; <cite>Trish Brady, Time management coach, <a href="http://www.cadenzaassociates.co.uk/">Cadenza Associates</a></cite></li>
+    <li>&quot;Many companies will find this simple to use and useful for their business - it just makes sense.&quot; <cite>David Dunn - Chief Operations Officer, <a href="http://www.sunderlandsoftwarecity.com/">Sunderland Software City</a></cite></li>
+  </ul>
+</div>
+<script type="text/javascript">
+  ODL.intro.quotes.init ();
+</script>
+
+<div class="arrow"></div>
+
+<div class="content" id="introPricing">
+  <h1>Our pricing plans</h1>
+  <div class="cols cols_2">
+    <!-- Solo -->
+    <div class="col" id="introFree">
+      <h2>Basic use</h2>
+      <div class="introPrice"><span>free forever</span> perfect for freelancers and hobbyists</div>
+      <div class="clear"></div>
+      <ul>
+        <li>unlimited projects, clients and tags</li>
+        <li>powerful search of your history</li>
+        <li>analysis of your activities</li>
+      </ul>
+      <p>Many find the free plan offers everything they need to keep track</p>
+    </div>
+    <!-- Team -->
+    <div class="col" id="introPremium">
+      <h2>Premium use</h2>
+      <div class="introPrice"><span>&pound;5</span> per month</div>
+      <div id="introPricingMathPlus">or</div>
+      <div class="introPrice"><span>&pound;40</span>per year</div>
+      <div class="clear"></div>
+      <ul>
+        <li>exportable spreadsheets</li>
+        <li>invoice generation</li>
+        <li>mileage claim calculations</li>
+      </ul>
+      <p>The premium features make your data more <em>valuable</em>...</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="arrow"></div>
+
+
+<div class="content" id="introRegisterLink" onclick="ODL.intro.register ();">
+  <h1>Click here to register, it takes seconds :-)</h1>
+</div>
+      </div>
+    </div>
+
+    <!-- To push the footer down -->
+    <div id="footerPush"></div>
+
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <div id="footerLeft">
+      &copy; 1DayLater Ltd. All Rights Reserved
+    </div>
+    <div id="footerRight">
+      <a href="http://1daylater.uservoice.com/" target="_blank">Support</a> - <a href="/about_us">About Us</a> - <a href="/apps">Apps</a> - <a href="/the_api">The API</a> - <a href="/terms_and_conditions">Terms &amp; Conditions</a> - <a href="/privacy_policy">Privacy Policy</a>
+    </div>
+  </div>
+
+  <!-- Uservoice -->
+  <script type="text/javascript">
+    function _loadUserVoice() {
+      var s = document.createElement('script');
+      s.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js";
+      document.getElementsByTagName('head')[0].appendChild(s);
+    }
+    _loadSuper = window.onload;
+    window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice(); };
+  </script>
+
+  <!-- Analyze this -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7070529-1']);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>
