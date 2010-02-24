@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<!--
+	generated in 0.601 seconds
+	64461 bytes batcached for 300 seconds
+-->
+<head profile="http://gmpg.org/xfn/11">
+	<title>up and running with cassandra &laquo; snax</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="http://s.wordpress.com/blank.css" type="text/css" media="screen" />
+	<link rel="pingback" href="http://blog.evanweaver.com/xmlrpc.php" />
+				<script src='http://wordpress.com/remote-login.php?action=js&amp;host=blog.evanweaver.com&amp;id=18067431&amp;t=1292959960&amp;back=blog.evanweaver.com%2F2009%2F07%2F06%2Fup-and-running-with-cassandra%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="snax &raquo; Feed" href="http://blog.evanweaver.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="snax &raquo; Comments Feed" href="http://blog.evanweaver.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="snax &raquo; up and running with&nbsp;cassandra Comments Feed" href="http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="http://s0.wp.com/wp-content/themes/h4/global.css?m=1291749258g" type="text/css" />
+<script type='text/javascript' src='http://s2.wp.com/wp-includes/js/l10n.js?m=1290133841g&amp;ver=20101110'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-includes/js/jquery/jquery.js?m=1290133841g&amp;ver=1.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-includes/js/comment-reply.js?m=1231878779g&amp;ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://evanweaver.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://evanweaver.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='snax' href='http://blog.evanweaver.com/' />
+<link rel='prev' title='distributed systems&nbsp;primer' href='http://blog.evanweaver.com/2009/05/04/distributed-systems-primer/' />
+<link rel='next' title='memcached gem&nbsp;release' href='http://blog.evanweaver.com/2009/08/04/memcached-gem-release/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/' />
+<link rel='shortlink' href='http://wp.me/p1dOab-1O' />
+<link rel="shortcut icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1250548519g" />
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel='openid.server' href='http://evanweaver.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://evanweaver.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://blog.evanweaver.com/osd.xml" title="snax" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="snax" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="on software" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://blog.evanweaver.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://blog.evanweaver.com?custom-css=1&#038;csblog=1dOab&#038;cscache=5&#038;csrev=95" />
+</head>
+
+<body class="wordpress y2010 m12 d21 h11 single postid-112 s-y2009 s-m07 s-d05 s-h16 s-category-uncategorized s-author-evanweaver">
+
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<h1 id="blog-title"><span><a href="http://blog.evanweaver.com/" title="snax" rel="home">snax</a></span></h1>
+		<div id="blog-description">on software</div>
+	</div><!--  #header -->
+
+	<div id="access">
+		<div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+		<div id="menu"><ul><li class="page_item page-item-2"><a href="http://blog.evanweaver.com/about/" title="about">about</a></li><li class="page_item page-item-461"><a href="http://blog.evanweaver.com/resume/" title="resume">resume</a></li></ul></div>
+	</div><!-- #access -->
+
+	<div id="container">
+		<div id="content">
+
+
+			<div id="nav-above" class="navigation">
+				<div class="nav-previous"><a href="http://blog.evanweaver.com/2009/05/04/distributed-systems-primer/" rel="prev"><span class="meta-nav">&laquo;</span> distributed systems&nbsp;primer</a></div>
+				<div class="nav-next"><a href="http://blog.evanweaver.com/2009/08/04/memcached-gem-release/" rel="next">memcached gem&nbsp;release <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="post-112" class="hentry p1 post publish author-evan category-uncategorized untagged y2009 m07 d05 h16">
+				<h2 class="entry-title">up and running with&nbsp;cassandra</h2>
+				<div class="entry-content">
+<p><a href="http://wiki.apache.org/cassandra/">Cassandra</a> is a hybrid non-relational database in the same class as Google&#8217;s BigTable. It is more featureful  than a key/value store like <a href="http://www.basho.com/Riak.html">Riak</a>, but supports fewer query types than a document store like <a href="http://www.mongodb.org">MongoDB</a>.</p>
+<p>Cassandra was started by Facebook and later transferred to the open-source community. It is an ideal runtime database for web-scale domains like social networks.</p>
+<p>This post is both a tutorial and a &#8220;getting started&#8221; overview. You will learn about Cassandra&#8217;s features, data model, API, and operational requirements—everything you need to know to deploy a Cassandra-backed service.</p>
+<p><b>May 11, 2010</b>: post updated for Cassandra gem 0.8 and Cassandra version 0.6.</p>
+<h2>features</h2>
+<p>There are a number of reasons to choose Cassandra for your website. Compared to other databases, three big features stand out:</p>
+<ul>
+<li>
+<b>Flexible schema</b>: with Cassandra, like a document store, you don&#8217;t have to decide what fields you need in your records ahead of time. You can add and remove arbitrary fields on the fly. This is an incredible productivity boost, especially in large deployments.</li>
+<li>
+<b>True scalability</b>: Cassandra scales horizontally in the purest sense. To add more capacity to a cluster, turn on another machine. You don&#8217;t have restart any processes, change your application queries, or manually relocate any data.</li>
+<li>
+<b>Multi-datacenter awareness</b>: you can adjust your node layout to ensure that if one datacenter burns in a fire, an alternative datacenter will have at least one full copy of every record.</li>
+</ul>
+<p>Some other features that help put Cassandra above the competition :</p>
+<ul>
+<li>
+<b>Range queries</b>: unlike most key/value stores, you can query for ordered ranges of keys.</li>
+<li>
+<b>List datastructures</b>: super columns add a 5th dimension to the hybrid model, turning columns into lists. This is very handy for things like per-user indexes.</li>
+<li>
+<b>Distributed writes</b>: you can read and write any data to anywhere in the cluster at any time. There is never any single point of failure.</li>
+</ul>
+<h2>installation</h2>
+<p>You need a Unix system. If you are using Mac OS 10.5, all you need is Git. Otherwise, you need to install Java 1.6, Git 1.6, Ruby, and Rubygems in some reasonable way.</p>
+<p>Start a terminal and run:</p>
+<pre>
+sudo gem install cassandra
+</pre>
+<p>If you are using Mac OS, you need to export the following environment variables:</p>
+<pre>
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
+export PATH="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin:$PATH"
+</pre>
+<p>Now you can build and start a test server with <code>cassandra_helper</code>:</p>
+<pre>
+cassandra_helper cassandra
+</pre>
+<p>It runs!</p>
+<h2>live demo</h2>
+<p>The above script boots the server with a schema that we can interact with. Open another terminal window and start <code>irb</code>, the Ruby shell:</p>
+<pre>
+irb
+</pre>
+<p>In the <code>irb</code> prompt, require the library:</p>
+<pre>
+require 'rubygems'
+require 'cassandra'
+include SimpleUUID
+</pre>
+<p>Now instantiate a client object:</p>
+<pre>
+twitter = Cassandra.new('Twitter')
+</pre>
+<p>Let&#8217;s insert a few things:</p>
+<pre>
+user = {'screen_name' =&gt; 'buttonscat'}
+twitter.insert(:Users, '5', user)
+
+tweet1 = {'text' =&gt; 'Nom nom nom nom nom.', 'user_id' =&gt; '5'}
+twitter.insert(:Statuses, '1', tweet1)
+
+tweet2 = {'text' =&gt; '@evan Zzzz....', 'user_id' =&gt; '5', 'reply_to_id' =&gt; '8'}
+twitter.insert(:Statuses, '2', tweet2)
+</pre>
+<p>Notice that the two status records do not have all the same columns. Let&#8217;s go ahead and connect them to our user record:</p>
+<pre>
+twitter.insert(:UserRelationships, '5', {'user_timeline' =&gt; {UUID.new =&gt; '1'}})
+twitter.insert(:UserRelationships, '5', {'user_timeline' =&gt; {UUID.new =&gt; '2'}})
+</pre>
+<p>The <code>UUID.new</code> call creates a collation key based on the current time; our tweet ids are stored in the values.</p>
+<p>Now we can query our user&#8217;s tweets:</p>
+<pre>
+timeline = twitter.get(:UserRelationships, '5', 'user_timeline', :reversed =&gt; true)
+timeline.map { |time, id| twitter.get(:Statuses, id, 'text') }
+# =&gt; ["@evan Zzzz....", "Nom nom nom nom nom."]
+</pre>
+<p>Two tweet bodies, returned in recency order—not bad at all. In a similar fashion, each time a user tweets, we could loop through their followers and insert the status key into their follower&#8217;s <code>home_timeline</code> relationship, for handling general status delivery.</p>
+<h2>the data model</h2>
+<p>Cassandra is best thought of as a 4 or 5 dimensional hash. The usual way to refer to a piece of data is as follows: a <b>keyspace</b>, a <b>column family</b>, a <b>key</b>, an <i>optional</i> <b>super column</b>, and a <b>column</b>. At the end of that chain lies a single, lonely value.</p>
+<p>Let&#8217;s break down what these layers mean.</p>
+<ul>
+<li>
+<p><b>Keyspace</b> (also confusingly called &#8220;table&#8221;): the outer-most level of organization. This is usually the name of the application. For example, <code>'Twitter'</code> and <code>'Wordpress'</code> are both good keyspaces. Keyspaces must be defined at startup in the <code>storage-conf.xml</code> file.</p>
+</li>
+<li>
+<p><b>Column family</b>: a slice of data corresponding to a particular key. Each column family is stored in a separate file on disk, so it can be useful to put frequently accessed data in one column family, and rarely accessed data in another. Some good column family names might be <code>:Posts</code>, <code>:Users</code> and <code>:UserAudits</code>. Column families must be defined at startup.</p>
+</li>
+<li>
+<p><b>Key</b>: the permanent name of the record. You can query over ranges of keys in a column family, like <code>:start =&gt; '10050', :finish =&gt; '10070'</code>—this is the only index Cassandra provides for free. Keys are defined on the fly.</p>
+</li>
+</ul>
+<p>After the column family level, the organization can diverge—this is a feature unique to Cassandra. You can choose either:</p>
+<ul>
+<li>
+<p>A <b>column</b>: this is a tuple with a name and a value. Good columns might be <code>'screen_name' =&gt; 'lisa4718'</code> or <code>'Google' =&gt; 'http://google.com'</code>.</p>
+<p>It is common to not specify a particular column name when requesting a key; the response will then be an ordered hash of all columns. For example, querying for <code>(:Users, '174927')</code> might return:</p>
+<pre>
+{'name' =&gt; 'Lisa Jones',
+ 'gender' =&gt; 'f',
+ 'screen_name' =&gt; 'lisa4718'}
+</pre>
+<p>In this case, <code>name</code>, <code>gender</code>, and <code>screen_name</code> are all column names. Columns are defined on the fly, and different records can have different sets of column names, even in the same keyspace and column family. This lets you use the column name itself as either <b>structure</b> or <b>data</b>. Columns can be stored in recency order, or alphabetical by name, and all columns keep a timestamp.</p>
+</li>
+<li>
+<p>A <b>super column</b>: this is a named list. It contains standard columns, stored in recency order.</p>
+<p>Say Lisa Jones has bookmarks in several categories. Querying <code>(:UserBookmarks, '174927')</code> might return:</p>
+<pre>
+{'work' =&gt; {
+    'Google' =&gt; 'http://google.com',
+    'IBM' =&gt; 'http://ibm.com'},
+ 'todo': {...},
+ 'cooking': {...}}
+</pre>
+<p>Here, <code>work</code>, <code>todo</code>, and <code>cooking</code> are all super column names. They are defined on the fly, and there can be any number of them per row. <code>:UserBookmarks</code> is the name of the <b>super column family</b>. Super columns are stored in alphabetical order, with their sub columns physically adjacent on the disk.</p>
+</li>
+</ul>
+<p>Super columns and standard columns cannot be mixed at the same (4th) level of dimensionality. You must define at startup which column families contain standard columns, and which contain super columns with standard columns inside them.</p>
+<p>Super columns are a great way to store one-to-many indexes to other records: make the sub column names TimeUUIDs (or whatever you&#8217;d like to use to sort the index), and have the values be the foreign key. We saw an example of this strategy in the demo, above.</p>
+<p>If this is confusing, don&#8217;t worry. We&#8217;ll now look at two example schemas in depth.</p>
+<h2>twitter schema</h2>
+<p>Here is the schema definition we used for the demo, above. It is based on Eric Florenzano&#8217;s <a href="http://github.com/ericflo/twissandra/tree/master">Twissandra</a>:</p>
+<pre>
+&lt;Keyspace Name="Twitter"&gt;
+  &lt;ColumnFamily CompareWith="UTF8Type" Name="Statuses" /&gt;
+  &lt;ColumnFamily CompareWith="UTF8Type" Name="StatusAudits" /&gt;
+  &lt;ColumnFamily CompareWith="UTF8Type" Name="StatusRelationships"
+    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" /&gt;
+  &lt;ColumnFamily CompareWith="UTF8Type" Name="Users" /&gt;
+  &lt;ColumnFamily CompareWith="UTF8Type" Name="UserRelationships"
+    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" /&gt;
+&lt;/Keyspace&gt;
+</pre>
+<p>What could be in <code>StatusRelationships</code>? Maybe a list of users who favorited the tweet? Having a super column family for both record types lets us index each direction of whatever many-to-many relationships we come up with.</p>
+<p>Here&#8217;s how the data is organized:</p>
+<div style="text-align:center;margin-bottom:10px;"><a href="http://evanweaver.files.wordpress.com/2010/12/twitter.jpg"><img src="http://evanweaver.files.wordpress.com/2010/12/twitter_small.jpg" alt="Click to enlarge"/></a></div>
+<p>Cassandra lets you distribute the keys across the cluster either randomly, or in order, via the <code>Partitioner</code> option in the <code>storage-conf.xml</code> file.</p>
+<p>For the Twitter application, if we were using the order-preserving partitioner, all recent statuses would be stored on the same node. This would cause hotspots. Instead, we should use the random partitioner.</p>
+<p>Alternatively, we could preface the status keys with the user key, which has less temporal locality. If we used <code>user_id:status_id</code> as the status key, we could do range queries on the user fragment to get tweets-by-user, avoiding the need for a <code>user_timeline</code> super column.</p>
+<h2>multi-blog schema</h2>
+<p>Here&#8217;s a another schema, suggested to me by <a href="http://spyced.blogspot.com/">Jonathan Ellis</a>, the primary Cassandra maintainer. It&#8217;s for a multi-tenancy blog platform:</p>
+<pre>
+&lt;Keyspace Name="Multiblog"&gt;
+  &lt;ColumnFamily CompareWith="TimeUUIDType" Name="Blogs" /&gt;
+  &lt;ColumnFamily CompareWith="TimeUUIDType" Name="Comments"/&gt;
+&lt;/Keyspace&gt;
+</pre>
+<p>Imagine we have a blog named &#8216;The Cutest Kittens&#8217;. We will insert a row when the first post is made as follows:</p>
+<pre>
+require 'rubygems'
+require 'cassandra'
+include SimpleUUID
+
+multiblog = Cassandra.new('Multiblog')
+
+multiblog.insert(:Blogs, 'The Cutest Kittens',
+  { UUID.new =&gt;
+    '{"title":"Say Hello to Buttons Cat","body":"Buttons is a cute cat."}' })
+</pre>
+<p><code>UUID.new</code> generates a unique, sortable column name, and the JSON hash contains the post details. Let&#8217;s insert another:</p>
+<pre>
+multiblog.insert(:Blogs, 'The Cutest Kittens',
+  { UUID.new =&gt;
+    '{"title":"Introducing Commie Cat","body":"Commie is also a cute cat"}' })
+</pre>
+<p>Now we can find the latest post with the following query:</p>
+<pre>
+post = multiblog.get(:Blogs, 'The Cutest Kittens', :reversed =&gt; true).to_a.first
+</pre>
+<p>On our website, we can build links based on the readable representation of the UUID:</p>
+<pre>
+guid = post.first.to_guid
+# =&gt; "b06e80b0-8c61-11de-8287-c1fa647fd821"
+</pre>
+<p>If the user clicks this string in a permalink, our app can find the post directly via:</p>
+<pre>
+multiblog.get(:Blogs, 'The Cutest Kittens', :start =&gt; UUID.new(guid), :count =&gt; 1)
+</pre>
+<p>For comments, we&#8217;ll use the post UUID as the outermost key:</p>
+<pre>
+multiblog.insert(:Comments, guid,
+  {UUID.new =&gt; 'I like this cat. - Evan'})
+multiblog.insert(:Comments, guid,
+  {UUID.new =&gt; 'I am cuter. - Buttons'})
+</pre>
+<p>Now we can get all comments (oldest first) for a post by calling:</p>
+<pre>
+multiblog.get(:Comments, guid)
+</pre>
+<p>We could paginate them by passing <code>:start</code> with a UUID. See <a href="http://www.slideshare.net/Eweaver/efficient-pagination-using-mysql">this presentation</a> to learn more about token-based pagination.</p>
+<p>We have sidestepped two problems with this data model: we don&#8217;t have to maintain separate indexes for any lookups, and the posts and comments are stored in separate files, where they don&#8217;t cause as much write contention. Note that we didn&#8217;t need to use any super columns, either.</p>
+<h2>storage layout and api comparison</h2>
+<p>The storage strategy for Cassandra&#8217;s standard model is the same as BigTable&#8217;s. Here&#8217;s a comparison chart:</p>
+<table class="tt">
+<tr>
+<th></th>
+<th colspan="2">multi-file</th>
+<th>per-file</th>
+<th colspan="4" class="tt_right">intra-file</th>
+</tr>
+<tr>
+<th>Relational</th>
+<td>server</td>
+<td>database</td>
+<td>table*</td>
+<td>primary key</td>
+<td>column value</td>
+<td></td>
+<td class="tt_right"></td>
+</tr>
+<tr>
+<th>BigTable</th>
+<td>cluster</td>
+<td>table</td>
+<td>column family</td>
+<td>key</td>
+<td>column name</td>
+<td>column value</td>
+<td class="tt_right"></td>
+</tr>
+<tr>
+<th>Cassandra, standard model</th>
+<td>cluster</td>
+<td>keyspace</td>
+<td>column family</td>
+<td>key</td>
+<td>column name</td>
+<td>column value</td>
+<td class="tt_right"></td>
+</tr>
+<tr>
+<th class="tt_footer">Cassandra, super column model</th>
+<td class="tt_footer">cluster</td>
+<td class="tt_footer">keyspace</td>
+<td class="tt_footer">column family</td>
+<td class="tt_footer">key</td>
+<td class="tt_footer">super column name</td>
+<td class="tt_footer">column name</td>
+<td class="tt_footer tt_right">column value</td>
+</tr>
+</table>
+<p style="font-size:12px;text-align:right;margin-top:0;">* With fixed column names.</p>
+<p>Column families are stored in <b>column-major</b> order, which is why people call BigTable a column-oriented database. This is not the same as a  column-oriented OLAP database like Sybase IQ—it depends on whether your data model considers keys to span column families or not.</p>
+<div style="text-align:center;"><a href="http://evanweaver.files.wordpress.com/2010/12/row_oriented.jpg"><img src="http://evanweaver.files.wordpress.com/2010/12/row_oriented_small.jpg" alt="Click to enlarge"/></a></div>
+<p>In row-orientation, the column names are the <b>structure</b>, and you think of the column families as <b>containing keys</b>. This is the convention in relational databases.</p>
+<div style="text-align:center;"><a href="http://evanweaver.files.wordpress.com/2010/12/column_oriented.jpg"><img src="http://evanweaver.files.wordpress.com/2010/12/column_oriented_small.jpg" alt="Click to enlarge"/></a></div>
+<p>In column-orientation, the column names are the <b>data</b>, and the column families are the structure. You think of the key as <b>containing the column family</b>, which is the convention in BigTable. (In Cassandra, super columns are also stored in column-major order—all the sub columns are together.)</p>
+<p>In Cassandra&#8217;s Ruby API, parameters are expressed in storage order, for clarity:</p>
+<table class="tt">
+<tr>
+<th>Relational</th>
+<td class="tt_right"><code>SELECT `column` FROM `database`.`table` WHERE `id` = key;</code></td>
+</tr>
+<tr>
+<th>BigTable</th>
+<td class="tt_right"><code>table.get(key, "column_family:column")</code></td>
+</tr>
+<tr>
+<th>Cassandra: standard model</th>
+<td class="tt_right"><code>keyspace.get("column_family", key, "column")</code></td>
+</tr>
+<tr>
+<th class="tt_footer">Cassandra: super column model</th>
+<td class="tt_footer tt_right"><code>keyspace.get("column_family", key, "super_column", "column")</code></td>
+</tr>
+</table>
+<p>Note that Cassandra&#8217;s internal Thrift interface mimics BigTable in some ways, but this is being changed.</p>
+<h2>going to production</h2>
+<p>Cassandra is an alpha product and could, theoretically, lose your data. In particular, if you change the schema specified in the <code>storage-conf.xml</code> file, you must follow <a href="https://issues.apache.org/jira/browse/CASSANDRA-44">these instructions</a> carefully, or corruption will occur (this is going to be fixed). Also, the on-disk storage format is subject to change, making upgrading a bit difficult.</p>
+<p>The biggest deployment is at Facebook, where hundreds of terabytes of token indexes are kept in about a hundred Cassandra nodes. However, their use case  allows the data to be rebuilt if something goes wrong. Proceed carefully, keep a backup in an <a href="http://mashable.com/2009/01/30/magnolia-data-loss/">unrelated storage engine</a>&#8230;and submit patches if things go wrong. (Some other production  deployments are listed <a href="http://www.dbms2.com/2010/07/06/riptano-and-cassandra-adoption/">here</a>.)</p>
+<p>That aside, here is a guide for deploying a production cluster:</p>
+<ul>
+<li>
+<p><b>Hardware</b>: get a handful of commodity Linux servers. 16GB memory is good; Cassandra likes a big filesystem buffer. You don&#8217;t need RAID. If you put the commitlog file and the data files on separate physical disks, things will go faster. Don&#8217;t use EC2 or friends without being aware that the virtualized I/O can be slow, especially on the small instances.</p>
+</li>
+<li>
+<p><b>Configuration</b>: in the <code>storage-conf.xml</code> schema file, set the replication factor to 3. List the IP address of one of the nodes as the seed. Set the listen address to the empty string, so the hosts will resolve their own IPs. Now, adjust the contents of <code>cassandra.in.sh</code> for your various paths and JVM options—for a 16GB node, set the JVM heap to 4GB.</p>
+</li>
+<li>
+<p><b>Deployment</b>: build a package of Cassandra itself and your configuration files, and deliver it to all your servers (I use <a href="http://en.wikipedia.org/wiki/Capistrano">Capistrano</a> for this). Start the servers by setting <code>CASSANDRA_INCLUDE</code> in the environment to point to your <code>cassandra.in.sh</code> file, and run <code>bin/cassandra</code>. At this point, you should see join notices in the Cassandra logs:</p>
+<pre>
+Cassandra starting up...
+Node 10.224.17.13:7001 has now joined.
+Node 10.224.17.14:7001 has now joined.
+</pre>
+<p>Congratulations! You have a cluster. Don&#8217;t forget to turn off debug logging in the <code>log4j.properties</code> file.</p>
+</li>
+<li>
+<p><b>Visibility</b>: you can get a little more information about your cluster via the tool <code>bin/nodeprobe</code>, included:</p>
+<pre>
+$ bin/nodeprobe --host 10.224.17.13 ring
+Token(124007023942663924846758258675932114665)  3 10.224.17.13  |&lt;--|
+Token(106858063638814585506848525974047690568)  3 10.224.17.19  |   ^
+Token(141130545721235451315477340120224986045)  3 10.224.17.14  |--&gt;|
+</pre>
+<p>Cassandra also exposes various statistics over <a href="http://en.wikipedia.org/wiki/Java_Management_Extensions">JMX</a>.</p>
+</li>
+</ul>
+<p>Note that your client machines (not servers!) must have accurate clocks for Cassandra to resolve write conflicts properly. Use <a href="http://en.wikipedia.org/wiki/Network_Time_Protocol">NTP</a>.</p>
+<h2>conclusion</h2>
+<p>There is a misperception that if someone advocates a non-relational database, they either don&#8217;t understand SQL optimization, or they are generally a hater. This is not the case.</p>
+<p>It is reasonable to seek a new tool for a new problem, and database problems have changed with the rise of web-scale distributed systems. This does not mean that SQL as a general-purpose runtime and reporting tool is going away. However, at web-scale, it is more flexible to separate the concerns. Runtime object lookups can be handled by a low-latency, strict, self-managed system like Cassandra. Asynchronous analytics and reporting can be handled by a high-latency, flexible, un-managed system like <a href="http://hadoop.apache.org/core/">Hadoop</a>. And in neither case does SQL lend itself to sharding.</p>
+<p>I think that Cassandra is the most promising current implementation of a runtime distributed database, but much work remains to be done. We&#8217;re beginning to use Cassandra at Twitter, and here&#8217;s what I would like to happen real-soon-now:</p>
+<ul>
+<li>
+<b>Interface cleanup</b>: <span style="text-decoration:line-through;">the Thrift API for Cassandra is incomplete and inconsistent, which makes writing<br />
+clients very irritating.</span><br />Done!</li>
+<li>
+<b>Online migrations</b>: restarting the cluster 3 times to add a column family is silly.</li>
+<li>
+<b>ActiveModel or DataMapper adapter</b>: <span style="text-decoration:line-through;">for interaction with business objects in Ruby.</span><br />Done!<br />
+Michael<br />
+Koziarski on the Rails core team wrote an <a href="http://github.com/NZKoz/cassandra_object">ActiveModel adapter</a>.</li>
+<li>
+<b>Scala client</b>: for interoperability with JVM middleware.</li>
+</ul>
+<p>Go ahead and jump on any of those projects—it&#8217;s a chance to get in on the ground floor.</p>
+<p>Cassandra has excellent performance. There some benchmark results for version 0.5 at the end of the <a href="http://www.brianfrankcooper.net/pubs/ycsb-v4.pdf"> Yahoo performance study</a>.</p>
+<h2>further resources</h2>
+<ul>
+<li><a href="http://wiki.apache.org/cassandra/">Cassandra wiki</a></li>
+<li>Presentation by Avinash Lakshman about Cassandra: <a href="http://www.slideshare.net/Eweaver/cassandra-presentation-at-nosql">slides</a>, <a href="http://vimeo.com/5185526">video</a>
+</li>
+<li>The <a href="http://mail-archives.apache.org/mod_mbox/incubator-cassandra-user/">cassandra-user</a> and <a href="http://mail-archives.apache.org/mod_mbox/incubator-cassandra-user/">cassandra-dev</a> mailing lists</li>
+<li>The #cassandra IRC channel on <a href="irc://irc.freenode.net/cassandra">irc.freenode.net</a>
+</li>
+<li>Cassandra&#8217;s <a href="http://issues.apache.org/jira/browse/CASSANDRA">bug tracker</a>
+</li>
+<li>Twitter&#8217;s Ruby client: <a href="http://evanweaver.files.wordpress.com/2010/12/doc/fauna/cassandra_client">docs</a>, <a href="http://github.com/fauna/cassandra_client/">source</a>
+</li>
+</ul>
+
+				</div>
+				<div class="entry-meta">
+					This entry was written by <span class="author vcard"><a class="url fn n" href="http://blog.evanweaver.com/author/evanweaver/" title="View all posts by evan">evan</a></span>, posted on <abbr class="published" title="2009-07-06T00:00:00-0800">July 6, 2009 at 12:00 AM</abbr>, filed under <a href="http://blog.evanweaver.com/category/uncategorized/" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a>. Bookmark the <a href="http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/" title="Permalink to up and running with&nbsp;cassandra" rel="bookmark">permalink</a>. Follow any comments here with the <a href="http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/feed/" title="Comments RSS to up and running with&nbsp;cassandra" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.
+					Both comments and trackbacks are currently closed.
+				</div>
+			</div><!-- .post -->
+
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="http://blog.evanweaver.com/2009/05/04/distributed-systems-primer/" rel="prev"><span class="meta-nav">&laquo;</span> distributed systems&nbsp;primer</a></div>
+				<div class="nav-next"><a href="http://blog.evanweaver.com/2009/08/04/memcached-gem-release/" rel="next">memcached gem&nbsp;release <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+			<div id="comments">
+
+
+		<div id="comments-list" class="comments">
+		<h3><span>26</span> Comments</h3>
+		<ol>
+									<li id="comment-8245" class="comment c c-y2009 c-m07 c-d06 c-h13 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://twitter.com/ryancarson' rel='external nofollow' class='url url'>Ryan Carson</a></span></div>
+							<div class="comment-meta">Posted July 6, 2009 at 9:20 PM <span class="meta-sep">|</span> <a href="#comment-8245" title="Permalink to this comment">Permalink</a></div>
+							<p>I absolutely loved this piece. I was wondering if you&#8217;d like to write something like this for <a href="http://thinkvitamin.com" rel="nofollow">ThinkVitamin</a>?</p>
+</li>
+						<li id="comment-8246" class="comment c1 c-y2009 c-m07 c-d06 c-h14">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://www.koziarski.net' rel='external nofollow' class='url url'>Michael Koziarski</a></span></div>
+							<div class="comment-meta">Posted July 6, 2009 at 10:15 PM <span class="meta-sep">|</span> <a href="#comment-8246" title="Permalink to this comment">Permalink</a></div>
+							<p>Thanks so much for this intro, and for providing a delicately balanced set of compatible downloads. :)</p>
+<p>Cassandra&#8217;s the first open-source non-RDBMS which has really shown the potential to be game-changing. There&#8217;s a bunch of rough edges but it definitely deserves closer attention.</p>
+<p>Here&#8217;s hoping the community gets the time and momentum to tidy up some of those rough edges (e.g. naming every damned thing a column and on-disk forwards compatibility). There&#8217;s something cool here.</p>
+</li>
+						<li id="comment-8247" class="comment c2 c-y2009 c-m07 c-d06 c-h17 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://www.seandelaney.co.uk/blog' rel='external nofollow' class='url url'>Sean Delaney</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 1:59 AM <span class="meta-sep">|</span> <a href="#comment-8247" title="Permalink to this comment">Permalink</a></div>
+							<p>This is a very good read, and well structured.  It hit the nail on the head by highlighting the important features and capabilities.</p>
+<p>Cassandra in a Nutshell!</p>
+</li>
+						<li id="comment-8248" class="comment c3 c-y2009 c-m07 c-d06 c-h20">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://whomwah.com' rel='external nofollow' class='url url'>Duncan Robertson</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 4:44 AM <span class="meta-sep">|</span> <a href="#comment-8248" title="Permalink to this comment">Permalink</a></div>
+							<p>Great write-up! I normally skim through these things, but on this occasion I read every word. Thanks.</p>
+</li>
+						<li id="comment-8249" class="comment c4 c-y2009 c-m07 c-d06 c-h22 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://whomwah.com' rel='external nofollow' class='url url'>Louis-Philippe Gauthier</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 6:51 AM <span class="meta-sep">|</span> <a href="#comment-8249" title="Permalink to this comment">Permalink</a></div>
+							<p>I&#8217;ve been trying to get Cassandra running for a while but I always end up getting this error message:</p>
+<pre>cassandra-r789419/bin/cassandra: line 65:
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin/java:
+Bad CPU type in executable
+</pre>
+<p>I&#8217;m running Mac OSX 10.5.7 on a MacBook.</p>
+</li>
+						<li id="comment-8250" class="comment c5 c-y2009 c-m07 c-d06 c-h23">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://whomwah.com' rel='external nofollow' class='url url'>Rick Branson</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 7:52 AM <span class="meta-sep">|</span> <a href="#comment-8250" title="Permalink to this comment">Permalink</a></div>
+							<p>Great writeup. It really distills the technology concisely. The comment about EC2 is surprising though. Do you have experience testing out Cassandra performance on EC2 or a comparable environment? The larger instances come with multiple drives that can be used independently as you recommend above. These perform almost exactly like a standard SATA drive. Also, the persistent EBS volumes can be striped with software RAID and get quite acceptable IOPS performance, although if you need lots of throughput you&#8217;re going to hit the roughly 100MB/sec GigE wall.</p>
+</li>
+						<li id="comment-8251" class="comment c6 c-y2009 c-m07 c-d07 c-h00 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.rightscale.com' rel='external nofollow' class='url url'>Thorsten</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 8:17 AM <span class="meta-sep">|</span> <a href="#comment-8251" title="Permalink to this comment">Permalink</a></div>
+							<p>Very nice write-up Evan! I wish I could have read this a few weeks ago when I was starting to look into Cassandra and had to dig through the Thrift API file with its mis-namings to figure out what&#8217;s going on.</p>
+<p>What has your experience been with respect to reliability? Have you actually tested hanging nodes or slowing them down, or futzing with their clocks and seeing what happens? I know all the theoretical stuff about Cassandra&#8217;s failure tolerance, the question is more about the practice&#8230;</p>
+</li>
+						<li id="comment-8252" class="comment c7 c-y2009 c-m07 c-d07 c-h00">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.rightscale.com' rel='external nofollow' class='url url'>Anthony</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 8:53 AM <span class="meta-sep">|</span> <a href="#comment-8252" title="Permalink to this comment">Permalink</a></div>
+							<p>Louis-Philippe: You are running a 64-bit Java on a CPU that can only handle 32-bit code. See <a href="http://tshawkins.blogspot.com/2009/04/java-bad-cpu-id-in-executable.html" rel="nofollow">here</a>. You probably need to downgrade, or specify a different  <code>JAVAHOME</code>.</p>
+</li>
+						<li id="comment-8253" class="comment c8 c-y2009 c-m07 c-d07 c-h03 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.rightscale.com' rel='external nofollow' class='url url'>Louis-Philippe Gauthier</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 11:23 AM <span class="meta-sep">|</span> <a href="#comment-8253" title="Permalink to this comment">Permalink</a></div>
+							<p>@Anthony: Thank you, I hadn&#8217;t realised that Mac OSX shipped 64Bit Java on 32Bit only machines&#8230;</p>
+</li>
+						<li id="comment-8254" class="comment c9 c-y2009 c-m07 c-d07 c-h03">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://beiercai.com' rel='external nofollow' class='url url'>Beier</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 11:35 AM <span class="meta-sep">|</span> <a href="#comment-8254" title="Permalink to this comment">Permalink</a></div>
+							<p>I&#8217;m trying to intall Cassandra, but keep getting this error. Googling didn&#8217;t help much:</p>
+<pre>
+Error installing cassandra_client-0.2.2.gem:
+        cassandra_client requires json &gt;= 0
+</pre>
+<p>I&#8217;m using Ubuntu 8.04.</p>
+</li>
+						<li id="comment-8255" class="comment c10 c-y2009 c-m07 c-d07 c-h04 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.evanweaver.com' rel='external nofollow' class='url url'>evan</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 12:09 PM <span class="meta-sep">|</span> <a href="#comment-8255" title="Permalink to this comment">Permalink</a></div>
+							<p><b>Beier</b>: you need to install the <code>json</code> gem:</p>
+<pre>
+sudo gem install json
+</pre>
+<p>I updated the post.</p>
+</li>
+						<li id="comment-8256" class="comment c11 c-y2009 c-m07 c-d07 c-h04">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://anyall.org' rel='external nofollow' class='url url'>Brendan O'Connor</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 12:42 PM <span class="meta-sep">|</span> <a href="#comment-8256" title="Permalink to this comment">Permalink</a></div>
+							<p>Thanks for the writeup.  I was following Cassandra right when it was first released but no one put out a good explanation &#8212; which is unfortunate, as it uses somewhat confusing terminology.  This is helpful.</p>
+</li>
+						<li id="comment-8257" class="comment c12 c-y2009 c-m07 c-d07 c-h05 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://anyall.org' rel='external nofollow' class='url url'>Vijay</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 1:02 PM <span class="meta-sep">|</span> <a href="#comment-8257" title="Permalink to this comment">Permalink</a></div>
+							<p>Great writeup. Shouldn&#8217;t this be on the Cassandra home page?</p>
+</li>
+						<li id="comment-8258" class="comment c13 c-y2009 c-m07 c-d07 c-h09">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.metaoptimize.com' rel='external nofollow' class='url url'>Joseph Turian</a></span></div>
+							<div class="comment-meta">Posted July 7, 2009 at 5:51 PM <span class="meta-sep">|</span> <a href="#comment-8258" title="Permalink to this comment">Permalink</a></div>
+							<blockquote><p>&#8220;I think that Cassandra is the most promising current implementation of a runtime distributed database.&#8221;</p></blockquote>
+<p>Could you explain why? I am most curious about the choice of Cassandra, vs. other possible NoSQL packages.</p>
+</li>
+						<li id="comment-8259" class="comment c14 c-y2009 c-m07 c-d07 c-h22 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://smartic.us' rel='external nofollow' class='url url'>bryanl</a></span></div>
+							<div class="comment-meta">Posted July 8, 2009 at 6:24 AM <span class="meta-sep">|</span> <a href="#comment-8259" title="Permalink to this comment">Permalink</a></div>
+							<p>This is a good read.  Thanks for taking the time to make it.</p>
+</li>
+						<li id="comment-8260" class="comment c15 c-y2009 c-m07 c-d11 c-h20">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://www.janoberst.com' rel='external nofollow' class='url url'>Jan</a></span></div>
+							<div class="comment-meta">Posted July 12, 2009 at 4:59 AM <span class="meta-sep">|</span> <a href="#comment-8260" title="Permalink to this comment">Permalink</a></div>
+							<p>I like your examples, but when I try the Twitter one I get the following exception: <code>`recv_get_superColumn':  columnfamily alone is required for super CF UserRelationships</code></p>
+<p>I&#8217;m using both Cassandra trunk and your client in versions from this morning.</p>
+</li>
+						<li id="comment-8261" class="comment c16 c-y2009 c-m07 c-d13 c-h01 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.evanweaver.com' rel='external nofollow' class='url url'>evan</a></span></div>
+							<div class="comment-meta">Posted July 13, 2009 at 9:47 AM <span class="meta-sep">|</span> <a href="#comment-8261" title="Permalink to this comment">Permalink</a></div>
+							<p><b>Joseph</b>: There are five areas of specific concern to us:</p>
+<p>Multi-datacenter support<br />
+Sound distributed systems foundations, not just bolt-on sharding<br />
+Production deployments at scale<br />
+Structured objects, not just keys and values<br />
+List structures (e.g. Cassandra&#8217;s super columns)<br />
+All the other solutions lack the majority of these.</p>
+<p><b>Jan</b>: Don&#8217;t use Cassandra trunk; it has regressions. That&#8217;s why both the client README and the blog post say to use r789419.</p>
+</li>
+						<li id="comment-8262" class="comment c17 c-y2009 c-m07 c-d22 c-h22">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blakechambers.com' rel='external nofollow' class='url url'>Blake Chambers</a></span></div>
+							<div class="comment-meta">Posted July 23, 2009 at 6:02 AM <span class="meta-sep">|</span> <a href="#comment-8262" title="Permalink to this comment">Permalink</a></div>
+							<p>Very nicely done.  I like the paint charts, too.  :)</p>
+</li>
+						<li id="comment-8263" class="comment c18 c-y2009 c-m10 c-d09 c-h03 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://eric.lubow.org' rel='external nofollow' class='url url'>Eric Lubow</a></span></div>
+							<div class="comment-meta">Posted October 9, 2009 at 11:13 AM <span class="meta-sep">|</span> <a href="#comment-8263" title="Permalink to this comment">Permalink</a></div>
+							<p>Excellent post.  I am in the process of comparing Tokyo Cabinet and Cassandra.  I fished my way through TC pretty easily and it definitely looks promising.  I had a hard time getting my head around column families and super columns until reading this.</p>
+<p>Have you tried out Tokyo Cabinet?  In your response to Joseph you mentioned that you need 5 points and I think TC hits 4 of those fairly well.  Interested in hearing your thoughts.</p>
+</li>
+						<li id="comment-8264" class="comment c19 c-y2009 c-m10 c-d09 c-h03">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.evanweaver.com' rel='external nofollow' class='url url'>evan</a></span></div>
+							<div class="comment-meta">Posted October 9, 2009 at 11:16 AM <span class="meta-sep">|</span> <a href="#comment-8264" title="Permalink to this comment">Permalink</a></div>
+							<p><b>Eric:</b> Tokyo Cabinet is nice, but it&#8217;s not distributed in any way.</p>
+</li>
+						<li id="comment-8265" class="comment c20 c-y2009 c-m10 c-d15 c-h04 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://wgillett.wordpress.com' rel='external nofollow' class='url url'>Walter Gillett</a></span></div>
+							<div class="comment-meta">Posted October 15, 2009 at 12:14 PM <span class="meta-sep">|</span> <a href="#comment-8265" title="Permalink to this comment">Permalink</a></div>
+							<p>Very useful article, thanks for posting. I&#8217;m starting to explore Cassandra and this article provides some excellent context. Agree that it would be good to  merge this article into the Cassandra project overview page, which is useful, but is also incomplete and lacks the helpful concrete code examples you have  provided.</p>
+<p>Also: in the section &#8220;the data  model&#8221; it would be helpful to define the term &#8220;record&#8221;, perhaps right after the definition for &#8220;column family.&#8221; How about record := &#8220;a row in a column family;  a tuple of column values.&#8221; You&#8217;re leaving this as implicit given the reader&#8217;s expected familiarity with RDBMS concepts, but since Cassandra is a different  animal, good to be explicit.</p>
+<p>On a unrelated note: what tool did you use to create this blog page? Looks clean and readable.</p>
+</li>
+						<li id="comment-8266" class="comment c21 c-y2010 c-m01 c-d14 c-h06">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://wgillett.wordpress.com' rel='external nofollow' class='url url'>Andrey</a></span></div>
+							<div class="comment-meta">Posted January 14, 2010 at 2:36 PM <span class="meta-sep">|</span> <a href="#comment-8266" title="Permalink to this comment">Permalink</a></div>
+							<p>As I understand &#8211; structure of Cassandra is many dimension hash (4-5 depending if you was using super-column or not). So, generally if I will have lots of  information (for example I will have to show information about 5 users and each user has 10 columns) &#8211; will I need to have 50 queries to Cassandra? That&#8217;s lot  of queries. They should be really fast, but won&#8217;t it be actually slower than MySQL? I was thinking about this after I read this code:
+<pre>timeline.map { |time, id| twitter.get(:Statuses, id, 'text') }</pre>
+<p>Please, correct me if I am wrong</p>
+</li>
+						<li id="comment-8267" class="comment c22 c-y2010 c-m01 c-d14 c-h07 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.evanweaver.com' rel='external nofollow' class='url url'>evan</a></span></div>
+							<div class="comment-meta">Posted January 14, 2010 at 3:45 PM <span class="meta-sep">|</span> <a href="#comment-8267" title="Permalink to this comment">Permalink</a></div>
+							<p><b>Walter:</b> Records actually include both the column names and values; it&#8217;s not a tuple. I&#8217;ll find a way to clarify the blog post.</p>
+<p>The blog tool is entirely homebrewed.</p>
+<p><b>Andrey:</b> There are range reads available for pretty much any subset of data you would want, as long as you can traverse to itby the hash structure. The example is very simplistic, for clarity.</p>
+<p>So no need to worry about bad orders of operation.</p>
+</li>
+						<li id="comment-8268" class="comment c23 c-y2010 c-m02 c-d23 c-h14">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://stephan.sugarmotor.org' rel='external nofollow' class='url url'>Stephan</a></span></div>
+							<div class="comment-meta">Posted February 23, 2010 at 10:06 PM <span class="meta-sep">|</span> <a href="#comment-8268" title="Permalink to this comment">Permalink</a></div>
+							<p>What about full-text search ?</p>
+</li>
+						<li id="comment-8269" class="comment c24 c-y2010 c-m02 c-d23 c-h19 alt">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://stephan.sugarmotor.org' rel='external nofollow' class='url url'>spacelee</a></span></div>
+							<div class="comment-meta">Posted February 24, 2010 at 3:29 AM <span class="meta-sep">|</span> <a href="#comment-8269" title="Permalink to this comment">Permalink</a></div>
+							<p>I had an issue installing the gem: <code>mkmf not found</code>&#8230;</p>
+</li>
+						<li id="comment-8270" class="comment c25 c-y2010 c-m02 c-d24 c-h01">
+							<div class="comment-author vcard"> <span class="fn n"><a href='http://blog.evanweaver.com' rel='external nofollow' class='url url'>evan</a></span></div>
+							<div class="comment-meta">Posted February 24, 2010 at 9:21 AM <span class="meta-sep">|</span> <a href="#comment-8270" title="Permalink to this comment">Permalink</a></div>
+							<p><b>Stephan:</b> Each tool in its place. Use <a href="http://code.google.com/p/zoie/" rel="nofollow">Zoie</a> or <a href="http://www.sphinxsearch.com/" rel="nofollow">Sphinx</a>.</p>
+<p><b>spacelee:</b> Please report issues on the <a href="http://github.com/fauna/cassandra/issues" rel="nofollow">issue tracker</a>.</p>
+</li>
+		</ol>
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+	</div><!-- #comments-list .comments -->
+
+<div class="navigation">
+  
+</div>
+
+			</div><!-- #comments -->
+
+		</div><!-- #content -->
+	</div><!-- #container -->
+
+	<div id="primary" class="sidebar">
+		<ul class="xoxo">
+
+			<li id="nav_menu-2" class="widget widget_nav_menu">
+				<h3 class="widgettitle">meta</h3>
+<div class="menu-meta-container"><ul id="menu-meta" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a href="http://blog.evanweaver.com/about/">about</a></li>
+<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="http://blog.evanweaver.com/resume/">resume</a></li>
+<li id="menu-item-425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-425"><a href="https://github.com/fauna">github</a></li>
+<li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="http://cloudbur.st">cloudburst</a></li>
+</ul></div>
+			</li>
+
+			<li id="text-4" class="widget widget_text">
+				<h3 class="widgettitle">subscribe</h3>
+			<div class="textwidget"><p><a href="http://feeds.feedburner.com/snax" title="Subscribe to Posts" rel="alternate"><img src="http://blog.evanweaver.com/i/rss/orange-small.png" alt="Posts RSS Feed" /></a>&nbsp;<a href="http://feeds.feedburner.com/snax" title="Subscribe to Posts" rel="alternate">posts</a></p><p><a href="http://feeds.feedburner.com/snax_comments" title="Subscribe to Comments" rel="alternate"><img src="http://blog.evanweaver.com/i/rss/orange-small.png" alt="Comments RSS Feed" /></a>&nbsp;<a href="http://feeds.feedburner.com/snax_comments" title="Subscribe to Comments" rel="alternate">comments</a></p></div>
+		
+			</li>
+		
+			<li id="recent-posts-2" class="widget widget_recent_entries">		
+				<h3 class="widgettitle">recent articles</h3>
+		<ul>
+				<li><a href="http://blog.evanweaver.com/2010/08/12/distributed-systems-primer-update/" title="distributed systems primer,&nbsp;updated">distributed systems primer,&nbsp;updated</a></li>
+				<li><a href="http://blog.evanweaver.com/2009/10/21/object-allocations-on-the-web/" title="object allocations on the&nbsp;web">object allocations on the&nbsp;web</a></li>
+				<li><a href="http://blog.evanweaver.com/2009/09/30/scribe-client-gem/" title="scribe&nbsp;client">scribe&nbsp;client</a></li>
+				<li><a href="http://blog.evanweaver.com/2009/09/24/ree/" title="ree">ree</a></li>
+				<li><a href="http://blog.evanweaver.com/2009/08/04/memcached-gem-release/" title="memcached gem&nbsp;release">memcached gem&nbsp;release</a></li>
+				<li><a href="http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/" title="up and running with&nbsp;cassandra">up and running with&nbsp;cassandra</a></li>
+				</ul>
+		
+			</li>
+		
+			<li id="top-posts" class="widget widget_stats_topposts">			
+				<h3 class="widgettitle">popular</h3>
+			<ul><li><a href='http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/'>up and running with cassandra</a></li><li><a href='http://blog.evanweaver.com/2007/08/15/svn-branching-best-practices-in-practice/'>svn branching best practices (in practice)</a></li><li><a href='http://blog.evanweaver.com/2007/04/28/bleak_house/'>bleak_house</a></li><li><a href='http://blog.evanweaver.com/2009/03/13/qcon-presentation/'>qcon presentation</a></li></ul>		
+			</li>
+
+			<li id="nav_menu-3" class="widget widget_nav_menu">
+				<h3 class="widgettitle">projects</h3>
+<div class="menu-projects-container"><ul id="menu-projects" class="menu"><li id="menu-item-428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-428"><a href="http://fauna.github.com/fauna/memcached">memcached 1.0</a></li>
+<li id="menu-item-429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-429"><a href="http://fauna.github.com/fauna/zookeeper">zookeeper 0.3</a></li>
+<li id="menu-item-480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-480"><a href="http://fauna.github.com/fauna/cassandra">cassandra 0.8</a></li>
+<li id="menu-item-481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-481"><a href="http://fauna.github.com/fauna/thrift_client">thrift_client 0.4</a></li>
+<li id="menu-item-482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-482"><a href="http://fauna.github.com/fauna/bleak_house">bleak_house 4.5</a></li>
+<li id="menu-item-483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-483"><a href="http://fauna.github.com/fauna/peep">peep 0.6</a></li>
+<li id="menu-item-484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-484"><a href="http://fauna.github.com/fauna/allison">allison 2.0</a></li>
+<li id="menu-item-485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-485"><a href="http://fauna.github.com/fauna/echoe">echoe 4.0</a></li>
+<li id="menu-item-486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-486"><a href="http://fauna.github.com/fauna/raspell">raspell 1.2</a></li>
+<li id="menu-item-487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-487"><a href="http://fauna.github.com/fauna/simple_uuid">simple_uuid 0.1</a></li>
+</ul></div>
+			</li>
+
+			<li id="twitter-2" class="widget widget_twitter">
+				<h3 class="widgettitle"><a href='http://twitter.com/evan'>twitter</a></h3>
+<ul class='tweets'>
+<li>Hey, @<a href='http://twitter.com/attaboy'>attaboy</a> is on the Muni Diaries blog: <a href="http://t.co/LhPZNjI" rel="nofollow">http://t.co/LhPZNjI</a> <a href="http://twitter.com/evan/statuses/17279194572529664" class="timesince">1&nbsp;hour&nbsp;ago</a></li>
+</ul>
+
+			</li>
+			
+			<li id="search" class="widget widget_search">				
+				<h3 class="widgettitle"><label for="s">search</label></h3>
+				<form id="searchform" class="blog-search" method="get" action="http://blog.evanweaver.com">
+					<div>
+						<input id="s" name="s" type="text" class="text" value="" size="10" tabindex="1" />
+						<input type="submit" class="button" value="ok" tabindex="2" />
+					</div>
+				</form>
+			
+			</li>
+		</ul>
+	</div><!-- #primary .sidebar -->
+
+	<div id="secondary" class="sidebar">
+		<ul class="xoxo">
+
+			<li id="text-3" class="widget widget_text">			<div class="textwidget"></div>
+		
+			</li>
+		</ul>
+	</div><!-- #secondary .sidebar -->
+
+	<div id="footer">
+		<span id="generator-link"><a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.</span>
+		<span class="meta-sep">|</span>
+		<span id="theme-link">Theme: <a href="http://www.plaintxt.org/themes/sandbox/" rel="designer">Sandbox 1.6.1</a>.</span>
+	</div><!-- #footer -->
+
+</div><!-- #wrapper .hfeed -->
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://evanweaver.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=18040bc629; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://evanweaver.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://blog.evanweaver.com/2009/07/06/up-and-running-with-cassandra/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="18040bc629" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://evanweaver.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://evanweaver.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom'};</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?n&#038;ver=MU'></script>
+	<script type="text/javascript">	
+	// <![CDATA[
+	WPGroHo = {
+		data: {},
+		renderers: {},
+		syncProfileData: function( hash, id ) {
+			if ( !WPGroHo.data[hash] ) {
+				WPGroHo.data[hash] = {};
+				a = jQuery( 'div.grofile-hash-map-' + hash + ' span' ).each( function() {
+					WPGroHo.data[hash][this.className] = jQuery( this ).text();
+				} );
+			}
+
+			WPGroHo.appendProfileData( WPGroHo.data[hash], hash, id );
+		},
+		appendProfileData: function( data, hash, id ) {
+			for ( var key in data ) {
+				if ( jQuery.isFunction( WPGroHo.renderers[key] ) ) {
+					return WPGroHo.renderers[key]( data[key], hash, id, key );
+				}
+
+				jQuery( '#' + id ).find( 'h4' ).after( jQuery( '<p class="grav-extra ' + key + '" />' ).html( data[key] ) );
+			}
+		}
+	};
+	jQuery(document).ready(function($){
+		Gravatar.profile_cb = function( h, d ) {
+			WPGroHo.syncProfileData( h, d );
+		};
+		Gravatar.attach_profiles();
+	});
+	// ]]>
+	</script>
+	<div style="display:none">
+	</div>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="http://s.stats.wordpress.com/w.js?19" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'18067431','v':'wpcom','user_id':'0','post':'112','subd':'evanweaver'});
+ex_go({'crypt':'RDZ8LFkxbXFOeC15QSsxaTNDWXZUUnldZEdZQSw3eUp1TGxUOHlibE9jM2FfMXJneCtySCtuRURmT2JRUCZjaHNNbWVSLHp8eFd8aXVLV25aJW51VGh6b1YyV3Z2di5wdjZiUkssX0JULTc5YUQtYm8/TT94WUc0P3pwOWdlQktnJWhaNl8rJitJX0MueDFCNmIvUWgreFlxRyYzcjdwVGtacF8sbXBzMytiK3JmOHRYUS1hXWdwQm13NS5ra29oOTItMUNPcSVteVFEW09tW0hPQ0YtNy5qaHJpaFclSXJTfHIvWS18cV81OTJhb00tZ19KX3M1Ug=='});
+addLoadEvent(function(){linktracker_init('18067431',112);});
+	</script>
+
+</body>
+</html>
