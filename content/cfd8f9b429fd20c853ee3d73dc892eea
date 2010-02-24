@@ -1,0 +1,757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+  <head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3) | Engine Yard Ruby on Rails Blog</title>
+    
+    <script type="text/javascript" src="http://use.typekit.com/cra4agv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <link rel="image_src" href="http://assets.engineyard.com/images/logo-engineyard2.png" />
+    <link rel="stylesheet" href="http://www.engineyard.com/blog/wp-content/themes/engineyard-v4/style.css?id=1839099330" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="http://www.engineyard.com/stylesheets/print.css" type="text/css" media="print" />
+
+    <!-- <link rel="stylesheet" href="http://www.engineyard.com/blog/wp-content/themes/engineyard-v4/blog.css" type="text/css" media="screen" /> -->
+    <link rel="alternate" type="application/rss+xml" title="Engine Yard Ruby on Rails Blog RSS Feed" href="http://www.engineyard.com/blog/feed/" />
+    <link rel="alternate" type="application/atom+xml" title="Engine Yard Ruby on Rails Blog Atom Feed" href="http://www.engineyard.com/blog/feed/atom/" />
+    <link rel="pingback" href="http://www.engineyard.com/blog/xmlrpc.php" />
+
+    <style type="text/css" media="screen">
+            	#page { background: url("http://www.engineyard.com/blog/wp-content/themes/engineyard-v4/images/kubrickbgwide.jpg") repeat-y top; border: none; }
+          </style>
+
+    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
+
+    
+    
+    <meta name="verify-v1" content="Xzegn7ZWIjujAwKJfSEVcEfmkD2r8IHBG+w3h7OtihE=" />
+    
+    <link rel="alternate" type="application/rss+xml" title="Engine Yard Ruby on Rails Blog &raquo; Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3) Comments Feed" href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/feed/" />
+<link rel='stylesheet' id='flickr-gallery-css'  href='http://www.engineyard.com/blog/wp-content/plugins/flickr-gallery/flickr-gallery.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fg-jquery-ui-css'  href='http://www.engineyard.com/blog/wp-content/plugins/flickr-gallery/tab-theme/jquery-ui-1.7.1.css?ver=1.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-flightbox-css'  href='http://www.engineyard.com/blog/wp-content/plugins/flickr-gallery/flightbox/jquery.flightbox.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-postratings-css'  href='http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/postratings-css.css?ver=1.50' type='text/css' media='all' />
+<link rel='stylesheet' id='sociable-front-css-css'  href='http://www.engineyard.com/blog/wp-content/plugins/sociable/sociable.css?ver=3.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-content/plugins/flickr-gallery/flightbox/jquery.flightbox.js?ver=1.3.0'></script>
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.engineyard.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.engineyard.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Engine Yard Ruby on Rails Blog' href='http://www.engineyard.com/blog/' />
+<link rel='start' title='Customer in the Spotlight!' href='http://www.engineyard.com/blog/2009/customer-in-the-spotlight/' />
+<link rel='prev' title='Compiling Ruby: From Text to Bytecode' href='http://www.engineyard.com/blog/2009/the-anatomy-of-a-ruby-jit-compile/' />
+<link rel='next' title='September Travels' href='http://www.engineyard.com/blog/2009/september-travels/' />
+<meta name="generator" content="WordPress 3.0" />
+<link rel='shortlink' href='http://www.engineyard.com/blog/?p=2126' />
+
+<!-- All in One SEO Pack 1.6.10.1 by Michael Torbert of Semper Fi Web Design[317,424] -->
+<meta name="description" content="Most of today's and up and coming key-value stores are more than just simple key-value stores. Cassandra is a modern key-value store that continues this trend." />
+<link rel="canonical" href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/" />
+<!-- /all in one seo pack -->
+
+<script type="text/javascript">var AKPC_IDS = "";</script>
+	
+<link rel="stylesheet" href="http://www.engineyard.com/blog/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+    <script src="//cdn.optimizely.com/js/4180050.js"></script>
+  </head>
+  <body><div id="page blog" class="container">
+  <div class="homeLink">
+  <div class="branding">
+    <a href="http://www.engineyard.com">
+      <img src="http://www.engineyard.com/images/logo_engineyard.png" alt="Engine Yard - Rails Hosting" title="Return to home" />
+    </a>
+  </div>
+</div>
+
+<div class="header">
+  <div>
+          <ul class='utility'>
+            <li class='phoneNumber'>Sales: (866) 518-YARD</li>
+            <li class='login'><a href="http://cloud.engineyard.com">Login</a></li>
+          </ul>
+            <ul class="navigation"> 
+              <li > 
+                <a href="/products/appcloud">Cloud Products</a> 
+              </li> 
+	      <li> 
+                <a href="/support">Support</a> 
+              </li> 
+	      <li> 
+                <a href="/services">Services</a> 
+              </li> 
+              <li> 
+                <a href="/open-source">Open Source</a> 
+              </li> 
+
+              <li> 
+                <a href="/developer">Resources</a> 
+              </li> 
+
+              <li> 
+                <a href="/company">Company</a> 
+              </li> 
+
+            </ul>
+        </div>
+      </div>
+  <div class="content">
+  	<div id="content" class="column">
+
+  	
+      <!-- <div class="navigation">
+        <div class="alignleft">&laquo; <a href="http://www.engineyard.com/blog/2009/the-anatomy-of-a-ruby-jit-compile/" rel="prev">Compiling Ruby: From Text to Bytecode</a></div>
+        <div class="alignright"><a href="http://www.engineyard.com/blog/2009/september-travels/" rel="next">September Travels</a> &raquo;</div>
+      </div> -->
+
+      <div class="navigation">
+        <a href="http://www.engineyard.com/blog/" rel="home">&larr; Back to blog homepage</a>
+      </div>
+
+  		<div class="post-2126 post type-post hentry category-technology tag-cassandra tag-databases tag-key-value-stores" id="post-2126">
+  			<h2 class="entry-title"><div class="left"><img alt='' src='http://www.engineyard.com/blog?getfile=3756' class='avatar avatar-50 avatar-default' height='50' width='50' /></div><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/" rel="bookmark" title="Permanent Link to Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3)">Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3)</a></h2>
+    				<small class="timestamp"><strong>By <a href="http://www.engineyard.com/blog/author/kirkhaines/" title="Posts by Kirk Haines">Kirk Haines</a></strong> | August 31st, 2009 at 10:08AM</small>
+  			<div class="entry">
+  				<p>Most of today&#8217;s up and coming key-value stores are more than <em>just</em> simple key-value stores. You saw this when we looked at <a href="http://www.engineyard.com/blog/2009/key-value-stores-for-ruby-part-2-tokyo-cabinet/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.engineyard.com');">Tokyo Cabinet</a> which, in addition to simple key-value capabilities, adds more sophisticated abilities, such as database-like tables. In this post we&#8217;ll look at <a href="http://incubator.apache.org/cassandra/" onclick="javascript:pageTracker._trackPageview('/outbound/article/incubator.apache.org');">Cassandra</a> &#8212; a modern key-value store that continues this trend. Cassandra was originally developed by Facebook and released to open source last year. The Facebook team describes Cassandra as (Google) BigTable running on top of an Amazon Dynamo-like infrastructure.</p>
+<p><a href="http://incubator.apache.org/cassandra/" onclick="javascript:pageTracker._trackPageview('/outbound/article/incubator.apache.org');">Cassandra</a> is implemented using Java, and unlike Tokyo Cabinet, is designed to be distributed. One key feature of its distributed architecture is that it is an  <a href="http://www.allthingsdistributed.com/2008/12/eventually_consistent.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.allthingsdistributed.com');">eventually consistent</a> design. For Cassandra, scalability isn&#8217;t about absolute speed, but about adding system capacity at a reasonable cost, while retaining reasonable speed. A data store that promises immediate consistency <a href="http://portal.acm.org/citation.cfm?doid=564585.564601" onclick="javascript:pageTracker._trackPageview('/outbound/article/portal.acm.org');">sacrifices either availability or the ability to survive network partitioning</a>, and when you write internet applications that need to scale, those are the two properties that are generally the most desirable.</p>
+<p>For example, consider Twitter. As a Twitter user, which of the following options would you select?</p>
+<ol>
+<li>When you view your timeline, it is always correct, BUT sometimes it can&#8217;t be viewed at all</li>
+<li>You always view your timeline, but it sometimes takes time before the timeline reflects new posts</li>
+</ol>
+<p>From the loud griping that the Twitter fail whale causes, I think most people prefer availability to immediate consistency. Eventual consistency within a reasonable time period is sufficient, and that&#8217;s exactly what Cassandra provides.</p>
+<p>With Cassandra, a write will always succeed, but a read will not always immediately reflect the result of that write. The benefit is that you can expand the capacity of your Cassandra based storage system just by adding more nodes to it.</p>
+<p>In addition to being truly scalable and decentralized (which also means that your Cassandra installation can easily be built in such a way that it spans data centers, and keeps you up and running in the event of a large space rock hitting one of them), Cassandra also sports a few other neat features. It goes beyond a simple key-value data store to offer a table-like store. The schema for those tables, just like with Tokyo Cabinet, is flexible. You can add or remove fields (which are called columns in Cassandra parlance) on the fly. Cassandra also lets you do ranged queries on the keys, and permits the use of table columns as lists. It&#8217;s packed with features that resonate for the implementer of large scale applications.</p>
+<p>If you think that Cassandra might be worth a look, installing it is simple. You can find the source code or precompiled binaries to <a href="http://incubator.apache.org/cassandra/#download" onclick="javascript:pageTracker._trackPageview('/outbound/article/incubator.apache.org');">download</a>. There is a simpler approach, however: <code>sudo gem install cassandra</code></p>
+<p>If you&#8217;re using OS X, there is an additional complication—Cassandra requires the 1.6 version of the JDK, and even if you have kept up on your Apple system updates and have 1.6 installed, it is still not the default. Make sure you have <a href="http://developer.apple.com/java/download/" onclick="javascript:pageTracker._trackPageview('/outbound/article/developer.apple.com');">jdk 1.6</a> installed, and then (assuming a bash-like shell):</p>
+<pre>export JAVA_HOME=/System/Library/Frameworks \\
+  /JavaVM.framework/Versions/1.6
+export PATH=/System/Library/Frameworks/JavaVM.framework \\
+  /Versions/1.6/Commands/:$PATH</pre>
+<p>If you installed the Cassandra gem, you can start an instance of Cassandra with: <code>cassandra_helper cassandra</code></p>
+<p>Cassandra uses a multidimensional data model. At the top there is a keyspace, which is referred to as a table in the <code>storage-conf.xml</code> file. The keyspace defines a high level grouping for the data, and there&#8217;s typically one key space per application. Keyspaces must be defined in the <code>storage-conf.xml</code> file before startup.</p>
+<p>Below the keyspace lies the column family, which is the basic unit of data organization within a keyspace. In a row oriented database, data is stored by row, with all columns grouped together. In a column oriented database, data is stored by column, with all rows grouped together. Cassandra&#8217;s use of column families allows a hybrid approach. A column family allows a set of columns for a given row to be stored together. This allows you to optimize your column design in order to group commonly queried columns together. Like keyspaces, column families must be defined in the <code>storage-conf.xml</code> file before startup.</p>
+<p>Next comes the key. This is the unique, permanent identifier for a records. Cassandra will index this for you.</p>
+<p>Below this level Cassandra provides a couple of options that allow either one or two additional dimensions of data organization. The first of these is the column.</p>
+<p>It is at the column level that Cassandra&#8217;s kinship with simpler key-value stores becomes apparent. Columns are where a record&#8217;s data is stored, and a column is expressed as a basic key-value relationship. <code>'birthday' => '1998-08-22'</code> Columns can be stored sorted alphabetically, or by timestamp (all column entries are timestamped). Columns can be defined on the fly.</p>
+<p>The final tier of organization is an optional tier called the <em>super column</em>. This can be somewhat confusing, but a super column is really just a group of columns. Users cannot mix columns and super columns at the fourth tier of organization. Once again, users <em>must</em> define which column families contain super columns, and which contain standard columns, in <code>storage-conf.xml</code> before startup. Super columns allow you to group sets or related, sorted column data under a single name.</p>
+<p>But enough with the exposition: it&#8217;s time to see how it works in code!</p>
+
+<div class="wp_syntax"><div class="code"><pre class="irb" style="font-family:monospace;">$ irb
+&gt;&gt; require 'rubygems'
+&gt;&gt; require 'cassandra'
+&gt;&gt; include Cassandra::Constants
+=&gt; Object
+&gt;&gt; store = Cassandra.new('Twitter')
+=&gt; #&lt;Cassandra:70225222080780, @keyspace=&quot;Twitter&quot;,
+   @schema={:Usernames =&gt; nil, :Users =&gt; nil,
+   :StatusRelationships =&gt; nil, :UserAudits =&gt; nil,
+   :Statuses =&gt; nil, :UserRelationships =&gt; nil,
+   :StatusAudits =&gt; nil}, @host=&quot;127.0.0.1&quot;, @port=9160&gt;</pre></div></div>
+
+<p>The Cassandra gem is brought to you by <a href="http://github.com/fauna/cassandra/tree/master" onclick="javascript:pageTracker._trackPageview('/outbound/article/github.com');">Evan Weaver</a>, of Twitter, so there is a certain bias in the default <code>storage-conf.xml</code> configuration that he bundles the gem with. He provides several good schemas, though, which we can look at to understand how Cassandra really works.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="irb" style="font-family:monospace;">&gt;&gt; store.insert(:Users, '12345', {'screen_name' =&gt; 'wyhaines'})
+=&gt; nil
+&gt;&gt; store.insert(:Users, '67890', {'screen_name' =&gt; 'wayneeseguin'})
+=&gt; nil
+&gt;&gt; store.insert(:Statuses, '1', {'user_id' =&gt; '67890', 'text' =&gt; 
+?&gt; 'Hey, what is Cassandra like?'})
+=&gt; nil
+&gt;&gt; store.insert(:Statuses, '2', {'user_id' =&gt; '12345', 'text' =&gt; 
+?&gt; '@wayneeseguin, It is great!'})
+=&gt; nil
+&gt;&gt; store.insert(:Statuses, '3', {'user_id' =&gt; '12345', 'text' =&gt;
+?&gt; 'It is a key/value store with a lime twist.'})
+=&gt; nil</pre></div></div>
+
+<p>Using the Twitter schema, a couple of users were created, and then some status messages were created, with one field containing the user id, and another containing the text of the status message.  Each status message has a unique ID.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="irb" style="font-family:monospace;">&gt;&gt; store.insert(:UserRelationships,
+?&gt; '67890', {'user_timeline' =&gt; {UUID.new =&gt; '1'}})
+=&gt; nil
+&gt;&gt; store.insert(:UserRelationships, '12345',
+?&gt; {'user_timeline' =&gt; {UUID.new =&gt; '2'}})
+=&gt; nil
+&gt;&gt; store.insert(:UserRelationships, '12345',
+?&gt; {'user_timeline' =&gt; {UUID.new =&gt; '3'}})
+=&gt; nil</pre></div></div>
+
+<p>Using a column based database like Cassandra takes a bit of a mental shift from a simple key-value store or a typical row-oriented relational database.  Recall the hierarchy of storage—Column Family, Key, Column/Value. If each status message has a unique key, I can&#8217;t just ask for all keys where  column family == &#8216;:Statuses&#8217; and  column user_id == &#8217;12345&#8242;. UserRelationships is a super column.  It&#8217;s defined like this in <code>storage-conf.xml</code>.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;ColumnFamily</span> </span>
+<span style="color: #009900;">  <span style="color: #000066;">CompareWith</span>=<span style="color: #ff0000;">&quot;UTF8Type&quot;</span> </span>
+<span style="color: #009900;">  <span style="color: #000066;">CompareSubcolumnsWith</span>=<span style="color: #ff0000;">&quot;TimeUUIDType&quot;</span> </span>
+<span style="color: #009900;">  <span style="color: #000066;">ColumnType</span>=<span style="color: #ff0000;">&quot;Super&quot;</span> </span>
+<span style="color: #009900;">  <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;UserRelationships&quot;</span> <span style="color: #000000; font-weight: bold;">/&gt;</span></span></pre></div></div>
+
+<p>This says that <code>UserRelationships</code> is a super column, and that the sort order of its subcolumns is a TimeUUIDType; that is, a time based UUID. By inserting rows keyed by the user id into <code>UserRelationships</code>, with values that are a column, <code>user_timeline</code> and subcolumns composed of a time based UUID pointing to a message key, you build a structure that provides an easy path to query all of the messages from a given user, in time sorted order.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="irb" style="font-family:monospace;">&gt;&gt; my_message_relationships = store.get(:UserRelationships, 
+?&gt; '12345', 'user_timeline', :reversed =&gt; true)
+=&gt; #&lt;OrderedHash {&lt;Cassandra::UUID#70039670470560 time:
+   Fri Aug 28 10:09:13 -0500 2009, usecs: 76042
+   jitter: 15593315074131154323&gt;=&gt;&quot;3&quot;,
+   &lt;Cassandra::UUID#70039670467740
+   time: Fri Aug 28 10:08:40 -0500 2009,
+   usecs: 756348 jitter: 15886038034184122516&gt;=&gt;&quot;2&quot;}&gt;</pre></div></div>
+
+<p>This query asks for the <code>UserRelationships</code> for key 12345, sorted by <code>user_timeline</code>, in reverse order. What is returned is a ordered hash keyed by the UUID timestamps, and keyed by message ids (i.e. exactly what was inserted earlier). You can use this to pull a list of recent messages.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="irb" style="font-family:monospace;">&gt;&gt; my_message_relationships.values.each do |message_id| 
+?&gt; puts store.get(:Statuses, message_id).inspect
+?&gt; end
+&nbsp;
+#&lt;OrderedHash {
+  &quot;text&quot;=&gt;&quot;It is a key/value store with a lime twist.&quot;,
+  &quot;user_id&quot;=&gt;&quot;12345&quot;
+}&gt;
+#&lt;OrderedHash {
+  &quot;text&quot;=&gt;&quot;@wayneeseguin, It is great!&quot;, 
+  &quot;user_id&quot;=&gt;&quot;12345&quot;
+}&gt;
+=&gt; [&quot;3&quot;, &quot;2&quot;]</pre></div></div>
+
+<p>As you can see, using Cassandra is more complicated than using a simple key-value store, even one like Tokyo Cabinet which builds a table model on a row based key-value system.  However, just like the first time you tried to learn recursion, once your perspective shifts so that you can grok it, Cassandra&#8217;s structure naturally lends itself to a whole class of otherwise tricky, high labor queries.</p>
+<p>The other significant drawback to Cassandra is that although column schema is fluid, and can be changed at runtime, the higher levels of data organization—keyspaces, column families, and super columns—have to be defined in an XML configuration file, <code>storage-conf.xml</code> at startup. For example, if you wanted to start a new project using the Cassandra gem, you have to create your own set of configuration files (look at <code>gems/cassandra-0.5.5/conf</code> for your ruby installation to see how the sample packaged with the Cassandra gem is structured).</p>
+<p>Consider the common example of a blog. Let&#8217;s say you want to be fancy and allow your blog to have user accounts so that users can see threads of their own blog comments over time. Your <code>storage-conf.xml</code> config might look like this:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;Keyspace</span> <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;Blogofmine&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;ColumnFamily</span> <span style="color: #000066;">CompareWith</span>=<span style="color: #ff0000;">&quot;TimeUUIDType&quot;</span> <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;Posts&quot;</span> <span style="color: #000000; font-weight: bold;">/&gt;</span></span>
+  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;ColumnFamily</span> <span style="color: #000066;">CompareWith</span>=<span style="color: #ff0000;">&quot;TimeUUIDType&quot;</span> <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;Comments&quot;</span> <span style="color: #000000; font-weight: bold;">/&gt;</span></span>
+  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;ColumnFamily</span> <span style="color: #000066;">CompareWith</span>=<span style="color: #ff0000;">&quot;UTF8Type&quot;</span> <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;Users&quot;</span> <span style="color: #000000; font-weight: bold;">/&gt;</span></span>
+  <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;ColumnFamily</span> <span style="color: #000066;">CompareWith</span>=<span style="color: #ff0000;">&quot;UTF8Type&quot;</span> </span>
+<span style="color: #009900;">    <span style="color: #000066;">CompareSubcolumnsWith</span>=<span style="color: #ff0000;">&quot;TimeUUIDType&quot;</span> </span>
+<span style="color: #009900;">    <span style="color: #000066;">ColumnType</span>=<span style="color: #ff0000;">&quot;Super&quot;</span> </span>
+<span style="color: #009900;">    <span style="color: #000066;">Name</span>=<span style="color: #ff0000;">&quot;UserComments&quot;</span> <span style="color: #000000; font-weight: bold;">/&gt;</span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/Keyspace<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></div></div>
+
+<p>Cassandra is fun to work with, and using the Cassandra gem eliminates most of the hassles of manually setting it up to run while you are getting your feet wet. It offers an interesting balance of performance (it&#8217;s surprisingly fast!) and features an architecture that is truly horizontally scalable.</p>
+<p>Cassandra has a lot of promise, but it&#8217;s also quite young, and certainly isn&#8217;t bug free. The Ruby API is in a state of flux, and if you have a non-standard setup, it can be a hassle. I had a heck of a time getting it to run right on my OS X laptop, despite apparently having all prerequisites installed correctly. If you like what you see, get involved, maybe even write a DataMapper adapter for it. I think Cassandra is going to be around in the Ruby community for a long time.<script type="text/javascript">AKPC_IDS += "2126,";</script></p>
+
+  				  				<!-- <p>Tags: <a href="http://www.engineyard.com/blog/tag/cassandra/" rel="tag">Cassandra</a>, <a href="http://www.engineyard.com/blog/tag/databases/" rel="tag">Databases</a>, <a href="http://www.engineyard.com/blog/tag/key-value-stores/" rel="tag">Key-Value Stores</a></p> -->
+
+  				<ul class="postmetadata">
+            <!-- Tags: <a href="http://www.engineyard.com/blog/tag/cassandra/" rel="tag">Cassandra</a>, <a href="http://www.engineyard.com/blog/tag/databases/" rel="tag">Databases</a>, <a href="http://www.engineyard.com/blog/tag/key-value-stores/" rel="tag">Key-Value Stores</a><br /> -->
+  				  <!-- <li><a href="http://www.engineyard.com/blog/category/technology/" title="View all posts in Technology" rel="category tag">Technology</a></li> -->
+  				  <!-- <li><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/#comments" title="Comment on Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3)"><span class='IDCommentsReplace' style='display:none'>2126</span>11 Comments &#187;<span style='display:none' id='IDCommentPostInfoPermalink2126'>http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/</span><span style='display:none' id='IDCommentPostInfoTitle2126'>Cassandra+and+Ruby%3A+A+Love+Affair%3F+%28Key-Value+Stores+Part+3%29</span><span style='display:none' id='IDCommentPostInfoTime2126'>2009-08-31+17%3A00%3A50</span><span style='display:none' id='IDCommentPostInfoAuthor2126'>Kirk+Haines</span></a></li> -->
+  				    			  </ul>
+
+  				<!-- Ratings -->
+  				<div class="popularity">
+  				
+<div class="sociable">
+<div class="sociable_tagline">
+Share this post: 
+</div>
+<ul>
+	<li class="sociablefirst"><a rel="nofollow"  href="mailto:?subject=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;body=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F" title="email"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="email" alt="email" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-325px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;bodytext=Most%20of%20today%27s%20and%20up%20and%20coming%20key-value%20stores%20are%20more%20than%20just%20simple%20key-value%20stores.%20You%20saw%20this%20when%20we%20looked%20at%20Tokyo%20Cabinet%20which%2C%20in%20addition%20to%20simple%20key-value%20capabilities%2C%20adds%20more%20sophisticated%20abilities%2C%20such%20as%20relational-database-like%20tables.%20Cassandra%20is%20a%20modern%20key-value%20store%20that%20continues%20this%20trend.%0D%0A%0D%0ACassandra%20is%20implemented%20using%20Java%2C%20and%20unlike%20Tokyo%20Cabinet%2C%20is%20designed%20to%20be%20distributed.%20One%20key%20feature%20of%20its%20distribution%20strategy%20is%20that%20it%20is%20designed%20to%20be%20eventually%20consistent.%20Scalability%20isn%27t%20about%20absolute%20speed.%20Rather%2C%20scalability%2C%20at%20least%20in%20practice%2C%20is%20about%20the%20ability%20to%20continue%20growing%20in%20total%20capacity%20at%20a%20reasonable%20cost%2C%20while%20retaining%20reasonable%20speed.%20A%20data%20store%20that%20promises%20immediate%20consistency%20sacrifices%20either%20availability%20or%20the%20ability%20to%20survive%20network%20partitioning%2C%20and%20when%20we%20are%20writing%20internet%20applications%20which%20are%20designed%20to%20be%20highly%20scalable%2C%20those%20are%20the%20two%20properties%20that%20are%20generally%20the%20most%20desirable." title="Digg"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://delicious.com/post?url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;notes=Most%20of%20today%27s%20and%20up%20and%20coming%20key-value%20stores%20are%20more%20than%20just%20simple%20key-value%20stores.%20You%20saw%20this%20when%20we%20looked%20at%20Tokyo%20Cabinet%20which%2C%20in%20addition%20to%20simple%20key-value%20capabilities%2C%20adds%20more%20sophisticated%20abilities%2C%20such%20as%20relational-database-like%20tables.%20Cassandra%20is%20a%20modern%20key-value%20store%20that%20continues%20this%20trend.%0D%0A%0D%0ACassandra%20is%20implemented%20using%20Java%2C%20and%20unlike%20Tokyo%20Cabinet%2C%20is%20designed%20to%20be%20distributed.%20One%20key%20feature%20of%20its%20distribution%20strategy%20is%20that%20it%20is%20designed%20to%20be%20eventually%20consistent.%20Scalability%20isn%27t%20about%20absolute%20speed.%20Rather%2C%20scalability%2C%20at%20least%20in%20practice%2C%20is%20about%20the%20ability%20to%20continue%20growing%20in%20total%20capacity%20at%20a%20reasonable%20cost%2C%20while%20retaining%20reasonable%20speed.%20A%20data%20store%20that%20promises%20immediate%20consistency%20sacrifices%20either%20availability%20or%20the%20ability%20to%20survive%20network%20partitioning%2C%20and%20when%20we%20are%20writing%20internet%20applications%20which%20are%20designed%20to%20be%20highly%20scalable%2C%20those%20are%20the%20two%20properties%20that%20are%20generally%20the%20most%20desirable." title="del.icio.us"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://reddit.com/submit?url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29" title="Reddit"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://slashdot.org/bookmark.pl?title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F" title="Slashdot"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Slashdot" alt="Slashdot" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-145px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29" title="StumbleUpon"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://technorati.com/faves?add=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F" title="Technorati"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Technorati" alt="Technorati" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-271px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://twitter.com/home?status=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29%20-%20http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F" title="Twitter"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;annotation=Most%20of%20today%27s%20and%20up%20and%20coming%20key-value%20stores%20are%20more%20than%20just%20simple%20key-value%20stores.%20You%20saw%20this%20when%20we%20looked%20at%20Tokyo%20Cabinet%20which%2C%20in%20addition%20to%20simple%20key-value%20capabilities%2C%20adds%20more%20sophisticated%20abilities%2C%20such%20as%20relational-database-like%20tables.%20Cassandra%20is%20a%20modern%20key-value%20store%20that%20continues%20this%20trend.%0D%0A%0D%0ACassandra%20is%20implemented%20using%20Java%2C%20and%20unlike%20Tokyo%20Cabinet%2C%20is%20designed%20to%20be%20distributed.%20One%20key%20feature%20of%20its%20distribution%20strategy%20is%20that%20it%20is%20designed%20to%20be%20eventually%20consistent.%20Scalability%20isn%27t%20about%20absolute%20speed.%20Rather%2C%20scalability%2C%20at%20least%20in%20practice%2C%20is%20about%20the%20ability%20to%20continue%20growing%20in%20total%20capacity%20at%20a%20reasonable%20cost%2C%20while%20retaining%20reasonable%20speed.%20A%20data%20store%20that%20promises%20immediate%20consistency%20sacrifices%20either%20availability%20or%20the%20ability%20to%20survive%20network%20partitioning%2C%20and%20when%20we%20are%20writing%20internet%20applications%20which%20are%20designed%20to%20be%20highly%20scalable%2C%20those%20are%20the%20two%20properties%20that%20are%20generally%20the%20most%20desirable." title="Google Bookmarks"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;t=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29" title="Facebook"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers" /></a></li>
+	<li class="sociablelast"><a rel="nofollow"  href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&amp;title=Cassandra%20and%20Ruby%3A%20A%20Love%20Affair%3F%20%28Key-Value%20Stores%20Part%203%29&amp;source=Engine+Yard+Ruby+on+Rails+Blog+&amp;summary=Most%20of%20today%27s%20and%20up%20and%20coming%20key-value%20stores%20are%20more%20than%20just%20simple%20key-value%20stores.%20You%20saw%20this%20when%20we%20looked%20at%20Tokyo%20Cabinet%20which%2C%20in%20addition%20to%20simple%20key-value%20capabilities%2C%20adds%20more%20sophisticated%20abilities%2C%20such%20as%20relational-database-like%20tables.%20Cassandra%20is%20a%20modern%20key-value%20store%20that%20continues%20this%20trend.%0D%0A%0D%0ACassandra%20is%20implemented%20using%20Java%2C%20and%20unlike%20Tokyo%20Cabinet%2C%20is%20designed%20to%20be%20distributed.%20One%20key%20feature%20of%20its%20distribution%20strategy%20is%20that%20it%20is%20designed%20to%20be%20eventually%20consistent.%20Scalability%20isn%27t%20about%20absolute%20speed.%20Rather%2C%20scalability%2C%20at%20least%20in%20practice%2C%20is%20about%20the%20ability%20to%20continue%20growing%20in%20total%20capacity%20at%20a%20reasonable%20cost%2C%20while%20retaining%20reasonable%20speed.%20A%20data%20store%20that%20promises%20immediate%20consistency%20sacrifices%20either%20availability%20or%20the%20ability%20to%20survive%20network%20partitioning%2C%20and%20when%20we%20are%20writing%20internet%20applications%20which%20are%20designed%20to%20be%20highly%20scalable%2C%20those%20are%20the%20two%20properties%20that%20are%20generally%20the%20most%20desirable." title="LinkedIn"><img src="http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.gif" title="LinkedIn" alt="LinkedIn" style="width: 16px; height: 16px; background: transparent url(http://www.engineyard.com/blog/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-1px -37px" class="sociable-hovers" /></a></li>
+</ul>
+</div>
+  				Popularity: 15% | <div id="post-ratings-2126" class="post-ratings">Rate this post: <img id="rating_2126_1" src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="1 Star" title="1 Star" onmouseover="current_rating(2126, 1, '1 Star');" onmouseout="ratings_off(4.8, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2126_2" src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="2 Stars" title="2 Stars" onmouseover="current_rating(2126, 2, '2 Stars');" onmouseout="ratings_off(4.8, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2126_3" src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="3 Stars" title="3 Stars" onmouseover="current_rating(2126, 3, '3 Stars');" onmouseout="ratings_off(4.8, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2126_4" src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="4 Stars" title="4 Stars" onmouseover="current_rating(2126, 4, '4 Stars');" onmouseout="ratings_off(4.8, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_2126_5" src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/stars_crystal/rating_half.gif" alt="5 Stars" title="5 Stars" onmouseover="current_rating(2126, 5, '5 Stars');" onmouseout="ratings_off(4.8, 5, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></div>
+<div id="post-ratings-2126-loading"  class="post-ratings-loading"><img src="http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="post-ratings-image" />&nbsp;Loading ...</div>
+  				<div class="related">
+<h3>Related Posts:</h3>
+<p>No related posts.</p>
+</div>  				</div>
+
+  			</div>
+  			
+  			<div class="navigation">
+          <a href="http://www.engineyard.com/blog/" rel="home">&larr; Back to blog homepage</a>
+        </div>
+        
+  		</div>
+
+  		<div id='idc-container'></div>
+	<div id="idc-noscript">
+		<p id="idc-unavailable">This website uses <a href="http://intensedebate.com/">IntenseDebate comments</a>, but they are not currently loaded because either your browser doesn't support JavaScript, or they didn't load fast enough.</p>
+		
+<!-- You can start editing here. -->
+
+	<h3 id="comments"><span class='IDCommentsReplace' style='display:none'>2126</span>11 Responses<span style='display:none' id='IDCommentPostInfoPermalink2126'>http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/</span><span style='display:none' id='IDCommentPostInfoTitle2126'>Cassandra+and+Ruby%3A+A+Love+Affair%3F+%28Key-Value+Stores+Part+3%29</span><span style='display:none' id='IDCommentPostInfoTime2126'>2009-08-31+17%3A00%3A50</span><span style='display:none' id='IDCommentPostInfoAuthor2126'>Kirk+Haines</span> to &#8220;Cassandra and Ruby: A Love Affair? (Key-Value Stores Part 3)&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-16182">
+				<div id="div-comment-16182" class="comment-body">
+				<div class="comment-author vcard">
+		<a href='http://twitter.com/ehoque' rel='external nofollow' target='_blank' title='Visit ehsanul&rsquo;s website' class='snap_noshots'><img alt='ehsanul' src='http://www.gravatar.com/avatar/dddc63b63be3f9abeca7b0bebb383b80?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' /></a>		<cite class="fn"><a href="http://twitter.com/ehoque" onclick="javascript:pageTracker._trackPageview('/outbound/commentauthor/twitter.com');"  rel='external nofollow' class='url'>ehsanul</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16182">
+			August 31, 2009 at 5:36 pm</a>		</div>
+
+		<p>Cassandra looks great. I wonder how it compares to MongoDB, which has auto-sharding support that lets you add machines dynamically. <a href="http://www.mongodb.org/display/DOCS/Sharding" onclick="javascript:pageTracker._trackPageview('/outbound/comment/www.mongodb.org');" target="_blank">http://www.mongodb.org/display/DOCS/Sharding</a> </p>
+<p>MongoDB doesn&#039;t have tables, but rather, it is schema-less, you define the schema as you put objects into it, and you can just add fields, or omit them as you please.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16182#respond' onclick='return addComment.moveForm("div-comment-16182", "16182", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-16181">
+				<div id="div-comment-16181" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Lyric Hartley' src='http://www.gravatar.com/avatar/5a98313b89b5c2e1b8985bf19da347db?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Lyric Hartley</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16181">
+			August 31, 2009 at 5:36 pm</a>		</div>
+
+		<p>I have started a chef recipe for the install and config, if anyone is interested..<br />
+<a href="http://chef-cassandra.notlong.com" onclick="javascript:pageTracker._trackPageview('/outbound/comment/chef-cassandra.notlong.com');" target="_blank">http://chef-cassandra.notlong.com</a></p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16181#respond' onclick='return addComment.moveForm("div-comment-16181", "16181", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-16183">
+				<div id="div-comment-16183" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Carl Mercier' src='http://www.gravatar.com/avatar/9c2d9c73920c971cd33ca27b59f3e2a9?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Carl Mercier</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16183">
+			August 31, 2009 at 5:38 pm</a>		</div>
+
+		<p>I&#039;d be interested to know how it compares to MongoDB which just hit 1.0 recently.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16183#respond' onclick='return addComment.moveForm("div-comment-16183", "16183", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-16185">
+				<div id="div-comment-16185" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Kirk Haines' src='http://www.engineyard.com/blog?getfile=3756' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Kirk Haines</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16185">
+			August 31, 2009 at 5:52 pm</a>		</div>
+
+		<p>Hi. I&#039;m going to be doing a MongoDB article in a few weeks, so I can better address the comparison between the two of them there, and I am making a note to focus on that comparison as part of the article. I haven&#039;t had enough time really putting MongoDB through its paces to give a good, objective comparison just yet, though, and I don&#039;t want to throw out my vauge impressions at this point because I may well change my mind.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16185#respond' onclick='return addComment.moveForm("div-comment-16185", "16185", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment even depth-2 parent" id="comment-16206">
+				<div id="div-comment-16206" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='User' src='http://www.gravatar.com/avatar/c1fb5a7f85902e8a394b1e338823e6d5?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">User</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16206">
+			August 31, 2009 at 9:05 pm</a>		</div>
+
+		<p>Last I looked MongoDB didn&#039;t actually support partitioned queries except by pkey; hopefully this has changed.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16206#respond' onclick='return addComment.moveForm("div-comment-16206", "16206", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment odd alt depth-3" id="comment-16208">
+				<div id="div-comment-16208" class="comment-body">
+				<div class="comment-author vcard">
+		<a href='http://www.mongodb.org' rel='external nofollow' target='_blank' title='Visit dm_10gen&rsquo;s website' class='snap_noshots'><img alt='dm_10gen' src='http://www.gravatar.com/avatar/ccd9d3934901e0c96865f264851c8ddc?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' /></a>		<cite class="fn"><a href="http://www.mongodb.org" onclick="javascript:pageTracker._trackPageview('/outbound/commentauthor/www.mongodb.org');"  rel='external nofollow' class='url'>dm_10gen</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16208">
+			August 31, 2009 at 9:22 pm</a>		</div>
+
+		<p>In mongodb you can do any query.  If one of the terms of the query is the partition key, the query will be executed on the smallest possible set of shards.  If the query is general it will go to all shards and collect the results. </p>
+<p>MongoDB sharding is currently in alpha (the core database is full production now).</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16208#respond' onclick='return addComment.moveForm("div-comment-16208", "16208", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+</ul>
+</li>
+		<li class="comment even thread-even depth-1" id="comment-16211">
+				<div id="div-comment-16211" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='joevandyk' src='http://www.gravatar.com/avatar/57badfb3e8a4e8a81536f7dc6e47b812?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">joevandyk</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16211">
+			August 31, 2009 at 10:03 pm</a>		</div>
+
+		<p>From mongo&#039;s website: &quot;Mongo does not support full master-master replication.  However, for certain restricted use cases master-master can be used.  Generally, we recommend one does not use the database in a master-master mode.&quot;</p>
+<p>That&#039;s a bit different than what Cassandra offers, isn&#039;t it?</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16211#respond' onclick='return addComment.moveForm("div-comment-16211", "16211", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-16233">
+				<div id="div-comment-16233" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Michael Sheakoski' src='http://www.gravatar.com/avatar/abb9cf617ce3ecffccb61a3acf12ccff?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Michael Sheakoski</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16233">
+			September 1, 2009 at 2:38 am</a>		</div>
+
+		<p>FYI if you search for Java Preferences in Spotlight, you can pick which version it will load first. In Snow Leopard I only see Java SE 6 so it shouldn&#039;t be an issue.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16233#respond' onclick='return addComment.moveForm("div-comment-16233", "16233", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment even depth-2" id="comment-16356">
+				<div id="div-comment-16356" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Rhett' src='http://www.gravatar.com/avatar/292ea489740972fd2437b28bbfbccac8?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Rhett</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-16356">
+			September 2, 2009 at 11:22 pm</a>		</div>
+
+		<p>Java Preferences is the Apple-supported way to go.  If you&#039;re using Java Preferences, you also want to set your JAVA_HOME like so: </p>
+<p>export JAVA_HOME=`/usr/libexec/java_home` </p>
+<p>(note the backticks).  Also, if you use Java Preferences to pick your JDK, you don&#039;t have to modify your PATH.  More info: </p>
+<p><a href="http://lists.apple.com/archives/java-dev/2009/Jun/msg00139.html" onclick="javascript:pageTracker._trackPageview('/outbound/comment/lists.apple.com');" target="_blank"></a><a href="http://lists.apple.com/archives/java-dev/2009/Jun.." onclick="javascript:pageTracker._trackPageview('/outbound/comment/lists.apple.com');" rel="nofollow">http://lists.apple.com/archives/java-dev/2009/Jun..</a>.</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=16356#respond' onclick='return addComment.moveForm("div-comment-16356", "16356", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-even depth-1" id="comment-18735">
+				<div id="div-comment-18735" class="comment-body">
+				<div class="comment-author vcard">
+		<a href='http://www.codemonkeyism.com' rel='external nofollow' target='_blank' title='Visit Stephan Schmidt&rsquo;s website' class='snap_noshots'><img alt='Stephan Schmidt' src='http://www.gravatar.com/avatar/44a15a1ded0a9084a577a3269884447d?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' /></a>		<cite class="fn"><a href="http://www.codemonkeyism.com" onclick="javascript:pageTracker._trackPageview('/outbound/commentauthor/www.codemonkeyism.com');"  rel='external nofollow' class='url'>Stephan Schmidt</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-18735">
+			September 16, 2009 at 9:40 am</a>		</div>
+
+		<p>MongoDB is more like a SQL database e.g. MySQL. Replication is master/slave and possibly master/master in the future, similar to MySQL (also goes for sharding). MongoDB supports rich querying compared to other schemaless, document stores. The main difference to classic models (SQL) is that MongoDB is schemaless. </p>
+<p>Cassandra is a distributed storage. This scales much longer than &quot;classic&quot; replication. The downside: Cassandra has not as rich query capabilities. </p>
+<p>Cheers<br />
+Stephan<br />
+<a href="http://www.codemonkeyism.com" onclick="javascript:pageTracker._trackPageview('/outbound/comment/www.codemonkeyism.com');" target="_blank">http://www.codemonkeyism.com</a></p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=18735#respond' onclick='return addComment.moveForm("div-comment-18735", "18735", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-41309">
+				<div id="div-comment-41309" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='Erez' src='http://www.gravatar.com/avatar/ba37ad56f95b7a528f13b2adad8878f4?s=32&amp;d=http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536&amp;r=PG' class='avatar avatar-32 avatar-default' height='32' width='32' />		<cite class="fn">Erez</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/comment-page-1/#comment-41309">
+			March 6, 2010 at 7:06 pm</a>		</div>
+
+		<p>I am on Windows 7 &#8211; is there a way to get the cassandra gem?<br />
+Running &quot;gem install cassandra&quot; from command line console the command fails as it attempts to run nmake. </p>
+<p>Thanks,<br />
+Erez</p>
+
+		<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='/blog/2009/cassandra-and-ruby-a-love-affair/?replytocom=41309#respond' onclick='return addComment.moveForm("div-comment-41309", "41309", "respond", "2126")'>Reply</a>		</div>
+				</div>
+		</li>
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/2009/cassandra-and-ruby-a-love-affair/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+<form action="http://www.engineyard.com/blog/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; &lt;pre lang=&quot;&quot; line=&quot;&quot; escaped=&quot;&quot;&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='2126' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+
+</form>
+
+</div>
+
+	</div>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var idc_xd_receiver = '/blog/wp-content/plugins/intensedebate/xd_receiver.htm';
+	function IDC_revert() { document.getElementById('idc-loading-comments').style.display='none'; if ( !document.getElementById('IDCommentsHead') ) { document.getElementById('idc-noscript').style.display='block'; document.getElementById('idc-comment-wrap-js').parentNode.removeChild(document.getElementById('idc-comment-wrap-js')); } else { document.getElementById('idc-noscript').style.display='none'; } }
+	idc_ns = document.getElementById('idc-noscript');
+	idc_ns.style.display='none'; idc_ld = document.createElement('div');
+	idc_ld.id = 'idc-loading-comments'; idc_ld.style.verticalAlign='middle';
+	idc_ld.innerHTML = "<img src='http://www.engineyard.com/blog/wp-content/plugins/intensedebate/loading.gif' alt='Loading' border='0' align='absmiddle' /> Loading IntenseDebate Comments...";
+	idc_ns.parentNode.insertBefore(idc_ld, idc_ns);
+	setTimeout( IDC_revert, 5000 );
+	/* ]]> */
+	</script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var s = document.createElement("script"); s.type = "text/javascript"; s.id = 'idc-comment-wrap-js'; s.src = "http://intensedebate.com/js/wordpressTemplateCommentWrapper2.php?acct=2057c8ea9c832ba2e7baa3494ba8a993&postid=2126&title=Cassandra+and+Ruby%3A+A+Love+Affair%3F+%28Key-Value+Stores+Part+3%29&url=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2009%2Fcassandra-and-ruby-a-love-affair%2F&posttime=2009-08-31+17%3A00%3A50&postauthor=Kirk+Haines&guid=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F%3Fp%3D2126"; document.getElementsByTagName("head")[0].appendChild(s);
+		/* ]]> */
+		</script>
+
+  	
+  </div>
+	
+  <div id="sidebar" class="side column">
+    <div class="block blogHead hidden">
+      <a href="http://www.engineyard.com/blog" title="Return to Union Station Homepage" class="homelink"></a>
+	    <p><!---->News from Engine Yard and the voices of our people.</p>
+    </div>
+
+    <form role="search" method="get" id="searchform" action="http://www.engineyard.com/blog/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form>        <div class='block feature'>
+	<a href="http://www.engineyard.com/video/17825326" class="trackLink"><img src="http://www.engineyard.com/images/blog-cloud.png" /></a>
+        <h3><a href="http://www.engineyard.com/video/17825326" class="trackLink"> Watch a Quick Tour of<br />Engine Yard Cloud</a></h3>
+        <p>See how easy it is to deploy your rails applications.</p>
+    </div>
+
+  <div class='block feature'>
+    <h3><a href="http://jobs.engineyard.com">Ruby Jobs <span class="presented">presented by Engine Yard</span></a></h3>
+    <p>Explore and post Ruby and Rails focused employment opportunities.</p>
+  </div>
+
+    <div class='block feature'>
+      <h3><img src='http://www.engineyard.com/images/icn_feature_summary_newsletter.png' alt='' />The Engine Yard Newsletter</h3>
+      <p>Get Ruby on Rails tips, and news.</p>  
+      <script type="text/javascript"> 
+      var profiling = {
+        isEnabled: false,
+        numberOfProfilingFields: 3,
+        alwaysShowFields: [ 'mktDummyEntry']
+      };
+      </script>
+      <script type="text/javascript">function mktoGetForm() {return document.getElementById('mktForm_1002'); }</script>
+
+      <form class="lpeRegForm formNotEmpty newsletter" method="post" enctype="application/x-www-form-urlencoded" action="http://na-f.marketo.com/index.php/leadCapture/save" id="mktForm_1002" name="mktForm_1002">
+
+        <div class="mktFormReq mktField">
+          <input class='mktFormText mktFormEmail mktFReq' name="Email" id="Email" type='text' value="" maxlength='255' tabIndex='2' placeholder="Email Address" />
+          <div class='mktFormMsg'></div>
+        </div>
+        <div id="mktFrmButtons">
+          <input id='mktFrmSubmit' type='submit' class="cta button" value='Subscribe' name='submitButton' onclick='formSubmit(document.getElementById("mktForm_1002")); return false;' />
+        </div>
+        <input type="text" name="_marketo_comments" value="" class="hidden" />
+        <input type="hidden" name="lpId" value="1009" />
+        <input type="hidden" name="subId" value="121" />
+        <input type="hidden" name="kw" value="" />
+        <input type="hidden" name="cr" value="" />
+        <input type="hidden" name="searchstr" value="" />
+        <input type="hidden" name="lpurl" value="http://pages.engineyard.com/Blank-Newsletter.html?cr={creative}&kw={keyword}" />
+        <input type="hidden" name="formid" value="1002" />
+        <input type="hidden" name="returnURL" value="http://pages.engineyard.com/SubscribeThanks.html" />
+        <input type="hidden" name="retURL" value="http://pages.engineyard.com/SubscribeThanks.html" />
+        <input type="hidden" name="_mkt_disp" value="return" />
+        <input type="hidden" name="_mkt_trk" value="%MC0%" />
+      </form>
+      <script type="text/javascript" src="http://na-f.marketo.com/js/mktFormSupport.js"></script>
+      <script type="text/javascript">
+      function formSubmit(elt) {
+        return Mkto.formSubmit(elt);
+      }
+      function formReset(elt) {
+        return Mkto.formReset(elt);
+      }
+      </script>
+    </div>
+
+    <ul>
+      <li id="categoryposts-3" class="widget widget_categoryposts"><h2 class="widgettitle">Recent Technology Posts</h2><ul>
+		<li class="cat-post-item">
+			<a class="post-title" href="http://www.engineyard.com/blog/2010/virtualize-this-instant-rails-in-a-virtual-box/" rel="bookmark" title="Permanent link to Virtualize This &#8211; Instant Rails in a Virtual Box">Virtualize This &#8211; Instant Rails in a Virtual Box</a>
+			
+			
+						
+						
+					</li>
+			<li class="cat-post-item">
+			<a class="post-title" href="http://www.engineyard.com/blog/2010/getting-setup-for-ruby-on-rails-development/" rel="bookmark" title="Permanent link to Getting Setup for Ruby on Rails Development">Getting Setup for Ruby on Rails Development</a>
+			
+			
+						
+						
+					</li>
+			<li class="cat-post-item">
+			<a class="post-title" href="http://www.engineyard.com/blog/2010/fikus-deploying-padrino-to-engine-yard-appcloud/" rel="bookmark" title="Permanent link to Fikus: Deploying Padrino to Engine Yard AppCloud">Fikus: Deploying Padrino to Engine Yard AppCloud</a>
+			
+			
+						
+						
+					</li>
+			<li class="cat-post-item">
+			<a class="post-title" href="http://www.engineyard.com/blog/2010/deployment-best-practices-with-engine-yard-and-bundler-1-0/" rel="bookmark" title="Permanent link to Deployment Best Practices with Engine Yard and Bundler 1.0">Deployment Best Practices with Engine Yard and Bundler 1.0</a>
+			
+			
+						
+						
+					</li>
+			<li class="cat-post-item">
+			<a class="post-title" href="http://www.engineyard.com/blog/2010/managing-your-ey-cloud-recipes/" rel="bookmark" title="Permanent link to Managing your ey-cloud-recipes">Managing your ey-cloud-recipes</a>
+			
+			
+						
+						
+					</li>
+	</ul>
+</li><li id="akpc-widget-505402221" class="widget akpc-widget"><h2 class="widgettitle">Most Popular Posts</h2>
+			<div class="akpc_report" rel="">
+				
+				<ol>
+						<li>
+									<span>100%</span>
+									<a href="http://www.engineyard.com/blog/2009/engine-yard-flex-announced-new-features-added-to-solo/">Engine Yard Flex Announced, New Features Added to Solo</a>
+								</li>
+	<li>
+									<span>92%</span>
+									<a href="http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/">The Lowdown on Routes in Rails 3</a>
+								</li>
+	<li>
+									<span>67%</span>
+									<a href="http://www.engineyard.com/blog/2010/homebrew-os-xs-missing-package-manager/">Homebrew: OS X's Missing Package Manager</a>
+								</li>
+	<li>
+									<span>63%</span>
+									<a href="http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/">The Lowdown on Routes in Rails 3</a>
+								</li>
+	<li>
+									<span>49%</span>
+									<a href="http://www.engineyard.com/blog/2010/making-ruby-fast-the-rubinius-jit/">Making Ruby Fast: The Rubinius JIT</a>
+								</li>
+
+				</ol>
+			</div>
+			</li>			
+	</ul>
+
+  <div class="widget">
+    <h2>Archives</h2>
+    <ul class="archives-yr">
+      	<li><a href='http://www.engineyard.com/blog/2010/' title='2010'>2010</a></li>
+	<li><a href='http://www.engineyard.com/blog/2009/' title='2009'>2009</a></li>
+	<li><a href='http://www.engineyard.com/blog/2008/' title='2008'>2008</a></li>
+	<li><a href='http://www.engineyard.com/blog/2007/' title='2007'>2007</a></li>
+	<li><a href='http://www.engineyard.com/blog/2006/' title='2006'>2006</a></li>
+    </ul>
+  </div>
+                
+  <div class="widget">
+    <p><a href="http://feeds2.feedburner.com/engineyard"; rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png"; alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds2.feedburner.com/engineyard"; rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p>
+  </div>
+
+</div></div>
+<style type="text/css" media="all">#avatar_footer { display: none; } /* Change this in Users > Avatars. */ </style><div id="avatar_footer">Avatars by <a href="http://www.sterling-adventures.co.uk/blog/">Sterling Adventures</a></div>		<script type="text/javascript">
+		/* <![CDATA[ */
+		var s = document.createElement("script"); s.type = "text/javascript"; s.src = "http://intensedebate.com/js/wordpressTemplateLinkWrapper2.php?acct=2057c8ea9c832ba2e7baa3494ba8a993"; document.getElementsByTagName("head")[0].appendChild(s);
+		/* ]]> */
+		</script>
+<div id="footer" class="infoSection">
+  <p>
+    Engine Yard &ndash; The Rails Application Platform<br />
+    &copy;2010 Engine Yard, Inc. All rights reserved.
+  </p>
+  <ul>
+    <li><a href="/legal/privacy">Privacy Policy</a></li>
+    <li><a href="/company/careers">Careers</a></li>
+    <li><a href="/company/contact">Contact</a></li>
+  </ul>
+</div>
+
+</div><!-- End Container -->
+
+<!-- jQuery includes -->
+<script src='http://www.engineyard.com/javascripts/default.js' type='text/javascript'></script>
+
+<!-- LeadLander Tracking -->
+<script type="text/javascript" language="javascript">llactid=15210</script> 
+<script type="text/javascript" language="javascript" src="http://t4.trackalyzer.com/trackalyze.js"></script>
+<!-- End LeadLander Tracking -->
+
+<!-- Marketo Tracking -->
+<script src="http://munchkin.marketo.net/munchkin.js"; type="text/javascript"></script>
+<script>mktoMunchkin("422-MTH-535");</script>
+<!-- End Marketo Tracking -->
+
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-includes/js/jquery/ui.core.js?ver=1.7.3'></script>
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-includes/js/jquery/ui.tabs.js?ver=1.7.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ratingsL10n = {
+	plugin_url: "http://www.engineyard.com/blog/wp-content/plugins/wp-postratings",
+	ajax_url: "http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/wp-postratings.php",
+	text_wait: "Please rate only 1 post at a time.",
+	image: "stars_crystal",
+	image_ext: "gif",
+	max: "5",
+	show_loading: "1",
+	show_fading: "1",
+	custom: "0"
+};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src=ratingsL10n.plugin_url+"/images/"+ratingsL10n.image+"/rating_over."+ratingsL10n.image_ext;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.engineyard.com/blog/wp-content/plugins/wp-postratings/postratings-js.js?ver=1.50'></script>
+
+<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-764576-1");
+		// Cookied already: 
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+<!-- End of Google Analytics code -->
+
+<script type="text/javascript">
+jQuery(function() {
+	
+	jQuery.post("index.php",{ak_action:"api_record_view", ids: AKPC_IDS, type:"single"}, false, "json");
+});
+</script>
+	
+</body>
+</html>
