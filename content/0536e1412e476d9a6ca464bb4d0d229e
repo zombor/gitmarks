@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>apache2-mpm-itk</title>
+  </head>
+  <body>
+    <h1>The Apache 2 ITK MPM</h1>
+
+    <p>apache2-mpm-itk (just mpm-itk for short) is an MPM (Multi-Processing
+      Module) for the <a href="http://www.apache.org/">Apache</a> web
+      server. mpm-itk allows you to run each of your vhost under a separate uid
+      and gid &mdash; in short, the scripts and configuration files for one vhost no
+      longer have to be readable for all the other vhosts.</p>
+      
+    <p>There are already MPMs available that do this; however, I am not aware
+      of any besides mpm-itk that are actively developed. (If you only run CGI
+      scripts, suexec will probably solve most of your problems with any
+      MPM.)</p>
+
+    <p>mpm-itk is based on the traditional <em>prefork</em> MPM, which means
+      it's non-threaded; in short, this means you can run non-thread-aware code
+      (like many <a href="http://www.php.net">PHP</a> extensions) without
+      problems. On the other hand, you lose out to any performance benefit
+      you'd get with threads, of course; you'd have to decide for yourself if
+      that's worth it or not. You will also take an additional performance
+      hit over prefork, since there's an extra fork per request.</p>
+
+    <h2>Download</h2>
+
+    <p>The latest version is <strong>2.2.11-02</strong>, updated <strong>2009-04-14</strong>.
+      You can download the
+      <a href="apache2.2-mpm-itk-2.2.11-02/">patch series</a> (apply in order), or
+      <a href="apache2.2-mpm-itk-20090414-00.patch">monolithic diff</a>.</p>
+
+    <h2>Installation</h2>
+
+    <p>If you can't apply a patch, you probably should not be using this. :-)
+      However, several distributions now include mpm-itk as a choice alongside
+      the other MPMs; in alphabetical order:</p>
+
+    <ul>
+      <li><a href="http://www.archlinux.org/">Arch Linux</a></li>
+      <li><a href="http://www.debian.org/">Debian GNU/Linux</a></li>
+      <li><a href="http://www.freebsd.org/">FreeBSD</a> ports</li>
+      <li><a href="http://www.gentoo.org/">Gentoo Linux</a></li>
+      <li><a href="http://www.mandriva.com/">Mandriva</a></li>
+      <li><a href="http://www.opensuse.org/">openSUSE</a></li>
+      <li><a href="http://www.ubuntu.com/">Ubuntu</a></li>
+    </ul>
+     
+    <p>If you know of any I missed, or if you have included mpm-itk in your
+      favourite distribution, please drop me a note (see below).
+      I'd always be happy to expand this list :-)</p>
+
+    <h2>Configuration</h2>
+
+    <p>The new configuration settings compared to the prefork MPM are:</p>
+
+    <ul> 
+      <li><code>AssignUserID</code>: Takes two parameters, uid and gid (or
+        really, user name and group name); specifies what uid and gid the
+        vhost will run as (after parsing the request etc., of course).
+        Note that if you do not assign a user ID, the default one from
+        Apache will be used.</li>
+      <li><code>MaxClientsVHost</code>: A separate MaxClients
+        for the vhost.
+        This can be useful if, say, half of your vhosts depend on some NFS
+        server (like on our setup); if the NFS server goes down, you do not
+        want the children waiting forever on NFS to take the non-NFS-dependent
+        hosts down. This can thus act as a safety measure, giving "server too
+        busy" on the NFS-dependent vhosts while keeping the other ones
+        happily running. (Of course, you could use it to simply keep one site
+        from eating way too much resources, but there are probably better
+        ways of doing that.)</li>
+      <li><code>NiceValue</code>: Lets you nice some requests down, to give
+        them less CPU time.</li>
+    </ul>
+
+    <p>AssignUserID and NiceValue can be set wherever you'd like in the Apache
+      configuration, except in .htaccess. MaxClientsVHost can only be set
+      inside a VirtualHost directive.</p>
+
+    <h2>Quirks and warnings</h2>
+
+    <p>Since mpm-itk has to be able to setuid(),
+      it <em>runs as root</em> (although restricted with POSIX capabilities
+      where possible) until the request is parsed and the vhost
+      determined. This means that <em>any security hole before the request
+      is parsed</em> will be a root security hole. (The most likely place
+      is probably in mod_ssl.) This is not going to change in the near future,
+      as the most likely alternative solution (socket passing and its variants) is very
+      hard to get to work properly in a number of common use cases, like
+      SSL.</p>
+
+    <p>The lack of socket passing also leads to another minor quirk:
+      if you connect to httpd, make a request and then make a request on the
+      same connection that gets handled by a different uid, mpm-itk simply
+      shuts down the connection. This is perfectly legal according to RFC2616, and
+      all major clients seem to handle it well; the web server simply simulates a
+      timeout, and the client just opens a new connection and retries the request.
+      However, there is a small performance hit, and thus you should avoid including
+      content from multiple uids in the same page.</p>
+
+    <p>Note that mpm-itk is experimental software; and we've done a
+      fair amount of stress testing, but it's nowhere as tested as, say,
+      prefork. That being said, it's being run in production at several
+      sites in the world, both hobbyist and commercial, some as large as
+      ~10 million hits a day.</p>
+
+    <p>People have reported issues with mpm-itk and mod_python, mod_ruby
+      and FastCGI. I believe the mod_python and FastCGI problems have been
+      largely solved by updates to those packages, but as I use neither, I
+      can't really guarantee anything. YMMV, test before use.</p>
+
+    <h2>Licensing</h2>
+
+    <p>mpm-itk is licensed under the Apache License, version 2.0, like the rest
+      of Apache.</p>
+
+    <h2>Contact</h2>
+
+    <p>mpm-itk is developed by Steinar H. Gunderson; e-mail
+      address is at my <a href="http://www.sesse.net/">home page</a>.</p>
+    
+    <p>There is a user mailing list at mpm-itk [at] lists.err.no. Visit the
+      <a href="http://lists.err.no/mailman/listinfo/mpm-itk">mailing list page</a> to
+      subscribe, or send a blank e-mail to mpm-itk-subscribe [at] lists.err.no.</p>
+  </body>
+</html>
