@@ -1,0 +1,750 @@
+<title>GrimmSpeed :: Subaru, Hyundai, Mitsubishi, Mazda Aftermarket Parts Engineering</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION" content="Your source for Subaru Hyundai Mitsubishi Mazda automotive performance parts and porting / polishing.">
+<meta name="KEYWORDS" content="grimmspeed, subaru, rally, subaru performance parts, subaru racing parts, wastegate, external wastegate,ceramic, turbo, coating, porting, polishing, pnp, 2004 2005 subaru ,2006 evolution subaru, 
+ 350z outback subaru, accessory tuning subaru, grimm speed, clutch boost subaru, cooper lancer subaru, engine sale subaru, forester 2007 subaru, head forester subaru,
+ headlights performance subaru, lancer wheel subaru, line cooper subaru, outback light subaru, perf toyota subaru, racing accessory subaru, redline headlight subaru,
+ scion racing subaru, transmission 2005 subaru, turbo evolution subaru, wheel outback subaru, 2004 turbo part, 2007 control part, access legacy part, aftermarket spoiler part,
+ control 350z part, downpipe head part, evolution racing part, forester wheels part, headlight downpipe part, impreza mini part, legacy transmission part, mini aftermarket part, perf headlights part, pipe sale part, redline 2006 part,
+ scion exhaust part, subaru perf part, transmission upgrade part, upgrade control part, wheels legacy part, 2005 transmission perf, 350z control perf, accessory line perf, boost turbo perf, cooper downpipe perf, engine outback perf,
+ exhaust wheel perf,head engine perf,headlights pipe perf,legacy 2004 perf,line exhaust perf,outback rally perf, racing 2006 perf, redline forum perf, scion redline perf, toyota 350z perf, tuning headlight perf, upgrade scion perf,
+ 2004 sti, part performance sti, perrin performance, sti jdm part, sti performance, cobb, turboxs, nasioc, 2002 wrx, 2003 wrx, 2004 wrx, 2005 wrx, 2006 wrx, 2007 wrx, 2008 wrx, 2004 sti, 2004 wrx sti, 2005 sti, 2005 wrx sti, 2006 sti, 2006 wrx sti, 2007 sti,
+ 2007 wrx sti, brakes subaru wrx, exhaust subaru, impreza, subaru rims, wrx rims, wrx tires, subaru part, controller bost subaru, part wrx rim, wheels subaru part">
+<meta name="verify-v1" content="pRYnfRtSbaF58TGdQiCVb3wx2WxH6rEBPREOOsd1wgQ=" />
+
+<script language="JavaScript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array. Rememeber
+// to increment the theImages[x] index!
+
+theImages[0] = 'banner_border.jpg'
+theImages[1] = 'images/enginuity.jpg'
+theImages[2] = 'images/wrxmodders_banner.bmp'
+
+
+
+
+// ======================================
+// do not change anything below this line
+// ======================================
+
+var j = 0
+var p = theImages.length;
+
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<link rel="stylesheet" type="text/css" href="contentslider.css" />
+<script type="text/javascript" src="contentslider.js">
+
+/***********************************************
+* Featured Content Slider- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+<script type="text/javascript" src="scripts/prototype.js"></script>
+<script type="text/javascript" src="scripts/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="scripts/slideshow.js"></script>
+
+<style>
+  body {
+  background-image: url("http://www.grimmspeed.com/images/homepage_background_image_2.gif");
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+</style>
+
+</head>
+
+<body bgcolor="#94864a" id="home">
+<!-- wrap starts here -->
+<div id="outerwrap">
+	<div id="innerwrap">
+		<head>
+<link rel="shortcut icon" href="../images/favicon.ico" />
+<style>
+body { text-align: center}
+
+.clear {
+clear: left; 
+line-height: 0; 
+height: 0;
+}
+
+#menu {
+width:100%;
+background-color: #9f211f;
+}
+
+#thicktabs {
+margin: 0;
+padding: 0;
+width: 100%;
+font: bold 12px Tahoma;
+background-color: #9f211f;
+border-bottom: 0px solid #6f0c09; /*thick bottom border below tabs*/
+border-top: 0px solid #6f0c09;
+height: 26px;
+}
+
+#thicktabs li{
+display: inline;
+border-left:0px solid #DADADA;
+}
+
+#thicktabs li a{
+float: left;
+color: white;
+padding: 6px 32px; /*padding of tabs*/ 
+text-decoration: none;
+
+border-left:1px solid white;
+border-right:0px solid #6f0c09;
+}
+
+#thicktabs li a#leftmostitem{ /*Extra CSS for left most menu item*/
+border-left: 0px solid #6f0c09; /*left border style*/
+}
+
+#thicktabs li a#rightmostitem{ /*Extra CSS for right most menu item*/
+border-right: 0px solid #6f0c09; /*right border style*/
+background-position: top left; /*Position background image to the left instead of default right, to hide indented underline for this link*/
+}
+
+#thicktabs li a:visited{
+color: white;
+}
+
+#thicktabs li a:hover{
+color: #cebd77;
+background-image: url(../images/redbgover.gif); /*background image swap on hover*/
+}
+
+#thicktabs li a:active{
+color: white;
+background-image: url(../images/redbg.gif); /*background image swap on hover*/
+}
+#outerwrap {
+	width: 	950px;
+	/*background: url(images/contentbg.gif) repeat-y top;*/
+	margin: 0 auto;
+	background-color: white;
+}
+#innerwrap {
+	background-color: white;
+	padding: 0 0px 0 0px;
+	margin: 0 auto;
+}
+#body{
+	padding: 0;
+	background-color: white;
+}
+
+#body-content {
+	background-color: white;
+	text-align: left;
+	margin-left: 5px;
+}
+
+#footer {
+	background-color: #cebd77;
+	/*background: url(images/footerbg.gif) no-repeat center top;*/
+	margin: 0 auto;
+	text-align: left;
+	clear: both;
+}
+
+#footer a{
+color: white; 
+text-decoration: none;
+}
+
+#footer-content{
+	/*padding: 0 20px 0 13px;*/
+}
+#header {
+	background-color: #cebd77;
+	position: relative;
+	/*background: url(images/headerbg.gif) no-repeat center bottom;*/
+	margin: 0 auto;
+	text-align: left;
+	clear: both;
+	height: 76px;
+}
+#header .logo {
+	position: absolute;
+	margin: 0; 
+	padding: 0 0 0px 0;
+	font: bolder 3.3em 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2px;
+	color: #FFF;
+	text-transform: none;
+	
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 13px; left: 18px;	
+}
+
+#header .links {
+	position: absolute;
+	margin: 0; padding: 0;
+	color: #FFF;
+	text-transform: none;
+	top: 5px; right: 5px; 
+}
+
+#sidebar {
+	float: left;
+	width: 19.7%;
+	height: 450px;
+	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+			
+}	
+#main {
+	background-color: white;
+	float: left;
+	width: 55.6%;
+/*	height: 450px;
+*/	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid; 
+}
+#main2 {
+	background-color: white;
+	float: left;
+	width: 730px;
+/*	height: 450px;
+*/	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid; 
+}
+#main img {
+*margin: 0px 0px -5px; 0px;
+}
+
+#sidebarright{
+	float: left;
+	width: 20%;
+	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 450px;
+}
+
+#one{
+	float: left;
+	width: 460px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 600px;
+}
+#two{
+	float: left;
+	width: 225px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 155px;
+}
+#three{
+	float: left;
+	width: 460px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 155px;
+	background-color: #F0F0F0;
+}
+#four{
+	float: left;
+	width: 225px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 155px;
+}
+#five{
+	float: left;
+	width: 456px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid;
+	height: 431px;
+	background-color: #F0F0F0;
+}
+
+#five a{
+color: black; 
+text-decoration: none;
+}
+
+#video-archive-main {
+	background-color: white;
+	float: left;
+	width: 730px;
+/*	height: 1200px;
+*/	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid; 
+}
+#customerreviews {
+	background-color: white;
+	float: left;
+	width: 76%;
+/*	height: 450px;
+*/	margin-top: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-color: #94864a;
+	border-style: solid; 
+}
+#bluebar {
+	/*padding: 2px 20px 2px 13px;	*/
+	background-color: #181852;
+
+	
+}
+
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+a:link {
+	
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+}
+.style4 {font-weight: bold}
+.style7 {font-size: 24px}
+.style13 {font-size: 18px; color: #FFFFFF; }
+.style15 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+h4 {
+background-color: #efece3;
+text-align: left;
+display:block;
+color: #928346;
+font-family: arial, verdana, helvetica, tahoma;
+font-weight: bold;
+font-size: 18px;
+padding:2px 5px 2px 5px;
+border-bottom: 1px solid #b8af88;
+margin-top: 0px;
+margin-bottom: 3px;
+}
+
+/* Dropdown menu styles*/
+.slidetabsmenu{float:left;width:100%;font:bold 12px Tahoma;line-height:normal;border-bottom:0px solid gray;}
+* html .slidetabsmenu{margin-bottom:1em;}
+
+.slidetabsmenu ul{list-style-type:none;margin:0;padding:0;}
+.slidetabsmenu li{display:inline;margin:0;padding:0;}
+.slidetabsmenu a{float:left;margin-right: 5px;padding:0 0 0 9px;text-decoration:none;color:white;}
+.slidetabsmenu a:visited{float:left;text-decoration:none;color:white;}
+.slidetabsmenu a span {float:left;display:block;padding:2px 13px 2px 4px;font-weight:bold;color:#3B3B3B;}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.slidetabsmenu a span {float:none;}
+/* End IE5-Mac hack */
+.slidetabsmenu a:visited span{color: white;}
+.slidetabsmenu a:hover span, .slidetabsmenu li.selected a span{color: black;}
+.slidetabsmenu a:hover, .slidetabsmenu li.selected a{background-position:0% -125px;}
+.slidetabsmenu a:hover span, .slidetabsmenu li.selected a span{background-position:100% -125px;}
+
+html>/**/body .IEonlybr{ /*None IE browsers hack*/
+display: none; /*Hide BR tag in non IE browsers, since it's not needed*/
+}
+
+/* ######### Style for Drop Down Menu ######### */
+.dropmenudiv_c{text-align:left;position:absolute;top:0;font-weight:bold;font-family:Tahoma,Helvetica,Arial;line-height:15px;z-index:100;background-color:#9f211f;font-size:12px;width:180px;visibility:hidden;}
+.dropmenudiv_c a{width:auto;display:block;text-indent:2px;padding:2px 0px;text-decoration:none;background-color:#9f211f;color:white;}
+.dropmenudiv_c a:visited{width:auto;display:block;text-decoration:none;color:white;background-color:#9f211f;}
+* html .dropmenudiv_c a{width: 100%;}
+.dropmenudiv_c a:hover{color: #cebd77;text-decoration:none;background-image: url(../images/redbgover.gif); /*background image swap on hover*/}
+
+<!--[if IE]>
+p.iepara{ /*Conditional CSS- For IE (inc IE7), create 1em spacing between menu and paragraph that follows*/
+padding-top: 1em;
+}
+<![endif]-->
+
+</style>
+<script type="text/javascript" src="http://www.grimmspeed.com/images/lightbox/js/prototype.js"></script>
+<script type="text/javascript" src="http://www.grimmspeed.com/images/lightbox/js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="http://www.grimmspeed.com/images/lightbox/js/lightbox.js"></script>
+<link rel="stylesheet" href="http://www.grimmspeed.com/images/lightbox/css/lightbox.css" type="text/css" media="screen" />
+
+<style>img {border:0px;}</style>
+
+
+</head>
+
+
+<div id="header"> 
+  <div class="logo"><a href="http://www.grimmspeed.com"><img src="../images/header_logo_2.png" border="0"></a><img src="../images/phonenumber_logo.jpg" border="0"></div>
+  <div class="links" align="right"><span class="style3"><br />
+    <br/>
+    <img src="http://www.grimmspeed.com/images/aim_logo.jpg" /></span></div>
+</div>
+
+<div id="menu">
+	<ul id="thicktabs">
+		<li id="home"><a id="leftmostitem" href="http://www.grimmspeed.com/index.php">Home</a></li>
+		<li id="store"><a href="/catalog">Products</a></li>
+		<li id="about"><a href="#" rel="dropmenu1_c">Company</a></li>
+		<li id="contact"><a href="#" rel="dropmenu1_c2">Dealers</a></li>
+		
+		<li id="project"><a href="http://www.grimmspeed.com/sponsored_cars.php">Sponsored Cars</a></li>		
+		<li id="contact"><a href="http://www.grimmspeed.com/customer_reviews.php">Customer Testimonials</a></li>
+		<li id="contact"><a id="rightmostitem" href="http://www.grimmspeed.com/contact_us.php">Contact Us</a></li>
+	</ul>
+</div>
+
+<!--1st drop down menu --> 
+<div id="dropmenu1_c" class="dropmenudiv_c">
+	<a href="http://www.grimmspeed.com/about_us.php">&nbsp;About Us</a>
+    <a href="http://www.grimmspeed.com/careers.php">&nbsp;Careers</a>
+	<a href="http://www.grimmspeed.com/grimmspeed_team.php">&nbsp;Team Bios</a>
+</div>
+<div id="dropmenu1_c2" class="dropmenudiv_c">
+	<a href="http://www.grimmspeed.com/dealers.php">&nbsp;Find A Dealer</a>
+    <a href="http://www.grimmspeed.com/dealer_application.php">&nbsp;Dealer &nbsp;Application</a>
+	
+</div>
+
+<script type="text/javascript" src="../scripts/dropdowntabs.js">
+/***********************************************
+* Drop Down Tabs Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+tabdropdown.init("menu", 0)
+</script>
+		<div id="bluebar"><script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+	new fadeshow(fadeimages, 950, 282, 0, 4500, 0)
+</script>
+
+<!--bc889c7d07376c2108e6cb671f2ce88c--></div>	
+
+	<!--MAIN CONTENT-->
+	<div id="body">
+		<div id="body-content">
+	
+	<div id="sidebar">
+<!-- COPY THIS CODE TO PASTE INTO ANY HTML PAGE -->
+<table cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff;COLOR: #ffffff; FONT: 12px Tahoma;"><tr><td>
+<iframe id="NewsWindow" src="news_win.htm" width="185" height="446" marginwidth="0" marginheight="0" frameborder="0" scrolling="yes"></iframe>
+</td></tr></table>
+
+<!-- END CODE -->
+
+	
+		  		
+			</div>
+						
+	<div id="main">
+				<div id="slider1" class="contentslide">
+						 <div class="opacitylayer">
+                         
+                      
+                           <div class="contentdiv">
+				<a href="http://www.grimmspeed.com/catalog/product_info.php?cPath=144&products_id=213">
+				<img src="images/homepage_mastercylinderbrace_subaru_08.png" alt="GrimmSpeed Subaru Master Cylinder Brace 08+ WRX STI Impreza" title="GrimmSpeed Subaru Master Cylinder Brace 08+ WRX STI Impreza" />
+                </a>
+				</div>
+                
+                         <div class="contentdiv">
+				<a href="http://www.grimmspeed.com/catalog/product_info.php?cPath=22&products_id=197">
+				<img src="images/homepage_turboheatshield_subaru.png" alt="GrimmSpeed Subaru Turbo Heat Shields" title="GrimmSpeed Subaru Turbo Heat Shields" />
+                </a>
+				</div>   
+                         <div class="contentdiv">
+				<a href="http://www.grimmspeed.com/catalog/product_info.php?cPath=91&products_id=191">
+				<img src="images/homepage_aos_subaru.png" alt="GrimmSpeed Subaru Air Oil Separator" title="GrimmSpeed Subaru Air Oil Separator" />
+                </a>
+				</div>                        
+			   		   
+			      <div class="contentdiv">
+                <a href="http://www.grimmspeed.com/catalog/product_info.php?cPath=91&products_id=145">
+				<img src="images/homepage_boost_solenoid.png" alt="GrimmSpeed Subaru Electronic Boost Control Solenoid" title="GrimmSpeed Subaru Electronic Boost Control Solenoid" />
+                </a>
+				</div>
+				  <div class="contentdiv">
+                <a href="http://www.grimmspeed.com/catalog/product_info.php?cPath=22&products_id=121">
+				<img src="images/homepage_ewg_38mmvband.png" alt="GrimmSpeed Subaru 38mm EWG External Wastegate Up Pipe" title="GrimmSpeed Subaru 38mm EWG External Wastegate Up Pipe" />
+                </a>
+				</div>
+				         			
+				 
+                
+                
+								
+							
+
+						 </div>
+						 <div class="pagination" id="paginate-slider1"></div>
+			  </div>
+	</div>
+			
+	<div id="sidebarright"><a href="http://www.grimmspeed.com/military_discount.php" target="_blank"><img src="http://www.grimmspeed.com/images/homepage_side_banner_right_military.jpg"></a></div>
+			
+	<div id="one">
+			<h4>:: Featured Products</h4>
+			<img src="http://www.grimmspeed.com/images/homepage_divONE_1.png" border="0" usemap="#Map">
+<map name="Map">
+  <area shape="rect" coords="42,30,443,132" href="http://www.grimmspeed.com/catalog/product_info.php?cPath=91&products_id=145"><area shape="rect" coords="42,152,443,251" href="http://www.grimmspeed.com/catalog/index.php?cPath=32">
+<area shape="rect" coords="42,271,449,371" href="http://www.grimmspeed.com/catalog/index.php?cPath=22">
+<area shape="rect" coords="11,478,133,499" href="http://www.maperformance.com/grimmspeed/" target="_blank">
+<area shape="rect" coords="11,504,167,521" href="http://www.importimageracing.com/" target="_blank">
+<area shape="rect" coords="9,523,110,540" href="http://www.awdtuning.com/" target="_blank">
+<area shape="rect" coords="12,541,136,561" href="http://www.surgelinetuning.com/" target="_blank">
+<area shape="rect" coords="188,478,328,496" href="http://www.oakos.com/" target="_blank">
+<area shape="rect" coords="190,499,288,520" href="http://www.scoobytuner.com/" target="_blank">
+<area shape="rect" coords="186,522,307,538" href="http://www.turninconcepts.com/index.php?manufacturers_id=29&osCsid=ff2d76462d00cebe262c4b16c1b3548d" target="_blank">
+<area shape="rect" coords="191,544,296,559" href="http://www.tougetuning.com/store/index.php?manufacturers_id=15&osCsid=a92628eaf579769f901f902e22626ceb" target="_blank">
+</map>
+
+		  </div>
+			
+			
+	<div id="three">	
+	<h4>:: Follow Us on the Net</h4>
+	<font face="Tahoma" size="-1"><br>
+	<a href="http://www.facebook.com/pages/GrimmSpeed/196509830566?ref=ts" target="_blank"><img src="http://www.grimmspeed.com/images/facebook_logo.png"></a>    
+    <a href="http://www.youtube.com/grimmspeed" target="_blank"><img src="http://www.grimmspeed.com/images/youtube_logo.png"></a>   
+    <a href="http://www.twitter.com/grimmspeed" target="_blank"><img src="http://www.grimmspeed.com/images/twitter_logo.png"></a>   
+    <a href="http://forums.nasioc.com/forums/showthread.php?t=1237071" target="_blank"><img src="http://www.grimmspeed.com/images/NASIOC_logo.png"></a>
+		</font>
+			</div>
+			
+	
+			
+		  <div id="five"><h4>:: Videos</h4>
+			<table align="center" cellpadding="10">
+            
+            <tr>
+            <td><a href="http://www.youtube.com/watch?v=cogAD_jFFAE" target="_blank"><font face="Tahoma" size="-1">Subaru Master Cylinder Brace</font><br>
+                <img src="http://www.grimmspeed.com/images/video_thumbnail_master_cylinder_brace_subaru_08_trailer.jpg"></a></td>
+            <td><a href="http://www.youtube.com/watch?v=oCir54OIQr0" target="_blank"><font face="Tahoma" size="-1">Subaru Air Oil Separator Trailer</font><br>
+                <img src="http://www.grimmspeed.com/images/video_thumbnail_aos_trailer.jpg"></a></td>
+            
+            </tr>
+            <tr>
+            <td><a href="http://www.youtube.com/watch?v=H9KSMr0q0uY" target="_blank"><font face="Tahoma" size="-1">Boost Solenoid Subaru Install</font><br><img src="http://www.grimmspeed.com/images/video_thumbnail_bcs_subaru_0207_install.jpg"></a></td>
+            <td><a href="http://www.youtube.com/watch?v=DZNNVwgYKFY" target="_blank"><font face="Tahoma" size="-1">TGV Delete Time Lapse</font><br><img src="http://www.grimmspeed.com/images/video_thumbnail_tgv_time_lapse.jpg"></a></td>            
+            </tr>
+          
+            </table>
+            
+            </div>
+			
+		
+		</div>
+	</div>
+</div>
+	<!--FOOTER STARTS HERE-->
+ 	<style type="text/css">
+<!--
+.style5 {font-family: Tahoma; font-size: 12px; color: #ffffff; }
+-->
+</style>
+<div id="footer">
+
+<table width="100%" border="0" cellpadding="0"  cellspacing="0" align="center">
+
+
+<tr>
+<td width="16.67%" align="left"><img src="http://www.grimmspeed.com/images/credit_cards.jpg"></td>
+<td valign="top"><br /><span class="style5"><strong>Popular Cars:</strong>
+
+</span>
+  <li class="style5"><a href="http://www.grimmspeed.com/catalog/index.php?cPath=60">Subaru</a></li>
+<li class="style5"><a href="http://www.grimmspeed.com/catalog/index.php?cPath=104">Mitsubishi</a></li>
+<li class="style5"><a href="http://www.grimmspeed.com/catalog/index.php?cPath=116">Mazda</a></li>
+<li class="style5"><a href="http://www.grimmspeed.com/catalog/index.php?cPath=115">Hyundai</a></li></td>
+<td valign="top"><br /><span class="style5"><strong>About GrimmSpeed&#0153;:</strong>
+</span>
+  <li class="style5"><a href="http://www.grimmspeed.com/about_us.php">Background</a></li>
+<li class="style5"><a href="http://www.grimmspeed.com/careers.php">Careers with GS</a></li>
+<li class="style5"><a href="http://www.grimmspeed.com/grimmspeed_team.php">Team Member Bios</a></li>
+<li class="style5">GS Banners &amp; Logos</li>
+<li class="style5"><a href="http://www.grimmspeed.com/dealer_application.php">Dealer Application</a></li></td>
+<td valign="top"><br /><span class="style5"><strong>Information:</strong>
+</span>
+  <li class="style5"><a href="https://www.grimmspeed.com/core_program_form.doc" target="_blank">Core Exchange Form</a></li>
+<li class="style5">Sponsorship</li>
+<li class="style5">Gift Cards</li>
+<li class="style5"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=aorgxrcab&p=oi&m=1102253868480" target="_blank">Join Our Newsletter</a></li></td>
+<td valign="top"><br /><span class="style5"><strong>Ordering:</strong>
+</span>
+  <li class="style5">Order Status</li>
+<li class="style5">How to Order</li>
+<li class="style5">My Account</li>
+<li class="style5"><a href="http://www.grimmspeed.com/dealers.php">Dealer Finder</a></li>
+<li class="style5"><a href="https://www.grimmspeed.com/grimmspeed_product_warranty.pdf" target="_blank">Warranty Info</a></li></td>
+<td align="right">
+	<br /><img src="http://www.grimmspeed.com/images/sema_logo_thumbnail.jpg">&nbsp;&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan="6" align="center"> <span class="style5"><p>Copyright &copy; GrimmSpeed, LLC. 2006-2010 </p></span></td>
+</tr>
+
+<!--<tr>
+	<td width="25%" align="left" class="style3" rowspan="3">
+	
+	 
+	
+	</td>
+
+
+    <td width="50%" align="center" class="style3">
+		<a href="http://www.grimmspeed.com/index.php" class="style4">Popular Cars</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp; &nbsp; <a href="http://www.grimmspeed.com/about_us.php" class="style4">About 
+        GrimmSpeed</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp; <a href="http://www.grimmspeed.com/contact_us.php" class="style4">Contact 
+        Us</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.grimmspeed.com/grimmspeed_team.php" class="style4">Team 
+        Bios</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/sitemap.php" class="style4">Sitemap</a> 
+	</td>
+	<td width="25%" align="right" valign="bottom" class="style3" rowspan="4"><br />
+	<img src="http://www.grimmspeed.com/images/credit_cards.jpg">
+	<img src="http://www.grimmspeed.com/images/sema_logo_thumbnail.jpg">&nbsp;&nbsp;</td>
+	
+</tr>
+
+<tr>
+   <td colspan="1" class="style3" align="center" valign="bottom">
+   		<div align="center">
+   		  <p>Copyright &copy; GrimmSpeed, LLC. 2006-2010 </p>
+        </div>
+   </td>
+   
+</tr>-->
+</table>
+<div class="clear"></div>
+</div>
+<!-- New Google Analytics added 8-21-2010 -->
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1478948-1");
+	if(document.getElementById('gatracking')){
+	pageTracker._trackPageview(document.getElementById('gatracking').innerHTML);
+	} else {
+	pageTracker._trackPageview();
+	}
+} catch(err) {}</script>
+<!-- Old Google Analytics Commented out 8-21-2010 -->
+<!--<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1478948-1";
+urchinTracker();
+</script>-->
+
+</div>
+<script type="text/javascript">
+//Define: ContentSlider("slider_ID", [autorotate_miliseconds], [custompaginatelinkstext], [customnextlinktext])
+ContentSlider("slider1", 6000)
+//OR ContentSlider("slider1", 4000)
+//OR ContentSlider("slider1", 3000, linktextarray)
+//OR ContentSlider("slider1", 3000, linktextarray, "Foward")
+//OR ContentSlider("slider1", "", linktextarray)
+//OR ContentSlider("slider1", "", "", "Foward")
+</script>
+<br>
+</body>
+</html>
