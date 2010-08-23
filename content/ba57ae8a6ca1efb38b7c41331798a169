@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en-US">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<TITLE>Why you should not use a flag as a symbol of language</TITLE>
+ <link rel="stylesheet" title="Yucca's style" href="basic.css">
+</head>
+<body>
+
+<H1>Flag as a symbol of language - stupidity or insult?</H1>
+
+<h2>The problem</h2>
+
+<p>Very often flags are used as symbols of languages, on the Web
+and elsewhere. For instance, a Web page might contain
+an "English flag" which acts as a link to an English version
+of a document (which itself is in another language).
+It is usually bad practice to use images as anchors of
+<a href="www/links.html"
+title="Links Want To Be Links"
+>links</a>,
+but this document concentrates on the theme why flags are
+particularly unsuitable anchors.
+<p>
+In a perfect world, there would be no need for explicit links
+to versions of a document in different languages.
+Even in this
+imperfect world, the Web might evolve so that a server and
+a user agent smoothly select a version according to language preferences
+which the user has given when configuring the browser.
+(There are methods for such negotation in the
+<a href="http://www.w3.org/pub/WWW/Protocols/">HTTP protocol</a>,
+but they are rarely used in practice so far.
+See <cite><a href="multi/index-en.htm">Techniques for multilingual Web
+sites</a></cite>. This should not be confused with the misguided
+"forced redirection" e.g. by Google, which uses undisclosed
+heuristics to send the user to a page in a particular language.)</p>
+
+<h2>Why flags are used as symbols of languages?</h2>
+
+<p>Probably the most common motivation for using a flag as a language
+symbol is that it is expected to
+<strong>catch the eye</strong>
+better than
+text does.
+<p>
+I'm not arguing against that expectation, and I'm
+not preaching against eye-catching images in general; see my article
+<a href="images.html"><cite>How to use images in communication
+in general and on the Web in particular</cite></a>.
+I'm not even going to discuss the question whether it makes sense
+to draw every reader's attention to a flag.
+(Why should I care about a link to a German version in a document
+written in a language which I know quite well, especially if I don't
+know German?)
+But I will present arguments which speak against flags as
+language symbols much stronger than any 
+arguments about
+eye-catching
+or esthetics can speak in favor of it.
+
+<h2>The basic argument: what a flag really stands for</h2>
+
+<p>Fundamentally, a flag is a symbol of a <strong>country</strong>.
+(It could also be a symbol of an administrative area or a society
+or organization or movement, but such flags are not used as symbols
+of languages, with rare exceptions like
+<a title="Multilingual info site about Esperanto"
+href="http://www.esperanto.net">Esperanto</a>.)
+<p>
+Naturally one could use a flag a symbol for the country e.g.
+in a list of links to information related to various countries.
+Whether it is wise to do so depends on the context. Typically
+people know names of countries better than their flags, so usually
+a flag isn't such a great symbol communicatively.
+What we discuss here is the use of flags for <em>languages</em>,
+and such usage is plain wrong.
+<p>
+There is no one-to-one mapping between countries and languages.
+Even in the rare cases where the
+native speakers of a language and
+the citizens of a country are almost identical groups, there is no
+reason to
+<strong>bind</strong> the country and the language strictly together.
+<p>
+<img src="po.gif" alt="[Flag of Portugal]" align=right>
+Why should, for example, a Brasilian select the flag of Portugal
+to select his native language?
+It's quite possible that a Brasilian does not even <em>know</em>
+the flag of Portugal.
+<p>
+<img src="f-se.gif" alt="[Flag of Sweden]" align=right>
+Why should a Finn select the symbol of
+Sweden in order to read some material in his native language if
+it happens to be Swedish?
+Such use of flags could be taken as an insult, since
+loyalty to a flag is loyalty to the country that it symbolizes. 
+And in practical terms, the flag of Sweden on a Web page of
+an organization in Finland would <em>most logically</em> refer
+to related pages in Sweden; and such links would often be very
+useful, since the countries have so many cultural ties.
+<p>
+<img src="f-uk.gif" alt="[Flag of UK]" align=right>
+As an important special case, consider the flag which is probably
+the most commonly used as a symbol of language.
+The
+British <a href="http://www.flaginst.demon.co.uk/fiunionflag.htm">Union Flag</a>
+(often called Union Jack)
+is often used to denote the English language, and sometimes
+even called "the English flag". First, it needs to be noted that it
+is <em>not</em> the flag of England but of the United Kingdom
+of Great Britain and Northern Ireland. There <em>is</em> a 
+<a href="http://www.flags.net/ENGL.htm"
+title="World Flag Database: England"
+>flag of
+England</a>, but few people outside the United Kingdom know it,
+except perhaps as a football team symbol.
+More importantly, the majority of people who know English&nbsp;-
+or even the majority
+of people who speak English as their native language&nbsp;- do not live  in
+the United Kingdom.
+People who put the Union Flag into their documents to symbolize English
+rarely think about this, and neither do they think whether their document
+is actually in <em>British</em> English instead of e.g.
+American (US) English.
+<p>
+In many countries, the Union Flag refers to previous colonial masters.
+Thus, a flag used as a language symbol may have
+unwanted <em>connotations</em>
+(in addition to being misleading as
+regards to its denotation).
+Even if the associated feelings are positive, there is no reason to
+raise them, when the communicative purpose is just to refer to
+some information written in the English language.</p>
+
+<div>The <a href="http://www.cenorm.be"
+title="European committee for standardization"
+>CEN</a> Workshop Agreement 
+<cite>European Culturally Specific ICT Requirements</cite>
+says:</div>
+<blockquote><p>The use of national flags to denote language, although convenient to implement, is another potential source of major irritation to the users, particularly for native speakers of the language outside the thus
+indicated country.</p></blockquote>
+<!--"http://www.cenorm.be/isss/cwa_download_area/cwa14094.pdf" -->
+<div class="credit">Source (in PDF format): <a href=
+"ftp://cenftp1.cenorm.be/PUBLIC/CWAs/e-Europe/ESR/cwa14094-00-2001-Jan.pdf"
+type="application/pdf"><abbr title="CEN Workshop Agreement">CWA</abbr> 14094</a>, clause 5.9</div>
+
+<p>On <strong>international and multilingual pages</strong>,
+flags in menus cause great confusion: they would logically denote
+countries (leading to country-specific information, in some language)
+and they often do, but probably more often they refer
+to languages (typically leading to the same information in different
+languages).</p>
+
+<h2>Secondary arguments</h2>
+
+<p>An image, even a small one, takes more time to transfer over network
+than the alternatives discussed below. This means that the flag images
+might appear on the screen only after the text of the document is there.
+Such behavior looks odd, since it is contrary to the idea of providing
+fast and
+comfortable access to versions of a document in different languages.
+<p>
+Very often images of flags are of poor quality as regards to proportions,
+colors, and form.
+A flag image of reasonable quality might require a large image file,
+making the above-mentioned performance problem more serious.
+Images of flags might even be deliberately distorted to achieve
+a "cool" effect, such as presenting a rectangular flag as a round button.
+A flag of any country should be treated with <strong>respect</strong>;
+insulting a flag insults the country and its people.
+<p>
+An image serves a communicative purpose only if the user can see the image.
+There are several reasons why this might fail.
+In Web documents, an image can (and should) be accompanied with an
+alternative textual presentation
+of the same information,
+the so-called ALT attribute of an IMG element. For languages,
+this is easy, but then you can in fact ask what you need the image for
+in the first place.
+<p>
+
+<h2>So what symbols should we use for languages?</h2>
+
+<p>There <em>is</em> a perfect symbol for any language which you can use on
+the Web: the name of the language in the language itself, e.g.
+English (or British English or US English, if needed),
+svenska, suomi, Deutsch, français.  (Be careful with the grammatically correct use of
+upper and lower case here!)
+If a reader doesn't know the name of language <var>X</var>
+in <var>X</var>, he
+probably does not know <var>X</var> enough for the link to be of use to him.
+<p>
+If you need something shorter (you don't actually need on the Web,
+but you might need when designing e.g. id cards for employees),
+you can use the codes defined in the international standard ISO&nbsp;639,
+either the
+two-letter codes of ISO&nbsp;639-1,
+such as <strong>en</strong> for English,
+or the
+three-letter codes of ISO&nbsp;639-2, like
+<strong>eng</strong> for English.
+Both types of codes are listed on the
+<a href="http://www.loc.gov/standards/iso639-2/">
+ISO 639-2 Registration Authority</a> pages.
+The three-letter codes might be regarded as more informative
+and more understandable to the speakers of the languages.
+They are also more suitable if you expect that less common languages, which
+may have no two-letter code, will be included into the language
+repertoire. However, two-letter codes are so often used on Web pages
+and elsewhere that many people are familiar with them.</p>
+
+<p>
+<table align="left" border="0" cellpacing="15"><tr><td>
+<span style="background:#eee none;color:#f33;font-weight:bold">[en]</span>
+</td></tr></table>
+Depending on circumstances and preferences, the names or abbreviations
+can be presented in varying styles. In
+<a href="html-primer.html">HTML</a> such items, being text, can be
+embedded into suitable elements which may affect the size, font, color
+and other properties of text presentation.
+- However, it is unwise to try to control the presentation too much.
+For example, on some
+Web pages of the
+<a href="http://europa.eu.int/index-en.htm">European Union</a>
+(such as <a href=
+"http://web.archive.org/web/20031002070138/http://europa.eu.int/geninfo/query_en.htm"
+>an old version of the basic search page</a>)
+languages have been symbolized correctly by using ISO 639 codes but so that
+the letters are
+presented as colored images. This raised the irritating
+question whether the use of <em>different colors for different languages</em>
+carries a message&nbsp;- intentionally or unintentionally.
+<p>
+In many cases, there is no need to use <em>any</em> symbol for a language.
+If you have a link
+with anchor text in English (like
+<cite>Flag as a symbol of language - stupidity or insult?</cite>),
+isn't it pretty obvious that it refers to a document written in English?
+And if you have the home page of a company or an association in
+several languages, isn't it pretty natural to list its names in those
+languages, making each name a link to a version of the document
+in that language?</p>
+<hr title="Information about this document">
+<P>
+Several examples and arguments in this
+document have been taken from
+<a
+title=
+"article oeeu3ncvqa8.fsf@alpha.hut.fi, in group sfnet.keskustelu.viestinta.www (which group does not exist any more)"
+href="http://groups.google.com/groups?as_umsgid=oeeu3ncvqa8.fsf@alpha.hut.fi"
+hreflang="fi"
+>a news article</a>
+(in Finnish)
+by
+<a lang="fi" href="http://www.iki.fi/jhi/">Jarkko Hietaniemi</a>.
+</P>
+<div class="footer">
+<div>Originally created in 1997
+(see <a href=
+"http://web.archive.org/web/19970818185245/http://www.hut.fi/~jkorpela/flags.html"
+>version of 1997-07-12</a>).
+Date of last update:
+2006-05-14.
+</div>
+<div>This page belongs to the free information site
+<cite><a href="indexen.html">IT and communication</a></cite>
+by
+<a href="personal.html" title=
+"Jukka K. Korpela, an IT generalist and specialist (personal home page)"
+>Jukka "Yucca" Korpela</a>, mainly to section
+<cite><a href="www.html">Web authoring and surfing</a></cite>. 
+</div>
+</div>
+</body>
+</html>
